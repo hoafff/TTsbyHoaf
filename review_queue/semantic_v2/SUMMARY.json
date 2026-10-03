@@ -1,0 +1,11 @@
+{
+  "stage": "GIT_REVIEW_QUEUE_SEMANTIC_V2",
+  "packs": 100,
+  "sources": 16,
+  "items": 65167,
+  "source_text_chars": 5186077,
+  "target_chars": 45000,
+  "soft_max_chars": 55000,
+  "review_mode": "ChatGPT reads packs directly from GitHub and commits review results back to GitHub.",
+  "external_llm_api_required": false
+}

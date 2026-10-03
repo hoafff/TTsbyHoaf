@@ -1,0 +1,2088 @@
+{
+  "pack_id": "review_pack_0071",
+  "video_id": "hDNesxEPAws",
+  "rules": [
+    "ChatGPT reviews directly from GitHub. No external LLM API is required.",
+    "Do not rewrite source text in this stage.",
+    "Every output segment must preserve source words/order exactly.",
+    "Use context for tiny fragments; tiny does not automatically mean DROP.",
+    "PHONETIC_CROWDING_RISK is not an automatic DROP.",
+    "If splitting a piece further, concatenated text must equal text_exact after whitespace normalization."
+  ],
+  "allowed_labels": [
+    "KEEP_CANDIDATE",
+    "DROP_FRAGMENT",
+    "BROKEN_TEXT",
+    "WEIRD_PHRASE",
+    "PARALINGUISTIC",
+    "STUTTER_OR_REPEAT",
+    "PHONETIC_CROWDING_RISK",
+    "NEED_CONTEXT"
+  ],
+  "items": [
+    {
+      "piece_id": "hDNesxEPAws_S000513_P015",
+      "parent_block_id": "hDNesxEPAws_S000513",
+      "text_exact": "Nghĩ đến đây, Lý Thế Dân cảm thấy cả người không ổn chút nào.",
+      "char_count": 61,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000513_P013",
+          "text": "Chỉ đến chỗ trẫm là tính toán chi ly sao?"
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000513_P014",
+          "text": "Tiểu tử này chẳng lẽ có thành kiến gì với trẫm sao?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000513_P016",
+          "text": "Được rồi, đừng ngẩn người ra nữa, muốn ăn gì thì chọn nhanh lên, ngươi phía sau còn đang chờ kìa."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000513_P017",
+          "text": "Vương Dần thấy Lý Thế Dân đứng ngây ra đó liền thúc giục, cái này, cái này, còn cả cái này nữa."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000513_P016",
+      "parent_block_id": "hDNesxEPAws_S000513",
+      "text_exact": "Được rồi, đừng ngẩn người ra nữa, muốn ăn gì thì chọn nhanh lên, ngươi phía sau còn đang chờ kìa.",
+      "char_count": 97,
+      "word_count": 21,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000513_P014",
+          "text": "Tiểu tử này chẳng lẽ có thành kiến gì với trẫm sao?"
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000513_P015",
+          "text": "Nghĩ đến đây, Lý Thế Dân cảm thấy cả người không ổn chút nào."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000513_P017",
+          "text": "Vương Dần thấy Lý Thế Dân đứng ngây ra đó liền thúc giục, cái này, cái này, còn cả cái này nữa."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000513_P018",
+          "text": "Nghe vậy, Lý Thế Dân đành phải ngoan ngoãn bắt đầu chọn món."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000513_P017",
+      "parent_block_id": "hDNesxEPAws_S000513",
+      "text_exact": "Vương Dần thấy Lý Thế Dân đứng ngây ra đó liền thúc giục, cái này, cái này, còn cả cái này nữa.",
+      "char_count": 95,
+      "word_count": 22,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000513_P015",
+          "text": "Nghĩ đến đây, Lý Thế Dân cảm thấy cả người không ổn chút nào."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000513_P016",
+          "text": "Được rồi, đừng ngẩn người ra nữa, muốn ăn gì thì chọn nhanh lên, ngươi phía sau còn đang chờ kìa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000513_P018",
+          "text": "Nghe vậy, Lý Thế Dân đành phải ngoan ngoãn bắt đầu chọn món."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000513_P019",
+          "text": "Nói đi cũng phải nói lại, thân là một vị đế vương mà phải tự mình đứng đây chỉ trò chọn món."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000513_P018",
+      "parent_block_id": "hDNesxEPAws_S000513",
+      "text_exact": "Nghe vậy, Lý Thế Dân đành phải ngoan ngoãn bắt đầu chọn món.",
+      "char_count": 60,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000513_P016",
+          "text": "Được rồi, đừng ngẩn người ra nữa, muốn ăn gì thì chọn nhanh lên, ngươi phía sau còn đang chờ kìa."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000513_P017",
+          "text": "Vương Dần thấy Lý Thế Dân đứng ngây ra đó liền thúc giục, cái này, cái này, còn cả cái này nữa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000513_P019",
+          "text": "Nói đi cũng phải nói lại, thân là một vị đế vương mà phải tự mình đứng đây chỉ trò chọn món."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000513_P020",
+          "text": "Lý Thế Dân cảm thấy cả người cứ không tự nhiên thế nào ấy."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000513_P019",
+      "parent_block_id": "hDNesxEPAws_S000513",
+      "text_exact": "Nói đi cũng phải nói lại, thân là một vị đế vương mà phải tự mình đứng đây chỉ trò chọn món.",
+      "char_count": 92,
+      "word_count": 22,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000513_P017",
+          "text": "Vương Dần thấy Lý Thế Dân đứng ngây ra đó liền thúc giục, cái này, cái này, còn cả cái này nữa."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000513_P018",
+          "text": "Nghe vậy, Lý Thế Dân đành phải ngoan ngoãn bắt đầu chọn món."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000513_P020",
+          "text": "Lý Thế Dân cảm thấy cả người cứ không tự nhiên thế nào ấy."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000513_P021",
+          "text": "Sau khi gia đình Lý Thế Dân lấy cơm xong, Vương Dần dẫn bọn họ đến mấy cái bàn gần đó ngồi xuống."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000513_P020",
+      "parent_block_id": "hDNesxEPAws_S000513",
+      "text_exact": "Lý Thế Dân cảm thấy cả người cứ không tự nhiên thế nào ấy.",
+      "char_count": 58,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000513_P018",
+          "text": "Nghe vậy, Lý Thế Dân đành phải ngoan ngoãn bắt đầu chọn món."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000513_P019",
+          "text": "Nói đi cũng phải nói lại, thân là một vị đế vương mà phải tự mình đứng đây chỉ trò chọn món."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000513_P021",
+          "text": "Sau khi gia đình Lý Thế Dân lấy cơm xong, Vương Dần dẫn bọn họ đến mấy cái bàn gần đó ngồi xuống."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000513_P022",
+          "text": "Dù sao bàn chỉ dành cho bốn người, cả gia đình bảy tám người chắc chắn không ngồi chung một bàn được."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000513_P021",
+      "parent_block_id": "hDNesxEPAws_S000513",
+      "text_exact": "Sau khi gia đình Lý Thế Dân lấy cơm xong, Vương Dần dẫn bọn họ đến mấy cái bàn gần đó ngồi xuống.",
+      "char_count": 97,
+      "word_count": 23,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000513_P019",
+          "text": "Nói đi cũng phải nói lại, thân là một vị đế vương mà phải tự mình đứng đây chỉ trò chọn món."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000513_P020",
+          "text": "Lý Thế Dân cảm thấy cả người cứ không tự nhiên thế nào ấy."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000513_P022",
+          "text": "Dù sao bàn chỉ dành cho bốn người, cả gia đình bảy tám người chắc chắn không ngồi chung một bàn được."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P001",
+          "text": "Vương Dần và gia đình Lý Thế Dân đang ăn cơm không nói, nhưng khi các dân làng nhìn thấy thức ăn trong cửa sổ, tất cả đều sững sờ."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000513_P022",
+      "parent_block_id": "hDNesxEPAws_S000513",
+      "text_exact": "Dù sao bàn chỉ dành cho bốn người, cả gia đình bảy tám người chắc chắn không ngồi chung một bàn được.",
+      "char_count": 101,
+      "word_count": 22,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000513_P020",
+          "text": "Lý Thế Dân cảm thấy cả người cứ không tự nhiên thế nào ấy."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000513_P021",
+          "text": "Sau khi gia đình Lý Thế Dân lấy cơm xong, Vương Dần dẫn bọn họ đến mấy cái bàn gần đó ngồi xuống."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P001",
+          "text": "Vương Dần và gia đình Lý Thế Dân đang ăn cơm không nói, nhưng khi các dân làng nhìn thấy thức ăn trong cửa sổ, tất cả đều sững sờ."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P002",
+          "text": "Món ăn đẹp mắt và thơm như vậy là dành cho chúng ta ăn sao?"
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000514_P001",
+      "parent_block_id": "hDNesxEPAws_S000514",
+      "text_exact": "Vương Dần và gia đình Lý Thế Dân đang ăn cơm không nói, nhưng khi các dân làng nhìn thấy thức ăn trong cửa sổ, tất cả đều sững sờ.",
+      "char_count": 130,
+      "word_count": 30,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000513_P021",
+          "text": "Sau khi gia đình Lý Thế Dân lấy cơm xong, Vương Dần dẫn bọn họ đến mấy cái bàn gần đó ngồi xuống."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000513_P022",
+          "text": "Dù sao bàn chỉ dành cho bốn người, cả gia đình bảy tám người chắc chắn không ngồi chung một bàn được."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P002",
+          "text": "Món ăn đẹp mắt và thơm như vậy là dành cho chúng ta ăn sao?"
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P003",
+          "text": "Lại còn không tốn tiền?"
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000514_P002",
+      "parent_block_id": "hDNesxEPAws_S000514",
+      "text_exact": "Món ăn đẹp mắt và thơm như vậy là dành cho chúng ta ăn sao?",
+      "char_count": 59,
+      "word_count": 15,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000513_P022",
+          "text": "Dù sao bàn chỉ dành cho bốn người, cả gia đình bảy tám người chắc chắn không ngồi chung một bàn được."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P001",
+          "text": "Vương Dần và gia đình Lý Thế Dân đang ăn cơm không nói, nhưng khi các dân làng nhìn thấy thức ăn trong cửa sổ, tất cả đều sững sờ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P003",
+          "text": "Lại còn không tốn tiền?"
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P004",
+          "text": "không dám ăn đâu."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000514_P003",
+      "parent_block_id": "hDNesxEPAws_S000514",
+      "text_exact": "Lại còn không tốn tiền?",
+      "char_count": 23,
+      "word_count": 5,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P001",
+          "text": "Vương Dần và gia đình Lý Thế Dân đang ăn cơm không nói, nhưng khi các dân làng nhìn thấy thức ăn trong cửa sổ, tất cả đều sững sờ."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P002",
+          "text": "Món ăn đẹp mắt và thơm như vậy là dành cho chúng ta ăn sao?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P004",
+          "text": "không dám ăn đâu."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P005",
+          "text": "Thy Trúc và các đầu bếp thấy dân làng đứng ngây ra đó liền thúc giục."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000514_P004",
+      "parent_block_id": "hDNesxEPAws_S000514",
+      "text_exact": "không dám ăn đâu.",
+      "char_count": 17,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P002",
+          "text": "Món ăn đẹp mắt và thơm như vậy là dành cho chúng ta ăn sao?"
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P003",
+          "text": "Lại còn không tốn tiền?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P005",
+          "text": "Thy Trúc và các đầu bếp thấy dân làng đứng ngây ra đó liền thúc giục."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P006",
+          "text": "Nhanh lên nào, phía sau còn có người chờ đấy."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000514_P005",
+      "parent_block_id": "hDNesxEPAws_S000514",
+      "text_exact": "Thy Trúc và các đầu bếp thấy dân làng đứng ngây ra đó liền thúc giục.",
+      "char_count": 69,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P003",
+          "text": "Lại còn không tốn tiền?"
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P004",
+          "text": "không dám ăn đâu."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P006",
+          "text": "Nhanh lên nào, phía sau còn có người chờ đấy."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P007",
+          "text": "Vâng vâng ạ."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000514_P006",
+      "parent_block_id": "hDNesxEPAws_S000514",
+      "text_exact": "Nhanh lên nào, phía sau còn có người chờ đấy.",
+      "char_count": 45,
+      "word_count": 10,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P004",
+          "text": "không dám ăn đâu."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P005",
+          "text": "Thy Trúc và các đầu bếp thấy dân làng đứng ngây ra đó liền thúc giục."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P007",
+          "text": "Vâng vâng ạ."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P008",
+          "text": "Dân làng vội vàng ngoan ngoãn bắt đầu chọn món."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000514_P007",
+      "parent_block_id": "hDNesxEPAws_S000514",
+      "text_exact": "Vâng vâng ạ.",
+      "char_count": 12,
+      "word_count": 3,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": true
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P005",
+          "text": "Thy Trúc và các đầu bếp thấy dân làng đứng ngây ra đó liền thúc giục."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P006",
+          "text": "Nhanh lên nào, phía sau còn có người chờ đấy."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P008",
+          "text": "Dân làng vội vàng ngoan ngoãn bắt đầu chọn món."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P009",
+          "text": "Cái này còn cái này nữa là được rồi."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000514_P008",
+      "parent_block_id": "hDNesxEPAws_S000514",
+      "text_exact": "Dân làng vội vàng ngoan ngoãn bắt đầu chọn món.",
+      "char_count": 47,
+      "word_count": 10,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P006",
+          "text": "Nhanh lên nào, phía sau còn có người chờ đấy."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P007",
+          "text": "Vâng vâng ạ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P009",
+          "text": "Cái này còn cái này nữa là được rồi."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P010",
+          "text": "Dù sao vừa rồi gia đình Lý Thế Dân lấy cơm bọn họ đều đã dướn cổ lên xem nên quy trình cụ thể cũng không cần phải hỏi lại."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000514_P009",
+      "parent_block_id": "hDNesxEPAws_S000514",
+      "text_exact": "Cái này còn cái này nữa là được rồi.",
+      "char_count": 36,
+      "word_count": 9,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P007",
+          "text": "Vâng vâng ạ."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P008",
+          "text": "Dân làng vội vàng ngoan ngoãn bắt đầu chọn món."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P010",
+          "text": "Dù sao vừa rồi gia đình Lý Thế Dân lấy cơm bọn họ đều đã dướn cổ lên xem nên quy trình cụ thể cũng không cần phải hỏi lại."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P011",
+          "text": "Sau khi các dân làng lấy cơm xong và ngồi xuống, ai nấy nhìn thức ăn trong gay mà phát ngốc."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000514_P010",
+      "parent_block_id": "hDNesxEPAws_S000514",
+      "text_exact": "Dù sao vừa rồi gia đình Lý Thế Dân lấy cơm bọn họ đều đã dướn cổ lên xem nên quy trình cụ thể cũng không cần phải hỏi lại.",
+      "char_count": 122,
+      "word_count": 30,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P008",
+          "text": "Dân làng vội vàng ngoan ngoãn bắt đầu chọn món."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P009",
+          "text": "Cái này còn cái này nữa là được rồi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P011",
+          "text": "Sau khi các dân làng lấy cơm xong và ngồi xuống, ai nấy nhìn thức ăn trong gay mà phát ngốc."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P012",
+          "text": "Không ai dám động đũa."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000514_P011",
+      "parent_block_id": "hDNesxEPAws_S000514",
+      "text_exact": "Sau khi các dân làng lấy cơm xong và ngồi xuống, ai nấy nhìn thức ăn trong gay mà phát ngốc.",
+      "char_count": 92,
+      "word_count": 21,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P009",
+          "text": "Cái này còn cái này nữa là được rồi."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P010",
+          "text": "Dù sao vừa rồi gia đình Lý Thế Dân lấy cơm bọn họ đều đã dướn cổ lên xem nên quy trình cụ thể cũng không cần phải hỏi lại."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P012",
+          "text": "Không ai dám động đũa."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P013",
+          "text": "Cơm nước này nhìn đẹp và thông quá đi mất, cảm giác chẳng chân thực chút nào, cứ như đang nằm mơ vậy."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000514_P012",
+      "parent_block_id": "hDNesxEPAws_S000514",
+      "text_exact": "Không ai dám động đũa.",
+      "char_count": 22,
+      "word_count": 5,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P010",
+          "text": "Dù sao vừa rồi gia đình Lý Thế Dân lấy cơm bọn họ đều đã dướn cổ lên xem nên quy trình cụ thể cũng không cần phải hỏi lại."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P011",
+          "text": "Sau khi các dân làng lấy cơm xong và ngồi xuống, ai nấy nhìn thức ăn trong gay mà phát ngốc."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P013",
+          "text": "Cơm nước này nhìn đẹp và thông quá đi mất, cảm giác chẳng chân thực chút nào, cứ như đang nằm mơ vậy."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000515_P001",
+          "text": "Cha ơi, thông quá, cha không động đũa, đám trẻ cũng không dám ăn, chỉ biết nhìn chằm chằm vào khay cơm mà nuốt nước miếng ừng ực."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000514_P013",
+      "parent_block_id": "hDNesxEPAws_S000514",
+      "text_exact": "Cơm nước này nhìn đẹp và thông quá đi mất, cảm giác chẳng chân thực chút nào, cứ như đang nằm mơ vậy.",
+      "char_count": 101,
+      "word_count": 23,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P011",
+          "text": "Sau khi các dân làng lấy cơm xong và ngồi xuống, ai nấy nhìn thức ăn trong gay mà phát ngốc."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P012",
+          "text": "Không ai dám động đũa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000515_P001",
+          "text": "Cha ơi, thông quá, cha không động đũa, đám trẻ cũng không dám ăn, chỉ biết nhìn chằm chằm vào khay cơm mà nuốt nước miếng ừng ực."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000515_P002",
+          "text": "Vô Dần thấy bọn họ cứ ngẩn người ra, nhất thời chán lại đầy vạch đen."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000515_P001",
+      "parent_block_id": "hDNesxEPAws_S000515",
+      "text_exact": "Cha ơi, thông quá, cha không động đũa, đám trẻ cũng không dám ăn, chỉ biết nhìn chằm chằm vào khay cơm mà nuốt nước miếng ừng ực.",
+      "char_count": 129,
+      "word_count": 28,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P012",
+          "text": "Không ai dám động đũa."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000514_P013",
+          "text": "Cơm nước này nhìn đẹp và thông quá đi mất, cảm giác chẳng chân thực chút nào, cứ như đang nằm mơ vậy."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000515_P002",
+          "text": "Vô Dần thấy bọn họ cứ ngẩn người ra, nhất thời chán lại đầy vạch đen."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000515_P003",
+          "text": "\"Các ngươi định ngắm thức ăn đến bao giờ?"
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000515_P002",
+      "parent_block_id": "hDNesxEPAws_S000515",
+      "text_exact": "Vô Dần thấy bọn họ cứ ngẩn người ra, nhất thời chán lại đầy vạch đen.",
+      "char_count": 69,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000514_P013",
+          "text": "Cơm nước này nhìn đẹp và thông quá đi mất, cảm giác chẳng chân thực chút nào, cứ như đang nằm mơ vậy."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000515_P001",
+          "text": "Cha ơi, thông quá, cha không động đũa, đám trẻ cũng không dám ăn, chỉ biết nhìn chằm chằm vào khay cơm mà nuốt nước miếng ừng ực."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000515_P003",
+          "text": "\"Các ngươi định ngắm thức ăn đến bao giờ?"
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000515_P004",
+          "text": "Không ăn là nguội hết bây giờ.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000515_P003",
+      "parent_block_id": "hDNesxEPAws_S000515",
+      "text_exact": "\"Các ngươi định ngắm thức ăn đến bao giờ?",
+      "char_count": 41,
+      "word_count": 9,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000515_P001",
+          "text": "Cha ơi, thông quá, cha không động đũa, đám trẻ cũng không dám ăn, chỉ biết nhìn chằm chằm vào khay cơm mà nuốt nước miếng ừng ực."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000515_P002",
+          "text": "Vô Dần thấy bọn họ cứ ngẩn người ra, nhất thời chán lại đầy vạch đen."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000515_P004",
+          "text": "Không ăn là nguội hết bây giờ.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000516_P001",
+          "text": "Cuối cùng cũng có một người gan lớn dẫn đầu cầm bánh bao lên cắn một miếng, ngay sau đó mắt trợn tròn."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000515_P004",
+      "parent_block_id": "hDNesxEPAws_S000515",
+      "text_exact": "Không ăn là nguội hết bây giờ.\"",
+      "char_count": 31,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000515_P002",
+          "text": "Vô Dần thấy bọn họ cứ ngẩn người ra, nhất thời chán lại đầy vạch đen."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000515_P003",
+          "text": "\"Các ngươi định ngắm thức ăn đến bao giờ?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000516_P001",
+          "text": "Cuối cùng cũng có một người gan lớn dẫn đầu cầm bánh bao lên cắn một miếng, ngay sau đó mắt trợn tròn."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000516_P002",
+          "text": "\"Mề quá, thông quá.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000516_P001",
+      "parent_block_id": "hDNesxEPAws_S000516",
+      "text_exact": "Cuối cùng cũng có một người gan lớn dẫn đầu cầm bánh bao lên cắn một miếng, ngay sau đó mắt trợn tròn.",
+      "char_count": 102,
+      "word_count": 23,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000515_P003",
+          "text": "\"Các ngươi định ngắm thức ăn đến bao giờ?"
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000515_P004",
+          "text": "Không ăn là nguội hết bây giờ.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000516_P002",
+          "text": "\"Mề quá, thông quá.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000516_P003",
+          "text": "Kết quả là miếng bánh bao đó vừa vào bụng, hắn liền không dừng lại được nữa."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000516_P002",
+      "parent_block_id": "hDNesxEPAws_S000516",
+      "text_exact": "\"Mề quá, thông quá.\"",
+      "char_count": 20,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000515_P004",
+          "text": "Không ăn là nguội hết bây giờ.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000516_P001",
+          "text": "Cuối cùng cũng có một người gan lớn dẫn đầu cầm bánh bao lên cắn một miếng, ngay sau đó mắt trợn tròn."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000516_P003",
+          "text": "Kết quả là miếng bánh bao đó vừa vào bụng, hắn liền không dừng lại được nữa."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000516_P004",
+          "text": "Người dân này chỉ ba hai miếng đã ăn rạch cả cái bánh bao, kết quả vì ăn quá nhanh, hắn bị nghẹn đến trợn cả mắt."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000516_P003",
+      "parent_block_id": "hDNesxEPAws_S000516",
+      "text_exact": "Kết quả là miếng bánh bao đó vừa vào bụng, hắn liền không dừng lại được nữa.",
+      "char_count": 76,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000516_P001",
+          "text": "Cuối cùng cũng có một người gan lớn dẫn đầu cầm bánh bao lên cắn một miếng, ngay sau đó mắt trợn tròn."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000516_P002",
+          "text": "\"Mề quá, thông quá.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000516_P004",
+          "text": "Người dân này chỉ ba hai miếng đã ăn rạch cả cái bánh bao, kết quả vì ăn quá nhanh, hắn bị nghẹn đến trợn cả mắt."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000517_P001",
+          "text": "\"Cha ơi, canh kìa.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000516_P004",
+      "parent_block_id": "hDNesxEPAws_S000516",
+      "text_exact": "Người dân này chỉ ba hai miếng đã ăn rạch cả cái bánh bao, kết quả vì ăn quá nhanh, hắn bị nghẹn đến trợn cả mắt.",
+      "char_count": 113,
+      "word_count": 27,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000516_P002",
+          "text": "\"Mề quá, thông quá.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000516_P003",
+          "text": "Kết quả là miếng bánh bao đó vừa vào bụng, hắn liền không dừng lại được nữa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000517_P001",
+          "text": "\"Cha ơi, canh kìa.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000517_P002",
+          "text": "Đứa nhỏ thấy cha bị nghẹn, vội vàng chỉ vào bát canh inox."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000517_P001",
+      "parent_block_id": "hDNesxEPAws_S000517",
+      "text_exact": "\"Cha ơi, canh kìa.\"",
+      "char_count": 19,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000516_P003",
+          "text": "Kết quả là miếng bánh bao đó vừa vào bụng, hắn liền không dừng lại được nữa."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000516_P004",
+          "text": "Người dân này chỉ ba hai miếng đã ăn rạch cả cái bánh bao, kết quả vì ăn quá nhanh, hắn bị nghẹn đến trợn cả mắt."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000517_P002",
+          "text": "Đứa nhỏ thấy cha bị nghẹn, vội vàng chỉ vào bát canh inox."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P001",
+          "text": "Hù!"
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000517_P002",
+      "parent_block_id": "hDNesxEPAws_S000517",
+      "text_exact": "Đứa nhỏ thấy cha bị nghẹn, vội vàng chỉ vào bát canh inox.",
+      "char_count": 58,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000516_P004",
+          "text": "Người dân này chỉ ba hai miếng đã ăn rạch cả cái bánh bao, kết quả vì ăn quá nhanh, hắn bị nghẹn đến trợn cả mắt."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000517_P001",
+          "text": "\"Cha ơi, canh kìa.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P001",
+          "text": "Hù!"
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P002",
+          "text": "Người dân húc một mụ canh, cuối cùng cũng xui được."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000518_P001",
+      "parent_block_id": "hDNesxEPAws_S000518",
+      "text_exact": "Hù!",
+      "char_count": 3,
+      "word_count": 1,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": true
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000517_P001",
+          "text": "\"Cha ơi, canh kìa.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000517_P002",
+          "text": "Đứa nhỏ thấy cha bị nghẹn, vội vàng chỉ vào bát canh inox."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P002",
+          "text": "Người dân húc một mụ canh, cuối cùng cũng xui được."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P003",
+          "text": "Sau đó hắn phát hiện mọi người xung quanh đều nhìn mình như nhìn quái vật, liên tưởng đến dáng vẻ ăn uống vừa rồi, nhất thời hận không thể giấu mặt vào gầm bàn."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000518_P002",
+      "parent_block_id": "hDNesxEPAws_S000518",
+      "text_exact": "Người dân húc một mụ canh, cuối cùng cũng xui được.",
+      "char_count": 51,
+      "word_count": 11,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000517_P002",
+          "text": "Đứa nhỏ thấy cha bị nghẹn, vội vàng chỉ vào bát canh inox."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P001",
+          "text": "Hù!"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P003",
+          "text": "Sau đó hắn phát hiện mọi người xung quanh đều nhìn mình như nhìn quái vật, liên tưởng đến dáng vẻ ăn uống vừa rồi, nhất thời hận không thể giấu mặt vào gầm bàn."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P004",
+          "text": "\"Chết tiệt, mất mặt quá đi mất."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000518_P003",
+      "parent_block_id": "hDNesxEPAws_S000518",
+      "text_exact": "Sau đó hắn phát hiện mọi người xung quanh đều nhìn mình như nhìn quái vật, liên tưởng đến dáng vẻ ăn uống vừa rồi, nhất thời hận không thể giấu mặt vào gầm bàn.",
+      "char_count": 160,
+      "word_count": 35,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P001",
+          "text": "Hù!"
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P002",
+          "text": "Người dân húc một mụ canh, cuối cùng cũng xui được."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P004",
+          "text": "\"Chết tiệt, mất mặt quá đi mất."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P005",
+          "text": "Cha ơi, thật sự ngon như vậy sao?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000518_P004",
+      "parent_block_id": "hDNesxEPAws_S000518",
+      "text_exact": "\"Chết tiệt, mất mặt quá đi mất.",
+      "char_count": 31,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P002",
+          "text": "Người dân húc một mụ canh, cuối cùng cũng xui được."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P003",
+          "text": "Sau đó hắn phát hiện mọi người xung quanh đều nhìn mình như nhìn quái vật, liên tưởng đến dáng vẻ ăn uống vừa rồi, nhất thời hận không thể giấu mặt vào gầm bàn."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P005",
+          "text": "Cha ơi, thật sự ngon như vậy sao?\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P006",
+          "text": "Đứa nhỏ không nhận ra tình cảnh của cha mình, tò mò hỏi một câu, \"Im miệng!\""
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000518_P005",
+      "parent_block_id": "hDNesxEPAws_S000518",
+      "text_exact": "Cha ơi, thật sự ngon như vậy sao?\"",
+      "char_count": 34,
+      "word_count": 8,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P003",
+          "text": "Sau đó hắn phát hiện mọi người xung quanh đều nhìn mình như nhìn quái vật, liên tưởng đến dáng vẻ ăn uống vừa rồi, nhất thời hận không thể giấu mặt vào gầm bàn."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P004",
+          "text": "\"Chết tiệt, mất mặt quá đi mất."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P006",
+          "text": "Đứa nhỏ không nhận ra tình cảnh của cha mình, tò mò hỏi một câu, \"Im miệng!\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P007",
+          "text": "\"Ăn cơm đi.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000518_P006",
+      "parent_block_id": "hDNesxEPAws_S000518",
+      "text_exact": "Đứa nhỏ không nhận ra tình cảnh của cha mình, tò mò hỏi một câu, \"Im miệng!\"",
+      "char_count": 76,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P004",
+          "text": "\"Chết tiệt, mất mặt quá đi mất."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P005",
+          "text": "Cha ơi, thật sự ngon như vậy sao?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P007",
+          "text": "\"Ăn cơm đi.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P008",
+          "text": "Người dân nghe vậy liền cốc đầu con một cái."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000518_P007",
+      "parent_block_id": "hDNesxEPAws_S000518",
+      "text_exact": "\"Ăn cơm đi.\"",
+      "char_count": 12,
+      "word_count": 3,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": true
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P005",
+          "text": "Cha ơi, thật sự ngon như vậy sao?\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P006",
+          "text": "Đứa nhỏ không nhận ra tình cảnh của cha mình, tò mò hỏi một câu, \"Im miệng!\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P008",
+          "text": "Người dân nghe vậy liền cốc đầu con một cái."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P009",
+          "text": "\"Còn nói nữa à, sợ người ta không thấy lão tử nhà ngươi mất mặt sao?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000518_P008",
+      "parent_block_id": "hDNesxEPAws_S000518",
+      "text_exact": "Người dân nghe vậy liền cốc đầu con một cái.",
+      "char_count": 44,
+      "word_count": 10,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P006",
+          "text": "Đứa nhỏ không nhận ra tình cảnh của cha mình, tò mò hỏi một câu, \"Im miệng!\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P007",
+          "text": "\"Ăn cơm đi.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P009",
+          "text": "\"Còn nói nữa à, sợ người ta không thấy lão tử nhà ngươi mất mặt sao?\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P010",
+          "text": "Những người dân khác thấy vậy cũng bắt đầu cầm bánh bao lên ăn, dù sao cũng có người mở đầu rồi, chúng ta cũng ăn theo thôi."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000518_P009",
+      "parent_block_id": "hDNesxEPAws_S000518",
+      "text_exact": "\"Còn nói nữa à, sợ người ta không thấy lão tử nhà ngươi mất mặt sao?\"",
+      "char_count": 69,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P007",
+          "text": "\"Ăn cơm đi.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P008",
+          "text": "Người dân nghe vậy liền cốc đầu con một cái."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P010",
+          "text": "Những người dân khác thấy vậy cũng bắt đầu cầm bánh bao lên ăn, dù sao cũng có người mở đầu rồi, chúng ta cũng ăn theo thôi."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P011",
+          "text": "Kết quả là bánh bao vừa vào miệng, mắt ai nấy đều không tự chủ được mà trợn tròn."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000518_P010",
+      "parent_block_id": "hDNesxEPAws_S000518",
+      "text_exact": "Những người dân khác thấy vậy cũng bắt đầu cầm bánh bao lên ăn, dù sao cũng có người mở đầu rồi, chúng ta cũng ăn theo thôi.",
+      "char_count": 124,
+      "word_count": 28,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P008",
+          "text": "Người dân nghe vậy liền cốc đầu con một cái."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P009",
+          "text": "\"Còn nói nữa à, sợ người ta không thấy lão tử nhà ngươi mất mặt sao?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P011",
+          "text": "Kết quả là bánh bao vừa vào miệng, mắt ai nấy đều không tự chủ được mà trợn tròn."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P012",
+          "text": "\"Ngo quá đi mất.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000518_P011",
+      "parent_block_id": "hDNesxEPAws_S000518",
+      "text_exact": "Kết quả là bánh bao vừa vào miệng, mắt ai nấy đều không tự chủ được mà trợn tròn.",
+      "char_count": 81,
+      "word_count": 19,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P009",
+          "text": "\"Còn nói nữa à, sợ người ta không thấy lão tử nhà ngươi mất mặt sao?\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P010",
+          "text": "Những người dân khác thấy vậy cũng bắt đầu cầm bánh bao lên ăn, dù sao cũng có người mở đầu rồi, chúng ta cũng ăn theo thôi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P012",
+          "text": "\"Ngo quá đi mất.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P013",
+          "text": "Ngay sau đó, tất cả đều cúi đầu ăn lấy ăn để, vừa ăn vừa dặn dò con mình."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000518_P012",
+      "parent_block_id": "hDNesxEPAws_S000518",
+      "text_exact": "\"Ngo quá đi mất.\"",
+      "char_count": 17,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P010",
+          "text": "Những người dân khác thấy vậy cũng bắt đầu cầm bánh bao lên ăn, dù sao cũng có người mở đầu rồi, chúng ta cũng ăn theo thôi."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P011",
+          "text": "Kết quả là bánh bao vừa vào miệng, mắt ai nấy đều không tự chủ được mà trợn tròn."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P013",
+          "text": "Ngay sau đó, tất cả đều cúi đầu ăn lấy ăn để, vừa ăn vừa dặn dò con mình."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P014",
+          "text": "\"An nhanh đi kẻo nguội.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000518_P013",
+      "parent_block_id": "hDNesxEPAws_S000518",
+      "text_exact": "Ngay sau đó, tất cả đều cúi đầu ăn lấy ăn để, vừa ăn vừa dặn dò con mình.",
+      "char_count": 73,
+      "word_count": 19,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P011",
+          "text": "Kết quả là bánh bao vừa vào miệng, mắt ai nấy đều không tự chủ được mà trợn tròn."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P012",
+          "text": "\"Ngo quá đi mất.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P014",
+          "text": "\"An nhanh đi kẻo nguội.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P015",
+          "text": "\"Vâng.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000518_P014",
+      "parent_block_id": "hDNesxEPAws_S000518",
+      "text_exact": "\"An nhanh đi kẻo nguội.\"",
+      "char_count": 24,
+      "word_count": 5,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P012",
+          "text": "\"Ngo quá đi mất.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P013",
+          "text": "Ngay sau đó, tất cả đều cúi đầu ăn lấy ăn để, vừa ăn vừa dặn dò con mình."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P015",
+          "text": "\"Vâng.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000519_P001",
+          "text": "Nghe cha lên tiếng, đám trẻ chờ đợi từ lâu không kịp chờ đợi cầm bánh bao lên gặm."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000518_P015",
+      "parent_block_id": "hDNesxEPAws_S000518",
+      "text_exact": "\"Vâng.\"",
+      "char_count": 7,
+      "word_count": 1,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": true
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P013",
+          "text": "Ngay sau đó, tất cả đều cúi đầu ăn lấy ăn để, vừa ăn vừa dặn dò con mình."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P014",
+          "text": "\"An nhanh đi kẻo nguội.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000519_P001",
+          "text": "Nghe cha lên tiếng, đám trẻ chờ đợi từ lâu không kịp chờ đợi cầm bánh bao lên gặm."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000519_P002",
+          "text": "Trong chốc lát, cả nhà ăn chỉ còn lại tiếng ăn uống, không khí trở nên vô cùng kỳ lạ."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000519_P001",
+      "parent_block_id": "hDNesxEPAws_S000519",
+      "text_exact": "Nghe cha lên tiếng, đám trẻ chờ đợi từ lâu không kịp chờ đợi cầm bánh bao lên gặm.",
+      "char_count": 82,
+      "word_count": 19,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P014",
+          "text": "\"An nhanh đi kẻo nguội.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000518_P015",
+          "text": "\"Vâng.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000519_P002",
+          "text": "Trong chốc lát, cả nhà ăn chỉ còn lại tiếng ăn uống, không khí trở nên vô cùng kỳ lạ."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000519_P003",
+          "text": "Bánh bao này đúng là đồ tốt."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000519_P002",
+      "parent_block_id": "hDNesxEPAws_S000519",
+      "text_exact": "Trong chốc lát, cả nhà ăn chỉ còn lại tiếng ăn uống, không khí trở nên vô cùng kỳ lạ.",
+      "char_count": 85,
+      "word_count": 20,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000518_P015",
+          "text": "\"Vâng.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000519_P001",
+          "text": "Nghe cha lên tiếng, đám trẻ chờ đợi từ lâu không kịp chờ đợi cầm bánh bao lên gặm."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000519_P003",
+          "text": "Bánh bao này đúng là đồ tốt."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P001",
+          "text": "Lý Thế Dân bóp nhẹ cái bánh bao trong tay, sốc mềm ngon miệng, lại còn hơi ngọt, ngon hơn bánh bột ngô nhiều."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000519_P003",
+      "parent_block_id": "hDNesxEPAws_S000519",
+      "text_exact": "Bánh bao này đúng là đồ tốt.",
+      "char_count": 28,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000519_P001",
+          "text": "Nghe cha lên tiếng, đám trẻ chờ đợi từ lâu không kịp chờ đợi cầm bánh bao lên gặm."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000519_P002",
+          "text": "Trong chốc lát, cả nhà ăn chỉ còn lại tiếng ăn uống, không khí trở nên vô cùng kỳ lạ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P001",
+          "text": "Lý Thế Dân bóp nhẹ cái bánh bao trong tay, sốc mềm ngon miệng, lại còn hơi ngọt, ngon hơn bánh bột ngô nhiều."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P002",
+          "text": "Vương Dần ác ý nghĩ thầm, \"Nếu nói cho ngài biết vị ngọt đó là do nước bọt của ngài, sợ là ngài không nuốt nổi nữa đâu.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000520_P001",
+      "parent_block_id": "hDNesxEPAws_S000520",
+      "text_exact": "Lý Thế Dân bóp nhẹ cái bánh bao trong tay, sốc mềm ngon miệng, lại còn hơi ngọt, ngon hơn bánh bột ngô nhiều.",
+      "char_count": 109,
+      "word_count": 24,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000519_P002",
+          "text": "Trong chốc lát, cả nhà ăn chỉ còn lại tiếng ăn uống, không khí trở nên vô cùng kỳ lạ."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000519_P003",
+          "text": "Bánh bao này đúng là đồ tốt."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P002",
+          "text": "Vương Dần ác ý nghĩ thầm, \"Nếu nói cho ngài biết vị ngọt đó là do nước bọt của ngài, sợ là ngài không nuốt nổi nữa đâu.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P003",
+          "text": "Tiếc là nhà dân bình thường lấy đâu ra bột mì trắng thế này."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000520_P002",
+      "parent_block_id": "hDNesxEPAws_S000520",
+      "text_exact": "Vương Dần ác ý nghĩ thầm, \"Nếu nói cho ngài biết vị ngọt đó là do nước bọt của ngài, sợ là ngài không nuốt nổi nữa đâu.\"",
+      "char_count": 120,
+      "word_count": 28,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000519_P003",
+          "text": "Bánh bao này đúng là đồ tốt."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P001",
+          "text": "Lý Thế Dân bóp nhẹ cái bánh bao trong tay, sốc mềm ngon miệng, lại còn hơi ngọt, ngon hơn bánh bột ngô nhiều."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P003",
+          "text": "Tiếc là nhà dân bình thường lấy đâu ra bột mì trắng thế này."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P004",
+          "text": "Lý Thế Dân lại thở dài một tiếng, \"Đừng nói bột mì trắng, ngay cả khoai tây bây giờ vẫn chưa được phổ biến rộng rãi đâu."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000520_P003",
+      "parent_block_id": "hDNesxEPAws_S000520",
+      "text_exact": "Tiếc là nhà dân bình thường lấy đâu ra bột mì trắng thế này.",
+      "char_count": 60,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P001",
+          "text": "Lý Thế Dân bóp nhẹ cái bánh bao trong tay, sốc mềm ngon miệng, lại còn hơi ngọt, ngon hơn bánh bột ngô nhiều."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P002",
+          "text": "Vương Dần ác ý nghĩ thầm, \"Nếu nói cho ngài biết vị ngọt đó là do nước bọt của ngài, sợ là ngài không nuốt nổi nữa đâu.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P004",
+          "text": "Lý Thế Dân lại thở dài một tiếng, \"Đừng nói bột mì trắng, ngay cả khoai tây bây giờ vẫn chưa được phổ biến rộng rãi đâu."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P005",
+          "text": "Được rồi, lo mà ăn cơm đi.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000520_P004",
+      "parent_block_id": "hDNesxEPAws_S000520",
+      "text_exact": "Lý Thế Dân lại thở dài một tiếng, \"Đừng nói bột mì trắng, ngay cả khoai tây bây giờ vẫn chưa được phổ biến rộng rãi đâu.",
+      "char_count": 120,
+      "word_count": 27,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P002",
+          "text": "Vương Dần ác ý nghĩ thầm, \"Nếu nói cho ngài biết vị ngọt đó là do nước bọt của ngài, sợ là ngài không nuốt nổi nữa đâu.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P003",
+          "text": "Tiếc là nhà dân bình thường lấy đâu ra bột mì trắng thế này."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P005",
+          "text": "Được rồi, lo mà ăn cơm đi.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P006",
+          "text": "Vương Dần liếc hắn một cái, \"Chết tiệt, suốt ngày chỉ biết lải nhải, nhưng nói đi cũng phải nói lại, vấn đề thế gia cũng nên được đưa vào chương trình nghị sự rồi.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000520_P005",
+      "parent_block_id": "hDNesxEPAws_S000520",
+      "text_exact": "Được rồi, lo mà ăn cơm đi.\"",
+      "char_count": 27,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P003",
+          "text": "Tiếc là nhà dân bình thường lấy đâu ra bột mì trắng thế này."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P004",
+          "text": "Lý Thế Dân lại thở dài một tiếng, \"Đừng nói bột mì trắng, ngay cả khoai tây bây giờ vẫn chưa được phổ biến rộng rãi đâu."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P006",
+          "text": "Vương Dần liếc hắn một cái, \"Chết tiệt, suốt ngày chỉ biết lải nhải, nhưng nói đi cũng phải nói lại, vấn đề thế gia cũng nên được đưa vào chương trình nghị sự rồi.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P007",
+          "text": "Sau khi ăn xong, Vương Dần lại tập hợp phụ huynh và trẻ em, sắp xếp cho Lý Thái phân lớp theo độ tuổi."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000520_P006",
+      "parent_block_id": "hDNesxEPAws_S000520",
+      "text_exact": "Vương Dần liếc hắn một cái, \"Chết tiệt, suốt ngày chỉ biết lải nhải, nhưng nói đi cũng phải nói lại, vấn đề thế gia cũng nên được đưa vào chương trình nghị sự rồi.\"",
+      "char_count": 164,
+      "word_count": 35,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P004",
+          "text": "Lý Thế Dân lại thở dài một tiếng, \"Đừng nói bột mì trắng, ngay cả khoai tây bây giờ vẫn chưa được phổ biến rộng rãi đâu."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P005",
+          "text": "Được rồi, lo mà ăn cơm đi.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P007",
+          "text": "Sau khi ăn xong, Vương Dần lại tập hợp phụ huynh và trẻ em, sắp xếp cho Lý Thái phân lớp theo độ tuổi."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P008",
+          "text": "Ý của Vương Dần là lúc đầu cứ tạm thời như vậy, sau này sẽ căn cứ vào tiến độ học tập của từng đứa trẻ mà cân nhắc việc phân khối lớp."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000520_P007",
+      "parent_block_id": "hDNesxEPAws_S000520",
+      "text_exact": "Sau khi ăn xong, Vương Dần lại tập hợp phụ huynh và trẻ em, sắp xếp cho Lý Thái phân lớp theo độ tuổi.",
+      "char_count": 102,
+      "word_count": 24,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P005",
+          "text": "Được rồi, lo mà ăn cơm đi.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P006",
+          "text": "Vương Dần liếc hắn một cái, \"Chết tiệt, suốt ngày chỉ biết lải nhải, nhưng nói đi cũng phải nói lại, vấn đề thế gia cũng nên được đưa vào chương trình nghị sự rồi.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P008",
+          "text": "Ý của Vương Dần là lúc đầu cứ tạm thời như vậy, sau này sẽ căn cứ vào tiến độ học tập của từng đứa trẻ mà cân nhắc việc phân khối lớp."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P009",
+          "text": "Còn về ký túc xá thì tạm thời không cần lo."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000520_P008",
+      "parent_block_id": "hDNesxEPAws_S000520",
+      "text_exact": "Ý của Vương Dần là lúc đầu cứ tạm thời như vậy, sau này sẽ căn cứ vào tiến độ học tập của từng đứa trẻ mà cân nhắc việc phân khối lớp.",
+      "char_count": 134,
+      "word_count": 33,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P006",
+          "text": "Vương Dần liếc hắn một cái, \"Chết tiệt, suốt ngày chỉ biết lải nhải, nhưng nói đi cũng phải nói lại, vấn đề thế gia cũng nên được đưa vào chương trình nghị sự rồi.\""
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P007",
+          "text": "Sau khi ăn xong, Vương Dần lại tập hợp phụ huynh và trẻ em, sắp xếp cho Lý Thái phân lớp theo độ tuổi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P009",
+          "text": "Còn về ký túc xá thì tạm thời không cần lo."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P010",
+          "text": "Dù sao những đứa trẻ ở xa đã được sắp xếp vào ký túc xá rồi, còn những đứa trẻ ở gần đều chọn học ngoại chú nên cũng không ở ký túc xá."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000520_P009",
+      "parent_block_id": "hDNesxEPAws_S000520",
+      "text_exact": "Còn về ký túc xá thì tạm thời không cần lo.",
+      "char_count": 43,
+      "word_count": 11,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P007",
+          "text": "Sau khi ăn xong, Vương Dần lại tập hợp phụ huynh và trẻ em, sắp xếp cho Lý Thái phân lớp theo độ tuổi."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P008",
+          "text": "Ý của Vương Dần là lúc đầu cứ tạm thời như vậy, sau này sẽ căn cứ vào tiến độ học tập của từng đứa trẻ mà cân nhắc việc phân khối lớp."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P010",
+          "text": "Dù sao những đứa trẻ ở xa đã được sắp xếp vào ký túc xá rồi, còn những đứa trẻ ở gần đều chọn học ngoại chú nên cũng không ở ký túc xá."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P011",
+          "text": "Mọi người muốn ở lại trường xem thêm chút nữa thì cứ xem, muốn về nhà cũng được."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000520_P010",
+      "parent_block_id": "hDNesxEPAws_S000520",
+      "text_exact": "Dù sao những đứa trẻ ở xa đã được sắp xếp vào ký túc xá rồi, còn những đứa trẻ ở gần đều chọn học ngoại chú nên cũng không ở ký túc xá.",
+      "char_count": 135,
+      "word_count": 34,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P008",
+          "text": "Ý của Vương Dần là lúc đầu cứ tạm thời như vậy, sau này sẽ căn cứ vào tiến độ học tập của từng đứa trẻ mà cân nhắc việc phân khối lớp."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P009",
+          "text": "Còn về ký túc xá thì tạm thời không cần lo."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P011",
+          "text": "Mọi người muốn ở lại trường xem thêm chút nữa thì cứ xem, muốn về nhà cũng được."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P012",
+          "text": "Vô Dần dặn dò dân làng ở mấy thôn phụ cận, ba ngày sau trường chính thức khai giảng, đến lúc đó đừng quên đưa con đến nhé."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000520_P011",
+      "parent_block_id": "hDNesxEPAws_S000520",
+      "text_exact": "Mọi người muốn ở lại trường xem thêm chút nữa thì cứ xem, muốn về nhà cũng được.",
+      "char_count": 80,
+      "word_count": 18,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P009",
+          "text": "Còn về ký túc xá thì tạm thời không cần lo."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P010",
+          "text": "Dù sao những đứa trẻ ở xa đã được sắp xếp vào ký túc xá rồi, còn những đứa trẻ ở gần đều chọn học ngoại chú nên cũng không ở ký túc xá."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P012",
+          "text": "Vô Dần dặn dò dân làng ở mấy thôn phụ cận, ba ngày sau trường chính thức khai giảng, đến lúc đó đừng quên đưa con đến nhé."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P013",
+          "text": "Sau khi cho dân làng về, Vương Dần tìm đến đám giáo viên dự bị, lấy ra một loạt đồng hồ treo tường và chuông báo giờ sai bọn họ lắp vào từ phòng học."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000520_P012",
+      "parent_block_id": "hDNesxEPAws_S000520",
+      "text_exact": "Vô Dần dặn dò dân làng ở mấy thôn phụ cận, ba ngày sau trường chính thức khai giảng, đến lúc đó đừng quên đưa con đến nhé.",
+      "char_count": 122,
+      "word_count": 28,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P010",
+          "text": "Dù sao những đứa trẻ ở xa đã được sắp xếp vào ký túc xá rồi, còn những đứa trẻ ở gần đều chọn học ngoại chú nên cũng không ở ký túc xá."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P011",
+          "text": "Mọi người muốn ở lại trường xem thêm chút nữa thì cứ xem, muốn về nhà cũng được."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P013",
+          "text": "Sau khi cho dân làng về, Vương Dần tìm đến đám giáo viên dự bị, lấy ra một loạt đồng hồ treo tường và chuông báo giờ sai bọn họ lắp vào từ phòng học."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000521_P001",
+          "text": "Khi Vương Dần giải thích công dụng của đồng hồ, Lý Thế Dân nhất thời mắt sáng rực, sống chết đòi Vương Dần phải cho hắn vài cái."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000520_P013",
+      "parent_block_id": "hDNesxEPAws_S000520",
+      "text_exact": "Sau khi cho dân làng về, Vương Dần tìm đến đám giáo viên dự bị, lấy ra một loạt đồng hồ treo tường và chuông báo giờ sai bọn họ lắp vào từ phòng học.",
+      "char_count": 149,
+      "word_count": 35,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P011",
+          "text": "Mọi người muốn ở lại trường xem thêm chút nữa thì cứ xem, muốn về nhà cũng được."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P012",
+          "text": "Vô Dần dặn dò dân làng ở mấy thôn phụ cận, ba ngày sau trường chính thức khai giảng, đến lúc đó đừng quên đưa con đến nhé."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000521_P001",
+          "text": "Khi Vương Dần giải thích công dụng của đồng hồ, Lý Thế Dân nhất thời mắt sáng rực, sống chết đòi Vương Dần phải cho hắn vài cái."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000521_P002",
+          "text": "Vương Dần dứt khoát lấy ra một đống lớn ném cho hắn, đồng hồ đeo tay, đồng hồ báo thức, đồng hồ treo tường, đồng hồ bỏ túi."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000521_P001",
+      "parent_block_id": "hDNesxEPAws_S000521",
+      "text_exact": "Khi Vương Dần giải thích công dụng của đồng hồ, Lý Thế Dân nhất thời mắt sáng rực, sống chết đòi Vương Dần phải cho hắn vài cái.",
+      "char_count": 128,
+      "word_count": 28,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P012",
+          "text": "Vô Dần dặn dò dân làng ở mấy thôn phụ cận, ba ngày sau trường chính thức khai giảng, đến lúc đó đừng quên đưa con đến nhé."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000520_P013",
+          "text": "Sau khi cho dân làng về, Vương Dần tìm đến đám giáo viên dự bị, lấy ra một loạt đồng hồ treo tường và chuông báo giờ sai bọn họ lắp vào từ phòng học."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000521_P002",
+          "text": "Vương Dần dứt khoát lấy ra một đống lớn ném cho hắn, đồng hồ đeo tay, đồng hồ báo thức, đồng hồ treo tường, đồng hồ bỏ túi."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000521_P003",
+          "text": "Cuối cùng Lý Thế Dân khéo léo bày tỏ mong muốn Vương Dần sắp xếp cho mấy tiểu hoàng tử nhà mình vào cùng một phòng ký túc xá."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000521_P002",
+      "parent_block_id": "hDNesxEPAws_S000521",
+      "text_exact": "Vương Dần dứt khoát lấy ra một đống lớn ném cho hắn, đồng hồ đeo tay, đồng hồ báo thức, đồng hồ treo tường, đồng hồ bỏ túi.",
+      "char_count": 123,
+      "word_count": 28,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000520_P013",
+          "text": "Sau khi cho dân làng về, Vương Dần tìm đến đám giáo viên dự bị, lấy ra một loạt đồng hồ treo tường và chuông báo giờ sai bọn họ lắp vào từ phòng học."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000521_P001",
+          "text": "Khi Vương Dần giải thích công dụng của đồng hồ, Lý Thế Dân nhất thời mắt sáng rực, sống chết đòi Vương Dần phải cho hắn vài cái."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000521_P003",
+          "text": "Cuối cùng Lý Thế Dân khéo léo bày tỏ mong muốn Vương Dần sắp xếp cho mấy tiểu hoàng tử nhà mình vào cùng một phòng ký túc xá."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000521_P004",
+          "text": "Đối với yêu cầu nhỏ này, Vương Dần tự nhiên thuận miệng đồng ý."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000521_P003",
+      "parent_block_id": "hDNesxEPAws_S000521",
+      "text_exact": "Cuối cùng Lý Thế Dân khéo léo bày tỏ mong muốn Vương Dần sắp xếp cho mấy tiểu hoàng tử nhà mình vào cùng một phòng ký túc xá.",
+      "char_count": 125,
+      "word_count": 29,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000521_P001",
+          "text": "Khi Vương Dần giải thích công dụng của đồng hồ, Lý Thế Dân nhất thời mắt sáng rực, sống chết đòi Vương Dần phải cho hắn vài cái."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000521_P002",
+          "text": "Vương Dần dứt khoát lấy ra một đống lớn ném cho hắn, đồng hồ đeo tay, đồng hồ báo thức, đồng hồ treo tường, đồng hồ bỏ túi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000521_P004",
+          "text": "Đối với yêu cầu nhỏ này, Vương Dần tự nhiên thuận miệng đồng ý."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000521_P005",
+          "text": "Vương Dần lúc này Lý Uyên đột nhiên lê tiếng, \"Hay là ngươi sắp xếp cho trẫm một chức vụ trong ngôi trường này đi."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000521_P004",
+      "parent_block_id": "hDNesxEPAws_S000521",
+      "text_exact": "Đối với yêu cầu nhỏ này, Vương Dần tự nhiên thuận miệng đồng ý.",
+      "char_count": 63,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000521_P002",
+          "text": "Vương Dần dứt khoát lấy ra một đống lớn ném cho hắn, đồng hồ đeo tay, đồng hồ báo thức, đồng hồ treo tường, đồng hồ bỏ túi."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000521_P003",
+          "text": "Cuối cùng Lý Thế Dân khéo léo bày tỏ mong muốn Vương Dần sắp xếp cho mấy tiểu hoàng tử nhà mình vào cùng một phòng ký túc xá."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000521_P005",
+          "text": "Vương Dần lúc này Lý Uyên đột nhiên lê tiếng, \"Hay là ngươi sắp xếp cho trẫm một chức vụ trong ngôi trường này đi."
+        }
+      ]
+    },
+    {
+      "piece_id": "hDNesxEPAws_S000521_P005",
+      "parent_block_id": "hDNesxEPAws_S000521",
+      "text_exact": "Vương Dần lúc này Lý Uyên đột nhiên lê tiếng, \"Hay là ngươi sắp xếp cho trẫm một chức vụ trong ngôi trường này đi.",
+      "char_count": 114,
+      "word_count": 25,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "hDNesxEPAws_S000521_P003",
+          "text": "Cuối cùng Lý Thế Dân khéo léo bày tỏ mong muốn Vương Dần sắp xếp cho mấy tiểu hoàng tử nhà mình vào cùng một phòng ký túc xá."
+        },
+        {
+          "piece_id": "hDNesxEPAws_S000521_P004",
+          "text": "Đối với yêu cầu nhỏ này, Vương Dần tự nhiên thuận miệng đồng ý."
+        }
+      ],
+      "next_context": []
+    }
+  ]
+}

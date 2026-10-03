@@ -1,0 +1,4289 @@
+{
+  "pack_id": "review_pack_0051",
+  "video_id": "arAbGLeCUsU",
+  "rules": [
+    "ChatGPT reviews directly from GitHub. No external LLM API is required.",
+    "Do not rewrite source text in this stage.",
+    "Every output segment must preserve source words/order exactly.",
+    "Use context for tiny fragments; tiny does not automatically mean DROP.",
+    "PHONETIC_CROWDING_RISK is not an automatic DROP.",
+    "If splitting a piece further, concatenated text must equal text_exact after whitespace normalization."
+  ],
+  "allowed_labels": [
+    "KEEP_CANDIDATE",
+    "DROP_FRAGMENT",
+    "BROKEN_TEXT",
+    "WEIRD_PHRASE",
+    "PARALINGUISTIC",
+    "STUTTER_OR_REPEAT",
+    "PHONETIC_CROWDING_RISK",
+    "NEED_CONTEXT"
+  ],
+  "items": [
+    {
+      "piece_id": "arAbGLeCUsU_S000497_P001",
+      "parent_block_id": "arAbGLeCUsU_S000497",
+      "text_exact": "Thế là họ bắt đầu nghĩ đến việc nhiều người làm mai cho mình một mối hô sựng, huống hồ với tình trạng của họ, chỉ cần tìm được người làm mai thì cũng chẳng cần cân nhắc đến vấn đề nhan sắc làm gì, chỉ cần không phải loại người nhìn vào là hù chết người là được.",
+      "char_count": 261,
+      "word_count": 59,
+      "hints": {
+        "needs_ai_split_hint": true,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000496_P007",
+          "text": "Vì vậy mấy gã độc thân này bắt đầu tính đến chuyện đại sự cả đời của mình."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000496_P008",
+          "text": "Nếu tìm trong thôn thì chắc chắn không xong rồi, vì ai nấy đều đã có chủ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000497_P002",
+          "text": "Kết quả sau khi nhìn thấy đám nữ tử này, họ mới chợt nhận ra còn tìm người làm mai làm gì nữa."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000497_P003",
+          "text": "Đây chẳng phải là có sẵn rồi sao?"
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000497_P002",
+      "parent_block_id": "arAbGLeCUsU_S000497",
+      "text_exact": "Kết quả sau khi nhìn thấy đám nữ tử này, họ mới chợt nhận ra còn tìm người làm mai làm gì nữa.",
+      "char_count": 94,
+      "word_count": 23,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000496_P008",
+          "text": "Nếu tìm trong thôn thì chắc chắn không xong rồi, vì ai nấy đều đã có chủ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000497_P001",
+          "text": "Thế là họ bắt đầu nghĩ đến việc nhiều người làm mai cho mình một mối hô sựng, huống hồ với tình trạng của họ, chỉ cần tìm được người làm mai thì cũng chẳng cần cân nhắc đến vấn đề nhan sắc làm gì, chỉ cần không phải loại người nhìn vào là hù chết người là được."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000497_P003",
+          "text": "Đây chẳng phải là có sẵn rồi sao?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P001",
+          "text": "Phải biết rằng ban đầu những nữ tử này bị đám hòa thượng kia giam giữ, nhan sắc tuy không thể nói là khuynh quốc khuynh thành, nhưng cũng thuộc hàng trên trung bình, diện mạo chắc chắn không tệ đi đâu được."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000497_P003",
+      "parent_block_id": "arAbGLeCUsU_S000497",
+      "text_exact": "Đây chẳng phải là có sẵn rồi sao?",
+      "char_count": 33,
+      "word_count": 8,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000497_P001",
+          "text": "Thế là họ bắt đầu nghĩ đến việc nhiều người làm mai cho mình một mối hô sựng, huống hồ với tình trạng của họ, chỉ cần tìm được người làm mai thì cũng chẳng cần cân nhắc đến vấn đề nhan sắc làm gì, chỉ cần không phải loại người nhìn vào là hù chết người là được."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000497_P002",
+          "text": "Kết quả sau khi nhìn thấy đám nữ tử này, họ mới chợt nhận ra còn tìm người làm mai làm gì nữa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P001",
+          "text": "Phải biết rằng ban đầu những nữ tử này bị đám hòa thượng kia giam giữ, nhan sắc tuy không thể nói là khuynh quốc khuynh thành, nhưng cũng thuộc hàng trên trung bình, diện mạo chắc chắn không tệ đi đâu được."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P002",
+          "text": "Hơn nữa hiện tại ai nấy đều được ăn no mặc ấm, bất kể là diện mạo hay vóc dáng đều tốt hơn trước rất nhiều."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000498_P001",
+      "parent_block_id": "arAbGLeCUsU_S000498",
+      "text_exact": "Phải biết rằng ban đầu những nữ tử này bị đám hòa thượng kia giam giữ, nhan sắc tuy không thể nói là khuynh quốc khuynh thành, nhưng cũng thuộc hàng trên trung bình, diện mạo chắc chắn không tệ đi đâu được.",
+      "char_count": 206,
+      "word_count": 43,
+      "hints": {
+        "needs_ai_split_hint": true,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000497_P002",
+          "text": "Kết quả sau khi nhìn thấy đám nữ tử này, họ mới chợt nhận ra còn tìm người làm mai làm gì nữa."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000497_P003",
+          "text": "Đây chẳng phải là có sẵn rồi sao?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P002",
+          "text": "Hơn nữa hiện tại ai nấy đều được ăn no mặc ấm, bất kể là diện mạo hay vóc dáng đều tốt hơn trước rất nhiều."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P003",
+          "text": "Thế là đám lão quang côn này không giữ nổi bình tĩnh nữa."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000498_P002",
+      "parent_block_id": "arAbGLeCUsU_S000498",
+      "text_exact": "Hơn nữa hiện tại ai nấy đều được ăn no mặc ấm, bất kể là diện mạo hay vóc dáng đều tốt hơn trước rất nhiều.",
+      "char_count": 107,
+      "word_count": 26,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000497_P003",
+          "text": "Đây chẳng phải là có sẵn rồi sao?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P001",
+          "text": "Phải biết rằng ban đầu những nữ tử này bị đám hòa thượng kia giam giữ, nhan sắc tuy không thể nói là khuynh quốc khuynh thành, nhưng cũng thuộc hàng trên trung bình, diện mạo chắc chắn không tệ đi đâu được."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P003",
+          "text": "Thế là đám lão quang côn này không giữ nổi bình tĩnh nữa."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P004",
+          "text": "Những tiểu nương tử này tuổi tác không lớn, trông lại xinh đẹp mơ mởn, ngay ngày ngay ở trong sơn động chẳng phải là quá lãng phí sao?"
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000498_P003",
+      "parent_block_id": "arAbGLeCUsU_S000498",
+      "text_exact": "Thế là đám lão quang côn này không giữ nổi bình tĩnh nữa.",
+      "char_count": 57,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P001",
+          "text": "Phải biết rằng ban đầu những nữ tử này bị đám hòa thượng kia giam giữ, nhan sắc tuy không thể nói là khuynh quốc khuynh thành, nhưng cũng thuộc hàng trên trung bình, diện mạo chắc chắn không tệ đi đâu được."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P002",
+          "text": "Hơn nữa hiện tại ai nấy đều được ăn no mặc ấm, bất kể là diện mạo hay vóc dáng đều tốt hơn trước rất nhiều."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P004",
+          "text": "Những tiểu nương tử này tuổi tác không lớn, trông lại xinh đẹp mơ mởn, ngay ngày ngay ở trong sơn động chẳng phải là quá lãng phí sao?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P005",
+          "text": "Nếu có thể rước một người về làm vợ thì đúng là mỹ mãn vô cùng."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000498_P004",
+      "parent_block_id": "arAbGLeCUsU_S000498",
+      "text_exact": "Những tiểu nương tử này tuổi tác không lớn, trông lại xinh đẹp mơ mởn, ngay ngày ngay ở trong sơn động chẳng phải là quá lãng phí sao?",
+      "char_count": 134,
+      "word_count": 29,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P002",
+          "text": "Hơn nữa hiện tại ai nấy đều được ăn no mặc ấm, bất kể là diện mạo hay vóc dáng đều tốt hơn trước rất nhiều."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P003",
+          "text": "Thế là đám lão quang côn này không giữ nổi bình tĩnh nữa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P005",
+          "text": "Nếu có thể rước một người về làm vợ thì đúng là mỹ mãn vô cùng."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P006",
+          "text": "Mặc dù quá khứ của những nữ tử này họ cũng biết đôi chút, nhưng họ không để tâm."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000498_P005",
+      "parent_block_id": "arAbGLeCUsU_S000498",
+      "text_exact": "Nếu có thể rước một người về làm vợ thì đúng là mỹ mãn vô cùng.",
+      "char_count": 63,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P003",
+          "text": "Thế là đám lão quang côn này không giữ nổi bình tĩnh nữa."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P004",
+          "text": "Những tiểu nương tử này tuổi tác không lớn, trông lại xinh đẹp mơ mởn, ngay ngày ngay ở trong sơn động chẳng phải là quá lãng phí sao?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P006",
+          "text": "Mặc dù quá khứ của những nữ tử này họ cũng biết đôi chút, nhưng họ không để tâm."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P007",
+          "text": "Thứ nhất là hiện tại bầu không khí ở Đại Đường đường khá cởi mở, đối với loại chuyện này cũng khá bao dung."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000498_P006",
+      "parent_block_id": "arAbGLeCUsU_S000498",
+      "text_exact": "Mặc dù quá khứ của những nữ tử này họ cũng biết đôi chút, nhưng họ không để tâm.",
+      "char_count": 80,
+      "word_count": 19,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P004",
+          "text": "Những tiểu nương tử này tuổi tác không lớn, trông lại xinh đẹp mơ mởn, ngay ngày ngay ở trong sơn động chẳng phải là quá lãng phí sao?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P005",
+          "text": "Nếu có thể rước một người về làm vợ thì đúng là mỹ mãn vô cùng."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P007",
+          "text": "Thứ nhất là hiện tại bầu không khí ở Đại Đường đường khá cởi mở, đối với loại chuyện này cũng khá bao dung."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P008",
+          "text": "Thứ hai là bọn họ ai nấy đều không phải trai tân gì, một đám lão quang quân còn để ý cái gì nữa chứ."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000498_P007",
+      "parent_block_id": "arAbGLeCUsU_S000498",
+      "text_exact": "Thứ nhất là hiện tại bầu không khí ở Đại Đường đường khá cởi mở, đối với loại chuyện này cũng khá bao dung.",
+      "char_count": 107,
+      "word_count": 24,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P005",
+          "text": "Nếu có thể rước một người về làm vợ thì đúng là mỹ mãn vô cùng."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P006",
+          "text": "Mặc dù quá khứ của những nữ tử này họ cũng biết đôi chút, nhưng họ không để tâm."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P008",
+          "text": "Thứ hai là bọn họ ai nấy đều không phải trai tân gì, một đám lão quang quân còn để ý cái gì nữa chứ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P009",
+          "text": "Và lại những tiểu nương tử này ai nấy đều xinh đẹp như vậy."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000498_P008",
+      "parent_block_id": "arAbGLeCUsU_S000498",
+      "text_exact": "Thứ hai là bọn họ ai nấy đều không phải trai tân gì, một đám lão quang quân còn để ý cái gì nữa chứ.",
+      "char_count": 100,
+      "word_count": 25,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P006",
+          "text": "Mặc dù quá khứ của những nữ tử này họ cũng biết đôi chút, nhưng họ không để tâm."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P007",
+          "text": "Thứ nhất là hiện tại bầu không khí ở Đại Đường đường khá cởi mở, đối với loại chuyện này cũng khá bao dung."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P009",
+          "text": "Và lại những tiểu nương tử này ai nấy đều xinh đẹp như vậy."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P010",
+          "text": "Quỷ mới thèm để ý chuyện đó."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000498_P009",
+      "parent_block_id": "arAbGLeCUsU_S000498",
+      "text_exact": "Và lại những tiểu nương tử này ai nấy đều xinh đẹp như vậy.",
+      "char_count": 59,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P007",
+          "text": "Thứ nhất là hiện tại bầu không khí ở Đại Đường đường khá cởi mở, đối với loại chuyện này cũng khá bao dung."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P008",
+          "text": "Thứ hai là bọn họ ai nấy đều không phải trai tân gì, một đám lão quang quân còn để ý cái gì nữa chứ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P010",
+          "text": "Quỷ mới thèm để ý chuyện đó."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000499_P001",
+          "text": "Cưới được một người về là đã phải thắp hương cảm tạ trời đất rồi."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000498_P010",
+      "parent_block_id": "arAbGLeCUsU_S000498",
+      "text_exact": "Quỷ mới thèm để ý chuyện đó.",
+      "char_count": 28,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P008",
+          "text": "Thứ hai là bọn họ ai nấy đều không phải trai tân gì, một đám lão quang quân còn để ý cái gì nữa chứ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P009",
+          "text": "Và lại những tiểu nương tử này ai nấy đều xinh đẹp như vậy."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000499_P001",
+          "text": "Cưới được một người về là đã phải thắp hương cảm tạ trời đất rồi."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000499_P002",
+          "text": "Thế là mấy gã độc thân trong thôn lại đi tìm Vương Nhị Ngưu."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000499_P001",
+      "parent_block_id": "arAbGLeCUsU_S000499",
+      "text_exact": "Cưới được một người về là đã phải thắp hương cảm tạ trời đất rồi.",
+      "char_count": 65,
+      "word_count": 15,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P009",
+          "text": "Và lại những tiểu nương tử này ai nấy đều xinh đẹp như vậy."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P010",
+          "text": "Quỷ mới thèm để ý chuyện đó."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000499_P002",
+          "text": "Thế là mấy gã độc thân trong thôn lại đi tìm Vương Nhị Ngưu."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000499_P003",
+          "text": "Vương Nhị Ngưu nghĩ thầm chuyện này có vẻ cũng không tệ, vừa có thể giải quyết vấn đề độc thân trong thôn, vừa có thể tìm cho những nữ tử này một nơi nương tượng, dường như rất có triển vọng."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000499_P002",
+      "parent_block_id": "arAbGLeCUsU_S000499",
+      "text_exact": "Thế là mấy gã độc thân trong thôn lại đi tìm Vương Nhị Ngưu.",
+      "char_count": 60,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000498_P010",
+          "text": "Quỷ mới thèm để ý chuyện đó."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000499_P001",
+          "text": "Cưới được một người về là đã phải thắp hương cảm tạ trời đất rồi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000499_P003",
+          "text": "Vương Nhị Ngưu nghĩ thầm chuyện này có vẻ cũng không tệ, vừa có thể giải quyết vấn đề độc thân trong thôn, vừa có thể tìm cho những nữ tử này một nơi nương tượng, dường như rất có triển vọng."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000499_P004",
+          "text": "Vì vậy, nhiệm vụ đưa đồ ăn thức uống được giao cho mấy gã độc thần này."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000499_P003",
+      "parent_block_id": "arAbGLeCUsU_S000499",
+      "text_exact": "Vương Nhị Ngưu nghĩ thầm chuyện này có vẻ cũng không tệ, vừa có thể giải quyết vấn đề độc thân trong thôn, vừa có thể tìm cho những nữ tử này một nơi nương tượng, dường như rất có triển vọng.",
+      "char_count": 191,
+      "word_count": 42,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000499_P001",
+          "text": "Cưới được một người về là đã phải thắp hương cảm tạ trời đất rồi."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000499_P002",
+          "text": "Thế là mấy gã độc thân trong thôn lại đi tìm Vương Nhị Ngưu."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000499_P004",
+          "text": "Vì vậy, nhiệm vụ đưa đồ ăn thức uống được giao cho mấy gã độc thần này."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P001",
+          "text": "Đương nhiên, trước đó Vương Nhị Ngưu vẫn không quên dặn dò kỹ lưỡng."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000499_P004",
+      "parent_block_id": "arAbGLeCUsU_S000499",
+      "text_exact": "Vì vậy, nhiệm vụ đưa đồ ăn thức uống được giao cho mấy gã độc thần này.",
+      "char_count": 71,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000499_P002",
+          "text": "Thế là mấy gã độc thân trong thôn lại đi tìm Vương Nhị Ngưu."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000499_P003",
+          "text": "Vương Nhị Ngưu nghĩ thầm chuyện này có vẻ cũng không tệ, vừa có thể giải quyết vấn đề độc thân trong thôn, vừa có thể tìm cho những nữ tử này một nơi nương tượng, dường như rất có triển vọng."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P001",
+          "text": "Đương nhiên, trước đó Vương Nhị Ngưu vẫn không quên dặn dò kỹ lưỡng."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P002",
+          "text": "Từ ngươi các ngươi phải biết điều cho ta, nếu dám làm chuyện gì quá đáng, tiên nhân chưa nói gì thì ta đã đánh chết các ngươi trước rồi."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000500_P001",
+      "parent_block_id": "arAbGLeCUsU_S000500",
+      "text_exact": "Đương nhiên, trước đó Vương Nhị Ngưu vẫn không quên dặn dò kỹ lưỡng.",
+      "char_count": 68,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000499_P003",
+          "text": "Vương Nhị Ngưu nghĩ thầm chuyện này có vẻ cũng không tệ, vừa có thể giải quyết vấn đề độc thân trong thôn, vừa có thể tìm cho những nữ tử này một nơi nương tượng, dường như rất có triển vọng."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000499_P004",
+          "text": "Vì vậy, nhiệm vụ đưa đồ ăn thức uống được giao cho mấy gã độc thần này."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P002",
+          "text": "Từ ngươi các ngươi phải biết điều cho ta, nếu dám làm chuyện gì quá đáng, tiên nhân chưa nói gì thì ta đã đánh chết các ngươi trước rồi."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P003",
+          "text": "Thực ra Vương Nhị Ngưu cũng chỉ dặn dò vậy thôi, dù sao nhân phẩm của mấy gã độc thân này vẫn đáng tin cậy, đều là những người trung hậu, huống chi cho dù Vương Nhị Ngưu không nói gì, họ cũng chẳng dám làm chuyện gì quá đáng, trừ phi là không muốn sống nữa."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000500_P002",
+      "parent_block_id": "arAbGLeCUsU_S000500",
+      "text_exact": "Từ ngươi các ngươi phải biết điều cho ta, nếu dám làm chuyện gì quá đáng, tiên nhân chưa nói gì thì ta đã đánh chết các ngươi trước rồi.",
+      "char_count": 136,
+      "word_count": 30,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000499_P004",
+          "text": "Vì vậy, nhiệm vụ đưa đồ ăn thức uống được giao cho mấy gã độc thần này."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P001",
+          "text": "Đương nhiên, trước đó Vương Nhị Ngưu vẫn không quên dặn dò kỹ lưỡng."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P003",
+          "text": "Thực ra Vương Nhị Ngưu cũng chỉ dặn dò vậy thôi, dù sao nhân phẩm của mấy gã độc thân này vẫn đáng tin cậy, đều là những người trung hậu, huống chi cho dù Vương Nhị Ngưu không nói gì, họ cũng chẳng dám làm chuyện gì quá đáng, trừ phi là không muốn sống nữa."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P004",
+          "text": "Những nữ tử này đều có tiên nhân bảo vệ, họ đi tìm vợ chứ không phải đi liều mạng."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000500_P003",
+      "parent_block_id": "arAbGLeCUsU_S000500",
+      "text_exact": "Thực ra Vương Nhị Ngưu cũng chỉ dặn dò vậy thôi, dù sao nhân phẩm của mấy gã độc thân này vẫn đáng tin cậy, đều là những người trung hậu, huống chi cho dù Vương Nhị Ngưu không nói gì, họ cũng chẳng dám làm chuyện gì quá đáng, trừ phi là không muốn sống nữa.",
+      "char_count": 257,
+      "word_count": 57,
+      "hints": {
+        "needs_ai_split_hint": true,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P001",
+          "text": "Đương nhiên, trước đó Vương Nhị Ngưu vẫn không quên dặn dò kỹ lưỡng."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P002",
+          "text": "Từ ngươi các ngươi phải biết điều cho ta, nếu dám làm chuyện gì quá đáng, tiên nhân chưa nói gì thì ta đã đánh chết các ngươi trước rồi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P004",
+          "text": "Những nữ tử này đều có tiên nhân bảo vệ, họ đi tìm vợ chứ không phải đi liều mạng."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P005",
+          "text": "cho họ m lá gan cũng không dám làm bệnh."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000500_P004",
+      "parent_block_id": "arAbGLeCUsU_S000500",
+      "text_exact": "Những nữ tử này đều có tiên nhân bảo vệ, họ đi tìm vợ chứ không phải đi liều mạng.",
+      "char_count": 82,
+      "word_count": 20,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P002",
+          "text": "Từ ngươi các ngươi phải biết điều cho ta, nếu dám làm chuyện gì quá đáng, tiên nhân chưa nói gì thì ta đã đánh chết các ngươi trước rồi."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P003",
+          "text": "Thực ra Vương Nhị Ngưu cũng chỉ dặn dò vậy thôi, dù sao nhân phẩm của mấy gã độc thân này vẫn đáng tin cậy, đều là những người trung hậu, huống chi cho dù Vương Nhị Ngưu không nói gì, họ cũng chẳng dám làm chuyện gì quá đáng, trừ phi là không muốn sống nữa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P005",
+          "text": "cho họ m lá gan cũng không dám làm bệnh."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P006",
+          "text": "Lúc đầu thấy người đưa đồ thay đổi, đám nữ tử kia vẫn rất cảnh giác, nhưng thấy họ ai nấy đều thật thả, không có cử động gì quá đáng nên cũng ngầm chấp nhận."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000500_P005",
+      "parent_block_id": "arAbGLeCUsU_S000500",
+      "text_exact": "cho họ m lá gan cũng không dám làm bệnh.",
+      "char_count": 40,
+      "word_count": 10,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P003",
+          "text": "Thực ra Vương Nhị Ngưu cũng chỉ dặn dò vậy thôi, dù sao nhân phẩm của mấy gã độc thân này vẫn đáng tin cậy, đều là những người trung hậu, huống chi cho dù Vương Nhị Ngưu không nói gì, họ cũng chẳng dám làm chuyện gì quá đáng, trừ phi là không muốn sống nữa."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P004",
+          "text": "Những nữ tử này đều có tiên nhân bảo vệ, họ đi tìm vợ chứ không phải đi liều mạng."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P006",
+          "text": "Lúc đầu thấy người đưa đồ thay đổi, đám nữ tử kia vẫn rất cảnh giác, nhưng thấy họ ai nấy đều thật thả, không có cử động gì quá đáng nên cũng ngầm chấp nhận."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P007",
+          "text": "Dù sao nói thế nào thì mình cũng đang ở trên địa bàn của người ta, không thể trực tiếp đuổi người ta đi được đúng không?"
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000500_P006",
+      "parent_block_id": "arAbGLeCUsU_S000500",
+      "text_exact": "Lúc đầu thấy người đưa đồ thay đổi, đám nữ tử kia vẫn rất cảnh giác, nhưng thấy họ ai nấy đều thật thả, không có cử động gì quá đáng nên cũng ngầm chấp nhận.",
+      "char_count": 157,
+      "word_count": 36,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P004",
+          "text": "Những nữ tử này đều có tiên nhân bảo vệ, họ đi tìm vợ chứ không phải đi liều mạng."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P005",
+          "text": "cho họ m lá gan cũng không dám làm bệnh."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P007",
+          "text": "Dù sao nói thế nào thì mình cũng đang ở trên địa bàn của người ta, không thể trực tiếp đuổi người ta đi được đúng không?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P001",
+          "text": "Tược ra đừng nói là những nữ tử này cảnh giác."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000500_P007",
+      "parent_block_id": "arAbGLeCUsU_S000500",
+      "text_exact": "Dù sao nói thế nào thì mình cũng đang ở trên địa bàn của người ta, không thể trực tiếp đuổi người ta đi được đúng không?",
+      "char_count": 120,
+      "word_count": 27,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P005",
+          "text": "cho họ m lá gan cũng không dám làm bệnh."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P006",
+          "text": "Lúc đầu thấy người đưa đồ thay đổi, đám nữ tử kia vẫn rất cảnh giác, nhưng thấy họ ai nấy đều thật thả, không có cử động gì quá đáng nên cũng ngầm chấp nhận."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P001",
+          "text": "Tược ra đừng nói là những nữ tử này cảnh giác."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P002",
+          "text": "Mấy gã độc thân kia cũng suýt chút nữa thì sợ đến tẻ ra quần."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000501_P001",
+      "parent_block_id": "arAbGLeCUsU_S000501",
+      "text_exact": "Tược ra đừng nói là những nữ tử này cảnh giác.",
+      "char_count": 46,
+      "word_count": 11,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P006",
+          "text": "Lúc đầu thấy người đưa đồ thay đổi, đám nữ tử kia vẫn rất cảnh giác, nhưng thấy họ ai nấy đều thật thả, không có cử động gì quá đáng nên cũng ngầm chấp nhận."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P007",
+          "text": "Dù sao nói thế nào thì mình cũng đang ở trên địa bàn của người ta, không thể trực tiếp đuổi người ta đi được đúng không?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P002",
+          "text": "Mấy gã độc thân kia cũng suýt chút nữa thì sợ đến tẻ ra quần."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P003",
+          "text": "Vương Lý Chính à?"
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000501_P002",
+      "parent_block_id": "arAbGLeCUsU_S000501",
+      "text_exact": "Mấy gã độc thân kia cũng suýt chút nữa thì sợ đến tẻ ra quần.",
+      "char_count": 61,
+      "word_count": 15,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000500_P007",
+          "text": "Dù sao nói thế nào thì mình cũng đang ở trên địa bàn của người ta, không thể trực tiếp đuổi người ta đi được đúng không?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P001",
+          "text": "Tược ra đừng nói là những nữ tử này cảnh giác."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P003",
+          "text": "Vương Lý Chính à?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P004",
+          "text": "Vương Lý Chính, sao ngươi không nói sớm là ở đây có một con đại gấu xám chứ?"
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000501_P003",
+      "parent_block_id": "arAbGLeCUsU_S000501",
+      "text_exact": "Vương Lý Chính à?",
+      "char_count": 17,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P001",
+          "text": "Tược ra đừng nói là những nữ tử này cảnh giác."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P002",
+          "text": "Mấy gã độc thân kia cũng suýt chút nữa thì sợ đến tẻ ra quần."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P004",
+          "text": "Vương Lý Chính, sao ngươi không nói sớm là ở đây có một con đại gấu xám chứ?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P005",
+          "text": "Hơn nữa con gấu này lại còn biết nói tiếng người nữa."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000501_P004",
+      "parent_block_id": "arAbGLeCUsU_S000501",
+      "text_exact": "Vương Lý Chính, sao ngươi không nói sớm là ở đây có một con đại gấu xám chứ?",
+      "char_count": 76,
+      "word_count": 18,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P002",
+          "text": "Mấy gã độc thân kia cũng suýt chút nữa thì sợ đến tẻ ra quần."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P003",
+          "text": "Vương Lý Chính à?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P005",
+          "text": "Hơn nữa con gấu này lại còn biết nói tiếng người nữa."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P006",
+          "text": "May nhờ khác khao giải quyết chuyện trung thân đại sự."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000501_P005",
+      "parent_block_id": "arAbGLeCUsU_S000501",
+      "text_exact": "Hơn nữa con gấu này lại còn biết nói tiếng người nữa.",
+      "char_count": 53,
+      "word_count": 12,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P003",
+          "text": "Vương Lý Chính à?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P004",
+          "text": "Vương Lý Chính, sao ngươi không nói sớm là ở đây có một con đại gấu xám chứ?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P006",
+          "text": "May nhờ khác khao giải quyết chuyện trung thân đại sự."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P007",
+          "text": "Đám người này cũng coi như liều mạng, lần lượt kiên trì chạy qua bên này."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000501_P006",
+      "parent_block_id": "arAbGLeCUsU_S000501",
+      "text_exact": "May nhờ khác khao giải quyết chuyện trung thân đại sự.",
+      "char_count": 54,
+      "word_count": 11,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P004",
+          "text": "Vương Lý Chính, sao ngươi không nói sớm là ở đây có một con đại gấu xám chứ?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P005",
+          "text": "Hơn nữa con gấu này lại còn biết nói tiếng người nữa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P007",
+          "text": "Đám người này cũng coi như liều mạng, lần lượt kiên trì chạy qua bên này."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P008",
+          "text": "Qua lại một hai lần, đôi bên cũng coi như đã quen mặt."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000501_P007",
+      "parent_block_id": "arAbGLeCUsU_S000501",
+      "text_exact": "Đám người này cũng coi như liều mạng, lần lượt kiên trì chạy qua bên này.",
+      "char_count": 73,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P005",
+          "text": "Hơn nữa con gấu này lại còn biết nói tiếng người nữa."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P006",
+          "text": "May nhờ khác khao giải quyết chuyện trung thân đại sự."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P008",
+          "text": "Qua lại một hai lần, đôi bên cũng coi như đã quen mặt."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P009",
+          "text": "Mấy gã độc thân này sau đó mỗi lần đưa đồ đều cố gắng lấy lòng tiểu nương tử hợp ý mình."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000501_P008",
+      "parent_block_id": "arAbGLeCUsU_S000501",
+      "text_exact": "Qua lại một hai lần, đôi bên cũng coi như đã quen mặt.",
+      "char_count": 54,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P006",
+          "text": "May nhờ khác khao giải quyết chuyện trung thân đại sự."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P007",
+          "text": "Đám người này cũng coi như liều mạng, lần lượt kiên trì chạy qua bên này."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P009",
+          "text": "Mấy gã độc thân này sau đó mỗi lần đưa đồ đều cố gắng lấy lòng tiểu nương tử hợp ý mình."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P010",
+          "text": "Mai sáng trong tối lén lút bày tỏ chút ý tứ của bản thân."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000501_P009",
+      "parent_block_id": "arAbGLeCUsU_S000501",
+      "text_exact": "Mấy gã độc thân này sau đó mỗi lần đưa đồ đều cố gắng lấy lòng tiểu nương tử hợp ý mình.",
+      "char_count": 88,
+      "word_count": 22,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P007",
+          "text": "Đám người này cũng coi như liều mạng, lần lượt kiên trì chạy qua bên này."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P008",
+          "text": "Qua lại một hai lần, đôi bên cũng coi như đã quen mặt."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P010",
+          "text": "Mai sáng trong tối lén lút bày tỏ chút ý tứ của bản thân."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P001",
+          "text": "Theo lý mà nói, những nữ tử này từng có trải qua như vậy, bình thường phải mất vài năm mới có thể thoát ra khỏi bóng tối, thậm chí có thể bị ám ảnh cả đời hoặc dứt khoát tự sát."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000501_P010",
+      "parent_block_id": "arAbGLeCUsU_S000501",
+      "text_exact": "Mai sáng trong tối lén lút bày tỏ chút ý tứ của bản thân.",
+      "char_count": 57,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P008",
+          "text": "Qua lại một hai lần, đôi bên cũng coi như đã quen mặt."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P009",
+          "text": "Mấy gã độc thân này sau đó mỗi lần đưa đồ đều cố gắng lấy lòng tiểu nương tử hợp ý mình."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P001",
+          "text": "Theo lý mà nói, những nữ tử này từng có trải qua như vậy, bình thường phải mất vài năm mới có thể thoát ra khỏi bóng tối, thậm chí có thể bị ám ảnh cả đời hoặc dứt khoát tự sát."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P002",
+          "text": "Nhưng ai bảo Vương Dần có hắc khoa kỹ cơ chứ?"
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000502_P001",
+      "parent_block_id": "arAbGLeCUsU_S000502",
+      "text_exact": "Theo lý mà nói, những nữ tử này từng có trải qua như vậy, bình thường phải mất vài năm mới có thể thoát ra khỏi bóng tối, thậm chí có thể bị ám ảnh cả đời hoặc dứt khoát tự sát.",
+      "char_count": 177,
+      "word_count": 42,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P009",
+          "text": "Mấy gã độc thân này sau đó mỗi lần đưa đồ đều cố gắng lấy lòng tiểu nương tử hợp ý mình."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P010",
+          "text": "Mai sáng trong tối lén lút bày tỏ chút ý tứ của bản thân."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P002",
+          "text": "Nhưng ai bảo Vương Dần có hắc khoa kỹ cơ chứ?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P003",
+          "text": "Cũng không biết lần trước sau khi Vương Dần hát cho họ nghe có phải hệ thống đã dở trò gì không?"
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000502_P002",
+      "parent_block_id": "arAbGLeCUsU_S000502",
+      "text_exact": "Nhưng ai bảo Vương Dần có hắc khoa kỹ cơ chứ?",
+      "char_count": 45,
+      "word_count": 11,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000501_P010",
+          "text": "Mai sáng trong tối lén lút bày tỏ chút ý tứ của bản thân."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P001",
+          "text": "Theo lý mà nói, những nữ tử này từng có trải qua như vậy, bình thường phải mất vài năm mới có thể thoát ra khỏi bóng tối, thậm chí có thể bị ám ảnh cả đời hoặc dứt khoát tự sát."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P003",
+          "text": "Cũng không biết lần trước sau khi Vương Dần hát cho họ nghe có phải hệ thống đã dở trò gì không?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P004",
+          "text": "Mà hiện tại tuy họ vẫn còn chút bài xích với nan nhân nhưng về cơ bản đã hoàn toàn thoát khỏi bóng tối, tìm lại được hy vọng vào cuộc sống."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000502_P003",
+      "parent_block_id": "arAbGLeCUsU_S000502",
+      "text_exact": "Cũng không biết lần trước sau khi Vương Dần hát cho họ nghe có phải hệ thống đã dở trò gì không?",
+      "char_count": 96,
+      "word_count": 22,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P001",
+          "text": "Theo lý mà nói, những nữ tử này từng có trải qua như vậy, bình thường phải mất vài năm mới có thể thoát ra khỏi bóng tối, thậm chí có thể bị ám ảnh cả đời hoặc dứt khoát tự sát."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P002",
+          "text": "Nhưng ai bảo Vương Dần có hắc khoa kỹ cơ chứ?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P004",
+          "text": "Mà hiện tại tuy họ vẫn còn chút bài xích với nan nhân nhưng về cơ bản đã hoàn toàn thoát khỏi bóng tối, tìm lại được hy vọng vào cuộc sống."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P005",
+          "text": "Cảm giác này giống như bị tẩy não vậy, chẳng qua đây là một cuộc tẩy não có lợi cho họ."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000502_P004",
+      "parent_block_id": "arAbGLeCUsU_S000502",
+      "text_exact": "Mà hiện tại tuy họ vẫn còn chút bài xích với nan nhân nhưng về cơ bản đã hoàn toàn thoát khỏi bóng tối, tìm lại được hy vọng vào cuộc sống.",
+      "char_count": 139,
+      "word_count": 32,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P002",
+          "text": "Nhưng ai bảo Vương Dần có hắc khoa kỹ cơ chứ?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P003",
+          "text": "Cũng không biết lần trước sau khi Vương Dần hát cho họ nghe có phải hệ thống đã dở trò gì không?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P005",
+          "text": "Cảm giác này giống như bị tẩy não vậy, chẳng qua đây là một cuộc tẩy não có lợi cho họ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P006",
+          "text": "Tóm lại, hiện tại họ cơ bản không khác gì người bình thường."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000502_P005",
+      "parent_block_id": "arAbGLeCUsU_S000502",
+      "text_exact": "Cảm giác này giống như bị tẩy não vậy, chẳng qua đây là một cuộc tẩy não có lợi cho họ.",
+      "char_count": 87,
+      "word_count": 21,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P003",
+          "text": "Cũng không biết lần trước sau khi Vương Dần hát cho họ nghe có phải hệ thống đã dở trò gì không?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P004",
+          "text": "Mà hiện tại tuy họ vẫn còn chút bài xích với nan nhân nhưng về cơ bản đã hoàn toàn thoát khỏi bóng tối, tìm lại được hy vọng vào cuộc sống."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P006",
+          "text": "Tóm lại, hiện tại họ cơ bản không khác gì người bình thường."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P007",
+          "text": "Bóng ma tâm lý coi như đã hoàn toàn tiêu tan."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000502_P006",
+      "parent_block_id": "arAbGLeCUsU_S000502",
+      "text_exact": "Tóm lại, hiện tại họ cơ bản không khác gì người bình thường.",
+      "char_count": 60,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P004",
+          "text": "Mà hiện tại tuy họ vẫn còn chút bài xích với nan nhân nhưng về cơ bản đã hoàn toàn thoát khỏi bóng tối, tìm lại được hy vọng vào cuộc sống."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P005",
+          "text": "Cảm giác này giống như bị tẩy não vậy, chẳng qua đây là một cuộc tẩy não có lợi cho họ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P007",
+          "text": "Bóng ma tâm lý coi như đã hoàn toàn tiêu tan."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P008",
+          "text": "Thực ra ở trong sơn động lâu như vậy, những lúc đêm khuya không ngủ được, họ cũng thỉnh thoảng bắt đầu nghĩ về tương lai của mình."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000502_P007",
+      "parent_block_id": "arAbGLeCUsU_S000502",
+      "text_exact": "Bóng ma tâm lý coi như đã hoàn toàn tiêu tan.",
+      "char_count": 45,
+      "word_count": 11,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P005",
+          "text": "Cảm giác này giống như bị tẩy não vậy, chẳng qua đây là một cuộc tẩy não có lợi cho họ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P006",
+          "text": "Tóm lại, hiện tại họ cơ bản không khác gì người bình thường."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P008",
+          "text": "Thực ra ở trong sơn động lâu như vậy, những lúc đêm khuya không ngủ được, họ cũng thỉnh thoảng bắt đầu nghĩ về tương lai của mình."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P009",
+          "text": "Dù sao tuổi tác cũng còn trẻ, ở này bình thường đã phải tính đến chuyện cưới gà rồi, bây giờ ăn no mặc ấm rồi, nghĩ đến tương lai cũng chẳng có gì lạ."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000502_P008",
+      "parent_block_id": "arAbGLeCUsU_S000502",
+      "text_exact": "Thực ra ở trong sơn động lâu như vậy, những lúc đêm khuya không ngủ được, họ cũng thỉnh thoảng bắt đầu nghĩ về tương lai của mình.",
+      "char_count": 130,
+      "word_count": 28,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P006",
+          "text": "Tóm lại, hiện tại họ cơ bản không khác gì người bình thường."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P007",
+          "text": "Bóng ma tâm lý coi như đã hoàn toàn tiêu tan."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P009",
+          "text": "Dù sao tuổi tác cũng còn trẻ, ở này bình thường đã phải tính đến chuyện cưới gà rồi, bây giờ ăn no mặc ấm rồi, nghĩ đến tương lai cũng chẳng có gì lạ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P010",
+          "text": "Vì vậy, dần dần một vài nữ tử bắt đầu nảy sinh hảo cảm với những gã độc thân luôn tìm cách lấy lòng mình."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000502_P009",
+      "parent_block_id": "arAbGLeCUsU_S000502",
+      "text_exact": "Dù sao tuổi tác cũng còn trẻ, ở này bình thường đã phải tính đến chuyện cưới gà rồi, bây giờ ăn no mặc ấm rồi, nghĩ đến tương lai cũng chẳng có gì lạ.",
+      "char_count": 150,
+      "word_count": 35,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P007",
+          "text": "Bóng ma tâm lý coi như đã hoàn toàn tiêu tan."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P008",
+          "text": "Thực ra ở trong sơn động lâu như vậy, những lúc đêm khuya không ngủ được, họ cũng thỉnh thoảng bắt đầu nghĩ về tương lai của mình."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P010",
+          "text": "Vì vậy, dần dần một vài nữ tử bắt đầu nảy sinh hảo cảm với những gã độc thân luôn tìm cách lấy lòng mình."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P011",
+          "text": "Tuy nói hiện tại họ đã thoát khỏi bóng tối, nhưng dù sao bản thân cũng từng có quá khứ như vậy, muốn tìm một lang quân tuổi tác tương đương thì cơ hội không lớn lắm."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000502_P010",
+      "parent_block_id": "arAbGLeCUsU_S000502",
+      "text_exact": "Vì vậy, dần dần một vài nữ tử bắt đầu nảy sinh hảo cảm với những gã độc thân luôn tìm cách lấy lòng mình.",
+      "char_count": 105,
+      "word_count": 25,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P008",
+          "text": "Thực ra ở trong sơn động lâu như vậy, những lúc đêm khuya không ngủ được, họ cũng thỉnh thoảng bắt đầu nghĩ về tương lai của mình."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P009",
+          "text": "Dù sao tuổi tác cũng còn trẻ, ở này bình thường đã phải tính đến chuyện cưới gà rồi, bây giờ ăn no mặc ấm rồi, nghĩ đến tương lai cũng chẳng có gì lạ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P011",
+          "text": "Tuy nói hiện tại họ đã thoát khỏi bóng tối, nhưng dù sao bản thân cũng từng có quá khứ như vậy, muốn tìm một lang quân tuổi tác tương đương thì cơ hội không lớn lắm."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P012",
+          "text": "Điều này họ vẫn rất rõ ràng."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000502_P011",
+      "parent_block_id": "arAbGLeCUsU_S000502",
+      "text_exact": "Tuy nói hiện tại họ đã thoát khỏi bóng tối, nhưng dù sao bản thân cũng từng có quá khứ như vậy, muốn tìm một lang quân tuổi tác tương đương thì cơ hội không lớn lắm.",
+      "char_count": 165,
+      "word_count": 37,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P009",
+          "text": "Dù sao tuổi tác cũng còn trẻ, ở này bình thường đã phải tính đến chuyện cưới gà rồi, bây giờ ăn no mặc ấm rồi, nghĩ đến tương lai cũng chẳng có gì lạ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P010",
+          "text": "Vì vậy, dần dần một vài nữ tử bắt đầu nảy sinh hảo cảm với những gã độc thân luôn tìm cách lấy lòng mình."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P012",
+          "text": "Điều này họ vẫn rất rõ ràng."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P013",
+          "text": "Thế là sau một thời gian dài mấy gã độc thân kiên trì nỗ lực, cuối cùng họ cũng nhận được phản hồi từ những cô gái mà mình nhắm trúng."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000502_P012",
+      "parent_block_id": "arAbGLeCUsU_S000502",
+      "text_exact": "Điều này họ vẫn rất rõ ràng.",
+      "char_count": 28,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P010",
+          "text": "Vì vậy, dần dần một vài nữ tử bắt đầu nảy sinh hảo cảm với những gã độc thân luôn tìm cách lấy lòng mình."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P011",
+          "text": "Tuy nói hiện tại họ đã thoát khỏi bóng tối, nhưng dù sao bản thân cũng từng có quá khứ như vậy, muốn tìm một lang quân tuổi tác tương đương thì cơ hội không lớn lắm."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P013",
+          "text": "Thế là sau một thời gian dài mấy gã độc thân kiên trì nỗ lực, cuối cùng họ cũng nhận được phản hồi từ những cô gái mà mình nhắm trúng."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P014",
+          "text": "Có thể chỉ là một ánh mắt thạnh thùng, cũng có thể chỉ là thỉnh thoảng giúp họ lau mồ hôi trên chán."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000502_P013",
+      "parent_block_id": "arAbGLeCUsU_S000502",
+      "text_exact": "Thế là sau một thời gian dài mấy gã độc thân kiên trì nỗ lực, cuối cùng họ cũng nhận được phản hồi từ những cô gái mà mình nhắm trúng.",
+      "char_count": 134,
+      "word_count": 31,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P011",
+          "text": "Tuy nói hiện tại họ đã thoát khỏi bóng tối, nhưng dù sao bản thân cũng từng có quá khứ như vậy, muốn tìm một lang quân tuổi tác tương đương thì cơ hội không lớn lắm."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P012",
+          "text": "Điều này họ vẫn rất rõ ràng."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P014",
+          "text": "Có thể chỉ là một ánh mắt thạnh thùng, cũng có thể chỉ là thỉnh thoảng giúp họ lau mồ hôi trên chán."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P015",
+          "text": "Bấy nhiêu đó đã đủ để họ kích động đến mức suýt chút nữa thì hú lên như sói không dễ dàng gì."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000502_P014",
+      "parent_block_id": "arAbGLeCUsU_S000502",
+      "text_exact": "Có thể chỉ là một ánh mắt thạnh thùng, cũng có thể chỉ là thỉnh thoảng giúp họ lau mồ hôi trên chán.",
+      "char_count": 100,
+      "word_count": 23,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P012",
+          "text": "Điều này họ vẫn rất rõ ràng."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P013",
+          "text": "Thế là sau một thời gian dài mấy gã độc thân kiên trì nỗ lực, cuối cùng họ cũng nhận được phản hồi từ những cô gái mà mình nhắm trúng."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P015",
+          "text": "Bấy nhiêu đó đã đủ để họ kích động đến mức suýt chút nữa thì hú lên như sói không dễ dàng gì."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P016",
+          "text": "Cuối cùng cũng thấy chút hy vọng rồi."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000502_P015",
+      "parent_block_id": "arAbGLeCUsU_S000502",
+      "text_exact": "Bấy nhiêu đó đã đủ để họ kích động đến mức suýt chút nữa thì hú lên như sói không dễ dàng gì.",
+      "char_count": 93,
+      "word_count": 23,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P013",
+          "text": "Thế là sau một thời gian dài mấy gã độc thân kiên trì nỗ lực, cuối cùng họ cũng nhận được phản hồi từ những cô gái mà mình nhắm trúng."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P014",
+          "text": "Có thể chỉ là một ánh mắt thạnh thùng, cũng có thể chỉ là thỉnh thoảng giúp họ lau mồ hôi trên chán."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P016",
+          "text": "Cuối cùng cũng thấy chút hy vọng rồi."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P017",
+          "text": "Thế là Tần xuất họ đến đây ngày càng dài đặc, cho dù không có việc gì cũng phải kiếm chuyện để chạy tới một chuyến."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000502_P016",
+      "parent_block_id": "arAbGLeCUsU_S000502",
+      "text_exact": "Cuối cùng cũng thấy chút hy vọng rồi.",
+      "char_count": 37,
+      "word_count": 8,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P014",
+          "text": "Có thể chỉ là một ánh mắt thạnh thùng, cũng có thể chỉ là thỉnh thoảng giúp họ lau mồ hôi trên chán."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P015",
+          "text": "Bấy nhiêu đó đã đủ để họ kích động đến mức suýt chút nữa thì hú lên như sói không dễ dàng gì."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P017",
+          "text": "Thế là Tần xuất họ đến đây ngày càng dài đặc, cho dù không có việc gì cũng phải kiếm chuyện để chạy tới một chuyến."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P018",
+          "text": "Khi đã thuận mắt nhau rồi thì những chuyện còn lại đơn giản hơn nhiều."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000502_P017",
+      "parent_block_id": "arAbGLeCUsU_S000502",
+      "text_exact": "Thế là Tần xuất họ đến đây ngày càng dài đặc, cho dù không có việc gì cũng phải kiếm chuyện để chạy tới một chuyến.",
+      "char_count": 115,
+      "word_count": 26,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P015",
+          "text": "Bấy nhiêu đó đã đủ để họ kích động đến mức suýt chút nữa thì hú lên như sói không dễ dàng gì."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P016",
+          "text": "Cuối cùng cũng thấy chút hy vọng rồi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P018",
+          "text": "Khi đã thuận mắt nhau rồi thì những chuyện còn lại đơn giản hơn nhiều."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000503_P001",
+          "text": "Ví dụ như chạy đến nhà gã độc thân giúp dọn dẹp cái ổ chó bừa bộn, thuận tiện giúp nấu một bữa cơm hoặc là chạy ra chỗ vắng người bên ngoài tâm sự một lát."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000502_P018",
+      "parent_block_id": "arAbGLeCUsU_S000502",
+      "text_exact": "Khi đã thuận mắt nhau rồi thì những chuyện còn lại đơn giản hơn nhiều.",
+      "char_count": 70,
+      "word_count": 15,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P016",
+          "text": "Cuối cùng cũng thấy chút hy vọng rồi."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P017",
+          "text": "Thế là Tần xuất họ đến đây ngày càng dài đặc, cho dù không có việc gì cũng phải kiếm chuyện để chạy tới một chuyến."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000503_P001",
+          "text": "Ví dụ như chạy đến nhà gã độc thân giúp dọn dẹp cái ổ chó bừa bộn, thuận tiện giúp nấu một bữa cơm hoặc là chạy ra chỗ vắng người bên ngoài tâm sự một lát."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P001",
+          "text": "Phải biết rằng cách sơn động không xa tình cờ lại có một cánh giường nhỏ, đương nhiên cũng chỉ là đơn giản ở riêng với nhau một lát mà thôi."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000503_P001",
+      "parent_block_id": "arAbGLeCUsU_S000503",
+      "text_exact": "Ví dụ như chạy đến nhà gã độc thân giúp dọn dẹp cái ổ chó bừa bộn, thuận tiện giúp nấu một bữa cơm hoặc là chạy ra chỗ vắng người bên ngoài tâm sự một lát.",
+      "char_count": 155,
+      "word_count": 37,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P017",
+          "text": "Thế là Tần xuất họ đến đây ngày càng dài đặc, cho dù không có việc gì cũng phải kiếm chuyện để chạy tới một chuyến."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P018",
+          "text": "Khi đã thuận mắt nhau rồi thì những chuyện còn lại đơn giản hơn nhiều."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P001",
+          "text": "Phải biết rằng cách sơn động không xa tình cờ lại có một cánh giường nhỏ, đương nhiên cũng chỉ là đơn giản ở riêng với nhau một lát mà thôi."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P002",
+          "text": "Dù sao tuy họ đã thoát khỏi bóng tối nhưng cũng chưa cởi mở đến mức độ đó đúng không?"
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000504_P001",
+      "parent_block_id": "arAbGLeCUsU_S000504",
+      "text_exact": "Phải biết rằng cách sơn động không xa tình cờ lại có một cánh giường nhỏ, đương nhiên cũng chỉ là đơn giản ở riêng với nhau một lát mà thôi.",
+      "char_count": 140,
+      "word_count": 31,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000502_P018",
+          "text": "Khi đã thuận mắt nhau rồi thì những chuyện còn lại đơn giản hơn nhiều."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000503_P001",
+          "text": "Ví dụ như chạy đến nhà gã độc thân giúp dọn dẹp cái ổ chó bừa bộn, thuận tiện giúp nấu một bữa cơm hoặc là chạy ra chỗ vắng người bên ngoài tâm sự một lát."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P002",
+          "text": "Dù sao tuy họ đã thoát khỏi bóng tối nhưng cũng chưa cởi mở đến mức độ đó đúng không?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P003",
+          "text": "Mấy gã độc thân này cũng không tệ."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000504_P002",
+      "parent_block_id": "arAbGLeCUsU_S000504",
+      "text_exact": "Dù sao tuy họ đã thoát khỏi bóng tối nhưng cũng chưa cởi mở đến mức độ đó đúng không?",
+      "char_count": 85,
+      "word_count": 20,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000503_P001",
+          "text": "Ví dụ như chạy đến nhà gã độc thân giúp dọn dẹp cái ổ chó bừa bộn, thuận tiện giúp nấu một bữa cơm hoặc là chạy ra chỗ vắng người bên ngoài tâm sự một lát."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P001",
+          "text": "Phải biết rằng cách sơn động không xa tình cờ lại có một cánh giường nhỏ, đương nhiên cũng chỉ là đơn giản ở riêng với nhau một lát mà thôi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P003",
+          "text": "Mấy gã độc thân này cũng không tệ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P004",
+          "text": "Mắt thấy vợ hiền sắp về tay, không thể vì nóng vội mà làm hỏng chuyện, dù sao bao nhiêu năm qua cũng đã đợi được, không gấp gáp gì một lúc này."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000504_P003",
+      "parent_block_id": "arAbGLeCUsU_S000504",
+      "text_exact": "Mấy gã độc thân này cũng không tệ.",
+      "char_count": 34,
+      "word_count": 8,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P001",
+          "text": "Phải biết rằng cách sơn động không xa tình cờ lại có một cánh giường nhỏ, đương nhiên cũng chỉ là đơn giản ở riêng với nhau một lát mà thôi."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P002",
+          "text": "Dù sao tuy họ đã thoát khỏi bóng tối nhưng cũng chưa cởi mở đến mức độ đó đúng không?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P004",
+          "text": "Mắt thấy vợ hiền sắp về tay, không thể vì nóng vội mà làm hỏng chuyện, dù sao bao nhiêu năm qua cũng đã đợi được, không gấp gáp gì một lúc này."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P005",
+          "text": "Kết quả là chuyện tiếp theo mới thật thú vị."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000504_P004",
+      "parent_block_id": "arAbGLeCUsU_S000504",
+      "text_exact": "Mắt thấy vợ hiền sắp về tay, không thể vì nóng vội mà làm hỏng chuyện, dù sao bao nhiêu năm qua cũng đã đợi được, không gấp gáp gì một lúc này.",
+      "char_count": 143,
+      "word_count": 33,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P002",
+          "text": "Dù sao tuy họ đã thoát khỏi bóng tối nhưng cũng chưa cởi mở đến mức độ đó đúng không?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P003",
+          "text": "Mấy gã độc thân này cũng không tệ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P005",
+          "text": "Kết quả là chuyện tiếp theo mới thật thú vị."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P006",
+          "text": "Mặc dù những nữ tử này ở trên địa bàn của thô thượng thủy, nhưng đừng quên thôn Thượng Thủy vẫn còn một ngôi trường."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000504_P005",
+      "parent_block_id": "arAbGLeCUsU_S000504",
+      "text_exact": "Kết quả là chuyện tiếp theo mới thật thú vị.",
+      "char_count": 44,
+      "word_count": 10,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P003",
+          "text": "Mấy gã độc thân này cũng không tệ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P004",
+          "text": "Mắt thấy vợ hiền sắp về tay, không thể vì nóng vội mà làm hỏng chuyện, dù sao bao nhiêu năm qua cũng đã đợi được, không gấp gáp gì một lúc này."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P006",
+          "text": "Mặc dù những nữ tử này ở trên địa bàn của thô thượng thủy, nhưng đừng quên thôn Thượng Thủy vẫn còn một ngôi trường."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P007",
+          "text": "Và những đứa trẻ đi học ở đó không chỉ có người của thôn Thượng Thủy."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000504_P006",
+      "parent_block_id": "arAbGLeCUsU_S000504",
+      "text_exact": "Mặc dù những nữ tử này ở trên địa bàn của thô thượng thủy, nhưng đừng quên thôn Thượng Thủy vẫn còn một ngôi trường.",
+      "char_count": 116,
+      "word_count": 25,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P004",
+          "text": "Mắt thấy vợ hiền sắp về tay, không thể vì nóng vội mà làm hỏng chuyện, dù sao bao nhiêu năm qua cũng đã đợi được, không gấp gáp gì một lúc này."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P005",
+          "text": "Kết quả là chuyện tiếp theo mới thật thú vị."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P007",
+          "text": "Và những đứa trẻ đi học ở đó không chỉ có người của thôn Thượng Thủy."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P008",
+          "text": "Đám độc thân ở các thôn khác sau khi biết được tình hình này, lập tức ai nấy đều phấn chấn."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000504_P007",
+      "parent_block_id": "arAbGLeCUsU_S000504",
+      "text_exact": "Và những đứa trẻ đi học ở đó không chỉ có người của thôn Thượng Thủy.",
+      "char_count": 69,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P005",
+          "text": "Kết quả là chuyện tiếp theo mới thật thú vị."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P006",
+          "text": "Mặc dù những nữ tử này ở trên địa bàn của thô thượng thủy, nhưng đừng quên thôn Thượng Thủy vẫn còn một ngôi trường."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P008",
+          "text": "Đám độc thân ở các thôn khác sau khi biết được tình hình này, lập tức ai nấy đều phấn chấn."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P009",
+          "text": "\"Người anh em thôn Thượng Thủy, các ngươi làm vậy là không được rồi."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000504_P008",
+      "parent_block_id": "arAbGLeCUsU_S000504",
+      "text_exact": "Đám độc thân ở các thôn khác sau khi biết được tình hình này, lập tức ai nấy đều phấn chấn.",
+      "char_count": 91,
+      "word_count": 21,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P006",
+          "text": "Mặc dù những nữ tử này ở trên địa bàn của thô thượng thủy, nhưng đừng quên thôn Thượng Thủy vẫn còn một ngôi trường."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P007",
+          "text": "Và những đứa trẻ đi học ở đó không chỉ có người của thôn Thượng Thủy."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P009",
+          "text": "\"Người anh em thôn Thượng Thủy, các ngươi làm vậy là không được rồi."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P010",
+          "text": "Trong thôn có nhiều tiểu nương tử như Hoa Như Ngọc thế kia mà lại không nói cho chúng ta biết."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000504_P009",
+      "parent_block_id": "arAbGLeCUsU_S000504",
+      "text_exact": "\"Người anh em thôn Thượng Thủy, các ngươi làm vậy là không được rồi.",
+      "char_count": 68,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P007",
+          "text": "Và những đứa trẻ đi học ở đó không chỉ có người của thôn Thượng Thủy."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P008",
+          "text": "Đám độc thân ở các thôn khác sau khi biết được tình hình này, lập tức ai nấy đều phấn chấn."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P010",
+          "text": "Trong thôn có nhiều tiểu nương tử như Hoa Như Ngọc thế kia mà lại không nói cho chúng ta biết."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P011",
+          "text": "Mấy gã độc thân thôn các ngươi tiêu hóa không hết đâu."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000504_P010",
+      "parent_block_id": "arAbGLeCUsU_S000504",
+      "text_exact": "Trong thôn có nhiều tiểu nương tử như Hoa Như Ngọc thế kia mà lại không nói cho chúng ta biết.",
+      "char_count": 94,
+      "word_count": 21,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P008",
+          "text": "Đám độc thân ở các thôn khác sau khi biết được tình hình này, lập tức ai nấy đều phấn chấn."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P009",
+          "text": "\"Người anh em thôn Thượng Thủy, các ngươi làm vậy là không được rồi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P011",
+          "text": "Mấy gã độc thân thôn các ngươi tiêu hóa không hết đâu."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000505_P001",
+          "text": "Chuyện giúp người làm niềm vui này, huynh đệ chúng ta phải đứng ra gánh vác chứ.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000504_P011",
+      "parent_block_id": "arAbGLeCUsU_S000504",
+      "text_exact": "Mấy gã độc thân thôn các ngươi tiêu hóa không hết đâu.",
+      "char_count": 54,
+      "word_count": 12,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P009",
+          "text": "\"Người anh em thôn Thượng Thủy, các ngươi làm vậy là không được rồi."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P010",
+          "text": "Trong thôn có nhiều tiểu nương tử như Hoa Như Ngọc thế kia mà lại không nói cho chúng ta biết."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000505_P001",
+          "text": "Chuyện giúp người làm niềm vui này, huynh đệ chúng ta phải đứng ra gánh vác chứ.\""
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000505_P002",
+          "text": "Thế là sơ động nơi những nữ tử này ở trở nên náo nhiệt hơn hẳn."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000505_P001",
+      "parent_block_id": "arAbGLeCUsU_S000505",
+      "text_exact": "Chuyện giúp người làm niềm vui này, huynh đệ chúng ta phải đứng ra gánh vác chứ.\"",
+      "char_count": 81,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P010",
+          "text": "Trong thôn có nhiều tiểu nương tử như Hoa Như Ngọc thế kia mà lại không nói cho chúng ta biết."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P011",
+          "text": "Mấy gã độc thân thôn các ngươi tiêu hóa không hết đâu."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000505_P002",
+          "text": "Thế là sơ động nơi những nữ tử này ở trở nên náo nhiệt hơn hẳn."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000505_P003",
+          "text": "Đám độc thân ở các thôn lân cận ai nấy đều dốc hết sức bình sinh mà chạy qua bên này."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000505_P002",
+      "parent_block_id": "arAbGLeCUsU_S000505",
+      "text_exact": "Thế là sơ động nơi những nữ tử này ở trở nên náo nhiệt hơn hẳn.",
+      "char_count": 63,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000504_P011",
+          "text": "Mấy gã độc thân thôn các ngươi tiêu hóa không hết đâu."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000505_P001",
+          "text": "Chuyện giúp người làm niềm vui này, huynh đệ chúng ta phải đứng ra gánh vác chứ.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000505_P003",
+          "text": "Đám độc thân ở các thôn lân cận ai nấy đều dốc hết sức bình sinh mà chạy qua bên này."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000506_P001",
+          "text": "Về phần đám độc thân ở những thôn xa hơn thì đành chịu, dù sao cũng quá xa, không thể ngày nào cũng bỏ bê công việc mà chạy đến thôn Thượng Thủy được đúng không?"
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000505_P003",
+      "parent_block_id": "arAbGLeCUsU_S000505",
+      "text_exact": "Đám độc thân ở các thôn lân cận ai nấy đều dốc hết sức bình sinh mà chạy qua bên này.",
+      "char_count": 85,
+      "word_count": 21,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000505_P001",
+          "text": "Chuyện giúp người làm niềm vui này, huynh đệ chúng ta phải đứng ra gánh vác chứ.\""
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000505_P002",
+          "text": "Thế là sơ động nơi những nữ tử này ở trở nên náo nhiệt hơn hẳn."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000506_P001",
+          "text": "Về phần đám độc thân ở những thôn xa hơn thì đành chịu, dù sao cũng quá xa, không thể ngày nào cũng bỏ bê công việc mà chạy đến thôn Thượng Thủy được đúng không?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000506_P002",
+          "text": "Đám độc thân ở các thôn xa chỉ có thể đứng nhìn mà thèm thuồng và đố kỵ."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000506_P001",
+      "parent_block_id": "arAbGLeCUsU_S000506",
+      "text_exact": "Về phần đám độc thân ở những thôn xa hơn thì đành chịu, dù sao cũng quá xa, không thể ngày nào cũng bỏ bê công việc mà chạy đến thôn Thượng Thủy được đúng không?",
+      "char_count": 161,
+      "word_count": 36,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000505_P002",
+          "text": "Thế là sơ động nơi những nữ tử này ở trở nên náo nhiệt hơn hẳn."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000505_P003",
+          "text": "Đám độc thân ở các thôn lân cận ai nấy đều dốc hết sức bình sinh mà chạy qua bên này."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000506_P002",
+          "text": "Đám độc thân ở các thôn xa chỉ có thể đứng nhìn mà thèm thuồng và đố kỵ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000507_P001",
+          "text": "Cũng có người muốn nhờ người làm may, nhưng phát hiện chuyện này không dễ làm."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000506_P002",
+      "parent_block_id": "arAbGLeCUsU_S000506",
+      "text_exact": "Đám độc thân ở các thôn xa chỉ có thể đứng nhìn mà thèm thuồng và đố kỵ.",
+      "char_count": 72,
+      "word_count": 18,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000505_P003",
+          "text": "Đám độc thân ở các thôn lân cận ai nấy đều dốc hết sức bình sinh mà chạy qua bên này."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000506_P001",
+          "text": "Về phần đám độc thân ở những thôn xa hơn thì đành chịu, dù sao cũng quá xa, không thể ngày nào cũng bỏ bê công việc mà chạy đến thôn Thượng Thủy được đúng không?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000507_P001",
+          "text": "Cũng có người muốn nhờ người làm may, nhưng phát hiện chuyện này không dễ làm."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000508_P001",
+          "text": "Hiện tại cha mẹ của những nữ tử này đều không còn."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000507_P001",
+      "parent_block_id": "arAbGLeCUsU_S000507",
+      "text_exact": "Cũng có người muốn nhờ người làm may, nhưng phát hiện chuyện này không dễ làm.",
+      "char_count": 78,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000506_P001",
+          "text": "Về phần đám độc thân ở những thôn xa hơn thì đành chịu, dù sao cũng quá xa, không thể ngày nào cũng bỏ bê công việc mà chạy đến thôn Thượng Thủy được đúng không?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000506_P002",
+          "text": "Đám độc thân ở các thôn xa chỉ có thể đứng nhìn mà thèm thuồng và đố kỵ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000508_P001",
+          "text": "Hiện tại cha mẹ của những nữ tử này đều không còn."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000508_P002",
+          "text": "Nói cách khác, chỉ có Vương Dần mới được coi là người giám hộ của họ, nhưng cũng không thể nhờ người tìm Vương Dần làm mai được đúng không?"
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000508_P001",
+      "parent_block_id": "arAbGLeCUsU_S000508",
+      "text_exact": "Hiện tại cha mẹ của những nữ tử này đều không còn.",
+      "char_count": 50,
+      "word_count": 12,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000506_P002",
+          "text": "Đám độc thân ở các thôn xa chỉ có thể đứng nhìn mà thèm thuồng và đố kỵ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000507_P001",
+          "text": "Cũng có người muốn nhờ người làm may, nhưng phát hiện chuyện này không dễ làm."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000508_P002",
+          "text": "Nói cách khác, chỉ có Vương Dần mới được coi là người giám hộ của họ, nhưng cũng không thể nhờ người tìm Vương Dần làm mai được đúng không?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000508_P003",
+          "text": "Người ta là tiên nhân, làm gì có thời gian rảnh rỗi mà để ý đến mấy chuyện vật vãnh này."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000508_P002",
+      "parent_block_id": "arAbGLeCUsU_S000508",
+      "text_exact": "Nói cách khác, chỉ có Vương Dần mới được coi là người giám hộ của họ, nhưng cũng không thể nhờ người tìm Vương Dần làm mai được đúng không?",
+      "char_count": 139,
+      "word_count": 30,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000507_P001",
+          "text": "Cũng có người muốn nhờ người làm may, nhưng phát hiện chuyện này không dễ làm."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000508_P001",
+          "text": "Hiện tại cha mẹ của những nữ tử này đều không còn."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000508_P003",
+          "text": "Người ta là tiên nhân, làm gì có thời gian rảnh rỗi mà để ý đến mấy chuyện vật vãnh này."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000508_P004",
+          "text": "Đương nhiên, giường lớn thì chim gì cũng có, người đông lên thì tự nhiên không phải ai cũng là người biết điều."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000508_P003",
+      "parent_block_id": "arAbGLeCUsU_S000508",
+      "text_exact": "Người ta là tiên nhân, làm gì có thời gian rảnh rỗi mà để ý đến mấy chuyện vật vãnh này.",
+      "char_count": 88,
+      "word_count": 21,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000508_P001",
+          "text": "Hiện tại cha mẹ của những nữ tử này đều không còn."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000508_P002",
+          "text": "Nói cách khác, chỉ có Vương Dần mới được coi là người giám hộ của họ, nhưng cũng không thể nhờ người tìm Vương Dần làm mai được đúng không?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000508_P004",
+          "text": "Đương nhiên, giường lớn thì chim gì cũng có, người đông lên thì tự nhiên không phải ai cũng là người biết điều."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000509_P001",
+          "text": "Bổ phận nơi thâm sơn cùng cốc dễ sinh đưa dân."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000508_P004",
+      "parent_block_id": "arAbGLeCUsU_S000508",
+      "text_exact": "Đương nhiên, giường lớn thì chim gì cũng có, người đông lên thì tự nhiên không phải ai cũng là người biết điều.",
+      "char_count": 111,
+      "word_count": 23,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000508_P002",
+          "text": "Nói cách khác, chỉ có Vương Dần mới được coi là người giám hộ của họ, nhưng cũng không thể nhờ người tìm Vương Dần làm mai được đúng không?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000508_P003",
+          "text": "Người ta là tiên nhân, làm gì có thời gian rảnh rỗi mà để ý đến mấy chuyện vật vãnh này."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000509_P001",
+          "text": "Bổ phận nơi thâm sơn cùng cốc dễ sinh đưa dân."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000509_P002",
+          "text": "Câu này tuy hơi khó nghe, nhưng thực tế đúng là có tình trạng như vậy."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000509_P001",
+      "parent_block_id": "arAbGLeCUsU_S000509",
+      "text_exact": "Bổ phận nơi thâm sơn cùng cốc dễ sinh đưa dân.",
+      "char_count": 46,
+      "word_count": 11,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000508_P003",
+          "text": "Người ta là tiên nhân, làm gì có thời gian rảnh rỗi mà để ý đến mấy chuyện vật vãnh này."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000508_P004",
+          "text": "Đương nhiên, giường lớn thì chim gì cũng có, người đông lên thì tự nhiên không phải ai cũng là người biết điều."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000509_P002",
+          "text": "Câu này tuy hơi khó nghe, nhưng thực tế đúng là có tình trạng như vậy."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P001",
+          "text": "Kể từ khi biết thôn Thượng Thủy có nhiều tiểu nương tử như Hoa Như Ngọc, một số kẻ du côn lưu manh bắt đầu nảy sinh ý đồ xấu."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000509_P002",
+      "parent_block_id": "arAbGLeCUsU_S000509",
+      "text_exact": "Câu này tuy hơi khó nghe, nhưng thực tế đúng là có tình trạng như vậy.",
+      "char_count": 70,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000508_P004",
+          "text": "Đương nhiên, giường lớn thì chim gì cũng có, người đông lên thì tự nhiên không phải ai cũng là người biết điều."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000509_P001",
+          "text": "Bổ phận nơi thâm sơn cùng cốc dễ sinh đưa dân."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P001",
+          "text": "Kể từ khi biết thôn Thượng Thủy có nhiều tiểu nương tử như Hoa Như Ngọc, một số kẻ du côn lưu manh bắt đầu nảy sinh ý đồ xấu."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P002",
+          "text": "Những kẻ này thường ở các thôn khá xa thôn Thượng Thủy."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000510_P001",
+      "parent_block_id": "arAbGLeCUsU_S000510",
+      "text_exact": "Kể từ khi biết thôn Thượng Thủy có nhiều tiểu nương tử như Hoa Như Ngọc, một số kẻ du côn lưu manh bắt đầu nảy sinh ý đồ xấu.",
+      "char_count": 125,
+      "word_count": 30,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000509_P001",
+          "text": "Bổ phận nơi thâm sơn cùng cốc dễ sinh đưa dân."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000509_P002",
+          "text": "Câu này tuy hơi khó nghe, nhưng thực tế đúng là có tình trạng như vậy."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P002",
+          "text": "Những kẻ này thường ở các thôn khá xa thôn Thượng Thủy."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P003",
+          "text": "Tuy biết có sự tồn tại của tiên nhân Vương Dần, nhưng vì chưa tận mắt chứng kiến nên sự kính sợ đối với Vương Dần cũng chẳng thấm tháp vào đâu."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000510_P002",
+      "parent_block_id": "arAbGLeCUsU_S000510",
+      "text_exact": "Những kẻ này thường ở các thôn khá xa thôn Thượng Thủy.",
+      "char_count": 55,
+      "word_count": 12,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000509_P002",
+          "text": "Câu này tuy hơi khó nghe, nhưng thực tế đúng là có tình trạng như vậy."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P001",
+          "text": "Kể từ khi biết thôn Thượng Thủy có nhiều tiểu nương tử như Hoa Như Ngọc, một số kẻ du côn lưu manh bắt đầu nảy sinh ý đồ xấu."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P003",
+          "text": "Tuy biết có sự tồn tại của tiên nhân Vương Dần, nhưng vì chưa tận mắt chứng kiến nên sự kính sợ đối với Vương Dần cũng chẳng thấm tháp vào đâu."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P004",
+          "text": "Dù vậy, lẽ ra khi biết có tiên nhân Vương Dần ở đó, họ không nên nảy sinh tâm tư bất chính, nhưng đừng quên câu Ngạn ngữ."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000510_P003",
+      "parent_block_id": "arAbGLeCUsU_S000510",
+      "text_exact": "Tuy biết có sự tồn tại của tiên nhân Vương Dần, nhưng vì chưa tận mắt chứng kiến nên sự kính sợ đối với Vương Dần cũng chẳng thấm tháp vào đâu.",
+      "char_count": 143,
+      "word_count": 32,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P001",
+          "text": "Kể từ khi biết thôn Thượng Thủy có nhiều tiểu nương tử như Hoa Như Ngọc, một số kẻ du côn lưu manh bắt đầu nảy sinh ý đồ xấu."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P002",
+          "text": "Những kẻ này thường ở các thôn khá xa thôn Thượng Thủy."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P004",
+          "text": "Dù vậy, lẽ ra khi biết có tiên nhân Vương Dần ở đó, họ không nên nảy sinh tâm tư bất chính, nhưng đừng quên câu Ngạn ngữ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P005",
+          "text": "Trên đầu chữ sắc có một con dao, có những kẻ thực sự dám bí quá hóa liều."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000510_P004",
+      "parent_block_id": "arAbGLeCUsU_S000510",
+      "text_exact": "Dù vậy, lẽ ra khi biết có tiên nhân Vương Dần ở đó, họ không nên nảy sinh tâm tư bất chính, nhưng đừng quên câu Ngạn ngữ.",
+      "char_count": 121,
+      "word_count": 28,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P002",
+          "text": "Những kẻ này thường ở các thôn khá xa thôn Thượng Thủy."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P003",
+          "text": "Tuy biết có sự tồn tại của tiên nhân Vương Dần, nhưng vì chưa tận mắt chứng kiến nên sự kính sợ đối với Vương Dần cũng chẳng thấm tháp vào đâu."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P005",
+          "text": "Trên đầu chữ sắc có một con dao, có những kẻ thực sự dám bí quá hóa liều."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P006",
+          "text": "Nhất là sau khi lén lút quan sát một thời gian, thấy Vương Dần căn bản không hề ghé qua phía sơ động, lan của những gã này bắt đầu lớn dần, nghĩ cũng đúng, người ta là tiên nhân cao tại thượng, làm sao có thời gian rảnh rỗi đến thăm những đóa hoa tàn nhị héo này?"
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000510_P005",
+      "parent_block_id": "arAbGLeCUsU_S000510",
+      "text_exact": "Trên đầu chữ sắc có một con dao, có những kẻ thực sự dám bí quá hóa liều.",
+      "char_count": 73,
+      "word_count": 18,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P003",
+          "text": "Tuy biết có sự tồn tại của tiên nhân Vương Dần, nhưng vì chưa tận mắt chứng kiến nên sự kính sợ đối với Vương Dần cũng chẳng thấm tháp vào đâu."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P004",
+          "text": "Dù vậy, lẽ ra khi biết có tiên nhân Vương Dần ở đó, họ không nên nảy sinh tâm tư bất chính, nhưng đừng quên câu Ngạn ngữ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P006",
+          "text": "Nhất là sau khi lén lút quan sát một thời gian, thấy Vương Dần căn bản không hề ghé qua phía sơ động, lan của những gã này bắt đầu lớn dần, nghĩ cũng đúng, người ta là tiên nhân cao tại thượng, làm sao có thời gian rảnh rỗi đến thăm những đóa hoa tàn nhị héo này?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000511_P001",
+          "text": "Người ta chắc đang ở đâu đó Tư Giao sung sướng rồi, nhưng chúng ta chỉ là phàm nhân bình thường, chúng ta không quan tâm chuyện đó."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000510_P006",
+      "parent_block_id": "arAbGLeCUsU_S000510",
+      "text_exact": "Nhất là sau khi lén lút quan sát một thời gian, thấy Vương Dần căn bản không hề ghé qua phía sơ động, lan của những gã này bắt đầu lớn dần, nghĩ cũng đúng, người ta là tiên nhân cao tại thượng, làm sao có thời gian rảnh rỗi đến thăm những đóa hoa tàn nhị héo này?",
+      "char_count": 263,
+      "word_count": 59,
+      "hints": {
+        "needs_ai_split_hint": true,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P004",
+          "text": "Dù vậy, lẽ ra khi biết có tiên nhân Vương Dần ở đó, họ không nên nảy sinh tâm tư bất chính, nhưng đừng quên câu Ngạn ngữ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P005",
+          "text": "Trên đầu chữ sắc có một con dao, có những kẻ thực sự dám bí quá hóa liều."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000511_P001",
+          "text": "Người ta chắc đang ở đâu đó Tư Giao sung sướng rồi, nhưng chúng ta chỉ là phàm nhân bình thường, chúng ta không quan tâm chuyện đó."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000511_P002",
+          "text": "Để những tiểu nương tử như Hoa Như Ngọc này cô độc thủ tiết trong sơn động này thì thật là quá lãng phí."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000511_P001",
+      "parent_block_id": "arAbGLeCUsU_S000511",
+      "text_exact": "Người ta chắc đang ở đâu đó Tư Giao sung sướng rồi, nhưng chúng ta chỉ là phàm nhân bình thường, chúng ta không quan tâm chuyện đó.",
+      "char_count": 131,
+      "word_count": 28,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P005",
+          "text": "Trên đầu chữ sắc có một con dao, có những kẻ thực sự dám bí quá hóa liều."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P006",
+          "text": "Nhất là sau khi lén lút quan sát một thời gian, thấy Vương Dần căn bản không hề ghé qua phía sơ động, lan của những gã này bắt đầu lớn dần, nghĩ cũng đúng, người ta là tiên nhân cao tại thượng, làm sao có thời gian rảnh rỗi đến thăm những đóa hoa tàn nhị héo này?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000511_P002",
+          "text": "Để những tiểu nương tử như Hoa Như Ngọc này cô độc thủ tiết trong sơn động này thì thật là quá lãng phí."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000511_P003",
+          "text": "Họ tính toán rất hay."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000511_P002",
+      "parent_block_id": "arAbGLeCUsU_S000511",
+      "text_exact": "Để những tiểu nương tử như Hoa Như Ngọc này cô độc thủ tiết trong sơn động này thì thật là quá lãng phí.",
+      "char_count": 104,
+      "word_count": 24,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000510_P006",
+          "text": "Nhất là sau khi lén lút quan sát một thời gian, thấy Vương Dần căn bản không hề ghé qua phía sơ động, lan của những gã này bắt đầu lớn dần, nghĩ cũng đúng, người ta là tiên nhân cao tại thượng, làm sao có thời gian rảnh rỗi đến thăm những đóa hoa tàn nhị héo này?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000511_P001",
+          "text": "Người ta chắc đang ở đâu đó Tư Giao sung sướng rồi, nhưng chúng ta chỉ là phàm nhân bình thường, chúng ta không quan tâm chuyện đó."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000511_P003",
+          "text": "Họ tính toán rất hay."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000511_P004",
+          "text": "Đợi đến khi làm xong chuyện cầm thú, trực tiếp thừa dịp đêm tối gió cao mà chuồn mất, nghĩ bụng chắc cũng chẳng ai biết là ai làm."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000511_P003",
+      "parent_block_id": "arAbGLeCUsU_S000511",
+      "text_exact": "Họ tính toán rất hay.",
+      "char_count": 21,
+      "word_count": 5,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000511_P001",
+          "text": "Người ta chắc đang ở đâu đó Tư Giao sung sướng rồi, nhưng chúng ta chỉ là phàm nhân bình thường, chúng ta không quan tâm chuyện đó."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000511_P002",
+          "text": "Để những tiểu nương tử như Hoa Như Ngọc này cô độc thủ tiết trong sơn động này thì thật là quá lãng phí."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000511_P004",
+          "text": "Đợi đến khi làm xong chuyện cầm thú, trực tiếp thừa dịp đêm tối gió cao mà chuồn mất, nghĩ bụng chắc cũng chẳng ai biết là ai làm."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P001",
+          "text": "Phải chi họ suy nghĩ tỉnh táo một chút, lo lắng xem nếu làm vậy có bị Vương Dần bấm ngón tay tính toán ra hung thủ hay không."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000511_P004",
+      "parent_block_id": "arAbGLeCUsU_S000511",
+      "text_exact": "Đợi đến khi làm xong chuyện cầm thú, trực tiếp thừa dịp đêm tối gió cao mà chuồn mất, nghĩ bụng chắc cũng chẳng ai biết là ai làm.",
+      "char_count": 130,
+      "word_count": 29,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000511_P002",
+          "text": "Để những tiểu nương tử như Hoa Như Ngọc này cô độc thủ tiết trong sơn động này thì thật là quá lãng phí."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000511_P003",
+          "text": "Họ tính toán rất hay."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P001",
+          "text": "Phải chi họ suy nghĩ tỉnh táo một chút, lo lắng xem nếu làm vậy có bị Vương Dần bấm ngón tay tính toán ra hung thủ hay không."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P002",
+          "text": "Nhưng đáng tiếc lúc này đầu óc họ đã bị dục vọng chiếm sạch rồi."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000512_P001",
+      "parent_block_id": "arAbGLeCUsU_S000512",
+      "text_exact": "Phải chi họ suy nghĩ tỉnh táo một chút, lo lắng xem nếu làm vậy có bị Vương Dần bấm ngón tay tính toán ra hung thủ hay không.",
+      "char_count": 125,
+      "word_count": 29,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000511_P003",
+          "text": "Họ tính toán rất hay."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000511_P004",
+          "text": "Đợi đến khi làm xong chuyện cầm thú, trực tiếp thừa dịp đêm tối gió cao mà chuồn mất, nghĩ bụng chắc cũng chẳng ai biết là ai làm."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P002",
+          "text": "Nhưng đáng tiếc lúc này đầu óc họ đã bị dục vọng chiếm sạch rồi."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P003",
+          "text": "Đó là một đêm trăng mờ gió cao."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000512_P002",
+      "parent_block_id": "arAbGLeCUsU_S000512",
+      "text_exact": "Nhưng đáng tiếc lúc này đầu óc họ đã bị dục vọng chiếm sạch rồi.",
+      "char_count": 64,
+      "word_count": 15,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000511_P004",
+          "text": "Đợi đến khi làm xong chuyện cầm thú, trực tiếp thừa dịp đêm tối gió cao mà chuồn mất, nghĩ bụng chắc cũng chẳng ai biết là ai làm."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P001",
+          "text": "Phải chi họ suy nghĩ tỉnh táo một chút, lo lắng xem nếu làm vậy có bị Vương Dần bấm ngón tay tính toán ra hung thủ hay không."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P003",
+          "text": "Đó là một đêm trăng mờ gió cao."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P004",
+          "text": "Mấy tên cầm thú lén lút lẻnh vào sơn động nơi các nữ tử đang ở."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000512_P003",
+      "parent_block_id": "arAbGLeCUsU_S000512",
+      "text_exact": "Đó là một đêm trăng mờ gió cao.",
+      "char_count": 31,
+      "word_count": 8,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P001",
+          "text": "Phải chi họ suy nghĩ tỉnh táo một chút, lo lắng xem nếu làm vậy có bị Vương Dần bấm ngón tay tính toán ra hung thủ hay không."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P002",
+          "text": "Nhưng đáng tiếc lúc này đầu óc họ đã bị dục vọng chiếm sạch rồi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P004",
+          "text": "Mấy tên cầm thú lén lút lẻnh vào sơn động nơi các nữ tử đang ở."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P005",
+          "text": "Thấy mấy trăm tiểu nương tử như hoa như ngọc đang nằm ngủ ở đó, tên nào tên nấy kích động đến mức suýt chút nữa thì hét lên."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000512_P004",
+      "parent_block_id": "arAbGLeCUsU_S000512",
+      "text_exact": "Mấy tên cầm thú lén lút lẻnh vào sơn động nơi các nữ tử đang ở.",
+      "char_count": 63,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P002",
+          "text": "Nhưng đáng tiếc lúc này đầu óc họ đã bị dục vọng chiếm sạch rồi."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P003",
+          "text": "Đó là một đêm trăng mờ gió cao."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P005",
+          "text": "Thấy mấy trăm tiểu nương tử như hoa như ngọc đang nằm ngủ ở đó, tên nào tên nấy kích động đến mức suýt chút nữa thì hét lên."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P006",
+          "text": "Kết quả là họ không để ý thấy lúc này một bóng đen đã đứng ở phía sau."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000512_P005",
+      "parent_block_id": "arAbGLeCUsU_S000512",
+      "text_exact": "Thấy mấy trăm tiểu nương tử như hoa như ngọc đang nằm ngủ ở đó, tên nào tên nấy kích động đến mức suýt chút nữa thì hét lên.",
+      "char_count": 124,
+      "word_count": 29,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P003",
+          "text": "Đó là một đêm trăng mờ gió cao."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P004",
+          "text": "Mấy tên cầm thú lén lút lẻnh vào sơn động nơi các nữ tử đang ở."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P006",
+          "text": "Kết quả là họ không để ý thấy lúc này một bóng đen đã đứng ở phía sau."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P007",
+          "text": "nhìn họ với ánh mắt không mấy thiện cảm, thế là bi kịch xảy ra."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000512_P006",
+      "parent_block_id": "arAbGLeCUsU_S000512",
+      "text_exact": "Kết quả là họ không để ý thấy lúc này một bóng đen đã đứng ở phía sau.",
+      "char_count": 70,
+      "word_count": 18,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P004",
+          "text": "Mấy tên cầm thú lén lút lẻnh vào sơn động nơi các nữ tử đang ở."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P005",
+          "text": "Thấy mấy trăm tiểu nương tử như hoa như ngọc đang nằm ngủ ở đó, tên nào tên nấy kích động đến mức suýt chút nữa thì hét lên."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P007",
+          "text": "nhìn họ với ánh mắt không mấy thiện cảm, thế là bi kịch xảy ra."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P008",
+          "text": "Hùng đại đầu tiên là vỗ vỗ vai một tên trong số đó, đợi đến khi tên kia cảnh giác quay đầu lại thì chỉ thấy một bàn chân gấu ngay trước mắt, ngay sau đó một cơn đau thấu xương truyền đến và hắn ngất lị đi."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000512_P007",
+      "parent_block_id": "arAbGLeCUsU_S000512",
+      "text_exact": "nhìn họ với ánh mắt không mấy thiện cảm, thế là bi kịch xảy ra.",
+      "char_count": 63,
+      "word_count": 15,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P005",
+          "text": "Thấy mấy trăm tiểu nương tử như hoa như ngọc đang nằm ngủ ở đó, tên nào tên nấy kích động đến mức suýt chút nữa thì hét lên."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P006",
+          "text": "Kết quả là họ không để ý thấy lúc này một bóng đen đã đứng ở phía sau."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P008",
+          "text": "Hùng đại đầu tiên là vỗ vỗ vai một tên trong số đó, đợi đến khi tên kia cảnh giác quay đầu lại thì chỉ thấy một bàn chân gấu ngay trước mắt, ngay sau đó một cơn đau thấu xương truyền đến và hắn ngất lị đi."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P009",
+          "text": "Sau đó thì không còn gì bất ngờ nữa."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000512_P008",
+      "parent_block_id": "arAbGLeCUsU_S000512",
+      "text_exact": "Hùng đại đầu tiên là vỗ vỗ vai một tên trong số đó, đợi đến khi tên kia cảnh giác quay đầu lại thì chỉ thấy một bàn chân gấu ngay trước mắt, ngay sau đó một cơn đau thấu xương truyền đến và hắn ngất lị đi.",
+      "char_count": 205,
+      "word_count": 48,
+      "hints": {
+        "needs_ai_split_hint": true,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P006",
+          "text": "Kết quả là họ không để ý thấy lúc này một bóng đen đã đứng ở phía sau."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P007",
+          "text": "nhìn họ với ánh mắt không mấy thiện cảm, thế là bi kịch xảy ra."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P009",
+          "text": "Sau đó thì không còn gì bất ngờ nữa."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P010",
+          "text": "Hùng Đại thu thập vài tên, những tên còn lại thấy tình hình không ổn định quay đầu bỏ chạy."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000512_P009",
+      "parent_block_id": "arAbGLeCUsU_S000512",
+      "text_exact": "Sau đó thì không còn gì bất ngờ nữa.",
+      "char_count": 36,
+      "word_count": 9,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P007",
+          "text": "nhìn họ với ánh mắt không mấy thiện cảm, thế là bi kịch xảy ra."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P008",
+          "text": "Hùng đại đầu tiên là vỗ vỗ vai một tên trong số đó, đợi đến khi tên kia cảnh giác quay đầu lại thì chỉ thấy một bàn chân gấu ngay trước mắt, ngay sau đó một cơn đau thấu xương truyền đến và hắn ngất lị đi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P010",
+          "text": "Hùng Đại thu thập vài tên, những tên còn lại thấy tình hình không ổn định quay đầu bỏ chạy."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P011",
+          "text": "Kết quả thân hình khổng lồ của Hùng đại chặn ngay cửa sơn động, trong mắt mỗi tên chỉ còn lại sự tuyệt vọng."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000512_P010",
+      "parent_block_id": "arAbGLeCUsU_S000512",
+      "text_exact": "Hùng Đại thu thập vài tên, những tên còn lại thấy tình hình không ổn định quay đầu bỏ chạy.",
+      "char_count": 91,
+      "word_count": 20,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P008",
+          "text": "Hùng đại đầu tiên là vỗ vỗ vai một tên trong số đó, đợi đến khi tên kia cảnh giác quay đầu lại thì chỉ thấy một bàn chân gấu ngay trước mắt, ngay sau đó một cơn đau thấu xương truyền đến và hắn ngất lị đi."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P009",
+          "text": "Sau đó thì không còn gì bất ngờ nữa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P011",
+          "text": "Kết quả thân hình khổng lồ của Hùng đại chặn ngay cửa sơn động, trong mắt mỗi tên chỉ còn lại sự tuyệt vọng."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000513_P001",
+          "text": "Động tĩnh lớn như vậy, những nữ tử kia chắc chắn đã bị đánh thức, dù sao họ cũng không phải người chết."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000512_P011",
+      "parent_block_id": "arAbGLeCUsU_S000512",
+      "text_exact": "Kết quả thân hình khổng lồ của Hùng đại chặn ngay cửa sơn động, trong mắt mỗi tên chỉ còn lại sự tuyệt vọng.",
+      "char_count": 108,
+      "word_count": 24,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P009",
+          "text": "Sau đó thì không còn gì bất ngờ nữa."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P010",
+          "text": "Hùng Đại thu thập vài tên, những tên còn lại thấy tình hình không ổn định quay đầu bỏ chạy."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000513_P001",
+          "text": "Động tĩnh lớn như vậy, những nữ tử kia chắc chắn đã bị đánh thức, dù sao họ cũng không phải người chết."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000513_P002",
+          "text": "Sau khi tỉnh lại và hiểu rõ tình cảnh trước mắt, ai nấy đều sợ hãi thét chói tai, cuối cùng khiến Hùng Đại đau đầu, phải dùng lời lẽ nhẹ nhàng an ủi hồi lâu mới khiến họ bình tĩnh lại."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000513_P001",
+      "parent_block_id": "arAbGLeCUsU_S000513",
+      "text_exact": "Động tĩnh lớn như vậy, những nữ tử kia chắc chắn đã bị đánh thức, dù sao họ cũng không phải người chết.",
+      "char_count": 103,
+      "word_count": 23,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P010",
+          "text": "Hùng Đại thu thập vài tên, những tên còn lại thấy tình hình không ổn định quay đầu bỏ chạy."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P011",
+          "text": "Kết quả thân hình khổng lồ của Hùng đại chặn ngay cửa sơn động, trong mắt mỗi tên chỉ còn lại sự tuyệt vọng."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000513_P002",
+          "text": "Sau khi tỉnh lại và hiểu rõ tình cảnh trước mắt, ai nấy đều sợ hãi thét chói tai, cuối cùng khiến Hùng Đại đau đầu, phải dùng lời lẽ nhẹ nhàng an ủi hồi lâu mới khiến họ bình tĩnh lại."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000513_P003",
+          "text": "Đương nhiên, lúc Hùng Đại an ủi cũng không hề rảnh tay, đám nữ tử thấy Hùng Đại thì tâm lý cuối cùng cũng ổn định lại, không biết là ai gan lớn đã hô vang cổ vũ cho Hùng Đại một tiếng, sau đó những nữ tử còn lại như bị lây lan."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000513_P002",
+      "parent_block_id": "arAbGLeCUsU_S000513",
+      "text_exact": "Sau khi tỉnh lại và hiểu rõ tình cảnh trước mắt, ai nấy đều sợ hãi thét chói tai, cuối cùng khiến Hùng Đại đau đầu, phải dùng lời lẽ nhẹ nhàng an ủi hồi lâu mới khiến họ bình tĩnh lại.",
+      "char_count": 184,
+      "word_count": 42,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000512_P011",
+          "text": "Kết quả thân hình khổng lồ của Hùng đại chặn ngay cửa sơn động, trong mắt mỗi tên chỉ còn lại sự tuyệt vọng."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000513_P001",
+          "text": "Động tĩnh lớn như vậy, những nữ tử kia chắc chắn đã bị đánh thức, dù sao họ cũng không phải người chết."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000513_P003",
+          "text": "Đương nhiên, lúc Hùng Đại an ủi cũng không hề rảnh tay, đám nữ tử thấy Hùng Đại thì tâm lý cuối cùng cũng ổn định lại, không biết là ai gan lớn đã hô vang cổ vũ cho Hùng Đại một tiếng, sau đó những nữ tử còn lại như bị lây lan."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000513_P004",
+          "text": "từ tiếng thét chói tai ban đầu chuyển thành tập thể cổ vũ cho Hùng Đại."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000513_P003",
+      "parent_block_id": "arAbGLeCUsU_S000513",
+      "text_exact": "Đương nhiên, lúc Hùng Đại an ủi cũng không hề rảnh tay, đám nữ tử thấy Hùng Đại thì tâm lý cuối cùng cũng ổn định lại, không biết là ai gan lớn đã hô vang cổ vũ cho Hùng Đại một tiếng, sau đó những nữ tử còn lại như bị lây lan.",
+      "char_count": 227,
+      "word_count": 54,
+      "hints": {
+        "needs_ai_split_hint": true,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000513_P001",
+          "text": "Động tĩnh lớn như vậy, những nữ tử kia chắc chắn đã bị đánh thức, dù sao họ cũng không phải người chết."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000513_P002",
+          "text": "Sau khi tỉnh lại và hiểu rõ tình cảnh trước mắt, ai nấy đều sợ hãi thét chói tai, cuối cùng khiến Hùng Đại đau đầu, phải dùng lời lẽ nhẹ nhàng an ủi hồi lâu mới khiến họ bình tĩnh lại."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000513_P004",
+          "text": "từ tiếng thét chói tai ban đầu chuyển thành tập thể cổ vũ cho Hùng Đại."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000514_P001",
+          "text": "Hùng Đại thấy các tiểu tỷ tỷ đều cổ vũ cho mình, lúc này đánh người càng thêm hăng hái."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000513_P004",
+      "parent_block_id": "arAbGLeCUsU_S000513",
+      "text_exact": "từ tiếng thét chói tai ban đầu chuyển thành tập thể cổ vũ cho Hùng Đại.",
+      "char_count": 71,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000513_P002",
+          "text": "Sau khi tỉnh lại và hiểu rõ tình cảnh trước mắt, ai nấy đều sợ hãi thét chói tai, cuối cùng khiến Hùng Đại đau đầu, phải dùng lời lẽ nhẹ nhàng an ủi hồi lâu mới khiến họ bình tĩnh lại."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000513_P003",
+          "text": "Đương nhiên, lúc Hùng Đại an ủi cũng không hề rảnh tay, đám nữ tử thấy Hùng Đại thì tâm lý cuối cùng cũng ổn định lại, không biết là ai gan lớn đã hô vang cổ vũ cho Hùng Đại một tiếng, sau đó những nữ tử còn lại như bị lây lan."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000514_P001",
+          "text": "Hùng Đại thấy các tiểu tỷ tỷ đều cổ vũ cho mình, lúc này đánh người càng thêm hăng hái."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000514_P002",
+          "text": "Cũng may Hùng Đại nhớ kỹ lời Vương dần dặn nên không dám dùng sức."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000514_P001",
+      "parent_block_id": "arAbGLeCUsU_S000514",
+      "text_exact": "Hùng Đại thấy các tiểu tỷ tỷ đều cổ vũ cho mình, lúc này đánh người càng thêm hăng hái.",
+      "char_count": 87,
+      "word_count": 20,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000513_P003",
+          "text": "Đương nhiên, lúc Hùng Đại an ủi cũng không hề rảnh tay, đám nữ tử thấy Hùng Đại thì tâm lý cuối cùng cũng ổn định lại, không biết là ai gan lớn đã hô vang cổ vũ cho Hùng Đại một tiếng, sau đó những nữ tử còn lại như bị lây lan."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000513_P004",
+          "text": "từ tiếng thét chói tai ban đầu chuyển thành tập thể cổ vũ cho Hùng Đại."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000514_P002",
+          "text": "Cũng may Hùng Đại nhớ kỹ lời Vương dần dặn nên không dám dùng sức."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P001",
+          "text": "Nếu không những kẻ này e là đã vỡ vụng thành từng mảnh ngay tại chỗ."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000514_P002",
+      "parent_block_id": "arAbGLeCUsU_S000514",
+      "text_exact": "Cũng may Hùng Đại nhớ kỹ lời Vương dần dặn nên không dám dùng sức.",
+      "char_count": 66,
+      "word_count": 15,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000513_P004",
+          "text": "từ tiếng thét chói tai ban đầu chuyển thành tập thể cổ vũ cho Hùng Đại."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000514_P001",
+          "text": "Hùng Đại thấy các tiểu tỷ tỷ đều cổ vũ cho mình, lúc này đánh người càng thêm hăng hái."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P001",
+          "text": "Nếu không những kẻ này e là đã vỡ vụng thành từng mảnh ngay tại chỗ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P002",
+          "text": "Phải biết rằng ban đầu Thái Qua là một con hổ nặng mấy trăm cân mà Hùng Đại còn có thể vỗ như vỗ rồi."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000515_P001",
+      "parent_block_id": "arAbGLeCUsU_S000515",
+      "text_exact": "Nếu không những kẻ này e là đã vỡ vụng thành từng mảnh ngay tại chỗ.",
+      "char_count": 68,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000514_P001",
+          "text": "Hùng Đại thấy các tiểu tỷ tỷ đều cổ vũ cho mình, lúc này đánh người càng thêm hăng hái."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000514_P002",
+          "text": "Cũng may Hùng Đại nhớ kỹ lời Vương dần dặn nên không dám dùng sức."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P002",
+          "text": "Phải biết rằng ban đầu Thái Qua là một con hổ nặng mấy trăm cân mà Hùng Đại còn có thể vỗ như vỗ rồi."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P003",
+          "text": "Hố Chi bọn họ chỉ là mấy con người, họ thật may mắn vì bị Hùng Đại tắt một cái là đã ngất đi ngay."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000515_P002",
+      "parent_block_id": "arAbGLeCUsU_S000515",
+      "text_exact": "Phải biết rằng ban đầu Thái Qua là một con hổ nặng mấy trăm cân mà Hùng Đại còn có thể vỗ như vỗ rồi.",
+      "char_count": 101,
+      "word_count": 25,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000514_P002",
+          "text": "Cũng may Hùng Đại nhớ kỹ lời Vương dần dặn nên không dám dùng sức."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P001",
+          "text": "Nếu không những kẻ này e là đã vỡ vụng thành từng mảnh ngay tại chỗ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P003",
+          "text": "Hố Chi bọn họ chỉ là mấy con người, họ thật may mắn vì bị Hùng Đại tắt một cái là đã ngất đi ngay."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P004",
+          "text": "Nhưng họ cũng thật bất hạnh, vì sau đó những nữ tử kia lại kéo đến đấm đá túi bụi, khiến họ đau đến mức tỉnh lại rồi lại ngất đi, cứ thế lặp lại mấy lần."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000515_P003",
+      "parent_block_id": "arAbGLeCUsU_S000515",
+      "text_exact": "Hố Chi bọn họ chỉ là mấy con người, họ thật may mắn vì bị Hùng Đại tắt một cái là đã ngất đi ngay.",
+      "char_count": 98,
+      "word_count": 25,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P001",
+          "text": "Nếu không những kẻ này e là đã vỡ vụng thành từng mảnh ngay tại chỗ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P002",
+          "text": "Phải biết rằng ban đầu Thái Qua là một con hổ nặng mấy trăm cân mà Hùng Đại còn có thể vỗ như vỗ rồi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P004",
+          "text": "Nhưng họ cũng thật bất hạnh, vì sau đó những nữ tử kia lại kéo đến đấm đá túi bụi, khiến họ đau đến mức tỉnh lại rồi lại ngất đi, cứ thế lặp lại mấy lần."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P005",
+          "text": "Thực ra những nữ tử này lúc đầu cũng không dám làm gì họ, dù sao chuyện trước kia khiến họ vẫn còn chút sợ hãi với nam nhân, nhất là loại nam nhân cầm thú này, nhưng sau đó thấy họ đều bị Hùng Đại đánh ngất, hơn nữa bên mình cộng lại cũng có đến ba bốn trăm người, còn sợ cái quái gì nữa, đánh luôn cho xong."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000515_P004",
+      "parent_block_id": "arAbGLeCUsU_S000515",
+      "text_exact": "Nhưng họ cũng thật bất hạnh, vì sau đó những nữ tử kia lại kéo đến đấm đá túi bụi, khiến họ đau đến mức tỉnh lại rồi lại ngất đi, cứ thế lặp lại mấy lần.",
+      "char_count": 153,
+      "word_count": 37,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P002",
+          "text": "Phải biết rằng ban đầu Thái Qua là một con hổ nặng mấy trăm cân mà Hùng Đại còn có thể vỗ như vỗ rồi."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P003",
+          "text": "Hố Chi bọn họ chỉ là mấy con người, họ thật may mắn vì bị Hùng Đại tắt một cái là đã ngất đi ngay."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P005",
+          "text": "Thực ra những nữ tử này lúc đầu cũng không dám làm gì họ, dù sao chuyện trước kia khiến họ vẫn còn chút sợ hãi với nam nhân, nhất là loại nam nhân cầm thú này, nhưng sau đó thấy họ đều bị Hùng Đại đánh ngất, hơn nữa bên mình cộng lại cũng có đến ba bốn trăm người, còn sợ cái quái gì nữa, đánh luôn cho xong."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P006",
+          "text": "Thế là càng đánh, trong lòng họ lại càng nhớ đến cuộc sống tăm tối bị giam cầm trước kia, cuối cùng dứt khoát coi những kẻ này là đám hòa thượng cầm thú đó mà ra tay nặng hơn."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000515_P005",
+      "parent_block_id": "arAbGLeCUsU_S000515",
+      "text_exact": "Thực ra những nữ tử này lúc đầu cũng không dám làm gì họ, dù sao chuyện trước kia khiến họ vẫn còn chút sợ hãi với nam nhân, nhất là loại nam nhân cầm thú này, nhưng sau đó thấy họ đều bị Hùng Đại đánh ngất, hơn nữa bên mình cộng lại cũng có đến ba bốn trăm người, còn sợ cái quái gì nữa, đánh luôn cho xong.",
+      "char_count": 308,
+      "word_count": 71,
+      "hints": {
+        "needs_ai_split_hint": true,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P003",
+          "text": "Hố Chi bọn họ chỉ là mấy con người, họ thật may mắn vì bị Hùng Đại tắt một cái là đã ngất đi ngay."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P004",
+          "text": "Nhưng họ cũng thật bất hạnh, vì sau đó những nữ tử kia lại kéo đến đấm đá túi bụi, khiến họ đau đến mức tỉnh lại rồi lại ngất đi, cứ thế lặp lại mấy lần."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P006",
+          "text": "Thế là càng đánh, trong lòng họ lại càng nhớ đến cuộc sống tăm tối bị giam cầm trước kia, cuối cùng dứt khoát coi những kẻ này là đám hòa thượng cầm thú đó mà ra tay nặng hơn."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P007",
+          "text": "Tuy nói sức phụ nữ không bằng đàn ông, nhưng đánh vào người thì vẫn đau thấu xương, nhất là khi những nữ tử này bị thù hận chi phối, tiềm lực bộc phát ra quả thực có chút đáng sợ."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000515_P006",
+      "parent_block_id": "arAbGLeCUsU_S000515",
+      "text_exact": "Thế là càng đánh, trong lòng họ lại càng nhớ đến cuộc sống tăm tối bị giam cầm trước kia, cuối cùng dứt khoát coi những kẻ này là đám hòa thượng cầm thú đó mà ra tay nặng hơn.",
+      "char_count": 175,
+      "word_count": 40,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P004",
+          "text": "Nhưng họ cũng thật bất hạnh, vì sau đó những nữ tử kia lại kéo đến đấm đá túi bụi, khiến họ đau đến mức tỉnh lại rồi lại ngất đi, cứ thế lặp lại mấy lần."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P005",
+          "text": "Thực ra những nữ tử này lúc đầu cũng không dám làm gì họ, dù sao chuyện trước kia khiến họ vẫn còn chút sợ hãi với nam nhân, nhất là loại nam nhân cầm thú này, nhưng sau đó thấy họ đều bị Hùng Đại đánh ngất, hơn nữa bên mình cộng lại cũng có đến ba bốn trăm người, còn sợ cái quái gì nữa, đánh luôn cho xong."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P007",
+          "text": "Tuy nói sức phụ nữ không bằng đàn ông, nhưng đánh vào người thì vẫn đau thấu xương, nhất là khi những nữ tử này bị thù hận chi phối, tiềm lực bộc phát ra quả thực có chút đáng sợ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P008",
+          "text": "Chầy ra sức thịt chỉ là chuyện nhỏ."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000515_P007",
+      "parent_block_id": "arAbGLeCUsU_S000515",
+      "text_exact": "Tuy nói sức phụ nữ không bằng đàn ông, nhưng đánh vào người thì vẫn đau thấu xương, nhất là khi những nữ tử này bị thù hận chi phối, tiềm lực bộc phát ra quả thực có chút đáng sợ.",
+      "char_count": 179,
+      "word_count": 41,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P005",
+          "text": "Thực ra những nữ tử này lúc đầu cũng không dám làm gì họ, dù sao chuyện trước kia khiến họ vẫn còn chút sợ hãi với nam nhân, nhất là loại nam nhân cầm thú này, nhưng sau đó thấy họ đều bị Hùng Đại đánh ngất, hơn nữa bên mình cộng lại cũng có đến ba bốn trăm người, còn sợ cái quái gì nữa, đánh luôn cho xong."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P006",
+          "text": "Thế là càng đánh, trong lòng họ lại càng nhớ đến cuộc sống tăm tối bị giam cầm trước kia, cuối cùng dứt khoát coi những kẻ này là đám hòa thượng cầm thú đó mà ra tay nặng hơn."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P008",
+          "text": "Chầy ra sức thịt chỉ là chuyện nhỏ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P009",
+          "text": "Nếu không phải cuối cùng Hùng Đại kịp thời ngăn cản, mấy tên cầm thú này đã bị đánh chết tươi ngay tại chỗ."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000515_P008",
+      "parent_block_id": "arAbGLeCUsU_S000515",
+      "text_exact": "Chầy ra sức thịt chỉ là chuyện nhỏ.",
+      "char_count": 35,
+      "word_count": 8,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P006",
+          "text": "Thế là càng đánh, trong lòng họ lại càng nhớ đến cuộc sống tăm tối bị giam cầm trước kia, cuối cùng dứt khoát coi những kẻ này là đám hòa thượng cầm thú đó mà ra tay nặng hơn."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P007",
+          "text": "Tuy nói sức phụ nữ không bằng đàn ông, nhưng đánh vào người thì vẫn đau thấu xương, nhất là khi những nữ tử này bị thù hận chi phối, tiềm lực bộc phát ra quả thực có chút đáng sợ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P009",
+          "text": "Nếu không phải cuối cùng Hùng Đại kịp thời ngăn cản, mấy tên cầm thú này đã bị đánh chết tươi ngay tại chỗ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P010",
+          "text": "Hùng đại ngăn cản không phải vì muốn cứu mạng họ."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000515_P009",
+      "parent_block_id": "arAbGLeCUsU_S000515",
+      "text_exact": "Nếu không phải cuối cùng Hùng Đại kịp thời ngăn cản, mấy tên cầm thú này đã bị đánh chết tươi ngay tại chỗ.",
+      "char_count": 107,
+      "word_count": 24,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P007",
+          "text": "Tuy nói sức phụ nữ không bằng đàn ông, nhưng đánh vào người thì vẫn đau thấu xương, nhất là khi những nữ tử này bị thù hận chi phối, tiềm lực bộc phát ra quả thực có chút đáng sợ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P008",
+          "text": "Chầy ra sức thịt chỉ là chuyện nhỏ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P010",
+          "text": "Hùng đại ngăn cản không phải vì muốn cứu mạng họ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P011",
+          "text": "Theo ý Hùng Đại thì những kẻ muốn làm chuyện xấu với các tiểu tỷ tỷ này có đánh chết cũng không tiếc, chỉ là chủ nhân trước đó đã dặn phải để lại người sống để chủ nhân tự mình xử lý."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000515_P010",
+      "parent_block_id": "arAbGLeCUsU_S000515",
+      "text_exact": "Hùng đại ngăn cản không phải vì muốn cứu mạng họ.",
+      "char_count": 49,
+      "word_count": 11,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P008",
+          "text": "Chầy ra sức thịt chỉ là chuyện nhỏ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P009",
+          "text": "Nếu không phải cuối cùng Hùng Đại kịp thời ngăn cản, mấy tên cầm thú này đã bị đánh chết tươi ngay tại chỗ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P011",
+          "text": "Theo ý Hùng Đại thì những kẻ muốn làm chuyện xấu với các tiểu tỷ tỷ này có đánh chết cũng không tiếc, chỉ là chủ nhân trước đó đã dặn phải để lại người sống để chủ nhân tự mình xử lý."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P012",
+          "text": "Ngày hôm sau, Vương Dần biết chuyện này, lập tức đưa Trình Lăng Tuyết lái xe chạy đến thôn Thượng Thủy."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000515_P011",
+      "parent_block_id": "arAbGLeCUsU_S000515",
+      "text_exact": "Theo ý Hùng Đại thì những kẻ muốn làm chuyện xấu với các tiểu tỷ tỷ này có đánh chết cũng không tiếc, chỉ là chủ nhân trước đó đã dặn phải để lại người sống để chủ nhân tự mình xử lý.",
+      "char_count": 183,
+      "word_count": 43,
+      "hints": {
+        "needs_ai_split_hint": true,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P009",
+          "text": "Nếu không phải cuối cùng Hùng Đại kịp thời ngăn cản, mấy tên cầm thú này đã bị đánh chết tươi ngay tại chỗ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P010",
+          "text": "Hùng đại ngăn cản không phải vì muốn cứu mạng họ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P012",
+          "text": "Ngày hôm sau, Vương Dần biết chuyện này, lập tức đưa Trình Lăng Tuyết lái xe chạy đến thôn Thượng Thủy."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P013",
+          "text": "Trời ạ, nơi Thâm Sơn cùng cốc này đúng là sinh ra điêu dân thật mà."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000515_P012",
+      "parent_block_id": "arAbGLeCUsU_S000515",
+      "text_exact": "Ngày hôm sau, Vương Dần biết chuyện này, lập tức đưa Trình Lăng Tuyết lái xe chạy đến thôn Thượng Thủy.",
+      "char_count": 103,
+      "word_count": 21,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P010",
+          "text": "Hùng đại ngăn cản không phải vì muốn cứu mạng họ."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P011",
+          "text": "Theo ý Hùng Đại thì những kẻ muốn làm chuyện xấu với các tiểu tỷ tỷ này có đánh chết cũng không tiếc, chỉ là chủ nhân trước đó đã dặn phải để lại người sống để chủ nhân tự mình xử lý."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P013",
+          "text": "Trời ạ, nơi Thâm Sơn cùng cốc này đúng là sinh ra điêu dân thật mà."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P014",
+          "text": "Đi tới cửa sơ động, thấy mấy cái bánh trưng bị quấn chặt cứng, Vương Dần nhất thời phì cười, \"Hay thật, đây chẳng phải là mấy cái xác ước sống sao?"
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000515_P013",
+      "parent_block_id": "arAbGLeCUsU_S000515",
+      "text_exact": "Trời ạ, nơi Thâm Sơn cùng cốc này đúng là sinh ra điêu dân thật mà.",
+      "char_count": 67,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P011",
+          "text": "Theo ý Hùng Đại thì những kẻ muốn làm chuyện xấu với các tiểu tỷ tỷ này có đánh chết cũng không tiếc, chỉ là chủ nhân trước đó đã dặn phải để lại người sống để chủ nhân tự mình xử lý."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P012",
+          "text": "Ngày hôm sau, Vương Dần biết chuyện này, lập tức đưa Trình Lăng Tuyết lái xe chạy đến thôn Thượng Thủy."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P014",
+          "text": "Đi tới cửa sơ động, thấy mấy cái bánh trưng bị quấn chặt cứng, Vương Dần nhất thời phì cười, \"Hay thật, đây chẳng phải là mấy cái xác ước sống sao?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P015",
+          "text": "Chủ nhân Hùng Đại thấy Vương Dần đến, liền đứng bằng hai chân sau."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000515_P014",
+      "parent_block_id": "arAbGLeCUsU_S000515",
+      "text_exact": "Đi tới cửa sơ động, thấy mấy cái bánh trưng bị quấn chặt cứng, Vương Dần nhất thời phì cười, \"Hay thật, đây chẳng phải là mấy cái xác ước sống sao?",
+      "char_count": 147,
+      "word_count": 32,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P012",
+          "text": "Ngày hôm sau, Vương Dần biết chuyện này, lập tức đưa Trình Lăng Tuyết lái xe chạy đến thôn Thượng Thủy."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P013",
+          "text": "Trời ạ, nơi Thâm Sơn cùng cốc này đúng là sinh ra điêu dân thật mà."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P015",
+          "text": "Chủ nhân Hùng Đại thấy Vương Dần đến, liền đứng bằng hai chân sau."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P016",
+          "text": "Huynh Hịch lao tới, ôm trầm lấy Vương Dần."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000515_P015",
+      "parent_block_id": "arAbGLeCUsU_S000515",
+      "text_exact": "Chủ nhân Hùng Đại thấy Vương Dần đến, liền đứng bằng hai chân sau.",
+      "char_count": 66,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P013",
+          "text": "Trời ạ, nơi Thâm Sơn cùng cốc này đúng là sinh ra điêu dân thật mà."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P014",
+          "text": "Đi tới cửa sơ động, thấy mấy cái bánh trưng bị quấn chặt cứng, Vương Dần nhất thời phì cười, \"Hay thật, đây chẳng phải là mấy cái xác ước sống sao?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P016",
+          "text": "Huynh Hịch lao tới, ôm trầm lấy Vương Dần."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P017",
+          "text": "Ta nhớ người quá, đã lâu lắm rồi người không đến thăm ta, những con vật này sau khi dùng thuốc cải tạo cơ thể đều trung thành 100% với Vương Dần."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000515_P016",
+      "parent_block_id": "arAbGLeCUsU_S000515",
+      "text_exact": "Huynh Hịch lao tới, ôm trầm lấy Vương Dần.",
+      "char_count": 42,
+      "word_count": 9,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P014",
+          "text": "Đi tới cửa sơ động, thấy mấy cái bánh trưng bị quấn chặt cứng, Vương Dần nhất thời phì cười, \"Hay thật, đây chẳng phải là mấy cái xác ước sống sao?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P015",
+          "text": "Chủ nhân Hùng Đại thấy Vương Dần đến, liền đứng bằng hai chân sau."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P017",
+          "text": "Ta nhớ người quá, đã lâu lắm rồi người không đến thăm ta, những con vật này sau khi dùng thuốc cải tạo cơ thể đều trung thành 100% với Vương Dần."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000516_P001",
+          "text": "Lâu như vậy không gặp, Hồng Đại quả thực là nhớ hắn đến phát điên."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000515_P017",
+      "parent_block_id": "arAbGLeCUsU_S000515",
+      "text_exact": "Ta nhớ người quá, đã lâu lắm rồi người không đến thăm ta, những con vật này sau khi dùng thuốc cải tạo cơ thể đều trung thành 100% với Vương Dần.",
+      "char_count": 145,
+      "word_count": 32,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P015",
+          "text": "Chủ nhân Hùng Đại thấy Vương Dần đến, liền đứng bằng hai chân sau."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P016",
+          "text": "Huynh Hịch lao tới, ôm trầm lấy Vương Dần."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000516_P001",
+          "text": "Lâu như vậy không gặp, Hồng Đại quả thực là nhớ hắn đến phát điên."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000516_P002",
+          "text": "Tiểu tử làm tốt lắm."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000516_P001",
+      "parent_block_id": "arAbGLeCUsU_S000516",
+      "text_exact": "Lâu như vậy không gặp, Hồng Đại quả thực là nhớ hắn đến phát điên.",
+      "char_count": 66,
+      "word_count": 15,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P016",
+          "text": "Huynh Hịch lao tới, ôm trầm lấy Vương Dần."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P017",
+          "text": "Ta nhớ người quá, đã lâu lắm rồi người không đến thăm ta, những con vật này sau khi dùng thuốc cải tạo cơ thể đều trung thành 100% với Vương Dần."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000516_P002",
+          "text": "Tiểu tử làm tốt lắm."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000516_P003",
+          "text": "Vương Dần hài lòng xa đầu nó."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000516_P002",
+      "parent_block_id": "arAbGLeCUsU_S000516",
+      "text_exact": "Tiểu tử làm tốt lắm.",
+      "char_count": 20,
+      "word_count": 5,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000515_P017",
+          "text": "Ta nhớ người quá, đã lâu lắm rồi người không đến thăm ta, những con vật này sau khi dùng thuốc cải tạo cơ thể đều trung thành 100% với Vương Dần."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000516_P001",
+          "text": "Lâu như vậy không gặp, Hồng Đại quả thực là nhớ hắn đến phát điên."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000516_P003",
+          "text": "Vương Dần hài lòng xa đầu nó."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000517_P001",
+          "text": "Chà, một thời gian không gặp mà trọng lượng cơ thể ngươi lại tăng vào rồi."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000516_P003",
+      "parent_block_id": "arAbGLeCUsU_S000516",
+      "text_exact": "Vương Dần hài lòng xa đầu nó.",
+      "char_count": 29,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000516_P001",
+          "text": "Lâu như vậy không gặp, Hồng Đại quả thực là nhớ hắn đến phát điên."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000516_P002",
+          "text": "Tiểu tử làm tốt lắm."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000517_P001",
+          "text": "Chà, một thời gian không gặp mà trọng lượng cơ thể ngươi lại tăng vào rồi."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P001",
+          "text": "Nghe vậy, Hùng Đại vui vẻ dùng cái mặt to cọ cọ vào mặt Vương Dần."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000517_P001",
+      "parent_block_id": "arAbGLeCUsU_S000517",
+      "text_exact": "Chà, một thời gian không gặp mà trọng lượng cơ thể ngươi lại tăng vào rồi.",
+      "char_count": 74,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000516_P002",
+          "text": "Tiểu tử làm tốt lắm."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000516_P003",
+          "text": "Vương Dần hài lòng xa đầu nó."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P001",
+          "text": "Nghe vậy, Hùng Đại vui vẻ dùng cái mặt to cọ cọ vào mặt Vương Dần."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P002",
+          "text": "Đến khi thấy nó định thè lưỡi liếm mặt mình, Vương Dần dứt khoát đẩy ra."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000518_P001",
+      "parent_block_id": "arAbGLeCUsU_S000518",
+      "text_exact": "Nghe vậy, Hùng Đại vui vẻ dùng cái mặt to cọ cọ vào mặt Vương Dần.",
+      "char_count": 66,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000516_P003",
+          "text": "Vương Dần hài lòng xa đầu nó."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000517_P001",
+          "text": "Chà, một thời gian không gặp mà trọng lượng cơ thể ngươi lại tăng vào rồi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P002",
+          "text": "Đến khi thấy nó định thè lưỡi liếm mặt mình, Vương Dần dứt khoát đẩy ra."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P003",
+          "text": "\"Cái này thì thôi đi, nếu bị ngươi liếm đầy mặt nước miếng thì ta lại phải đi dược."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000518_P002",
+      "parent_block_id": "arAbGLeCUsU_S000518",
+      "text_exact": "Đến khi thấy nó định thè lưỡi liếm mặt mình, Vương Dần dứt khoát đẩy ra.",
+      "char_count": 72,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000517_P001",
+          "text": "Chà, một thời gian không gặp mà trọng lượng cơ thể ngươi lại tăng vào rồi."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P001",
+          "text": "Nghe vậy, Hùng Đại vui vẻ dùng cái mặt to cọ cọ vào mặt Vương Dần."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P003",
+          "text": "\"Cái này thì thôi đi, nếu bị ngươi liếm đầy mặt nước miếng thì ta lại phải đi dược."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P004",
+          "text": "Hùng Đại, có nhớ tỷ tỷ không?"
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000518_P003",
+      "parent_block_id": "arAbGLeCUsU_S000518",
+      "text_exact": "\"Cái này thì thôi đi, nếu bị ngươi liếm đầy mặt nước miếng thì ta lại phải đi dược.",
+      "char_count": 83,
+      "word_count": 19,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P001",
+          "text": "Nghe vậy, Hùng Đại vui vẻ dùng cái mặt to cọ cọ vào mặt Vương Dần."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P002",
+          "text": "Đến khi thấy nó định thè lưỡi liếm mặt mình, Vương Dần dứt khoát đẩy ra."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P004",
+          "text": "Hùng Đại, có nhớ tỷ tỷ không?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P005",
+          "text": "Thấy Vương Dần đẩy Hùng đại gia, Trình Lăng Tuyết lập tức sáp tới, xoa xoa đám lông trắng trước ngực nó."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000518_P004",
+      "parent_block_id": "arAbGLeCUsU_S000518",
+      "text_exact": "Hùng Đại, có nhớ tỷ tỷ không?",
+      "char_count": 29,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P002",
+          "text": "Đến khi thấy nó định thè lưỡi liếm mặt mình, Vương Dần dứt khoát đẩy ra."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P003",
+          "text": "\"Cái này thì thôi đi, nếu bị ngươi liếm đầy mặt nước miếng thì ta lại phải đi dược."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P005",
+          "text": "Thấy Vương Dần đẩy Hùng đại gia, Trình Lăng Tuyết lập tức sáp tới, xoa xoa đám lông trắng trước ngực nó."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P006",
+          "text": "\"Nhiều ngày không gặp, ngươi trông càng đáng yêu hơn rồi đấy.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000518_P005",
+      "parent_block_id": "arAbGLeCUsU_S000518",
+      "text_exact": "Thấy Vương Dần đẩy Hùng đại gia, Trình Lăng Tuyết lập tức sáp tới, xoa xoa đám lông trắng trước ngực nó.",
+      "char_count": 104,
+      "word_count": 22,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P003",
+          "text": "\"Cái này thì thôi đi, nếu bị ngươi liếm đầy mặt nước miếng thì ta lại phải đi dược."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P004",
+          "text": "Hùng Đại, có nhớ tỷ tỷ không?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P006",
+          "text": "\"Nhiều ngày không gặp, ngươi trông càng đáng yêu hơn rồi đấy.\""
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P007",
+          "text": "\"Tỷ tỷ, ta cũng rất nhớ người.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000518_P006",
+      "parent_block_id": "arAbGLeCUsU_S000518",
+      "text_exact": "\"Nhiều ngày không gặp, ngươi trông càng đáng yêu hơn rồi đấy.\"",
+      "char_count": 62,
+      "word_count": 12,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P004",
+          "text": "Hùng Đại, có nhớ tỷ tỷ không?"
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P005",
+          "text": "Thấy Vương Dần đẩy Hùng đại gia, Trình Lăng Tuyết lập tức sáp tới, xoa xoa đám lông trắng trước ngực nó."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P007",
+          "text": "\"Tỷ tỷ, ta cũng rất nhớ người.\""
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P008",
+          "text": "Thấy Trình Lăng Tuyết chào hỏi mình, Hùng Đại lại vui vẻ sát tới chơi đùa cùng nàng."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000518_P007",
+      "parent_block_id": "arAbGLeCUsU_S000518",
+      "text_exact": "\"Tỷ tỷ, ta cũng rất nhớ người.\"",
+      "char_count": 31,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P005",
+          "text": "Thấy Vương Dần đẩy Hùng đại gia, Trình Lăng Tuyết lập tức sáp tới, xoa xoa đám lông trắng trước ngực nó."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P006",
+          "text": "\"Nhiều ngày không gặp, ngươi trông càng đáng yêu hơn rồi đấy.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P008",
+          "text": "Thấy Trình Lăng Tuyết chào hỏi mình, Hùng Đại lại vui vẻ sát tới chơi đùa cùng nàng."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P009",
+          "text": "Bái kiến tiên nhân."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000518_P008",
+      "parent_block_id": "arAbGLeCUsU_S000518",
+      "text_exact": "Thấy Trình Lăng Tuyết chào hỏi mình, Hùng Đại lại vui vẻ sát tới chơi đùa cùng nàng.",
+      "char_count": 84,
+      "word_count": 18,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P006",
+          "text": "\"Nhiều ngày không gặp, ngươi trông càng đáng yêu hơn rồi đấy.\""
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P007",
+          "text": "\"Tỷ tỷ, ta cũng rất nhớ người.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P009",
+          "text": "Bái kiến tiên nhân."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P010",
+          "text": "Thấy Vương Dần và Hùng Đại tương tác xong, đám nữ tử vội vàng cung kính hành lễ với Vương Dần."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000518_P009",
+      "parent_block_id": "arAbGLeCUsU_S000518",
+      "text_exact": "Bái kiến tiên nhân.",
+      "char_count": 19,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P007",
+          "text": "\"Tỷ tỷ, ta cũng rất nhớ người.\""
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P008",
+          "text": "Thấy Trình Lăng Tuyết chào hỏi mình, Hùng Đại lại vui vẻ sát tới chơi đùa cùng nàng."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P010",
+          "text": "Thấy Vương Dần và Hùng Đại tương tác xong, đám nữ tử vội vàng cung kính hành lễ với Vương Dần."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P011",
+          "text": "Vương Dần giơ tay ra hiệu Không cần đa lễ, ngay sau đó chạy vào trong sơn động kiểm tra."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000518_P010",
+      "parent_block_id": "arAbGLeCUsU_S000518",
+      "text_exact": "Thấy Vương Dần và Hùng Đại tương tác xong, đám nữ tử vội vàng cung kính hành lễ với Vương Dần.",
+      "char_count": 94,
+      "word_count": 21,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P008",
+          "text": "Thấy Trình Lăng Tuyết chào hỏi mình, Hùng Đại lại vui vẻ sát tới chơi đùa cùng nàng."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P009",
+          "text": "Bái kiến tiên nhân."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P011",
+          "text": "Vương Dần giơ tay ra hiệu Không cần đa lễ, ngay sau đó chạy vào trong sơn động kiểm tra."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000519_P001",
+          "text": "Nhìn chung không có gì thay đổi so với lúc hắn rời đi vài tháng trước."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000518_P011",
+      "parent_block_id": "arAbGLeCUsU_S000518",
+      "text_exact": "Vương Dần giơ tay ra hiệu Không cần đa lễ, ngay sau đó chạy vào trong sơn động kiểm tra.",
+      "char_count": 88,
+      "word_count": 20,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P009",
+          "text": "Bái kiến tiên nhân."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P010",
+          "text": "Thấy Vương Dần và Hùng Đại tương tác xong, đám nữ tử vội vàng cung kính hành lễ với Vương Dần."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000519_P001",
+          "text": "Nhìn chung không có gì thay đổi so với lúc hắn rời đi vài tháng trước."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000519_P002",
+          "text": "Nếu nói có thì chính là đống sợi và vải chất cao như núi đã không còn nữa."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000519_P001",
+      "parent_block_id": "arAbGLeCUsU_S000519",
+      "text_exact": "Nhìn chung không có gì thay đổi so với lúc hắn rời đi vài tháng trước.",
+      "char_count": 70,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P010",
+          "text": "Thấy Vương Dần và Hùng Đại tương tác xong, đám nữ tử vội vàng cung kính hành lễ với Vương Dần."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P011",
+          "text": "Vương Dần giơ tay ra hiệu Không cần đa lễ, ngay sau đó chạy vào trong sơn động kiểm tra."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000519_P002",
+          "text": "Nếu nói có thì chính là đống sợi và vải chất cao như núi đã không còn nữa."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000519_P003",
+          "text": "Hơn nữa Vương Dần phát hiện trên bàn trong sơn động có thêm mấy thứ giống như bình hoa, bên trong cắm một ít hoa dại không tên."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000519_P002",
+      "parent_block_id": "arAbGLeCUsU_S000519",
+      "text_exact": "Nếu nói có thì chính là đống sợi và vải chất cao như núi đã không còn nữa.",
+      "char_count": 74,
+      "word_count": 18,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000518_P011",
+          "text": "Vương Dần giơ tay ra hiệu Không cần đa lễ, ngay sau đó chạy vào trong sơn động kiểm tra."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000519_P001",
+          "text": "Nhìn chung không có gì thay đổi so với lúc hắn rời đi vài tháng trước."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000519_P003",
+          "text": "Hơn nữa Vương Dần phát hiện trên bàn trong sơn động có thêm mấy thứ giống như bình hoa, bên trong cắm một ít hoa dại không tên."
+        }
+      ]
+    },
+    {
+      "piece_id": "arAbGLeCUsU_S000519_P003",
+      "parent_block_id": "arAbGLeCUsU_S000519",
+      "text_exact": "Hơn nữa Vương Dần phát hiện trên bàn trong sơn động có thêm mấy thứ giống như bình hoa, bên trong cắm một ít hoa dại không tên.",
+      "char_count": 127,
+      "word_count": 28,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "arAbGLeCUsU_S000519_P001",
+          "text": "Nhìn chung không có gì thay đổi so với lúc hắn rời đi vài tháng trước."
+        },
+        {
+          "piece_id": "arAbGLeCUsU_S000519_P002",
+          "text": "Nếu nói có thì chính là đống sợi và vải chất cao như núi đã không còn nữa."
+        }
+      ],
+      "next_context": []
+    }
+  ]
+}

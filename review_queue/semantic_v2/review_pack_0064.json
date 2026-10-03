@@ -1,0 +1,3328 @@
+{
+  "pack_id": "review_pack_0064",
+  "video_id": "vimmfFJdrYM",
+  "rules": [
+    "ChatGPT reviews directly from GitHub. No external LLM API is required.",
+    "Do not rewrite source text in this stage.",
+    "Every output segment must preserve source words/order exactly.",
+    "Use context for tiny fragments; tiny does not automatically mean DROP.",
+    "PHONETIC_CROWDING_RISK is not an automatic DROP.",
+    "If splitting a piece further, concatenated text must equal text_exact after whitespace normalization."
+  ],
+  "allowed_labels": [
+    "KEEP_CANDIDATE",
+    "DROP_FRAGMENT",
+    "BROKEN_TEXT",
+    "WEIRD_PHRASE",
+    "PARALINGUISTIC",
+    "STUTTER_OR_REPEAT",
+    "PHONETIC_CROWDING_RISK",
+    "NEED_CONTEXT"
+  ],
+  "items": [
+    {
+      "piece_id": "vimmfFJdrYM_S000495_P002",
+      "parent_block_id": "vimmfFJdrYM_S000495",
+      "text_exact": "Chẳng phải nói tiên nhân biết bấm độ sao?",
+      "char_count": 41,
+      "word_count": 9,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000494_P017",
+          "text": "Đám sát thủ mai phục gần đó thấy vậy đều ngơ ngác."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000495_P001",
+          "text": "Thế này là xong rồi sao?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000495_P003",
+          "text": "lo lắng Vương Dần đang bày mưu, đám sát thủ nán lại tại chỗ chờ thêm nửa tiếng đồng hồ."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000495_P004",
+          "text": "Thấy Vương Dần nằm đó bất động suốt một khắc đồng hồ, đám sát thủ rốt cuộc lấy hết khan đảm, từ từ tiến lại gần Vương Dần."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000495_P003",
+      "parent_block_id": "vimmfFJdrYM_S000495",
+      "text_exact": "lo lắng Vương Dần đang bày mưu, đám sát thủ nán lại tại chỗ chờ thêm nửa tiếng đồng hồ.",
+      "char_count": 87,
+      "word_count": 20,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000495_P001",
+          "text": "Thế này là xong rồi sao?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000495_P002",
+          "text": "Chẳng phải nói tiên nhân biết bấm độ sao?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000495_P004",
+          "text": "Thấy Vương Dần nằm đó bất động suốt một khắc đồng hồ, đám sát thủ rốt cuộc lấy hết khan đảm, từ từ tiến lại gần Vương Dần."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P001",
+          "text": "Vừa đi vừa đề phòng xung quanh, sợ có đội quân nào đột nhiên xông ra, ai nấy đều nắm chặt binh khí trong tay, bộ dạng như Lâm đại địch, kết quả bọn họ chắc chắn phải thất vọng rồi."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000495_P004",
+      "parent_block_id": "vimmfFJdrYM_S000495",
+      "text_exact": "Thấy Vương Dần nằm đó bất động suốt một khắc đồng hồ, đám sát thủ rốt cuộc lấy hết khan đảm, từ từ tiến lại gần Vương Dần.",
+      "char_count": 122,
+      "word_count": 28,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000495_P002",
+          "text": "Chẳng phải nói tiên nhân biết bấm độ sao?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000495_P003",
+          "text": "lo lắng Vương Dần đang bày mưu, đám sát thủ nán lại tại chỗ chờ thêm nửa tiếng đồng hồ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P001",
+          "text": "Vừa đi vừa đề phòng xung quanh, sợ có đội quân nào đột nhiên xông ra, ai nấy đều nắm chặt binh khí trong tay, bộ dạng như Lâm đại địch, kết quả bọn họ chắc chắn phải thất vọng rồi."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P002",
+          "text": "Cho đến khi hơn trăm người này bao vây Vương Dần ký mít, xung quanh vẫn không có bất kỳ biến cố nào xảy ra."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000496_P001",
+      "parent_block_id": "vimmfFJdrYM_S000496",
+      "text_exact": "Vừa đi vừa đề phòng xung quanh, sợ có đội quân nào đột nhiên xông ra, ai nấy đều nắm chặt binh khí trong tay, bộ dạng như Lâm đại địch, kết quả bọn họ chắc chắn phải thất vọng rồi.",
+      "char_count": 180,
+      "word_count": 41,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000495_P003",
+          "text": "lo lắng Vương Dần đang bày mưu, đám sát thủ nán lại tại chỗ chờ thêm nửa tiếng đồng hồ."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000495_P004",
+          "text": "Thấy Vương Dần nằm đó bất động suốt một khắc đồng hồ, đám sát thủ rốt cuộc lấy hết khan đảm, từ từ tiến lại gần Vương Dần."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P002",
+          "text": "Cho đến khi hơn trăm người này bao vây Vương Dần ký mít, xung quanh vẫn không có bất kỳ biến cố nào xảy ra."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P003",
+          "text": "Tên cầm đầu áo đen ra hiệu cho đàn em bên cạnh."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000496_P002",
+      "parent_block_id": "vimmfFJdrYM_S000496",
+      "text_exact": "Cho đến khi hơn trăm người này bao vây Vương Dần ký mít, xung quanh vẫn không có bất kỳ biến cố nào xảy ra.",
+      "char_count": 107,
+      "word_count": 25,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000495_P004",
+          "text": "Thấy Vương Dần nằm đó bất động suốt một khắc đồng hồ, đám sát thủ rốt cuộc lấy hết khan đảm, từ từ tiến lại gần Vương Dần."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P001",
+          "text": "Vừa đi vừa đề phòng xung quanh, sợ có đội quân nào đột nhiên xông ra, ai nấy đều nắm chặt binh khí trong tay, bộ dạng như Lâm đại địch, kết quả bọn họ chắc chắn phải thất vọng rồi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P003",
+          "text": "Tên cầm đầu áo đen ra hiệu cho đàn em bên cạnh."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P004",
+          "text": "Mấy tên đàn em lập tức cõng dây thừng tiến tới bên cạnh Vương Dần, sau đó ra tay chói Vương Dần lại như một cái bánh chưng."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000496_P003",
+      "parent_block_id": "vimmfFJdrYM_S000496",
+      "text_exact": "Tên cầm đầu áo đen ra hiệu cho đàn em bên cạnh.",
+      "char_count": 47,
+      "word_count": 12,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P001",
+          "text": "Vừa đi vừa đề phòng xung quanh, sợ có đội quân nào đột nhiên xông ra, ai nấy đều nắm chặt binh khí trong tay, bộ dạng như Lâm đại địch, kết quả bọn họ chắc chắn phải thất vọng rồi."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P002",
+          "text": "Cho đến khi hơn trăm người này bao vây Vương Dần ký mít, xung quanh vẫn không có bất kỳ biến cố nào xảy ra."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P004",
+          "text": "Mấy tên đàn em lập tức cõng dây thừng tiến tới bên cạnh Vương Dần, sau đó ra tay chói Vương Dần lại như một cái bánh chưng."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P005",
+          "text": "Đúng nghĩa là một cái bánh trưng."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000496_P004",
+      "parent_block_id": "vimmfFJdrYM_S000496",
+      "text_exact": "Mấy tên đàn em lập tức cõng dây thừng tiến tới bên cạnh Vương Dần, sau đó ra tay chói Vương Dần lại như một cái bánh chưng.",
+      "char_count": 123,
+      "word_count": 28,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P002",
+          "text": "Cho đến khi hơn trăm người này bao vây Vương Dần ký mít, xung quanh vẫn không có bất kỳ biến cố nào xảy ra."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P003",
+          "text": "Tên cầm đầu áo đen ra hiệu cho đàn em bên cạnh."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P005",
+          "text": "Đúng nghĩa là một cái bánh trưng."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P006",
+          "text": "Mấy tên đàn em quấn dây thừng hết lớp này đến lớp khác, dây thừng quấn quanh dày đến hơn một thước, người ngoài nhìn vào căn bản không nhận ra đó là một con người."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000496_P005",
+      "parent_block_id": "vimmfFJdrYM_S000496",
+      "text_exact": "Đúng nghĩa là một cái bánh trưng.",
+      "char_count": 33,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P003",
+          "text": "Tên cầm đầu áo đen ra hiệu cho đàn em bên cạnh."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P004",
+          "text": "Mấy tên đàn em lập tức cõng dây thừng tiến tới bên cạnh Vương Dần, sau đó ra tay chói Vương Dần lại như một cái bánh chưng."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P006",
+          "text": "Mấy tên đàn em quấn dây thừng hết lớp này đến lớp khác, dây thừng quấn quanh dày đến hơn một thước, người ngoài nhìn vào căn bản không nhận ra đó là một con người."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P007",
+          "text": "Đám sát thủ nhất thời nhìn nhau ngơ ngác, cuối cùng khiêng cái bánh chưng lớn đi mất."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000496_P006",
+      "parent_block_id": "vimmfFJdrYM_S000496",
+      "text_exact": "Mấy tên đàn em quấn dây thừng hết lớp này đến lớp khác, dây thừng quấn quanh dày đến hơn một thước, người ngoài nhìn vào căn bản không nhận ra đó là một con người.",
+      "char_count": 163,
+      "word_count": 36,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P004",
+          "text": "Mấy tên đàn em lập tức cõng dây thừng tiến tới bên cạnh Vương Dần, sau đó ra tay chói Vương Dần lại như một cái bánh chưng."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P005",
+          "text": "Đúng nghĩa là một cái bánh trưng."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P007",
+          "text": "Đám sát thủ nhất thời nhìn nhau ngơ ngác, cuối cùng khiêng cái bánh chưng lớn đi mất."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P008",
+          "text": "Ư, ta đang ở đâu thế này?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000496_P007",
+      "parent_block_id": "vimmfFJdrYM_S000496",
+      "text_exact": "Đám sát thủ nhất thời nhìn nhau ngơ ngác, cuối cùng khiêng cái bánh chưng lớn đi mất.",
+      "char_count": 85,
+      "word_count": 18,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P005",
+          "text": "Đúng nghĩa là một cái bánh trưng."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P006",
+          "text": "Mấy tên đàn em quấn dây thừng hết lớp này đến lớp khác, dây thừng quấn quanh dày đến hơn một thước, người ngoài nhìn vào căn bản không nhận ra đó là một con người."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P008",
+          "text": "Ư, ta đang ở đâu thế này?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P009",
+          "text": "Vương Dần mơ màng tỉnh lại, định đưa tay xoa cái đầu đang choáng váng, kết quả cử động cánh tay như không nhấc lên nổi."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000496_P008",
+      "parent_block_id": "vimmfFJdrYM_S000496",
+      "text_exact": "Ư, ta đang ở đâu thế này?",
+      "char_count": 25,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P006",
+          "text": "Mấy tên đàn em quấn dây thừng hết lớp này đến lớp khác, dây thừng quấn quanh dày đến hơn một thước, người ngoài nhìn vào căn bản không nhận ra đó là một con người."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P007",
+          "text": "Đám sát thủ nhất thời nhìn nhau ngơ ngác, cuối cùng khiêng cái bánh chưng lớn đi mất."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P009",
+          "text": "Vương Dần mơ màng tỉnh lại, định đưa tay xoa cái đầu đang choáng váng, kết quả cử động cánh tay như không nhấc lên nổi."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P010",
+          "text": "Nhìn kỹ lại, hắn đang bị chói quạt tay sau lưng vào một cái cột lớn, trên người quấn đầy dây thừng hết lớp này đến lớp khác, dày đến gần hai thước."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000496_P009",
+      "parent_block_id": "vimmfFJdrYM_S000496",
+      "text_exact": "Vương Dần mơ màng tỉnh lại, định đưa tay xoa cái đầu đang choáng váng, kết quả cử động cánh tay như không nhấc lên nổi.",
+      "char_count": 119,
+      "word_count": 26,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P007",
+          "text": "Đám sát thủ nhất thời nhìn nhau ngơ ngác, cuối cùng khiêng cái bánh chưng lớn đi mất."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P008",
+          "text": "Ư, ta đang ở đâu thế này?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P010",
+          "text": "Nhìn kỹ lại, hắn đang bị chói quạt tay sau lưng vào một cái cột lớn, trên người quấn đầy dây thừng hết lớp này đến lớp khác, dày đến gần hai thước."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P011",
+          "text": "Chưa hết, bên ngoài dây thừng còn quấn thêm xích sắt và kẹp thép."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000496_P010",
+      "parent_block_id": "vimmfFJdrYM_S000496",
+      "text_exact": "Nhìn kỹ lại, hắn đang bị chói quạt tay sau lưng vào một cái cột lớn, trên người quấn đầy dây thừng hết lớp này đến lớp khác, dày đến gần hai thước.",
+      "char_count": 147,
+      "word_count": 33,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P008",
+          "text": "Ư, ta đang ở đâu thế này?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P009",
+          "text": "Vương Dần mơ màng tỉnh lại, định đưa tay xoa cái đầu đang choáng váng, kết quả cử động cánh tay như không nhấc lên nổi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P011",
+          "text": "Chưa hết, bên ngoài dây thừng còn quấn thêm xích sắt và kẹp thép."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P012",
+          "text": "Tóm lại là với cái đống này, dù có đổi thành một con gấu xám tới cũng đừng hòng thoát ra được."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000496_P011",
+      "parent_block_id": "vimmfFJdrYM_S000496",
+      "text_exact": "Chưa hết, bên ngoài dây thừng còn quấn thêm xích sắt và kẹp thép.",
+      "char_count": 65,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P009",
+          "text": "Vương Dần mơ màng tỉnh lại, định đưa tay xoa cái đầu đang choáng váng, kết quả cử động cánh tay như không nhấc lên nổi."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P010",
+          "text": "Nhìn kỹ lại, hắn đang bị chói quạt tay sau lưng vào một cái cột lớn, trên người quấn đầy dây thừng hết lớp này đến lớp khác, dày đến gần hai thước."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P012",
+          "text": "Tóm lại là với cái đống này, dù có đổi thành một con gấu xám tới cũng đừng hòng thoát ra được."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P013",
+          "text": "\"Tiên nhân tỉnh rồi sao?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000496_P012",
+      "parent_block_id": "vimmfFJdrYM_S000496",
+      "text_exact": "Tóm lại là với cái đống này, dù có đổi thành một con gấu xám tới cũng đừng hòng thoát ra được.",
+      "char_count": 94,
+      "word_count": 22,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P010",
+          "text": "Nhìn kỹ lại, hắn đang bị chói quạt tay sau lưng vào một cái cột lớn, trên người quấn đầy dây thừng hết lớp này đến lớp khác, dày đến gần hai thước."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P011",
+          "text": "Chưa hết, bên ngoài dây thừng còn quấn thêm xích sắt và kẹp thép."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P013",
+          "text": "\"Tiên nhân tỉnh rồi sao?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P014",
+          "text": "Đang lúc Vương Dần còn đang buồn bực, một giọng nói từ phía trước truyền tới."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000496_P013",
+      "parent_block_id": "vimmfFJdrYM_S000496",
+      "text_exact": "\"Tiên nhân tỉnh rồi sao?\"",
+      "char_count": 25,
+      "word_count": 5,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P011",
+          "text": "Chưa hết, bên ngoài dây thừng còn quấn thêm xích sắt và kẹp thép."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P012",
+          "text": "Tóm lại là với cái đống này, dù có đổi thành một con gấu xám tới cũng đừng hòng thoát ra được."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P014",
+          "text": "Đang lúc Vương Dần còn đang buồn bực, một giọng nói từ phía trước truyền tới."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P015",
+          "text": "Vương Dần ngẩng đầu nhìn lên, chỉ thấy mấy người đàn ông trung niên đang cười híp mắt nhìn mình."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000496_P014",
+      "parent_block_id": "vimmfFJdrYM_S000496",
+      "text_exact": "Đang lúc Vương Dần còn đang buồn bực, một giọng nói từ phía trước truyền tới.",
+      "char_count": 77,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P012",
+          "text": "Tóm lại là với cái đống này, dù có đổi thành một con gấu xám tới cũng đừng hòng thoát ra được."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P013",
+          "text": "\"Tiên nhân tỉnh rồi sao?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P015",
+          "text": "Vương Dần ngẩng đầu nhìn lên, chỉ thấy mấy người đàn ông trung niên đang cười híp mắt nhìn mình."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P016",
+          "text": "\"Các ngươi là ai?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000496_P015",
+      "parent_block_id": "vimmfFJdrYM_S000496",
+      "text_exact": "Vương Dần ngẩng đầu nhìn lên, chỉ thấy mấy người đàn ông trung niên đang cười híp mắt nhìn mình.",
+      "char_count": 96,
+      "word_count": 20,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P013",
+          "text": "\"Tiên nhân tỉnh rồi sao?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P014",
+          "text": "Đang lúc Vương Dần còn đang buồn bực, một giọng nói từ phía trước truyền tới."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P016",
+          "text": "\"Các ngươi là ai?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P017",
+          "text": "Tại sao lại bắt ta?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000496_P016",
+      "parent_block_id": "vimmfFJdrYM_S000496",
+      "text_exact": "\"Các ngươi là ai?",
+      "char_count": 17,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P014",
+          "text": "Đang lúc Vương Dần còn đang buồn bực, một giọng nói từ phía trước truyền tới."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P015",
+          "text": "Vương Dần ngẩng đầu nhìn lên, chỉ thấy mấy người đàn ông trung niên đang cười híp mắt nhìn mình."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P017",
+          "text": "Tại sao lại bắt ta?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P018",
+          "text": "Đây là nơi nào?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000496_P017",
+      "parent_block_id": "vimmfFJdrYM_S000496",
+      "text_exact": "Tại sao lại bắt ta?",
+      "char_count": 19,
+      "word_count": 5,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P015",
+          "text": "Vương Dần ngẩng đầu nhìn lên, chỉ thấy mấy người đàn ông trung niên đang cười híp mắt nhìn mình."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P016",
+          "text": "\"Các ngươi là ai?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P018",
+          "text": "Đây là nơi nào?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000497_P001",
+          "text": "Vương Dần mở miệng hỏi dồn dập ba câu."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000496_P018",
+      "parent_block_id": "vimmfFJdrYM_S000496",
+      "text_exact": "Đây là nơi nào?\"",
+      "char_count": 16,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P016",
+          "text": "\"Các ngươi là ai?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P017",
+          "text": "Tại sao lại bắt ta?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000497_P001",
+          "text": "Vương Dần mở miệng hỏi dồn dập ba câu."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P001",
+          "text": "Nhìn bộ dạng hiện tại của Vương Dần, trong lòng mấy người này rốt cuộc cũng thở phào nhẹ nhõm."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000497_P001",
+      "parent_block_id": "vimmfFJdrYM_S000497",
+      "text_exact": "Vương Dần mở miệng hỏi dồn dập ba câu.",
+      "char_count": 38,
+      "word_count": 9,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P017",
+          "text": "Tại sao lại bắt ta?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P018",
+          "text": "Đây là nơi nào?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P001",
+          "text": "Nhìn bộ dạng hiện tại của Vương Dần, trong lòng mấy người này rốt cuộc cũng thở phào nhẹ nhõm."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P002",
+          "text": "Lúc mới khiêng Vương Dần về đây, bọn họ quả thực đã giật mình, nhất là khi nghe nói quá trình thuận lợi đến kỳ lạ, ai nấy đều cảm thấy như đang nằm mơ."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000498_P001",
+      "parent_block_id": "vimmfFJdrYM_S000498",
+      "text_exact": "Nhìn bộ dạng hiện tại của Vương Dần, trong lòng mấy người này rốt cuộc cũng thở phào nhẹ nhõm.",
+      "char_count": 94,
+      "word_count": 20,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000496_P018",
+          "text": "Đây là nơi nào?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000497_P001",
+          "text": "Vương Dần mở miệng hỏi dồn dập ba câu."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P002",
+          "text": "Lúc mới khiêng Vương Dần về đây, bọn họ quả thực đã giật mình, nhất là khi nghe nói quá trình thuận lợi đến kỳ lạ, ai nấy đều cảm thấy như đang nằm mơ."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P003",
+          "text": "Sự thuận lợi này có phải là hơi quá mức không?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000498_P002",
+      "parent_block_id": "vimmfFJdrYM_S000498",
+      "text_exact": "Lúc mới khiêng Vương Dần về đây, bọn họ quả thực đã giật mình, nhất là khi nghe nói quá trình thuận lợi đến kỳ lạ, ai nấy đều cảm thấy như đang nằm mơ.",
+      "char_count": 151,
+      "word_count": 35,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000497_P001",
+          "text": "Vương Dần mở miệng hỏi dồn dập ba câu."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P001",
+          "text": "Nhìn bộ dạng hiện tại của Vương Dần, trong lòng mấy người này rốt cuộc cũng thở phào nhẹ nhõm."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P003",
+          "text": "Sự thuận lợi này có phải là hơi quá mức không?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P004",
+          "text": "lại chẳng có bất kỳ sự mai phục nào."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000498_P003",
+      "parent_block_id": "vimmfFJdrYM_S000498",
+      "text_exact": "Sự thuận lợi này có phải là hơi quá mức không?",
+      "char_count": 46,
+      "word_count": 11,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P001",
+          "text": "Nhìn bộ dạng hiện tại của Vương Dần, trong lòng mấy người này rốt cuộc cũng thở phào nhẹ nhõm."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P002",
+          "text": "Lúc mới khiêng Vương Dần về đây, bọn họ quả thực đã giật mình, nhất là khi nghe nói quá trình thuận lợi đến kỳ lạ, ai nấy đều cảm thấy như đang nằm mơ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P004",
+          "text": "lại chẳng có bất kỳ sự mai phục nào."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P005",
+          "text": "Vì tiên nhân này chẳng lẽ đầu óc có vấn đề thật sao?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000498_P004",
+      "parent_block_id": "vimmfFJdrYM_S000498",
+      "text_exact": "lại chẳng có bất kỳ sự mai phục nào.",
+      "char_count": 36,
+      "word_count": 9,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P002",
+          "text": "Lúc mới khiêng Vương Dần về đây, bọn họ quả thực đã giật mình, nhất là khi nghe nói quá trình thuận lợi đến kỳ lạ, ai nấy đều cảm thấy như đang nằm mơ."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P003",
+          "text": "Sự thuận lợi này có phải là hơi quá mức không?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P005",
+          "text": "Vì tiên nhân này chẳng lẽ đầu óc có vấn đề thật sao?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P001",
+          "text": "Chẳng phải sao?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000498_P005",
+      "parent_block_id": "vimmfFJdrYM_S000498",
+      "text_exact": "Vì tiên nhân này chẳng lẽ đầu óc có vấn đề thật sao?",
+      "char_count": 52,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P003",
+          "text": "Sự thuận lợi này có phải là hơi quá mức không?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P004",
+          "text": "lại chẳng có bất kỳ sự mai phục nào."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P001",
+          "text": "Chẳng phải sao?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P002",
+          "text": "Bây giờ Vương Dần bị hành hạ thành thế này rồi bắt tới đây rõ ràng là một quả hồng mềm mà."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000499_P001",
+      "parent_block_id": "vimmfFJdrYM_S000499",
+      "text_exact": "Chẳng phải sao?",
+      "char_count": 15,
+      "word_count": 3,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P004",
+          "text": "lại chẳng có bất kỳ sự mai phục nào."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P005",
+          "text": "Vì tiên nhân này chẳng lẽ đầu óc có vấn đề thật sao?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P002",
+          "text": "Bây giờ Vương Dần bị hành hạ thành thế này rồi bắt tới đây rõ ràng là một quả hồng mềm mà."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P003",
+          "text": "Cái gì mà tiên pháp chò má?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000499_P002",
+      "parent_block_id": "vimmfFJdrYM_S000499",
+      "text_exact": "Bây giờ Vương Dần bị hành hạ thành thế này rồi bắt tới đây rõ ràng là một quả hồng mềm mà.",
+      "char_count": 90,
+      "word_count": 22,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000498_P005",
+          "text": "Vì tiên nhân này chẳng lẽ đầu óc có vấn đề thật sao?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P001",
+          "text": "Chẳng phải sao?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P003",
+          "text": "Cái gì mà tiên pháp chò má?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P004",
+          "text": "Căn bản là không có đúng không?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000499_P003",
+      "parent_block_id": "vimmfFJdrYM_S000499",
+      "text_exact": "Cái gì mà tiên pháp chò má?",
+      "char_count": 27,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P001",
+          "text": "Chẳng phải sao?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P002",
+          "text": "Bây giờ Vương Dần bị hành hạ thành thế này rồi bắt tới đây rõ ràng là một quả hồng mềm mà."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P004",
+          "text": "Căn bản là không có đúng không?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P005",
+          "text": "Nếu có thì sao có thể bị người ta chói thành cái bánh trưng thế này?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000499_P004",
+      "parent_block_id": "vimmfFJdrYM_S000499",
+      "text_exact": "Căn bản là không có đúng không?",
+      "char_count": 31,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P002",
+          "text": "Bây giờ Vương Dần bị hành hạ thành thế này rồi bắt tới đây rõ ràng là một quả hồng mềm mà."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P003",
+          "text": "Cái gì mà tiên pháp chò má?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P005",
+          "text": "Nếu có thì sao có thể bị người ta chói thành cái bánh trưng thế này?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P006",
+          "text": "Nếu đã không có bất kỳ tiên pháp nào mà còn dám phơi mình ra ngoài như vậy, không phải đầu óc hỏng rồi thì là cái gì?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000499_P005",
+      "parent_block_id": "vimmfFJdrYM_S000499",
+      "text_exact": "Nếu có thì sao có thể bị người ta chói thành cái bánh trưng thế này?",
+      "char_count": 68,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P003",
+          "text": "Cái gì mà tiên pháp chò má?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P004",
+          "text": "Căn bản là không có đúng không?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P006",
+          "text": "Nếu đã không có bất kỳ tiên pháp nào mà còn dám phơi mình ra ngoài như vậy, không phải đầu óc hỏng rồi thì là cái gì?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P007",
+          "text": "Nhưng những điều đó không còn quan trọng nữa."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000499_P006",
+      "parent_block_id": "vimmfFJdrYM_S000499",
+      "text_exact": "Nếu đã không có bất kỳ tiên pháp nào mà còn dám phơi mình ra ngoài như vậy, không phải đầu óc hỏng rồi thì là cái gì?",
+      "char_count": 117,
+      "word_count": 28,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P004",
+          "text": "Căn bản là không có đúng không?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P005",
+          "text": "Nếu có thì sao có thể bị người ta chói thành cái bánh trưng thế này?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P007",
+          "text": "Nhưng những điều đó không còn quan trọng nữa."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P008",
+          "text": "Bây giờ vị tiên nhân này đã trở thành miếng thịt trên thớt rồi, còn sợ hắn có thể gây ra sóng gió gì được nữa sao?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000499_P007",
+      "parent_block_id": "vimmfFJdrYM_S000499",
+      "text_exact": "Nhưng những điều đó không còn quan trọng nữa.",
+      "char_count": 45,
+      "word_count": 9,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P005",
+          "text": "Nếu có thì sao có thể bị người ta chói thành cái bánh trưng thế này?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P006",
+          "text": "Nếu đã không có bất kỳ tiên pháp nào mà còn dám phơi mình ra ngoài như vậy, không phải đầu óc hỏng rồi thì là cái gì?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P008",
+          "text": "Bây giờ vị tiên nhân này đã trở thành miếng thịt trên thớt rồi, còn sợ hắn có thể gây ra sóng gió gì được nữa sao?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P009",
+          "text": "Chúng ta là ai?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000499_P008",
+      "parent_block_id": "vimmfFJdrYM_S000499",
+      "text_exact": "Bây giờ vị tiên nhân này đã trở thành miếng thịt trên thớt rồi, còn sợ hắn có thể gây ra sóng gió gì được nữa sao?",
+      "char_count": 114,
+      "word_count": 27,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P006",
+          "text": "Nếu đã không có bất kỳ tiên pháp nào mà còn dám phơi mình ra ngoài như vậy, không phải đầu óc hỏng rồi thì là cái gì?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P007",
+          "text": "Nhưng những điều đó không còn quan trọng nữa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P009",
+          "text": "Chúng ta là ai?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P010",
+          "text": "Ta nghĩ tiên nhân ngài chắc hẳn rất rõ ràng chứ?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000499_P009",
+      "parent_block_id": "vimmfFJdrYM_S000499",
+      "text_exact": "Chúng ta là ai?",
+      "char_count": 15,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P007",
+          "text": "Nhưng những điều đó không còn quan trọng nữa."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P008",
+          "text": "Bây giờ vị tiên nhân này đã trở thành miếng thịt trên thớt rồi, còn sợ hắn có thể gây ra sóng gió gì được nữa sao?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P010",
+          "text": "Ta nghĩ tiên nhân ngài chắc hẳn rất rõ ràng chứ?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000500_P001",
+          "text": "Một người đàn ông trung niên trong số đó cười híp mắt nói."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000499_P010",
+      "parent_block_id": "vimmfFJdrYM_S000499",
+      "text_exact": "Ta nghĩ tiên nhân ngài chắc hẳn rất rõ ràng chứ?",
+      "char_count": 48,
+      "word_count": 11,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P008",
+          "text": "Bây giờ vị tiên nhân này đã trở thành miếng thịt trên thớt rồi, còn sợ hắn có thể gây ra sóng gió gì được nữa sao?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P009",
+          "text": "Chúng ta là ai?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000500_P001",
+          "text": "Một người đàn ông trung niên trong số đó cười híp mắt nói."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000500_P002",
+          "text": "Ngài ở ngoài kia chờ lâu như vậy, chẳng phải là đang chờ chúng ta sao?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000500_P001",
+      "parent_block_id": "vimmfFJdrYM_S000500",
+      "text_exact": "Một người đàn ông trung niên trong số đó cười híp mắt nói.",
+      "char_count": 58,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P009",
+          "text": "Chúng ta là ai?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P010",
+          "text": "Ta nghĩ tiên nhân ngài chắc hẳn rất rõ ràng chứ?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000500_P002",
+          "text": "Ngài ở ngoài kia chờ lâu như vậy, chẳng phải là đang chờ chúng ta sao?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000500_P003",
+          "text": "Chờ các ngươi cái gì?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000500_P002",
+      "parent_block_id": "vimmfFJdrYM_S000500",
+      "text_exact": "Ngài ở ngoài kia chờ lâu như vậy, chẳng phải là đang chờ chúng ta sao?",
+      "char_count": 70,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000499_P010",
+          "text": "Ta nghĩ tiên nhân ngài chắc hẳn rất rõ ràng chứ?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000500_P001",
+          "text": "Một người đàn ông trung niên trong số đó cười híp mắt nói."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000500_P003",
+          "text": "Chờ các ngươi cái gì?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000501_P001",
+          "text": "Vương Dần nhất thời lo lắng nói, \"Ta đang tĩnh tu mà, ta không có chờ ai cả."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000500_P003",
+      "parent_block_id": "vimmfFJdrYM_S000500",
+      "text_exact": "Chờ các ngươi cái gì?",
+      "char_count": 21,
+      "word_count": 5,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000500_P001",
+          "text": "Một người đàn ông trung niên trong số đó cười híp mắt nói."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000500_P002",
+          "text": "Ngài ở ngoài kia chờ lâu như vậy, chẳng phải là đang chờ chúng ta sao?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000501_P001",
+          "text": "Vương Dần nhất thời lo lắng nói, \"Ta đang tĩnh tu mà, ta không có chờ ai cả."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P001",
+          "text": "Tiên nhân đã đến nước này rồi, còn nói vậy thì chẳng có ý nghĩa gì đâu.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000501_P001",
+      "parent_block_id": "vimmfFJdrYM_S000501",
+      "text_exact": "Vương Dần nhất thời lo lắng nói, \"Ta đang tĩnh tu mà, ta không có chờ ai cả.",
+      "char_count": 76,
+      "word_count": 18,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000500_P002",
+          "text": "Ngài ở ngoài kia chờ lâu như vậy, chẳng phải là đang chờ chúng ta sao?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000500_P003",
+          "text": "Chờ các ngươi cái gì?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P001",
+          "text": "Tiên nhân đã đến nước này rồi, còn nói vậy thì chẳng có ý nghĩa gì đâu.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P002",
+          "text": "Người đàn ông trung niên bĩu môi, \"Mọi người đều là người thông minh, chi bằng cứ nói thẳng ra cho xong.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000502_P001",
+      "parent_block_id": "vimmfFJdrYM_S000502",
+      "text_exact": "Tiên nhân đã đến nước này rồi, còn nói vậy thì chẳng có ý nghĩa gì đâu.\"",
+      "char_count": 72,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000500_P003",
+          "text": "Chờ các ngươi cái gì?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000501_P001",
+          "text": "Vương Dần nhất thời lo lắng nói, \"Ta đang tĩnh tu mà, ta không có chờ ai cả."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P002",
+          "text": "Người đàn ông trung niên bĩu môi, \"Mọi người đều là người thông minh, chi bằng cứ nói thẳng ra cho xong.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P003",
+          "text": "\"Được rồi.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000502_P002",
+      "parent_block_id": "vimmfFJdrYM_S000502",
+      "text_exact": "Người đàn ông trung niên bĩu môi, \"Mọi người đều là người thông minh, chi bằng cứ nói thẳng ra cho xong.\"",
+      "char_count": 105,
+      "word_count": 22,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000501_P001",
+          "text": "Vương Dần nhất thời lo lắng nói, \"Ta đang tĩnh tu mà, ta không có chờ ai cả."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P001",
+          "text": "Tiên nhân đã đến nước này rồi, còn nói vậy thì chẳng có ý nghĩa gì đâu.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P003",
+          "text": "\"Được rồi.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P004",
+          "text": "Vương Dần thở dài, \"Mấy nhà các ngươi đều tới cả rồi sao?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000502_P003",
+      "parent_block_id": "vimmfFJdrYM_S000502",
+      "text_exact": "\"Được rồi.\"",
+      "char_count": 11,
+      "word_count": 2,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": true
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P001",
+          "text": "Tiên nhân đã đến nước này rồi, còn nói vậy thì chẳng có ý nghĩa gì đâu.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P002",
+          "text": "Người đàn ông trung niên bĩu môi, \"Mọi người đều là người thông minh, chi bằng cứ nói thẳng ra cho xong.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P004",
+          "text": "Vương Dần thở dài, \"Mấy nhà các ngươi đều tới cả rồi sao?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P005",
+          "text": "Sao ta không thấy Trịnh Trạch đâu?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000502_P004",
+      "parent_block_id": "vimmfFJdrYM_S000502",
+      "text_exact": "Vương Dần thở dài, \"Mấy nhà các ngươi đều tới cả rồi sao?",
+      "char_count": 57,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P002",
+          "text": "Người đàn ông trung niên bĩu môi, \"Mọi người đều là người thông minh, chi bằng cứ nói thẳng ra cho xong.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P003",
+          "text": "\"Được rồi.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P005",
+          "text": "Sao ta không thấy Trịnh Trạch đâu?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P006",
+          "text": "Tiên nhân không cần vội, tộc trưởng các gia tộc ngài tự nhiên sẽ được gặp."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000502_P005",
+      "parent_block_id": "vimmfFJdrYM_S000502",
+      "text_exact": "Sao ta không thấy Trịnh Trạch đâu?",
+      "char_count": 34,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P003",
+          "text": "\"Được rồi.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P004",
+          "text": "Vương Dần thở dài, \"Mấy nhà các ngươi đều tới cả rồi sao?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P006",
+          "text": "Tiên nhân không cần vội, tộc trưởng các gia tộc ngài tự nhiên sẽ được gặp."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P007",
+          "text": "Nhưng trước đó chẳng lẽ chúng ta không nên nói chuyện hẳn hoi một chút sao?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000502_P006",
+      "parent_block_id": "vimmfFJdrYM_S000502",
+      "text_exact": "Tiên nhân không cần vội, tộc trưởng các gia tộc ngài tự nhiên sẽ được gặp.",
+      "char_count": 74,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P004",
+          "text": "Vương Dần thở dài, \"Mấy nhà các ngươi đều tới cả rồi sao?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P005",
+          "text": "Sao ta không thấy Trịnh Trạch đâu?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P007",
+          "text": "Nhưng trước đó chẳng lẽ chúng ta không nên nói chuyện hẳn hoi một chút sao?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P008",
+          "text": "Người trung niên cười híp mắt nói."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000502_P007",
+      "parent_block_id": "vimmfFJdrYM_S000502",
+      "text_exact": "Nhưng trước đó chẳng lẽ chúng ta không nên nói chuyện hẳn hoi một chút sao?\"",
+      "char_count": 76,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P005",
+          "text": "Sao ta không thấy Trịnh Trạch đâu?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P006",
+          "text": "Tiên nhân không cần vội, tộc trưởng các gia tộc ngài tự nhiên sẽ được gặp."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P008",
+          "text": "Người trung niên cười híp mắt nói."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P001",
+          "text": "Nói cái rắm ấy?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000502_P008",
+      "parent_block_id": "vimmfFJdrYM_S000502",
+      "text_exact": "Người trung niên cười híp mắt nói.",
+      "char_count": 34,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P006",
+          "text": "Tiên nhân không cần vội, tộc trưởng các gia tộc ngài tự nhiên sẽ được gặp."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P007",
+          "text": "Nhưng trước đó chẳng lẽ chúng ta không nên nói chuyện hẳn hoi một chút sao?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P001",
+          "text": "Nói cái rắm ấy?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P002",
+          "text": "Vương Dần bĩu môi, sau đó ra hiệu cho đống dây nhợ quấn quanh người mình."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000503_P001",
+      "parent_block_id": "vimmfFJdrYM_S000503",
+      "text_exact": "Nói cái rắm ấy?",
+      "char_count": 15,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P007",
+          "text": "Nhưng trước đó chẳng lẽ chúng ta không nên nói chuyện hẳn hoi một chút sao?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P008",
+          "text": "Người trung niên cười híp mắt nói."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P002",
+          "text": "Vương Dần bĩu môi, sau đó ra hiệu cho đống dây nhợ quấn quanh người mình."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P003",
+          "text": "\"Các ngươi một chút thành ý cũng không có, chúng ta cũng không còn cách nào khác.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000503_P002",
+      "parent_block_id": "vimmfFJdrYM_S000503",
+      "text_exact": "Vương Dần bĩu môi, sau đó ra hiệu cho đống dây nhợ quấn quanh người mình.",
+      "char_count": 73,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000502_P008",
+          "text": "Người trung niên cười híp mắt nói."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P001",
+          "text": "Nói cái rắm ấy?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P003",
+          "text": "\"Các ngươi một chút thành ý cũng không có, chúng ta cũng không còn cách nào khác.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P004",
+          "text": "Người trung niên nhún vai, \"Dù sao ngài cũng là tiên nhân, vạn nhất ngài kích động một cái, không cẩn thận tung ra tiên thuật gì đó, đám phàm nhân chúng ta làm sao chịu nổi?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000503_P003",
+      "parent_block_id": "vimmfFJdrYM_S000503",
+      "text_exact": "\"Các ngươi một chút thành ý cũng không có, chúng ta cũng không còn cách nào khác.\"",
+      "char_count": 82,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P001",
+          "text": "Nói cái rắm ấy?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P002",
+          "text": "Vương Dần bĩu môi, sau đó ra hiệu cho đống dây nhợ quấn quanh người mình."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P004",
+          "text": "Người trung niên nhún vai, \"Dù sao ngài cũng là tiên nhân, vạn nhất ngài kích động một cái, không cẩn thận tung ra tiên thuật gì đó, đám phàm nhân chúng ta làm sao chịu nổi?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P005",
+          "text": "Các ngươi đều là nhà nào?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000503_P004",
+      "parent_block_id": "vimmfFJdrYM_S000503",
+      "text_exact": "Người trung niên nhún vai, \"Dù sao ngài cũng là tiên nhân, vạn nhất ngài kích động một cái, không cẩn thận tung ra tiên thuật gì đó, đám phàm nhân chúng ta làm sao chịu nổi?",
+      "char_count": 173,
+      "word_count": 37,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P002",
+          "text": "Vương Dần bĩu môi, sau đó ra hiệu cho đống dây nhợ quấn quanh người mình."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P003",
+          "text": "\"Các ngươi một chút thành ý cũng không có, chúng ta cũng không còn cách nào khác.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P005",
+          "text": "Các ngươi đều là nhà nào?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P006",
+          "text": "Vương Dần vẻ mặt ủ rũ hỏi."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000503_P005",
+      "parent_block_id": "vimmfFJdrYM_S000503",
+      "text_exact": "Các ngươi đều là nhà nào?\"",
+      "char_count": 26,
+      "word_count": 6,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P003",
+          "text": "\"Các ngươi một chút thành ý cũng không có, chúng ta cũng không còn cách nào khác.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P004",
+          "text": "Người trung niên nhún vai, \"Dù sao ngài cũng là tiên nhân, vạn nhất ngài kích động một cái, không cẩn thận tung ra tiên thuật gì đó, đám phàm nhân chúng ta làm sao chịu nổi?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P006",
+          "text": "Vương Dần vẻ mặt ủ rũ hỏi."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P007",
+          "text": "Ta là người Thôi gia."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000503_P006",
+      "parent_block_id": "vimmfFJdrYM_S000503",
+      "text_exact": "Vương Dần vẻ mặt ủ rũ hỏi.",
+      "char_count": 26,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P004",
+          "text": "Người trung niên nhún vai, \"Dù sao ngài cũng là tiên nhân, vạn nhất ngài kích động một cái, không cẩn thận tung ra tiên thuật gì đó, đám phàm nhân chúng ta làm sao chịu nổi?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P005",
+          "text": "Các ngươi đều là nhà nào?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P007",
+          "text": "Ta là người Thôi gia."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P008",
+          "text": "Người đàn ông trung niên trả lời, \"Mấy vị này lần lượt là người Trịnh gia, Vương gia, Lô gia, Lý gia, nói đi, các ngươi muốn thế nào?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000503_P007",
+      "parent_block_id": "vimmfFJdrYM_S000503",
+      "text_exact": "Ta là người Thôi gia.",
+      "char_count": 21,
+      "word_count": 5,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P005",
+          "text": "Các ngươi đều là nhà nào?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P006",
+          "text": "Vương Dần vẻ mặt ủ rũ hỏi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P008",
+          "text": "Người đàn ông trung niên trả lời, \"Mấy vị này lần lượt là người Trịnh gia, Vương gia, Lô gia, Lý gia, nói đi, các ngươi muốn thế nào?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P009",
+          "text": "Vương Dần dường như đã nhận mệnh, ổi oải buông một câu, \"Thực ra chúng ta cũng không muốn làm gì quá đáng.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000503_P008",
+      "parent_block_id": "vimmfFJdrYM_S000503",
+      "text_exact": "Người đàn ông trung niên trả lời, \"Mấy vị này lần lượt là người Trịnh gia, Vương gia, Lô gia, Lý gia, nói đi, các ngươi muốn thế nào?\"",
+      "char_count": 134,
+      "word_count": 29,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P006",
+          "text": "Vương Dần vẻ mặt ủ rũ hỏi."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P007",
+          "text": "Ta là người Thôi gia."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P009",
+          "text": "Vương Dần dường như đã nhận mệnh, ổi oải buông một câu, \"Thực ra chúng ta cũng không muốn làm gì quá đáng.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P010",
+          "text": "[âm nhạc] Đại diện thô gia cười híp mắt nói, \"Chỉ cần tiên nhân chịu hợp tác với mấy nhà chúng ta, mọi chuyện đều dễ thương lượng.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000503_P009",
+      "parent_block_id": "vimmfFJdrYM_S000503",
+      "text_exact": "Vương Dần dường như đã nhận mệnh, ổi oải buông một câu, \"Thực ra chúng ta cũng không muốn làm gì quá đáng.\"",
+      "char_count": 107,
+      "word_count": 23,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P007",
+          "text": "Ta là người Thôi gia."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P008",
+          "text": "Người đàn ông trung niên trả lời, \"Mấy vị này lần lượt là người Trịnh gia, Vương gia, Lô gia, Lý gia, nói đi, các ngươi muốn thế nào?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P010",
+          "text": "[âm nhạc] Đại diện thô gia cười híp mắt nói, \"Chỉ cần tiên nhân chịu hợp tác với mấy nhà chúng ta, mọi chuyện đều dễ thương lượng.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P011",
+          "text": "\"Hợp tác thế nào?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000503_P010",
+      "parent_block_id": "vimmfFJdrYM_S000503",
+      "text_exact": "[âm nhạc] Đại diện thô gia cười híp mắt nói, \"Chỉ cần tiên nhân chịu hợp tác với mấy nhà chúng ta, mọi chuyện đều dễ thương lượng.\"",
+      "char_count": 131,
+      "word_count": 28,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P008",
+          "text": "Người đàn ông trung niên trả lời, \"Mấy vị này lần lượt là người Trịnh gia, Vương gia, Lô gia, Lý gia, nói đi, các ngươi muốn thế nào?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P009",
+          "text": "Vương Dần dường như đã nhận mệnh, ổi oải buông một câu, \"Thực ra chúng ta cũng không muốn làm gì quá đáng.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P011",
+          "text": "\"Hợp tác thế nào?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000504_P001",
+          "text": "Vương Dần nghi hoặc nhìn hắn hỏi."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000503_P011",
+      "parent_block_id": "vimmfFJdrYM_S000503",
+      "text_exact": "\"Hợp tác thế nào?\"",
+      "char_count": 18,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P009",
+          "text": "Vương Dần dường như đã nhận mệnh, ổi oải buông một câu, \"Thực ra chúng ta cũng không muốn làm gì quá đáng.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P010",
+          "text": "[âm nhạc] Đại diện thô gia cười híp mắt nói, \"Chỉ cần tiên nhân chịu hợp tác với mấy nhà chúng ta, mọi chuyện đều dễ thương lượng.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000504_P001",
+          "text": "Vương Dần nghi hoặc nhìn hắn hỏi."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000504_P002",
+          "text": "\"Có câu nói, có tiền cùng nhau kiếm.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000504_P001",
+      "parent_block_id": "vimmfFJdrYM_S000504",
+      "text_exact": "Vương Dần nghi hoặc nhìn hắn hỏi.",
+      "char_count": 33,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P010",
+          "text": "[âm nhạc] Đại diện thô gia cười híp mắt nói, \"Chỉ cần tiên nhân chịu hợp tác với mấy nhà chúng ta, mọi chuyện đều dễ thương lượng.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P011",
+          "text": "\"Hợp tác thế nào?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000504_P002",
+          "text": "\"Có câu nói, có tiền cùng nhau kiếm.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000504_P003",
+          "text": "Đại diện vương gia cười híp mắt tiến tới, \"Hay là tiên nhân đem những thứ tốt của ngài ra chia sẻ một chút, mọi người cùng nhau phát tài chẳng phải tốt hơn sao?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000504_P002",
+      "parent_block_id": "vimmfFJdrYM_S000504",
+      "text_exact": "\"Có câu nói, có tiền cùng nhau kiếm.\"",
+      "char_count": 37,
+      "word_count": 8,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000503_P011",
+          "text": "\"Hợp tác thế nào?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000504_P001",
+          "text": "Vương Dần nghi hoặc nhìn hắn hỏi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000504_P003",
+          "text": "Đại diện vương gia cười híp mắt tiến tới, \"Hay là tiên nhân đem những thứ tốt của ngài ra chia sẻ một chút, mọi người cùng nhau phát tài chẳng phải tốt hơn sao?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P001",
+          "text": "\"Đúng vậy, đại diện vương gia khác cũng đứng dậy, hà tất phải cùng Lý Thế Dân kia đối đầu với chúng ta, chỉ cần tiên nhân chịu hợp tác, những gì Lý thế dân cho ngài, thế gia chúng ta cũng có thể cho ngài."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000504_P003",
+      "parent_block_id": "vimmfFJdrYM_S000504",
+      "text_exact": "Đại diện vương gia cười híp mắt tiến tới, \"Hay là tiên nhân đem những thứ tốt của ngài ra chia sẻ một chút, mọi người cùng nhau phát tài chẳng phải tốt hơn sao?\"",
+      "char_count": 161,
+      "word_count": 35,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000504_P001",
+          "text": "Vương Dần nghi hoặc nhìn hắn hỏi."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000504_P002",
+          "text": "\"Có câu nói, có tiền cùng nhau kiếm.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P001",
+          "text": "\"Đúng vậy, đại diện vương gia khác cũng đứng dậy, hà tất phải cùng Lý Thế Dân kia đối đầu với chúng ta, chỉ cần tiên nhân chịu hợp tác, những gì Lý thế dân cho ngài, thế gia chúng ta cũng có thể cho ngài."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P002",
+          "text": "Thậm chí nếu ngài muốn vị trí hoàng vị cao cao tại thượng kia.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000505_P001",
+      "parent_block_id": "vimmfFJdrYM_S000505",
+      "text_exact": "\"Đúng vậy, đại diện vương gia khác cũng đứng dậy, hà tất phải cùng Lý Thế Dân kia đối đầu với chúng ta, chỉ cần tiên nhân chịu hợp tác, những gì Lý thế dân cho ngài, thế gia chúng ta cũng có thể cho ngài.",
+      "char_count": 204,
+      "word_count": 46,
+      "hints": {
+        "needs_ai_split_hint": true,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000504_P002",
+          "text": "\"Có câu nói, có tiền cùng nhau kiếm.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000504_P003",
+          "text": "Đại diện vương gia cười híp mắt tiến tới, \"Hay là tiên nhân đem những thứ tốt của ngài ra chia sẻ một chút, mọi người cùng nhau phát tài chẳng phải tốt hơn sao?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P002",
+          "text": "Thậm chí nếu ngài muốn vị trí hoàng vị cao cao tại thượng kia.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P003",
+          "text": "Đại diện Lý gia híp mắt, đề ẩn ý nói, \"Cũng không phải là không thể."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000505_P002",
+      "parent_block_id": "vimmfFJdrYM_S000505",
+      "text_exact": "Thậm chí nếu ngài muốn vị trí hoàng vị cao cao tại thượng kia.\"",
+      "char_count": 63,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000504_P003",
+          "text": "Đại diện vương gia cười híp mắt tiến tới, \"Hay là tiên nhân đem những thứ tốt của ngài ra chia sẻ một chút, mọi người cùng nhau phát tài chẳng phải tốt hơn sao?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P001",
+          "text": "\"Đúng vậy, đại diện vương gia khác cũng đứng dậy, hà tất phải cùng Lý Thế Dân kia đối đầu với chúng ta, chỉ cần tiên nhân chịu hợp tác, những gì Lý thế dân cho ngài, thế gia chúng ta cũng có thể cho ngài."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P003",
+          "text": "Đại diện Lý gia híp mắt, đề ẩn ý nói, \"Cũng không phải là không thể."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P004",
+          "text": "Các ngươi, các ngươi đây là muốn tạo phản sao?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000505_P003",
+      "parent_block_id": "vimmfFJdrYM_S000505",
+      "text_exact": "Đại diện Lý gia híp mắt, đề ẩn ý nói, \"Cũng không phải là không thể.",
+      "char_count": 68,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P001",
+          "text": "\"Đúng vậy, đại diện vương gia khác cũng đứng dậy, hà tất phải cùng Lý Thế Dân kia đối đầu với chúng ta, chỉ cần tiên nhân chịu hợp tác, những gì Lý thế dân cho ngài, thế gia chúng ta cũng có thể cho ngài."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P002",
+          "text": "Thậm chí nếu ngài muốn vị trí hoàng vị cao cao tại thượng kia.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P004",
+          "text": "Các ngươi, các ngươi đây là muốn tạo phản sao?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P005",
+          "text": "Vương Dần nghe vậy kinh hoàng trợn tròn mắt, đây là tội chu di cửu tộc đấy, đừng quên năm đó cha con Lý gia bọn họ làm sao có được thiên hạ."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000505_P004",
+      "parent_block_id": "vimmfFJdrYM_S000505",
+      "text_exact": "Các ngươi, các ngươi đây là muốn tạo phản sao?\"",
+      "char_count": 47,
+      "word_count": 10,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P002",
+          "text": "Thậm chí nếu ngài muốn vị trí hoàng vị cao cao tại thượng kia.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P003",
+          "text": "Đại diện Lý gia híp mắt, đề ẩn ý nói, \"Cũng không phải là không thể."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P005",
+          "text": "Vương Dần nghe vậy kinh hoàng trợn tròn mắt, đây là tội chu di cửu tộc đấy, đừng quên năm đó cha con Lý gia bọn họ làm sao có được thiên hạ."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P006",
+          "text": "Đại diện Lý gia híp mắt, sau đó vỗ tay một cái, suýt nữa thì quên mất."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000505_P005",
+      "parent_block_id": "vimmfFJdrYM_S000505",
+      "text_exact": "Vương Dần nghe vậy kinh hoàng trợn tròn mắt, đây là tội chu di cửu tộc đấy, đừng quên năm đó cha con Lý gia bọn họ làm sao có được thiên hạ.",
+      "char_count": 140,
+      "word_count": 33,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P003",
+          "text": "Đại diện Lý gia híp mắt, đề ẩn ý nói, \"Cũng không phải là không thể."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P004",
+          "text": "Các ngươi, các ngươi đây là muốn tạo phản sao?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P006",
+          "text": "Đại diện Lý gia híp mắt, sau đó vỗ tay một cái, suýt nữa thì quên mất."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P007",
+          "text": "Lúc đó tiên nhân ngài còn chưa tới đại đường nên không rõ chuyện này, làm sao có được thiên hạ?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000505_P006",
+      "parent_block_id": "vimmfFJdrYM_S000505",
+      "text_exact": "Đại diện Lý gia híp mắt, sau đó vỗ tay một cái, suýt nữa thì quên mất.",
+      "char_count": 70,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P004",
+          "text": "Các ngươi, các ngươi đây là muốn tạo phản sao?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P005",
+          "text": "Vương Dần nghe vậy kinh hoàng trợn tròn mắt, đây là tội chu di cửu tộc đấy, đừng quên năm đó cha con Lý gia bọn họ làm sao có được thiên hạ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P007",
+          "text": "Lúc đó tiên nhân ngài còn chưa tới đại đường nên không rõ chuyện này, làm sao có được thiên hạ?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P008",
+          "text": "Vương Dần làm ra bộ dạng hiếu kỳ hỏi, \"Dĩ nhiên là tạo phản chống lại tùy dạng đến rồi.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000505_P007",
+      "parent_block_id": "vimmfFJdrYM_S000505",
+      "text_exact": "Lúc đó tiên nhân ngài còn chưa tới đại đường nên không rõ chuyện này, làm sao có được thiên hạ?",
+      "char_count": 95,
+      "word_count": 21,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P005",
+          "text": "Vương Dần nghe vậy kinh hoàng trợn tròn mắt, đây là tội chu di cửu tộc đấy, đừng quên năm đó cha con Lý gia bọn họ làm sao có được thiên hạ."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P006",
+          "text": "Đại diện Lý gia híp mắt, sau đó vỗ tay một cái, suýt nữa thì quên mất."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P008",
+          "text": "Vương Dần làm ra bộ dạng hiếu kỳ hỏi, \"Dĩ nhiên là tạo phản chống lại tùy dạng đến rồi.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P009",
+          "text": "Đại diện Lý gia nhìn Vương dần đầy ẩn ý, \"Tiên nhân cũng đừng quên, câu nói không có vương triều ngàn năm, chỉ có thế gia ngàn năm không phải chỉ là lời nói xông đâu."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000505_P008",
+      "parent_block_id": "vimmfFJdrYM_S000505",
+      "text_exact": "Vương Dần làm ra bộ dạng hiếu kỳ hỏi, \"Dĩ nhiên là tạo phản chống lại tùy dạng đến rồi.\"",
+      "char_count": 88,
+      "word_count": 20,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P006",
+          "text": "Đại diện Lý gia híp mắt, sau đó vỗ tay một cái, suýt nữa thì quên mất."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P007",
+          "text": "Lúc đó tiên nhân ngài còn chưa tới đại đường nên không rõ chuyện này, làm sao có được thiên hạ?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P009",
+          "text": "Đại diện Lý gia nhìn Vương dần đầy ẩn ý, \"Tiên nhân cũng đừng quên, câu nói không có vương triều ngàn năm, chỉ có thế gia ngàn năm không phải chỉ là lời nói xông đâu."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P010",
+          "text": "Tiên nhân ngài là người thông minh, chắc hẳn biết nên làm thế nào."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000505_P009",
+      "parent_block_id": "vimmfFJdrYM_S000505",
+      "text_exact": "Đại diện Lý gia nhìn Vương dần đầy ẩn ý, \"Tiên nhân cũng đừng quên, câu nói không có vương triều ngàn năm, chỉ có thế gia ngàn năm không phải chỉ là lời nói xông đâu.",
+      "char_count": 166,
+      "word_count": 37,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P007",
+          "text": "Lúc đó tiên nhân ngài còn chưa tới đại đường nên không rõ chuyện này, làm sao có được thiên hạ?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P008",
+          "text": "Vương Dần làm ra bộ dạng hiếu kỳ hỏi, \"Dĩ nhiên là tạo phản chống lại tùy dạng đến rồi.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P010",
+          "text": "Tiên nhân ngài là người thông minh, chắc hẳn biết nên làm thế nào."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P011",
+          "text": "Chỉ cần tiên nhân chịu hợp tác, Vinh Hoa Phú Quý nằm trong tầm tay đại diện vương gia thấy Vương Dần có vẻ đang suy nghĩ, lập tức bồi thêm."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000505_P010",
+      "parent_block_id": "vimmfFJdrYM_S000505",
+      "text_exact": "Tiên nhân ngài là người thông minh, chắc hẳn biết nên làm thế nào.",
+      "char_count": 66,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P008",
+          "text": "Vương Dần làm ra bộ dạng hiếu kỳ hỏi, \"Dĩ nhiên là tạo phản chống lại tùy dạng đến rồi.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P009",
+          "text": "Đại diện Lý gia nhìn Vương dần đầy ẩn ý, \"Tiên nhân cũng đừng quên, câu nói không có vương triều ngàn năm, chỉ có thế gia ngàn năm không phải chỉ là lời nói xông đâu."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P011",
+          "text": "Chỉ cần tiên nhân chịu hợp tác, Vinh Hoa Phú Quý nằm trong tầm tay đại diện vương gia thấy Vương Dần có vẻ đang suy nghĩ, lập tức bồi thêm."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P012",
+          "text": "Đến lúc đó tiền tài, mỹ nhân, quyền lực, địa vị, tiên nhân, ngài cứ việc tùy ý chọn lượng.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000505_P011",
+      "parent_block_id": "vimmfFJdrYM_S000505",
+      "text_exact": "Chỉ cần tiên nhân chịu hợp tác, Vinh Hoa Phú Quý nằm trong tầm tay đại diện vương gia thấy Vương Dần có vẻ đang suy nghĩ, lập tức bồi thêm.",
+      "char_count": 139,
+      "word_count": 31,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P009",
+          "text": "Đại diện Lý gia nhìn Vương dần đầy ẩn ý, \"Tiên nhân cũng đừng quên, câu nói không có vương triều ngàn năm, chỉ có thế gia ngàn năm không phải chỉ là lời nói xông đâu."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P010",
+          "text": "Tiên nhân ngài là người thông minh, chắc hẳn biết nên làm thế nào."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P012",
+          "text": "Đến lúc đó tiền tài, mỹ nhân, quyền lực, địa vị, tiên nhân, ngài cứ việc tùy ý chọn lượng.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P013",
+          "text": "O, nghe các ngươi nói có vẻ cũng rất bùi tai đấy.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000505_P012",
+      "parent_block_id": "vimmfFJdrYM_S000505",
+      "text_exact": "Đến lúc đó tiền tài, mỹ nhân, quyền lực, địa vị, tiên nhân, ngài cứ việc tùy ý chọn lượng.\"",
+      "char_count": 91,
+      "word_count": 20,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P010",
+          "text": "Tiên nhân ngài là người thông minh, chắc hẳn biết nên làm thế nào."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P011",
+          "text": "Chỉ cần tiên nhân chịu hợp tác, Vinh Hoa Phú Quý nằm trong tầm tay đại diện vương gia thấy Vương Dần có vẻ đang suy nghĩ, lập tức bồi thêm."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P013",
+          "text": "O, nghe các ngươi nói có vẻ cũng rất bùi tai đấy.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P001",
+          "text": "Vương Dần nghe vậy định đưa tay sờ cằm, kết quả vừa cử động tay mới nhớ ra mình còn đang bị chói."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000505_P013",
+      "parent_block_id": "vimmfFJdrYM_S000505",
+      "text_exact": "O, nghe các ngươi nói có vẻ cũng rất bùi tai đấy.\"",
+      "char_count": 50,
+      "word_count": 12,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P011",
+          "text": "Chỉ cần tiên nhân chịu hợp tác, Vinh Hoa Phú Quý nằm trong tầm tay đại diện vương gia thấy Vương Dần có vẻ đang suy nghĩ, lập tức bồi thêm."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P012",
+          "text": "Đến lúc đó tiền tài, mỹ nhân, quyền lực, địa vị, tiên nhân, ngài cứ việc tùy ý chọn lượng.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P001",
+          "text": "Vương Dần nghe vậy định đưa tay sờ cằm, kết quả vừa cử động tay mới nhớ ra mình còn đang bị chói."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P002",
+          "text": "\"Mấy nhà các ngươi đều nghĩ như vậy sao?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000506_P001",
+      "parent_block_id": "vimmfFJdrYM_S000506",
+      "text_exact": "Vương Dần nghe vậy định đưa tay sờ cằm, kết quả vừa cử động tay mới nhớ ra mình còn đang bị chói.",
+      "char_count": 97,
+      "word_count": 23,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P012",
+          "text": "Đến lúc đó tiền tài, mỹ nhân, quyền lực, địa vị, tiên nhân, ngài cứ việc tùy ý chọn lượng.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P013",
+          "text": "O, nghe các ngươi nói có vẻ cũng rất bùi tai đấy.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P002",
+          "text": "\"Mấy nhà các ngươi đều nghĩ như vậy sao?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P003",
+          "text": "Đây là ý của tộc trưởng các ngươi?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000506_P002",
+      "parent_block_id": "vimmfFJdrYM_S000506",
+      "text_exact": "\"Mấy nhà các ngươi đều nghĩ như vậy sao?",
+      "char_count": 40,
+      "word_count": 9,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000505_P013",
+          "text": "O, nghe các ngươi nói có vẻ cũng rất bùi tai đấy.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P001",
+          "text": "Vương Dần nghe vậy định đưa tay sờ cằm, kết quả vừa cử động tay mới nhớ ra mình còn đang bị chói."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P003",
+          "text": "Đây là ý của tộc trưởng các ngươi?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P004",
+          "text": "Không sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000506_P003",
+      "parent_block_id": "vimmfFJdrYM_S000506",
+      "text_exact": "Đây là ý của tộc trưởng các ngươi?\"",
+      "char_count": 35,
+      "word_count": 8,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P001",
+          "text": "Vương Dần nghe vậy định đưa tay sờ cằm, kết quả vừa cử động tay mới nhớ ra mình còn đang bị chói."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P002",
+          "text": "\"Mấy nhà các ngươi đều nghĩ như vậy sao?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P004",
+          "text": "Không sai."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P005",
+          "text": "Mọi người thấy Vương Dần dường như có dấu hiệu dao động, nhất thời lộ vẻ vui mừng trong mắt."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000506_P004",
+      "parent_block_id": "vimmfFJdrYM_S000506",
+      "text_exact": "Không sai.",
+      "char_count": 10,
+      "word_count": 2,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": true
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P002",
+          "text": "\"Mấy nhà các ngươi đều nghĩ như vậy sao?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P003",
+          "text": "Đây là ý của tộc trưởng các ngươi?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P005",
+          "text": "Mọi người thấy Vương Dần dường như có dấu hiệu dao động, nhất thời lộ vẻ vui mừng trong mắt."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P006",
+          "text": "Hừ, tiên nhân chó má gì chứ?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000506_P005",
+      "parent_block_id": "vimmfFJdrYM_S000506",
+      "text_exact": "Mọi người thấy Vương Dần dường như có dấu hiệu dao động, nhất thời lộ vẻ vui mừng trong mắt.",
+      "char_count": 92,
+      "word_count": 20,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P003",
+          "text": "Đây là ý của tộc trưởng các ngươi?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P004",
+          "text": "Không sai."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P006",
+          "text": "Hừ, tiên nhân chó má gì chứ?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P007",
+          "text": "Quay đầu lại cũng chỉ là một tên lừa đảo giả thần giả quỷ mà thôi."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000506_P006",
+      "parent_block_id": "vimmfFJdrYM_S000506",
+      "text_exact": "Hừ, tiên nhân chó má gì chứ?",
+      "char_count": 28,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P004",
+          "text": "Không sai."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P005",
+          "text": "Mọi người thấy Vương Dần dường như có dấu hiệu dao động, nhất thời lộ vẻ vui mừng trong mắt."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P007",
+          "text": "Quay đầu lại cũng chỉ là một tên lừa đảo giả thần giả quỷ mà thôi."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P008",
+          "text": "Về phần cái gì mà cách không thủ vật chắc tám phần m cũng là lời đồn thổi thôi."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000506_P007",
+      "parent_block_id": "vimmfFJdrYM_S000506",
+      "text_exact": "Quay đầu lại cũng chỉ là một tên lừa đảo giả thần giả quỷ mà thôi.",
+      "char_count": 66,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P005",
+          "text": "Mọi người thấy Vương Dần dường như có dấu hiệu dao động, nhất thời lộ vẻ vui mừng trong mắt."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P006",
+          "text": "Hừ, tiên nhân chó má gì chứ?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P008",
+          "text": "Về phần cái gì mà cách không thủ vật chắc tám phần m cũng là lời đồn thổi thôi."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P009",
+          "text": "Bây giờ bộ dạng này của Vương Dần khác gì đám thương nhân trục lợi ngoài đường đâu chứ?"
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000506_P008",
+      "parent_block_id": "vimmfFJdrYM_S000506",
+      "text_exact": "Về phần cái gì mà cách không thủ vật chắc tám phần m cũng là lời đồn thổi thôi.",
+      "char_count": 79,
+      "word_count": 19,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P006",
+          "text": "Hừ, tiên nhân chó má gì chứ?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P007",
+          "text": "Quay đầu lại cũng chỉ là một tên lừa đảo giả thần giả quỷ mà thôi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P009",
+          "text": "Bây giờ bộ dạng này của Vương Dần khác gì đám thương nhân trục lợi ngoài đường đâu chứ?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P010",
+          "text": "Chỉ cần ngươi chịu dao động thì dễ làm rồi, đến lúc lấy hết đồ tốt của ngươi xong, ngươi có thể xuống dưới đất mà làm giấc mộng xuân thu của mình.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000506_P009",
+      "parent_block_id": "vimmfFJdrYM_S000506",
+      "text_exact": "Bây giờ bộ dạng này của Vương Dần khác gì đám thương nhân trục lợi ngoài đường đâu chứ?",
+      "char_count": 87,
+      "word_count": 19,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P007",
+          "text": "Quay đầu lại cũng chỉ là một tên lừa đảo giả thần giả quỷ mà thôi."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P008",
+          "text": "Về phần cái gì mà cách không thủ vật chắc tám phần m cũng là lời đồn thổi thôi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P010",
+          "text": "Chỉ cần ngươi chịu dao động thì dễ làm rồi, đến lúc lấy hết đồ tốt của ngươi xong, ngươi có thể xuống dưới đất mà làm giấc mộng xuân thu của mình.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P011",
+          "text": "Nghe qua quả thực rất hấp dẫn."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000506_P010",
+      "parent_block_id": "vimmfFJdrYM_S000506",
+      "text_exact": "Chỉ cần ngươi chịu dao động thì dễ làm rồi, đến lúc lấy hết đồ tốt của ngươi xong, ngươi có thể xuống dưới đất mà làm giấc mộng xuân thu của mình.\"",
+      "char_count": 147,
+      "word_count": 33,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P008",
+          "text": "Về phần cái gì mà cách không thủ vật chắc tám phần m cũng là lời đồn thổi thôi."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P009",
+          "text": "Bây giờ bộ dạng này của Vương Dần khác gì đám thương nhân trục lợi ngoài đường đâu chứ?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P011",
+          "text": "Nghe qua quả thực rất hấp dẫn."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P012",
+          "text": "Vương Dần gật đầu khẳng định, sau đó cười nói với mọi người."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000506_P011",
+      "parent_block_id": "vimmfFJdrYM_S000506",
+      "text_exact": "Nghe qua quả thực rất hấp dẫn.",
+      "char_count": 30,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P009",
+          "text": "Bây giờ bộ dạng này của Vương Dần khác gì đám thương nhân trục lợi ngoài đường đâu chứ?"
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P010",
+          "text": "Chỉ cần ngươi chịu dao động thì dễ làm rồi, đến lúc lấy hết đồ tốt của ngươi xong, ngươi có thể xuống dưới đất mà làm giấc mộng xuân thu của mình.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P012",
+          "text": "Vương Dần gật đầu khẳng định, sau đó cười nói với mọi người."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P013",
+          "text": "\"Nhưng mà ta từ chối cái gì?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000506_P012",
+      "parent_block_id": "vimmfFJdrYM_S000506",
+      "text_exact": "Vương Dần gật đầu khẳng định, sau đó cười nói với mọi người.",
+      "char_count": 60,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P010",
+          "text": "Chỉ cần ngươi chịu dao động thì dễ làm rồi, đến lúc lấy hết đồ tốt của ngươi xong, ngươi có thể xuống dưới đất mà làm giấc mộng xuân thu của mình.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P011",
+          "text": "Nghe qua quả thực rất hấp dẫn."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P013",
+          "text": "\"Nhưng mà ta từ chối cái gì?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P014",
+          "text": "Đại diện mấy nhà nghe vậy đều không thể tin nổi nhìn Vương Dần, ai nấy đều nghi ngờ mình nghe nhầm."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000506_P013",
+      "parent_block_id": "vimmfFJdrYM_S000506",
+      "text_exact": "\"Nhưng mà ta từ chối cái gì?\"",
+      "char_count": 29,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P011",
+          "text": "Nghe qua quả thực rất hấp dẫn."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P012",
+          "text": "Vương Dần gật đầu khẳng định, sau đó cười nói với mọi người."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P014",
+          "text": "Đại diện mấy nhà nghe vậy đều không thể tin nổi nhìn Vương Dần, ai nấy đều nghi ngờ mình nghe nhầm."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P015",
+          "text": "Ta nói là đề nghị của các ngươi quả thực rất tốt.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000506_P014",
+      "parent_block_id": "vimmfFJdrYM_S000506",
+      "text_exact": "Đại diện mấy nhà nghe vậy đều không thể tin nổi nhìn Vương Dần, ai nấy đều nghi ngờ mình nghe nhầm.",
+      "char_count": 99,
+      "word_count": 22,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P012",
+          "text": "Vương Dần gật đầu khẳng định, sau đó cười nói với mọi người."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P013",
+          "text": "\"Nhưng mà ta từ chối cái gì?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P015",
+          "text": "Ta nói là đề nghị của các ngươi quả thực rất tốt.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P016",
+          "text": "Vương Dần rất thân thiện nhắc lại một lần nữa."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000506_P015",
+      "parent_block_id": "vimmfFJdrYM_S000506",
+      "text_exact": "Ta nói là đề nghị của các ngươi quả thực rất tốt.\"",
+      "char_count": 50,
+      "word_count": 12,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P013",
+          "text": "\"Nhưng mà ta từ chối cái gì?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P014",
+          "text": "Đại diện mấy nhà nghe vậy đều không thể tin nổi nhìn Vương Dần, ai nấy đều nghi ngờ mình nghe nhầm."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P016",
+          "text": "Vương Dần rất thân thiện nhắc lại một lần nữa."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000507_P001",
+          "text": "\"Nhưng mà ta từ chối.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000506_P016",
+      "parent_block_id": "vimmfFJdrYM_S000506",
+      "text_exact": "Vương Dần rất thân thiện nhắc lại một lần nữa.",
+      "char_count": 46,
+      "word_count": 10,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P014",
+          "text": "Đại diện mấy nhà nghe vậy đều không thể tin nổi nhìn Vương Dần, ai nấy đều nghi ngờ mình nghe nhầm."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P015",
+          "text": "Ta nói là đề nghị của các ngươi quả thực rất tốt.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000507_P001",
+          "text": "\"Nhưng mà ta từ chối.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000507_P002",
+          "text": "Vương Dần, \"Trò đùa này của ngươi chẳng vui chút nào đâu.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000507_P001",
+      "parent_block_id": "vimmfFJdrYM_S000507",
+      "text_exact": "\"Nhưng mà ta từ chối.\"",
+      "char_count": 22,
+      "word_count": 5,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P015",
+          "text": "Ta nói là đề nghị của các ngươi quả thực rất tốt.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P016",
+          "text": "Vương Dần rất thân thiện nhắc lại một lần nữa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000507_P002",
+          "text": "Vương Dần, \"Trò đùa này của ngươi chẳng vui chút nào đâu.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000507_P003",
+          "text": "Đại diện Lý gia lúc này đã gọi thẳng tên húy của Vương Dần, có thể thấy tâm trạng đã không còn tốt đẹp gì nữa."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000507_P002",
+      "parent_block_id": "vimmfFJdrYM_S000507",
+      "text_exact": "Vương Dần, \"Trò đùa này của ngươi chẳng vui chút nào đâu.\"",
+      "char_count": 58,
+      "word_count": 12,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000506_P016",
+          "text": "Vương Dần rất thân thiện nhắc lại một lần nữa."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000507_P001",
+          "text": "\"Nhưng mà ta từ chối.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000507_P003",
+          "text": "Đại diện Lý gia lúc này đã gọi thẳng tên húy của Vương Dần, có thể thấy tâm trạng đã không còn tốt đẹp gì nữa."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P001",
+          "text": "\"Không đâu, ta không có được.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000507_P003",
+      "parent_block_id": "vimmfFJdrYM_S000507",
+      "text_exact": "Đại diện Lý gia lúc này đã gọi thẳng tên húy của Vương Dần, có thể thấy tâm trạng đã không còn tốt đẹp gì nữa.",
+      "char_count": 110,
+      "word_count": 26,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000507_P001",
+          "text": "\"Nhưng mà ta từ chối.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000507_P002",
+          "text": "Vương Dần, \"Trò đùa này của ngươi chẳng vui chút nào đâu.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P001",
+          "text": "\"Không đâu, ta không có được.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P002",
+          "text": "Vương Dần nghiêm mặt nói, \"Ta nói thật đấy, xem ra ngươi vẫn chưa hiểu rõ tình cảnh của mình rồi.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000508_P001",
+      "parent_block_id": "vimmfFJdrYM_S000508",
+      "text_exact": "\"Không đâu, ta không có được.\"",
+      "char_count": 30,
+      "word_count": 6,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000507_P002",
+          "text": "Vương Dần, \"Trò đùa này của ngươi chẳng vui chút nào đâu.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000507_P003",
+          "text": "Đại diện Lý gia lúc này đã gọi thẳng tên húy của Vương Dần, có thể thấy tâm trạng đã không còn tốt đẹp gì nữa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P002",
+          "text": "Vương Dần nghiêm mặt nói, \"Ta nói thật đấy, xem ra ngươi vẫn chưa hiểu rõ tình cảnh của mình rồi.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P003",
+          "text": "Đại diện Lý gia lóe lên một tia hung quang trong mắt, xem ra đã đến lúc để vị tiên nhân của chúng ta tỉnh táo lại một chút rồi."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000508_P002",
+      "parent_block_id": "vimmfFJdrYM_S000508",
+      "text_exact": "Vương Dần nghiêm mặt nói, \"Ta nói thật đấy, xem ra ngươi vẫn chưa hiểu rõ tình cảnh của mình rồi.\"",
+      "char_count": 98,
+      "word_count": 21,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000507_P003",
+          "text": "Đại diện Lý gia lúc này đã gọi thẳng tên húy của Vương Dần, có thể thấy tâm trạng đã không còn tốt đẹp gì nữa."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P001",
+          "text": "\"Không đâu, ta không có được.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P003",
+          "text": "Đại diện Lý gia lóe lên một tia hung quang trong mắt, xem ra đã đến lúc để vị tiên nhân của chúng ta tỉnh táo lại một chút rồi."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P004",
+          "text": "Ngay sau đó, đại diện Lý gia ra hiệu cho một tên người áo đen bên cạnh."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000508_P003",
+      "parent_block_id": "vimmfFJdrYM_S000508",
+      "text_exact": "Đại diện Lý gia lóe lên một tia hung quang trong mắt, xem ra đã đến lúc để vị tiên nhân của chúng ta tỉnh táo lại một chút rồi.",
+      "char_count": 127,
+      "word_count": 30,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P001",
+          "text": "\"Không đâu, ta không có được.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P002",
+          "text": "Vương Dần nghiêm mặt nói, \"Ta nói thật đấy, xem ra ngươi vẫn chưa hiểu rõ tình cảnh của mình rồi.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P004",
+          "text": "Ngay sau đó, đại diện Lý gia ra hiệu cho một tên người áo đen bên cạnh."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P005",
+          "text": "Tên người áo đen xoay người đi tới trước một cái lò than."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000508_P004",
+      "parent_block_id": "vimmfFJdrYM_S000508",
+      "text_exact": "Ngay sau đó, đại diện Lý gia ra hiệu cho một tên người áo đen bên cạnh.",
+      "char_count": 71,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P002",
+          "text": "Vương Dần nghiêm mặt nói, \"Ta nói thật đấy, xem ra ngươi vẫn chưa hiểu rõ tình cảnh của mình rồi.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P003",
+          "text": "Đại diện Lý gia lóe lên một tia hung quang trong mắt, xem ra đã đến lúc để vị tiên nhân của chúng ta tỉnh táo lại một chút rồi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P005",
+          "text": "Tên người áo đen xoay người đi tới trước một cái lò than."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000509_P001",
+          "text": "Vương dần liếc nhìn qua, chỉ thấy một cái lò than tổ ong đang cháy rực, một cái bàn ủi sắt đang được nung đỏ bên trong."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000508_P005",
+      "parent_block_id": "vimmfFJdrYM_S000508",
+      "text_exact": "Tên người áo đen xoay người đi tới trước một cái lò than.",
+      "char_count": 57,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P003",
+          "text": "Đại diện Lý gia lóe lên một tia hung quang trong mắt, xem ra đã đến lúc để vị tiên nhân của chúng ta tỉnh táo lại một chút rồi."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P004",
+          "text": "Ngay sau đó, đại diện Lý gia ra hiệu cho một tên người áo đen bên cạnh."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000509_P001",
+          "text": "Vương dần liếc nhìn qua, chỉ thấy một cái lò than tổ ong đang cháy rực, một cái bàn ủi sắt đang được nung đỏ bên trong."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000509_P002",
+          "text": "Tên người áo đen đưa tay lấy bàn ủi ra, chỉ thấy phần đầu sắt lúc này đã đỏ rực, tỏa ra hơi nóng hầm hập."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000509_P001",
+      "parent_block_id": "vimmfFJdrYM_S000509",
+      "text_exact": "Vương dần liếc nhìn qua, chỉ thấy một cái lò than tổ ong đang cháy rực, một cái bàn ủi sắt đang được nung đỏ bên trong.",
+      "char_count": 119,
+      "word_count": 27,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P004",
+          "text": "Ngay sau đó, đại diện Lý gia ra hiệu cho một tên người áo đen bên cạnh."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P005",
+          "text": "Tên người áo đen xoay người đi tới trước một cái lò than."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000509_P002",
+          "text": "Tên người áo đen đưa tay lấy bàn ủi ra, chỉ thấy phần đầu sắt lúc này đã đỏ rực, tỏa ra hơi nóng hầm hập."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000509_P003",
+          "text": "\"Vương Dần, ngươi hãy nghĩ cho kỹ.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000509_P002",
+      "parent_block_id": "vimmfFJdrYM_S000509",
+      "text_exact": "Tên người áo đen đưa tay lấy bàn ủi ra, chỉ thấy phần đầu sắt lúc này đã đỏ rực, tỏa ra hơi nóng hầm hập.",
+      "char_count": 105,
+      "word_count": 26,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000508_P005",
+          "text": "Tên người áo đen xoay người đi tới trước một cái lò than."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000509_P001",
+          "text": "Vương dần liếc nhìn qua, chỉ thấy một cái lò than tổ ong đang cháy rực, một cái bàn ủi sắt đang được nung đỏ bên trong."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000509_P003",
+          "text": "\"Vương Dần, ngươi hãy nghĩ cho kỹ.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000509_P004",
+          "text": "Đại diện Lý gia lên tiếng, \"Nếu thứ này đặt lên người thì không dễ chịu chút nào đâu.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000509_P003",
+      "parent_block_id": "vimmfFJdrYM_S000509",
+      "text_exact": "\"Vương Dần, ngươi hãy nghĩ cho kỹ.\"",
+      "char_count": 35,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000509_P001",
+          "text": "Vương dần liếc nhìn qua, chỉ thấy một cái lò than tổ ong đang cháy rực, một cái bàn ủi sắt đang được nung đỏ bên trong."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000509_P002",
+          "text": "Tên người áo đen đưa tay lấy bàn ủi ra, chỉ thấy phần đầu sắt lúc này đã đỏ rực, tỏa ra hơi nóng hầm hập."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000509_P004",
+          "text": "Đại diện Lý gia lên tiếng, \"Nếu thứ này đặt lên người thì không dễ chịu chút nào đâu.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000510_P001",
+          "text": "\"Mà tào, các ngươi muốn làm gì?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000509_P004",
+      "parent_block_id": "vimmfFJdrYM_S000509",
+      "text_exact": "Đại diện Lý gia lên tiếng, \"Nếu thứ này đặt lên người thì không dễ chịu chút nào đâu.\"",
+      "char_count": 86,
+      "word_count": 19,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000509_P002",
+          "text": "Tên người áo đen đưa tay lấy bàn ủi ra, chỉ thấy phần đầu sắt lúc này đã đỏ rực, tỏa ra hơi nóng hầm hập."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000509_P003",
+          "text": "\"Vương Dần, ngươi hãy nghĩ cho kỹ.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000510_P001",
+          "text": "\"Mà tào, các ngươi muốn làm gì?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000510_P002",
+          "text": "Vương Dần lập tức kinh hoàng nhìn tên người áo đen đang từng bước tiến lại gần."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000510_P001",
+      "parent_block_id": "vimmfFJdrYM_S000510",
+      "text_exact": "\"Mà tào, các ngươi muốn làm gì?\"",
+      "char_count": 32,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000509_P003",
+          "text": "\"Vương Dần, ngươi hãy nghĩ cho kỹ.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000509_P004",
+          "text": "Đại diện Lý gia lên tiếng, \"Nếu thứ này đặt lên người thì không dễ chịu chút nào đâu.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000510_P002",
+          "text": "Vương Dần lập tức kinh hoàng nhìn tên người áo đen đang từng bước tiến lại gần."
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000510_P003",
+          "text": "Ta cảnh cáo các ngươi, các ngươi đừng có làm loạn nha, nếu không quay đầu lại để bệ hạ xét nhà các ngươi giết sạch cửu tộc đấy."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000510_P002",
+      "parent_block_id": "vimmfFJdrYM_S000510",
+      "text_exact": "Vương Dần lập tức kinh hoàng nhìn tên người áo đen đang từng bước tiến lại gần.",
+      "char_count": 79,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000509_P004",
+          "text": "Đại diện Lý gia lên tiếng, \"Nếu thứ này đặt lên người thì không dễ chịu chút nào đâu.\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000510_P001",
+          "text": "\"Mà tào, các ngươi muốn làm gì?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000510_P003",
+          "text": "Ta cảnh cáo các ngươi, các ngươi đừng có làm loạn nha, nếu không quay đầu lại để bệ hạ xét nhà các ngươi giết sạch cửu tộc đấy."
+        }
+      ]
+    },
+    {
+      "piece_id": "vimmfFJdrYM_S000510_P003",
+      "parent_block_id": "vimmfFJdrYM_S000510",
+      "text_exact": "Ta cảnh cáo các ngươi, các ngươi đừng có làm loạn nha, nếu không quay đầu lại để bệ hạ xét nhà các ngươi giết sạch cửu tộc đấy.",
+      "char_count": 127,
+      "word_count": 29,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "vimmfFJdrYM_S000510_P001",
+          "text": "\"Mà tào, các ngươi muốn làm gì?\""
+        },
+        {
+          "piece_id": "vimmfFJdrYM_S000510_P002",
+          "text": "Vương Dần lập tức kinh hoàng nhìn tên người áo đen đang từng bước tiến lại gần."
+        }
+      ],
+      "next_context": []
+    }
+  ]
+}

@@ -1,0 +1,5436 @@
+{
+  "pack_id": "review_pack_0084",
+  "video_id": "Itad_gcdHHM",
+  "rules": [
+    "ChatGPT reviews directly from GitHub. No external LLM API is required.",
+    "Do not rewrite source text in this stage.",
+    "Every output segment must preserve source words/order exactly.",
+    "Use context for tiny fragments; tiny does not automatically mean DROP.",
+    "PHONETIC_CROWDING_RISK is not an automatic DROP.",
+    "If splitting a piece further, concatenated text must equal text_exact after whitespace normalization."
+  ],
+  "allowed_labels": [
+    "KEEP_CANDIDATE",
+    "DROP_FRAGMENT",
+    "BROKEN_TEXT",
+    "WEIRD_PHRASE",
+    "PARALINGUISTIC",
+    "STUTTER_OR_REPEAT",
+    "PHONETIC_CROWDING_RISK",
+    "NEED_CONTEXT"
+  ],
+  "items": [
+    {
+      "piece_id": "Itad_gcdHHM_S000530_P001",
+      "parent_block_id": "Itad_gcdHHM_S000530",
+      "text_exact": "Dù thiếu niên này lúc trước có thái độ bất kính với vật tổ, thậm chí còn dùng đao chỉ vào phương trượng ngay giữa đại điện, nhưng mọi người chưa bao giờ nghĩ hắn thật sự dám giết người.",
+      "char_count": 185,
+      "word_count": 40,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000529_P007",
+          "text": "Máu tươi phun ra."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000529_P008",
+          "text": "đầu lão phương trượng lăn mấy vòng trên đất, dừng lại ngay cạnh chân một vị khách hành hương, toàn bộ đại điện bỗng chốc im bặt, tất cả mọi người đều ngây người nhìn cảnh tượng trước mắt, như thể bị ai đó bấm nút tạm dừng."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000530_P002",
+          "text": "Dẫu sao thành vệ quân tuần tra cũng đang ở ngay gần nó, trừ phi hắn bị điên hoặc không muốn sống ở đại đường nữa."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000530_P003",
+          "text": "Thế nhưng cảnh tượng trước mắt đã nói cho họ biết một sự thật phũ phẳng, thiếu niên này thật sự dám giết người a."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000530_P002",
+      "parent_block_id": "Itad_gcdHHM_S000530",
+      "text_exact": "Dẫu sao thành vệ quân tuần tra cũng đang ở ngay gần nó, trừ phi hắn bị điên hoặc không muốn sống ở đại đường nữa.",
+      "char_count": 113,
+      "word_count": 26,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000529_P008",
+          "text": "đầu lão phương trượng lăn mấy vòng trên đất, dừng lại ngay cạnh chân một vị khách hành hương, toàn bộ đại điện bỗng chốc im bặt, tất cả mọi người đều ngây người nhìn cảnh tượng trước mắt, như thể bị ai đó bấm nút tạm dừng."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000530_P001",
+          "text": "Dù thiếu niên này lúc trước có thái độ bất kính với vật tổ, thậm chí còn dùng đao chỉ vào phương trượng ngay giữa đại điện, nhưng mọi người chưa bao giờ nghĩ hắn thật sự dám giết người."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000530_P003",
+          "text": "Thế nhưng cảnh tượng trước mắt đã nói cho họ biết một sự thật phũ phẳng, thiếu niên này thật sự dám giết người a."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000530_P004",
+          "text": "Việc khách hành hương nhìn thấy cái đầu đẫm máu lăn đến chân mình liền hét lên một tiếng, mắt trợn ngược rồi ngất xỉu tại chỗ."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000530_P003",
+      "parent_block_id": "Itad_gcdHHM_S000530",
+      "text_exact": "Thế nhưng cảnh tượng trước mắt đã nói cho họ biết một sự thật phũ phẳng, thiếu niên này thật sự dám giết người a.",
+      "char_count": 113,
+      "word_count": 25,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000530_P001",
+          "text": "Dù thiếu niên này lúc trước có thái độ bất kính với vật tổ, thậm chí còn dùng đao chỉ vào phương trượng ngay giữa đại điện, nhưng mọi người chưa bao giờ nghĩ hắn thật sự dám giết người."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000530_P002",
+          "text": "Dẫu sao thành vệ quân tuần tra cũng đang ở ngay gần nó, trừ phi hắn bị điên hoặc không muốn sống ở đại đường nữa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000530_P004",
+          "text": "Việc khách hành hương nhìn thấy cái đầu đẫm máu lăn đến chân mình liền hét lên một tiếng, mắt trợn ngược rồi ngất xỉu tại chỗ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000531_P001",
+          "text": "Giết người rồi."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000530_P004",
+      "parent_block_id": "Itad_gcdHHM_S000530",
+      "text_exact": "Việc khách hành hương nhìn thấy cái đầu đẫm máu lăn đến chân mình liền hét lên một tiếng, mắt trợn ngược rồi ngất xỉu tại chỗ.",
+      "char_count": 126,
+      "word_count": 27,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000530_P002",
+          "text": "Dẫu sao thành vệ quân tuần tra cũng đang ở ngay gần nó, trừ phi hắn bị điên hoặc không muốn sống ở đại đường nữa."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000530_P003",
+          "text": "Thế nhưng cảnh tượng trước mắt đã nói cho họ biết một sự thật phũ phẳng, thiếu niên này thật sự dám giết người a."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000531_P001",
+          "text": "Giết người rồi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000531_P002",
+          "text": "Sau khi định thần lại, mọi người bắt đầu hoảng loạn la hét, chen trúc nhau chạy ra ngoài."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000531_P001",
+      "parent_block_id": "Itad_gcdHHM_S000531",
+      "text_exact": "Giết người rồi.",
+      "char_count": 15,
+      "word_count": 3,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000530_P003",
+          "text": "Thế nhưng cảnh tượng trước mắt đã nói cho họ biết một sự thật phũ phẳng, thiếu niên này thật sự dám giết người a."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000530_P004",
+          "text": "Việc khách hành hương nhìn thấy cái đầu đẫm máu lăn đến chân mình liền hét lên một tiếng, mắt trợn ngược rồi ngất xỉu tại chỗ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000531_P002",
+          "text": "Sau khi định thần lại, mọi người bắt đầu hoảng loạn la hét, chen trúc nhau chạy ra ngoài."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000531_P003",
+          "text": "Một vài kẻ xui xẻo bị xô ngã, bị giẫm đạp mấy nhất."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000531_P002",
+      "parent_block_id": "Itad_gcdHHM_S000531",
+      "text_exact": "Sau khi định thần lại, mọi người bắt đầu hoảng loạn la hét, chen trúc nhau chạy ra ngoài.",
+      "char_count": 89,
+      "word_count": 19,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000530_P004",
+          "text": "Việc khách hành hương nhìn thấy cái đầu đẫm máu lăn đến chân mình liền hét lên một tiếng, mắt trợn ngược rồi ngất xỉu tại chỗ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000531_P001",
+          "text": "Giết người rồi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000531_P003",
+          "text": "Một vài kẻ xui xẻo bị xô ngã, bị giẫm đạp mấy nhất."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000532_P001",
+          "text": "May mà người trong điện không quá đông nên không có thương vong nghiêm trọng."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000531_P003",
+      "parent_block_id": "Itad_gcdHHM_S000531",
+      "text_exact": "Một vài kẻ xui xẻo bị xô ngã, bị giẫm đạp mấy nhất.",
+      "char_count": 51,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000531_P001",
+          "text": "Giết người rồi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000531_P002",
+          "text": "Sau khi định thần lại, mọi người bắt đầu hoảng loạn la hét, chen trúc nhau chạy ra ngoài."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000532_P001",
+          "text": "May mà người trong điện không quá đông nên không có thương vong nghiêm trọng."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000533_P001",
+          "text": "\"Ngươi ngươi dám dứt phương trượng?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000532_P001",
+      "parent_block_id": "Itad_gcdHHM_S000532",
+      "text_exact": "May mà người trong điện không quá đông nên không có thương vong nghiêm trọng.",
+      "char_count": 77,
+      "word_count": 15,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000531_P002",
+          "text": "Sau khi định thần lại, mọi người bắt đầu hoảng loạn la hét, chen trúc nhau chạy ra ngoài."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000531_P003",
+          "text": "Một vài kẻ xui xẻo bị xô ngã, bị giẫm đạp mấy nhất."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000533_P001",
+          "text": "\"Ngươi ngươi dám dứt phương trượng?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000533_P002",
+          "text": "Đám hòa thượng trong điện thấy vậy làm bộ bao vây vương dần lại, nhưng chỉ dám đứng xa xa, không ai dám tiến lại gần."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000533_P001",
+      "parent_block_id": "Itad_gcdHHM_S000533",
+      "text_exact": "\"Ngươi ngươi dám dứt phương trượng?\"",
+      "char_count": 36,
+      "word_count": 6,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000531_P003",
+          "text": "Một vài kẻ xui xẻo bị xô ngã, bị giẫm đạp mấy nhất."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000532_P001",
+          "text": "May mà người trong điện không quá đông nên không có thương vong nghiêm trọng."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000533_P002",
+          "text": "Đám hòa thượng trong điện thấy vậy làm bộ bao vây vương dần lại, nhưng chỉ dám đứng xa xa, không ai dám tiến lại gần."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P001",
+          "text": "Hôm nay ngươi đừng hòng rời khỏi đây, mấy tiểu hòa thượng kia thật sự đã gọi Thành Vệ Quân tới rồi.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000533_P002",
+      "parent_block_id": "Itad_gcdHHM_S000533",
+      "text_exact": "Đám hòa thượng trong điện thấy vậy làm bộ bao vây vương dần lại, nhưng chỉ dám đứng xa xa, không ai dám tiến lại gần.",
+      "char_count": 117,
+      "word_count": 26,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000532_P001",
+          "text": "May mà người trong điện không quá đông nên không có thương vong nghiêm trọng."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000533_P001",
+          "text": "\"Ngươi ngươi dám dứt phương trượng?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P001",
+          "text": "Hôm nay ngươi đừng hòng rời khỏi đây, mấy tiểu hòa thượng kia thật sự đã gọi Thành Vệ Quân tới rồi.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P002",
+          "text": "Những khách hành hương vừa chạy ra sân, thấy mấy tiểu hòa thượng dẫn theo thành vệ quân đi vào, liền xôn xao bàn tán."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000534_P001",
+      "parent_block_id": "Itad_gcdHHM_S000534",
+      "text_exact": "Hôm nay ngươi đừng hòng rời khỏi đây, mấy tiểu hòa thượng kia thật sự đã gọi Thành Vệ Quân tới rồi.\"",
+      "char_count": 100,
+      "word_count": 22,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000533_P001",
+          "text": "\"Ngươi ngươi dám dứt phương trượng?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000533_P002",
+          "text": "Đám hòa thượng trong điện thấy vậy làm bộ bao vây vương dần lại, nhưng chỉ dám đứng xa xa, không ai dám tiến lại gần."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P002",
+          "text": "Những khách hành hương vừa chạy ra sân, thấy mấy tiểu hòa thượng dẫn theo thành vệ quân đi vào, liền xôn xao bàn tán."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P003",
+          "text": "\"Các vị quân gia, mau vào đi, thiếu niên kia đã giết Phương Trượng rồi.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000534_P002",
+      "parent_block_id": "Itad_gcdHHM_S000534",
+      "text_exact": "Những khách hành hương vừa chạy ra sân, thấy mấy tiểu hòa thượng dẫn theo thành vệ quân đi vào, liền xôn xao bàn tán.",
+      "char_count": 117,
+      "word_count": 25,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000533_P002",
+          "text": "Đám hòa thượng trong điện thấy vậy làm bộ bao vây vương dần lại, nhưng chỉ dám đứng xa xa, không ai dám tiến lại gần."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P001",
+          "text": "Hôm nay ngươi đừng hòng rời khỏi đây, mấy tiểu hòa thượng kia thật sự đã gọi Thành Vệ Quân tới rồi.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P003",
+          "text": "\"Các vị quân gia, mau vào đi, thiếu niên kia đã giết Phương Trượng rồi.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P004",
+          "text": "Lập tức có kẻ hiếu kỳ hét lên một câu."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000534_P003",
+      "parent_block_id": "Itad_gcdHHM_S000534",
+      "text_exact": "\"Các vị quân gia, mau vào đi, thiếu niên kia đã giết Phương Trượng rồi.\"",
+      "char_count": 72,
+      "word_count": 15,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P001",
+          "text": "Hôm nay ngươi đừng hòng rời khỏi đây, mấy tiểu hòa thượng kia thật sự đã gọi Thành Vệ Quân tới rồi.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P002",
+          "text": "Những khách hành hương vừa chạy ra sân, thấy mấy tiểu hòa thượng dẫn theo thành vệ quân đi vào, liền xôn xao bàn tán."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P004",
+          "text": "Lập tức có kẻ hiếu kỳ hét lên một câu."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P005",
+          "text": "\"Cái gì?"
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000534_P004",
+      "parent_block_id": "Itad_gcdHHM_S000534",
+      "text_exact": "Lập tức có kẻ hiếu kỳ hét lên một câu.",
+      "char_count": 38,
+      "word_count": 10,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P002",
+          "text": "Những khách hành hương vừa chạy ra sân, thấy mấy tiểu hòa thượng dẫn theo thành vệ quân đi vào, liền xôn xao bàn tán."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P003",
+          "text": "\"Các vị quân gia, mau vào đi, thiếu niên kia đã giết Phương Trượng rồi.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P005",
+          "text": "\"Cái gì?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P006",
+          "text": "Phương Trượng bị giết?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000534_P005",
+      "parent_block_id": "Itad_gcdHHM_S000534",
+      "text_exact": "\"Cái gì?",
+      "char_count": 8,
+      "word_count": 2,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": true
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P003",
+          "text": "\"Các vị quân gia, mau vào đi, thiếu niên kia đã giết Phương Trượng rồi.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P004",
+          "text": "Lập tức có kẻ hiếu kỳ hét lên một câu."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P006",
+          "text": "Phương Trượng bị giết?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P007",
+          "text": "Mấy tiểu hòa thượng dẫn đường nghe xong thì sững sờ tại chỗ."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000534_P006",
+      "parent_block_id": "Itad_gcdHHM_S000534",
+      "text_exact": "Phương Trượng bị giết?\"",
+      "char_count": 23,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P004",
+          "text": "Lập tức có kẻ hiếu kỳ hét lên một câu."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P005",
+          "text": "\"Cái gì?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P007",
+          "text": "Mấy tiểu hòa thượng dẫn đường nghe xong thì sững sờ tại chỗ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P001",
+          "text": "\"Nhanh lên.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000534_P007",
+      "parent_block_id": "Itad_gcdHHM_S000534",
+      "text_exact": "Mấy tiểu hòa thượng dẫn đường nghe xong thì sững sờ tại chỗ.",
+      "char_count": 60,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P005",
+          "text": "\"Cái gì?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P006",
+          "text": "Phương Trượng bị giết?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P001",
+          "text": "\"Nhanh lên.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P002",
+          "text": "Đội trưởng Thành Vệ Quân nghe tin Phương Trượng bị giết, vội vàng vẫy tay ra hiệu cho thuộc hạ, rút vũ khí dẫn đầu xông vào đại điện."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P001",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "\"Nhanh lên.\"",
+      "char_count": 12,
+      "word_count": 2,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": true
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P006",
+          "text": "Phương Trượng bị giết?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P007",
+          "text": "Mấy tiểu hòa thượng dẫn đường nghe xong thì sững sờ tại chỗ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P002",
+          "text": "Đội trưởng Thành Vệ Quân nghe tin Phương Trượng bị giết, vội vàng vẫy tay ra hiệu cho thuộc hạ, rút vũ khí dẫn đầu xông vào đại điện."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P003",
+          "text": "giữa Thanh Thiên Bạch Nhật mà dám công khai hành hung tại thánh địa Phật môn, bắt lấy cho ta.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P002",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "Đội trưởng Thành Vệ Quân nghe tin Phương Trượng bị giết, vội vàng vẫy tay ra hiệu cho thuộc hạ, rút vũ khí dẫn đầu xông vào đại điện.",
+      "char_count": 133,
+      "word_count": 29,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000534_P007",
+          "text": "Mấy tiểu hòa thượng dẫn đường nghe xong thì sững sờ tại chỗ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P001",
+          "text": "\"Nhanh lên.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P003",
+          "text": "giữa Thanh Thiên Bạch Nhật mà dám công khai hành hung tại thánh địa Phật môn, bắt lấy cho ta.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P004",
+          "text": "Vừa vào đến điện, thấy thi thể không đầu nằm đó và bóng lưng của hai người đứng giữa điện, đội trưởng vung vũ khí ra lệnh cho thuộc hạ."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P003",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "giữa Thanh Thiên Bạch Nhật mà dám công khai hành hung tại thánh địa Phật môn, bắt lấy cho ta.\"",
+      "char_count": 94,
+      "word_count": 20,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P001",
+          "text": "\"Nhanh lên.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P002",
+          "text": "Đội trưởng Thành Vệ Quân nghe tin Phương Trượng bị giết, vội vàng vẫy tay ra hiệu cho thuộc hạ, rút vũ khí dẫn đầu xông vào đại điện."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P004",
+          "text": "Vừa vào đến điện, thấy thi thể không đầu nằm đó và bóng lưng của hai người đứng giữa điện, đội trưởng vung vũ khí ra lệnh cho thuộc hạ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P005",
+          "text": "Vương Dần nghe vậy, quay người lại nhìn đám thành vệ quân cười nói, \"Các người muốn bắt ta sao?"
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P004",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "Vừa vào đến điện, thấy thi thể không đầu nằm đó và bóng lưng của hai người đứng giữa điện, đội trưởng vung vũ khí ra lệnh cho thuộc hạ.",
+      "char_count": 135,
+      "word_count": 30,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P002",
+          "text": "Đội trưởng Thành Vệ Quân nghe tin Phương Trượng bị giết, vội vàng vẫy tay ra hiệu cho thuộc hạ, rút vũ khí dẫn đầu xông vào đại điện."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P003",
+          "text": "giữa Thanh Thiên Bạch Nhật mà dám công khai hành hung tại thánh địa Phật môn, bắt lấy cho ta.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P005",
+          "text": "Vương Dần nghe vậy, quay người lại nhìn đám thành vệ quân cười nói, \"Các người muốn bắt ta sao?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P006",
+          "text": "Tên hung đồ này?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P005",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "Vương Dần nghe vậy, quay người lại nhìn đám thành vệ quân cười nói, \"Các người muốn bắt ta sao?",
+      "char_count": 95,
+      "word_count": 20,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P003",
+          "text": "giữa Thanh Thiên Bạch Nhật mà dám công khai hành hung tại thánh địa Phật môn, bắt lấy cho ta.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P004",
+          "text": "Vừa vào đến điện, thấy thi thể không đầu nằm đó và bóng lưng của hai người đứng giữa điện, đội trưởng vung vũ khí ra lệnh cho thuộc hạ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P006",
+          "text": "Tên hung đồ này?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P007",
+          "text": "Đội trưởng vừa mở miệng liền khựng lại, sau đó nhìn kỹ mặt Vương Dần một hồi, không chắc chắn hỏi, \"Tiên tiên nhân, xem ra trí nhớ của vị đội trưởng này khá tốt."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P006",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "Tên hung đồ này?\"",
+      "char_count": 17,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P004",
+          "text": "Vừa vào đến điện, thấy thi thể không đầu nằm đó và bóng lưng của hai người đứng giữa điện, đội trưởng vung vũ khí ra lệnh cho thuộc hạ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P005",
+          "text": "Vương Dần nghe vậy, quay người lại nhìn đám thành vệ quân cười nói, \"Các người muốn bắt ta sao?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P007",
+          "text": "Đội trưởng vừa mở miệng liền khựng lại, sau đó nhìn kỹ mặt Vương Dần một hồi, không chắc chắn hỏi, \"Tiên tiên nhân, xem ra trí nhớ của vị đội trưởng này khá tốt."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P008",
+          "text": "Dù Vương Dần đã thay quần áo và đội tóc giả nhưng vẫn bị hắn nhận ra."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P007",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "Đội trưởng vừa mở miệng liền khựng lại, sau đó nhìn kỹ mặt Vương Dần một hồi, không chắc chắn hỏi, \"Tiên tiên nhân, xem ra trí nhớ của vị đội trưởng này khá tốt.",
+      "char_count": 161,
+      "word_count": 35,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P005",
+          "text": "Vương Dần nghe vậy, quay người lại nhìn đám thành vệ quân cười nói, \"Các người muốn bắt ta sao?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P006",
+          "text": "Tên hung đồ này?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P008",
+          "text": "Dù Vương Dần đã thay quần áo và đội tóc giả nhưng vẫn bị hắn nhận ra."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P009",
+          "text": "vốn dĩ sợ phiền phức nên mới đội cái thứ này, không ngờ cuối cùng phiền phức vẫn tìm đến cửa."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P008",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "Dù Vương Dần đã thay quần áo và đội tóc giả nhưng vẫn bị hắn nhận ra.",
+      "char_count": 69,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P006",
+          "text": "Tên hung đồ này?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P007",
+          "text": "Đội trưởng vừa mở miệng liền khựng lại, sau đó nhìn kỹ mặt Vương Dần một hồi, không chắc chắn hỏi, \"Tiên tiên nhân, xem ra trí nhớ của vị đội trưởng này khá tốt."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P009",
+          "text": "vốn dĩ sợ phiền phức nên mới đội cái thứ này, không ngờ cuối cùng phiền phức vẫn tìm đến cửa."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P010",
+          "text": "Vương Dần vừa nói vừa tháo bộ tóc giả xuống, hô thế này mới thoải mái."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P009",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "vốn dĩ sợ phiền phức nên mới đội cái thứ này, không ngờ cuối cùng phiền phức vẫn tìm đến cửa.",
+      "char_count": 93,
+      "word_count": 21,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P007",
+          "text": "Đội trưởng vừa mở miệng liền khựng lại, sau đó nhìn kỹ mặt Vương Dần một hồi, không chắc chắn hỏi, \"Tiên tiên nhân, xem ra trí nhớ của vị đội trưởng này khá tốt."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P008",
+          "text": "Dù Vương Dần đã thay quần áo và đội tóc giả nhưng vẫn bị hắn nhận ra."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P010",
+          "text": "Vương Dần vừa nói vừa tháo bộ tóc giả xuống, hô thế này mới thoải mái."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P011",
+          "text": "\"Bái kiến tiên nhân, đội trưởng thấy đúng là Vương Dần vội vàng dẫn đầu hành lễ.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P010",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "Vương Dần vừa nói vừa tháo bộ tóc giả xuống, hô thế này mới thoải mái.",
+      "char_count": 70,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P008",
+          "text": "Dù Vương Dần đã thay quần áo và đội tóc giả nhưng vẫn bị hắn nhận ra."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P009",
+          "text": "vốn dĩ sợ phiền phức nên mới đội cái thứ này, không ngờ cuối cùng phiền phức vẫn tìm đến cửa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P011",
+          "text": "\"Bái kiến tiên nhân, đội trưởng thấy đúng là Vương Dần vội vàng dẫn đầu hành lễ.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P012",
+          "text": "\"Bái kiến tiên nhân, đám binh sĩ cũng vội vàng hành lễ theo.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P011",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "\"Bái kiến tiên nhân, đội trưởng thấy đúng là Vương Dần vội vàng dẫn đầu hành lễ.\"",
+      "char_count": 81,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P009",
+          "text": "vốn dĩ sợ phiền phức nên mới đội cái thứ này, không ngờ cuối cùng phiền phức vẫn tìm đến cửa."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P010",
+          "text": "Vương Dần vừa nói vừa tháo bộ tóc giả xuống, hô thế này mới thoải mái."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P012",
+          "text": "\"Bái kiến tiên nhân, đám binh sĩ cũng vội vàng hành lễ theo.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P013",
+          "text": "\"Được rồi, Vương Dần xua tay, \"Các người tới đúng lúc lắm, giờ hãy khống chế toàn bộ hòa thượng trong ngôi chùa này lại cho ta.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P012",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "\"Bái kiến tiên nhân, đám binh sĩ cũng vội vàng hành lễ theo.\"",
+      "char_count": 61,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P010",
+          "text": "Vương Dần vừa nói vừa tháo bộ tóc giả xuống, hô thế này mới thoải mái."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P011",
+          "text": "\"Bái kiến tiên nhân, đội trưởng thấy đúng là Vương Dần vội vàng dẫn đầu hành lễ.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P013",
+          "text": "\"Được rồi, Vương Dần xua tay, \"Các người tới đúng lúc lắm, giờ hãy khống chế toàn bộ hòa thượng trong ngôi chùa này lại cho ta.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P014",
+          "text": "\"Tiên nhân, rốt cuộc đã xảy ra chuyện gì?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P013",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "\"Được rồi, Vương Dần xua tay, \"Các người tới đúng lúc lắm, giờ hãy khống chế toàn bộ hòa thượng trong ngôi chùa này lại cho ta.\"",
+      "char_count": 128,
+      "word_count": 27,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P011",
+          "text": "\"Bái kiến tiên nhân, đội trưởng thấy đúng là Vương Dần vội vàng dẫn đầu hành lễ.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P012",
+          "text": "\"Bái kiến tiên nhân, đám binh sĩ cũng vội vàng hành lễ theo.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P014",
+          "text": "\"Tiên nhân, rốt cuộc đã xảy ra chuyện gì?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P015",
+          "text": "Đội trưởng do dự một chút, bọn họ nói Phương Trượng bị giết, ý của đội trưởng là hiện giờ trong phòng ngoài mấy tên hòa thượng ra thì chỉ có hai người các ngài, không sai, là ta giết."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P014",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "\"Tiên nhân, rốt cuộc đã xảy ra chuyện gì?\"",
+      "char_count": 42,
+      "word_count": 9,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P012",
+          "text": "\"Bái kiến tiên nhân, đám binh sĩ cũng vội vàng hành lễ theo.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P013",
+          "text": "\"Được rồi, Vương Dần xua tay, \"Các người tới đúng lúc lắm, giờ hãy khống chế toàn bộ hòa thượng trong ngôi chùa này lại cho ta.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P015",
+          "text": "Đội trưởng do dự một chút, bọn họ nói Phương Trượng bị giết, ý của đội trưởng là hiện giờ trong phòng ngoài mấy tên hòa thượng ra thì chỉ có hai người các ngài, không sai, là ta giết."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P016",
+          "text": "Vương Dần nhìn đám binh sĩ, sau đó kể lại toàn bộ sự việc đã xảy ra."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P015",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "Đội trưởng do dự một chút, bọn họ nói Phương Trượng bị giết, ý của đội trưởng là hiện giờ trong phòng ngoài mấy tên hòa thượng ra thì chỉ có hai người các ngài, không sai, là ta giết.",
+      "char_count": 183,
+      "word_count": 40,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P013",
+          "text": "\"Được rồi, Vương Dần xua tay, \"Các người tới đúng lúc lắm, giờ hãy khống chế toàn bộ hòa thượng trong ngôi chùa này lại cho ta.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P014",
+          "text": "\"Tiên nhân, rốt cuộc đã xảy ra chuyện gì?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P016",
+          "text": "Vương Dần nhìn đám binh sĩ, sau đó kể lại toàn bộ sự việc đã xảy ra."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P017",
+          "text": "Lại có chuyện như vậy sao?"
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P016",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "Vương Dần nhìn đám binh sĩ, sau đó kể lại toàn bộ sự việc đã xảy ra.",
+      "char_count": 68,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P014",
+          "text": "\"Tiên nhân, rốt cuộc đã xảy ra chuyện gì?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P015",
+          "text": "Đội trưởng do dự một chút, bọn họ nói Phương Trượng bị giết, ý của đội trưởng là hiện giờ trong phòng ngoài mấy tên hòa thượng ra thì chỉ có hai người các ngài, không sai, là ta giết."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P017",
+          "text": "Lại có chuyện như vậy sao?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P018",
+          "text": "Nghe xong, đội trưởng vô cùng kinh hãi."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P017",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "Lại có chuyện như vậy sao?",
+      "char_count": 26,
+      "word_count": 6,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P015",
+          "text": "Đội trưởng do dự một chút, bọn họ nói Phương Trượng bị giết, ý của đội trưởng là hiện giờ trong phòng ngoài mấy tên hòa thượng ra thì chỉ có hai người các ngài, không sai, là ta giết."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P016",
+          "text": "Vương Dần nhìn đám binh sĩ, sau đó kể lại toàn bộ sự việc đã xảy ra."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P018",
+          "text": "Nghe xong, đội trưởng vô cùng kinh hãi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P019",
+          "text": "Nếu sự thật đúng như lời Vương Dần nói thì đây không phải là chuyện nhỏ nữa rồi."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P018",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "Nghe xong, đội trưởng vô cùng kinh hãi.",
+      "char_count": 39,
+      "word_count": 8,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P016",
+          "text": "Vương Dần nhìn đám binh sĩ, sau đó kể lại toàn bộ sự việc đã xảy ra."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P017",
+          "text": "Lại có chuyện như vậy sao?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P019",
+          "text": "Nếu sự thật đúng như lời Vương Dần nói thì đây không phải là chuyện nhỏ nữa rồi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000536_P001",
+          "text": "Tại hội chùa ta nói này phu nhân, cái hội chùa này có gì hay đâu, chẳng bằng ở nhà nghỉ ngơi cho khỏe."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000535_P019",
+      "parent_block_id": "Itad_gcdHHM_S000535",
+      "text_exact": "Nếu sự thật đúng như lời Vương Dần nói thì đây không phải là chuyện nhỏ nữa rồi.",
+      "char_count": 80,
+      "word_count": 18,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P017",
+          "text": "Lại có chuyện như vậy sao?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P018",
+          "text": "Nghe xong, đội trưởng vô cùng kinh hãi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000536_P001",
+          "text": "Tại hội chùa ta nói này phu nhân, cái hội chùa này có gì hay đâu, chẳng bằng ở nhà nghỉ ngơi cho khỏe."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000536_P002",
+          "text": "Trình Giảo Kim phàn nàn với vợ, ông thì biết cái gì?"
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000536_P001",
+      "parent_block_id": "Itad_gcdHHM_S000536",
+      "text_exact": "Tại hội chùa ta nói này phu nhân, cái hội chùa này có gì hay đâu, chẳng bằng ở nhà nghỉ ngơi cho khỏe.",
+      "char_count": 102,
+      "word_count": 24,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P018",
+          "text": "Nghe xong, đội trưởng vô cùng kinh hãi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P019",
+          "text": "Nếu sự thật đúng như lời Vương Dần nói thì đây không phải là chuyện nhỏ nữa rồi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000536_P002",
+          "text": "Trình Giảo Kim phàn nàn với vợ, ông thì biết cái gì?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P001",
+          "text": "Trình phu nhân liếc ông một cái, lỏ giọng nói, \"Đi dạo hội chùa chỉ là tiện thể thôi."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000536_P002",
+      "parent_block_id": "Itad_gcdHHM_S000536",
+      "text_exact": "Trình Giảo Kim phàn nàn với vợ, ông thì biết cái gì?",
+      "char_count": 52,
+      "word_count": 12,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000535_P019",
+          "text": "Nếu sự thật đúng như lời Vương Dần nói thì đây không phải là chuyện nhỏ nữa rồi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000536_P001",
+          "text": "Tại hội chùa ta nói này phu nhân, cái hội chùa này có gì hay đâu, chẳng bằng ở nhà nghỉ ngơi cho khỏe."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P001",
+          "text": "Trình phu nhân liếc ông một cái, lỏ giọng nói, \"Đi dạo hội chùa chỉ là tiện thể thôi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P002",
+          "text": "Tôi nghe nói gần đây có ngôi chùa linh lắm, chúng ta vào đó bái bồ tát.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000537_P001",
+      "parent_block_id": "Itad_gcdHHM_S000537",
+      "text_exact": "Trình phu nhân liếc ông một cái, lỏ giọng nói, \"Đi dạo hội chùa chỉ là tiện thể thôi.",
+      "char_count": 85,
+      "word_count": 19,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000536_P001",
+          "text": "Tại hội chùa ta nói này phu nhân, cái hội chùa này có gì hay đâu, chẳng bằng ở nhà nghỉ ngơi cho khỏe."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000536_P002",
+          "text": "Trình Giảo Kim phàn nàn với vợ, ông thì biết cái gì?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P002",
+          "text": "Tôi nghe nói gần đây có ngôi chùa linh lắm, chúng ta vào đó bái bồ tát.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P003",
+          "text": "Câu cho chuyện đại sự cả đời của Lăng Tuyết được suôn sẻ."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000537_P002",
+      "parent_block_id": "Itad_gcdHHM_S000537",
+      "text_exact": "Tôi nghe nói gần đây có ngôi chùa linh lắm, chúng ta vào đó bái bồ tát.\"",
+      "char_count": 72,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000536_P002",
+          "text": "Trình Giảo Kim phàn nàn với vợ, ông thì biết cái gì?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P001",
+          "text": "Trình phu nhân liếc ông một cái, lỏ giọng nói, \"Đi dạo hội chùa chỉ là tiện thể thôi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P003",
+          "text": "Câu cho chuyện đại sự cả đời của Lăng Tuyết được suôn sẻ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P004",
+          "text": "\"Tôi thấy Bái Bồ Tát làm gì?"
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000537_P003",
+      "parent_block_id": "Itad_gcdHHM_S000537",
+      "text_exact": "Câu cho chuyện đại sự cả đời của Lăng Tuyết được suôn sẻ.",
+      "char_count": 57,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P001",
+          "text": "Trình phu nhân liếc ông một cái, lỏ giọng nói, \"Đi dạo hội chùa chỉ là tiện thể thôi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P002",
+          "text": "Tôi nghe nói gần đây có ngôi chùa linh lắm, chúng ta vào đó bái bồ tát.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P004",
+          "text": "\"Tôi thấy Bái Bồ Tát làm gì?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P005",
+          "text": "Cứ trực tiếp tìm tiểu tử vương dần kia không phải xong rồi sao?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000537_P004",
+      "parent_block_id": "Itad_gcdHHM_S000537",
+      "text_exact": "\"Tôi thấy Bái Bồ Tát làm gì?",
+      "char_count": 28,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P002",
+          "text": "Tôi nghe nói gần đây có ngôi chùa linh lắm, chúng ta vào đó bái bồ tát.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P003",
+          "text": "Câu cho chuyện đại sự cả đời của Lăng Tuyết được suôn sẻ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P005",
+          "text": "Cứ trực tiếp tìm tiểu tử vương dần kia không phải xong rồi sao?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000538_P001",
+          "text": "Trình Giảo Kim bất đắc dĩ nói, \"Huống hồ dạo này hai đứa nó cứ dính lấy nhau suốt."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000537_P005",
+      "parent_block_id": "Itad_gcdHHM_S000537",
+      "text_exact": "Cứ trực tiếp tìm tiểu tử vương dần kia không phải xong rồi sao?\"",
+      "char_count": 64,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P003",
+          "text": "Câu cho chuyện đại sự cả đời của Lăng Tuyết được suôn sẻ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P004",
+          "text": "\"Tôi thấy Bái Bồ Tát làm gì?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000538_P001",
+          "text": "Trình Giảo Kim bất đắc dĩ nói, \"Huống hồ dạo này hai đứa nó cứ dính lấy nhau suốt."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000538_P002",
+          "text": "Tôi thấy chuyện này tám phn m là thành rồi, bảo ông đi thì cứ đi đi.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000538_P001",
+      "parent_block_id": "Itad_gcdHHM_S000538",
+      "text_exact": "Trình Giảo Kim bất đắc dĩ nói, \"Huống hồ dạo này hai đứa nó cứ dính lấy nhau suốt.",
+      "char_count": 82,
+      "word_count": 19,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P004",
+          "text": "\"Tôi thấy Bái Bồ Tát làm gì?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P005",
+          "text": "Cứ trực tiếp tìm tiểu tử vương dần kia không phải xong rồi sao?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000538_P002",
+          "text": "Tôi thấy chuyện này tám phn m là thành rồi, bảo ông đi thì cứ đi đi.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000539_P001",
+          "text": "\"Sao mà lắm lời thế?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000538_P002",
+      "parent_block_id": "Itad_gcdHHM_S000538",
+      "text_exact": "Tôi thấy chuyện này tám phn m là thành rồi, bảo ông đi thì cứ đi đi.\"",
+      "char_count": 69,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000537_P005",
+          "text": "Cứ trực tiếp tìm tiểu tử vương dần kia không phải xong rồi sao?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000538_P001",
+          "text": "Trình Giảo Kim bất đắc dĩ nói, \"Huống hồ dạo này hai đứa nó cứ dính lấy nhau suốt."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000539_P001",
+          "text": "\"Sao mà lắm lời thế?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000539_P002",
+          "text": "Trình phu nhân nói xong liền đi thẳng về phía ngôi chùa."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000539_P001",
+      "parent_block_id": "Itad_gcdHHM_S000539",
+      "text_exact": "\"Sao mà lắm lời thế?\"",
+      "char_count": 21,
+      "word_count": 5,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000538_P001",
+          "text": "Trình Giảo Kim bất đắc dĩ nói, \"Huống hồ dạo này hai đứa nó cứ dính lấy nhau suốt."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000538_P002",
+          "text": "Tôi thấy chuyện này tám phn m là thành rồi, bảo ông đi thì cứ đi đi.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000539_P002",
+          "text": "Trình phu nhân nói xong liền đi thẳng về phía ngôi chùa."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P001",
+          "text": "Trình Giảo Kim không còn cách nào khác, đành phải lủi thủy đi theo trước cổng chùa."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000539_P002",
+      "parent_block_id": "Itad_gcdHHM_S000539",
+      "text_exact": "Trình phu nhân nói xong liền đi thẳng về phía ngôi chùa.",
+      "char_count": 56,
+      "word_count": 12,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000538_P002",
+          "text": "Tôi thấy chuyện này tám phn m là thành rồi, bảo ông đi thì cứ đi đi.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000539_P001",
+          "text": "\"Sao mà lắm lời thế?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P001",
+          "text": "Trình Giảo Kim không còn cách nào khác, đành phải lủi thủy đi theo trước cổng chùa."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P002",
+          "text": "Ồ."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000540_P001",
+      "parent_block_id": "Itad_gcdHHM_S000540",
+      "text_exact": "Trình Giảo Kim không còn cách nào khác, đành phải lủi thủy đi theo trước cổng chùa.",
+      "char_count": 83,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000539_P001",
+          "text": "\"Sao mà lắm lời thế?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000539_P002",
+          "text": "Trình phu nhân nói xong liền đi thẳng về phía ngôi chùa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P002",
+          "text": "Ồ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P003",
+          "text": "Trình Giào Kim thấy mấy tiểu hòa thượng dẫn theo một đội thành vệ quân đi vào trong chùa, khẽ ồ lên một tiếng, đoán chắc là có chuyện hay để xem."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000540_P002",
+      "parent_block_id": "Itad_gcdHHM_S000540",
+      "text_exact": "Ồ.",
+      "char_count": 2,
+      "word_count": 1,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": true
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000539_P002",
+          "text": "Trình phu nhân nói xong liền đi thẳng về phía ngôi chùa."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P001",
+          "text": "Trình Giảo Kim không còn cách nào khác, đành phải lủi thủy đi theo trước cổng chùa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P003",
+          "text": "Trình Giào Kim thấy mấy tiểu hòa thượng dẫn theo một đội thành vệ quân đi vào trong chùa, khẽ ồ lên một tiếng, đoán chắc là có chuyện hay để xem."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P004",
+          "text": "Đôi chân vốn đang miễn cưỡng của ông bỗng bước nhanh hơn."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000540_P003",
+      "parent_block_id": "Itad_gcdHHM_S000540",
+      "text_exact": "Trình Giào Kim thấy mấy tiểu hòa thượng dẫn theo một đội thành vệ quân đi vào trong chùa, khẽ ồ lên một tiếng, đoán chắc là có chuyện hay để xem.",
+      "char_count": 145,
+      "word_count": 32,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P001",
+          "text": "Trình Giảo Kim không còn cách nào khác, đành phải lủi thủy đi theo trước cổng chùa."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P002",
+          "text": "Ồ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P004",
+          "text": "Đôi chân vốn đang miễn cưỡng của ông bỗng bước nhanh hơn."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P005",
+          "text": "Có chuyện gì vậy?"
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000540_P004",
+      "parent_block_id": "Itad_gcdHHM_S000540",
+      "text_exact": "Đôi chân vốn đang miễn cưỡng của ông bỗng bước nhanh hơn.",
+      "char_count": 57,
+      "word_count": 12,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P002",
+          "text": "Ồ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P003",
+          "text": "Trình Giào Kim thấy mấy tiểu hòa thượng dẫn theo một đội thành vệ quân đi vào trong chùa, khẽ ồ lên một tiếng, đoán chắc là có chuyện hay để xem."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P005",
+          "text": "Có chuyện gì vậy?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P006",
+          "text": "Vào đến sân, Trình phu nhân thấy rất nhiều khách hành hương vây quanh Đại Hùng Bảo Điện, không ai dám vào mà chỉ đứng ngoài chỉ trỏ, liền cảm thấy kỳ quái, bên trong có chuyện gì mà mọi người không vào?"
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000540_P005",
+      "parent_block_id": "Itad_gcdHHM_S000540",
+      "text_exact": "Có chuyện gì vậy?",
+      "char_count": 17,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P003",
+          "text": "Trình Giào Kim thấy mấy tiểu hòa thượng dẫn theo một đội thành vệ quân đi vào trong chùa, khẽ ồ lên một tiếng, đoán chắc là có chuyện hay để xem."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P004",
+          "text": "Đôi chân vốn đang miễn cưỡng của ông bỗng bước nhanh hơn."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P006",
+          "text": "Vào đến sân, Trình phu nhân thấy rất nhiều khách hành hương vây quanh Đại Hùng Bảo Điện, không ai dám vào mà chỉ đứng ngoài chỉ trỏ, liền cảm thấy kỳ quái, bên trong có chuyện gì mà mọi người không vào?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P007",
+          "text": "Thấy đông người quá không nhìn rõ tình hình, Trinh Giào Kim kéo một vị khách hành hương lại hỏi thăm, \"Tôi nói cho ông biết, chuyện lớn rồi.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000540_P006",
+      "parent_block_id": "Itad_gcdHHM_S000540",
+      "text_exact": "Vào đến sân, Trình phu nhân thấy rất nhiều khách hành hương vây quanh Đại Hùng Bảo Điện, không ai dám vào mà chỉ đứng ngoài chỉ trỏ, liền cảm thấy kỳ quái, bên trong có chuyện gì mà mọi người không vào?",
+      "char_count": 202,
+      "word_count": 43,
+      "hints": {
+        "needs_ai_split_hint": true,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P004",
+          "text": "Đôi chân vốn đang miễn cưỡng của ông bỗng bước nhanh hơn."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P005",
+          "text": "Có chuyện gì vậy?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P007",
+          "text": "Thấy đông người quá không nhìn rõ tình hình, Trinh Giào Kim kéo một vị khách hành hương lại hỏi thăm, \"Tôi nói cho ông biết, chuyện lớn rồi.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P008",
+          "text": "Vị khách hành hương kể lại đầu đuôi sự việc vừa xảy ra."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000540_P007",
+      "parent_block_id": "Itad_gcdHHM_S000540",
+      "text_exact": "Thấy đông người quá không nhìn rõ tình hình, Trinh Giào Kim kéo một vị khách hành hương lại hỏi thăm, \"Tôi nói cho ông biết, chuyện lớn rồi.\"",
+      "char_count": 141,
+      "word_count": 29,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P005",
+          "text": "Có chuyện gì vậy?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P006",
+          "text": "Vào đến sân, Trình phu nhân thấy rất nhiều khách hành hương vây quanh Đại Hùng Bảo Điện, không ai dám vào mà chỉ đứng ngoài chỉ trỏ, liền cảm thấy kỳ quái, bên trong có chuyện gì mà mọi người không vào?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P008",
+          "text": "Vị khách hành hương kể lại đầu đuôi sự việc vừa xảy ra."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P009",
+          "text": "\"Lại có chuyện như vậy sao?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000540_P008",
+      "parent_block_id": "Itad_gcdHHM_S000540",
+      "text_exact": "Vị khách hành hương kể lại đầu đuôi sự việc vừa xảy ra.",
+      "char_count": 55,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P006",
+          "text": "Vào đến sân, Trình phu nhân thấy rất nhiều khách hành hương vây quanh Đại Hùng Bảo Điện, không ai dám vào mà chỉ đứng ngoài chỉ trỏ, liền cảm thấy kỳ quái, bên trong có chuyện gì mà mọi người không vào?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P007",
+          "text": "Thấy đông người quá không nhìn rõ tình hình, Trinh Giào Kim kéo một vị khách hành hương lại hỏi thăm, \"Tôi nói cho ông biết, chuyện lớn rồi.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P009",
+          "text": "\"Lại có chuyện như vậy sao?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P010",
+          "text": "Trình Giảo Kim nhíu mày."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000540_P009",
+      "parent_block_id": "Itad_gcdHHM_S000540",
+      "text_exact": "\"Lại có chuyện như vậy sao?\"",
+      "char_count": 28,
+      "word_count": 6,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P007",
+          "text": "Thấy đông người quá không nhìn rõ tình hình, Trinh Giào Kim kéo một vị khách hành hương lại hỏi thăm, \"Tôi nói cho ông biết, chuyện lớn rồi.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P008",
+          "text": "Vị khách hành hương kể lại đầu đuôi sự việc vừa xảy ra."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P010",
+          "text": "Trình Giảo Kim nhíu mày."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P001",
+          "text": "\"Phu nhân, bà đứng đây đợi một lát, tôi vào xem sao.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000540_P010",
+      "parent_block_id": "Itad_gcdHHM_S000540",
+      "text_exact": "Trình Giảo Kim nhíu mày.",
+      "char_count": 24,
+      "word_count": 5,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P008",
+          "text": "Vị khách hành hương kể lại đầu đuôi sự việc vừa xảy ra."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P009",
+          "text": "\"Lại có chuyện như vậy sao?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P001",
+          "text": "\"Phu nhân, bà đứng đây đợi một lát, tôi vào xem sao.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P002",
+          "text": "Thấy vợ gật đầu, Trinh Giào Kim liền sẽ đám đông đi vào."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000541_P001",
+      "parent_block_id": "Itad_gcdHHM_S000541",
+      "text_exact": "\"Phu nhân, bà đứng đây đợi một lát, tôi vào xem sao.\"",
+      "char_count": 53,
+      "word_count": 12,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P009",
+          "text": "\"Lại có chuyện như vậy sao?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P010",
+          "text": "Trình Giảo Kim nhíu mày."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P002",
+          "text": "Thấy vợ gật đầu, Trinh Giào Kim liền sẽ đám đông đi vào."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P003",
+          "text": "Lang Tuyết, Vương Dần."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000541_P002",
+      "parent_block_id": "Itad_gcdHHM_S000541",
+      "text_exact": "Thấy vợ gật đầu, Trinh Giào Kim liền sẽ đám đông đi vào.",
+      "char_count": 56,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000540_P010",
+          "text": "Trình Giảo Kim nhíu mày."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P001",
+          "text": "\"Phu nhân, bà đứng đây đợi một lát, tôi vào xem sao.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P003",
+          "text": "Lang Tuyết, Vương Dần."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P004",
+          "text": "Thấy hai người trong điện, Trinh Giảo Kim kinh ngạc hỏi, \"Xảy ra chuyện gì thế này?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000541_P003",
+      "parent_block_id": "Itad_gcdHHM_S000541",
+      "text_exact": "Lang Tuyết, Vương Dần.",
+      "char_count": 22,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P001",
+          "text": "\"Phu nhân, bà đứng đây đợi một lát, tôi vào xem sao.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P002",
+          "text": "Thấy vợ gật đầu, Trinh Giào Kim liền sẽ đám đông đi vào."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P004",
+          "text": "Thấy hai người trong điện, Trinh Giảo Kim kinh ngạc hỏi, \"Xảy ra chuyện gì thế này?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P005",
+          "text": "Ngay sau đó, Trinh Giảo Kim chun mũi lại, người thấy một mùi máu tanh nồng nặc."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000541_P004",
+      "parent_block_id": "Itad_gcdHHM_S000541",
+      "text_exact": "Thấy hai người trong điện, Trinh Giảo Kim kinh ngạc hỏi, \"Xảy ra chuyện gì thế này?\"",
+      "char_count": 84,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P002",
+          "text": "Thấy vợ gật đầu, Trinh Giào Kim liền sẽ đám đông đi vào."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P003",
+          "text": "Lang Tuyết, Vương Dần."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P005",
+          "text": "Ngay sau đó, Trinh Giảo Kim chun mũi lại, người thấy một mùi máu tanh nồng nặc."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P006",
+          "text": "Nhìn kỹ lại, ông thấy một cái xác không đầu nằm trên đất, nhận ra đó là phương trượng của chùa này."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000541_P005",
+      "parent_block_id": "Itad_gcdHHM_S000541",
+      "text_exact": "Ngay sau đó, Trinh Giảo Kim chun mũi lại, người thấy một mùi máu tanh nồng nặc.",
+      "char_count": 79,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P003",
+          "text": "Lang Tuyết, Vương Dần."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P004",
+          "text": "Thấy hai người trong điện, Trinh Giảo Kim kinh ngạc hỏi, \"Xảy ra chuyện gì thế này?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P006",
+          "text": "Nhìn kỹ lại, ông thấy một cái xác không đầu nằm trên đất, nhận ra đó là phương trượng của chùa này."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P007",
+          "text": "Cách đó không xa, một cái đầu chọc lóc đang nằm im lìm, trên mặt vẫn còn vương lại vẻ kinh hoàng tột độ."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000541_P006",
+      "parent_block_id": "Itad_gcdHHM_S000541",
+      "text_exact": "Nhìn kỹ lại, ông thấy một cái xác không đầu nằm trên đất, nhận ra đó là phương trượng của chùa này.",
+      "char_count": 99,
+      "word_count": 22,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P004",
+          "text": "Thấy hai người trong điện, Trinh Giảo Kim kinh ngạc hỏi, \"Xảy ra chuyện gì thế này?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P005",
+          "text": "Ngay sau đó, Trinh Giảo Kim chun mũi lại, người thấy một mùi máu tanh nồng nặc."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P007",
+          "text": "Cách đó không xa, một cái đầu chọc lóc đang nằm im lìm, trên mặt vẫn còn vương lại vẻ kinh hoàng tột độ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P008",
+          "text": "Lão Trình Vương Dần thầm nghĩ thật là khéo, sau đó kéo ông sang một bên kể lại mọi chuyện."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000541_P007",
+      "parent_block_id": "Itad_gcdHHM_S000541",
+      "text_exact": "Cách đó không xa, một cái đầu chọc lóc đang nằm im lìm, trên mặt vẫn còn vương lại vẻ kinh hoàng tột độ.",
+      "char_count": 104,
+      "word_count": 24,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P005",
+          "text": "Ngay sau đó, Trinh Giảo Kim chun mũi lại, người thấy một mùi máu tanh nồng nặc."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P006",
+          "text": "Nhìn kỹ lại, ông thấy một cái xác không đầu nằm trên đất, nhận ra đó là phương trượng của chùa này."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P008",
+          "text": "Lão Trình Vương Dần thầm nghĩ thật là khéo, sau đó kéo ông sang một bên kể lại mọi chuyện."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P009",
+          "text": "Cái gì?"
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000541_P008",
+      "parent_block_id": "Itad_gcdHHM_S000541",
+      "text_exact": "Lão Trình Vương Dần thầm nghĩ thật là khéo, sau đó kéo ông sang một bên kể lại mọi chuyện.",
+      "char_count": 90,
+      "word_count": 20,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P006",
+          "text": "Nhìn kỹ lại, ông thấy một cái xác không đầu nằm trên đất, nhận ra đó là phương trượng của chùa này."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P007",
+          "text": "Cách đó không xa, một cái đầu chọc lóc đang nằm im lìm, trên mặt vẫn còn vương lại vẻ kinh hoàng tột độ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P009",
+          "text": "Cái gì?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P010",
+          "text": "Nghe tin con gái mình suýt chút nữa bị đám hòa thượng trong chùa làm nục, mắt Trình Giảo Kim trợn ngược lên, vội vàng chạy đến bên cạnh Trình Lăng Tuyết lo lắng hỏi."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000541_P009",
+      "parent_block_id": "Itad_gcdHHM_S000541",
+      "text_exact": "Cái gì?",
+      "char_count": 7,
+      "word_count": 2,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": true
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P007",
+          "text": "Cách đó không xa, một cái đầu chọc lóc đang nằm im lìm, trên mặt vẫn còn vương lại vẻ kinh hoàng tột độ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P008",
+          "text": "Lão Trình Vương Dần thầm nghĩ thật là khéo, sau đó kéo ông sang một bên kể lại mọi chuyện."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P010",
+          "text": "Nghe tin con gái mình suýt chút nữa bị đám hòa thượng trong chùa làm nục, mắt Trình Giảo Kim trợn ngược lên, vội vàng chạy đến bên cạnh Trình Lăng Tuyết lo lắng hỏi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P011",
+          "text": "\"Lang Tuyết, con không sao chứ?"
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000541_P010",
+      "parent_block_id": "Itad_gcdHHM_S000541",
+      "text_exact": "Nghe tin con gái mình suýt chút nữa bị đám hòa thượng trong chùa làm nục, mắt Trình Giảo Kim trợn ngược lên, vội vàng chạy đến bên cạnh Trình Lăng Tuyết lo lắng hỏi.",
+      "char_count": 165,
+      "word_count": 35,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P008",
+          "text": "Lão Trình Vương Dần thầm nghĩ thật là khéo, sau đó kéo ông sang một bên kể lại mọi chuyện."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P009",
+          "text": "Cái gì?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P011",
+          "text": "\"Lang Tuyết, con không sao chứ?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P012",
+          "text": "Cha, con không sao."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000541_P011",
+      "parent_block_id": "Itad_gcdHHM_S000541",
+      "text_exact": "\"Lang Tuyết, con không sao chứ?",
+      "char_count": 31,
+      "word_count": 6,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P009",
+          "text": "Cái gì?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P010",
+          "text": "Nghe tin con gái mình suýt chút nữa bị đám hòa thượng trong chùa làm nục, mắt Trình Giảo Kim trợn ngược lên, vội vàng chạy đến bên cạnh Trình Lăng Tuyết lo lắng hỏi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P012",
+          "text": "Cha, con không sao."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P013",
+          "text": "Trình Lăng Tuyết lắc đầu, may mà dần ca đến kịp lúc."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000541_P012",
+      "parent_block_id": "Itad_gcdHHM_S000541",
+      "text_exact": "Cha, con không sao.",
+      "char_count": 19,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P010",
+          "text": "Nghe tin con gái mình suýt chút nữa bị đám hòa thượng trong chùa làm nục, mắt Trình Giảo Kim trợn ngược lên, vội vàng chạy đến bên cạnh Trình Lăng Tuyết lo lắng hỏi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P011",
+          "text": "\"Lang Tuyết, con không sao chứ?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P013",
+          "text": "Trình Lăng Tuyết lắc đầu, may mà dần ca đến kịp lúc."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P014",
+          "text": "Đúng rồi, mẹ con đang ở bên ngoài, con ra tìm bà ấy đi."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000541_P013",
+      "parent_block_id": "Itad_gcdHHM_S000541",
+      "text_exact": "Trình Lăng Tuyết lắc đầu, may mà dần ca đến kịp lúc.",
+      "char_count": 52,
+      "word_count": 12,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P011",
+          "text": "\"Lang Tuyết, con không sao chứ?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P012",
+          "text": "Cha, con không sao."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P014",
+          "text": "Đúng rồi, mẹ con đang ở bên ngoài, con ra tìm bà ấy đi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P001",
+          "text": "Thấy con gái thật sự không sao, Trình Giảo Kim dặn dò một câu."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000541_P014",
+      "parent_block_id": "Itad_gcdHHM_S000541",
+      "text_exact": "Đúng rồi, mẹ con đang ở bên ngoài, con ra tìm bà ấy đi.",
+      "char_count": 55,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P012",
+          "text": "Cha, con không sao."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P013",
+          "text": "Trình Lăng Tuyết lắc đầu, may mà dần ca đến kịp lúc."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P001",
+          "text": "Thấy con gái thật sự không sao, Trình Giảo Kim dặn dò một câu."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P002",
+          "text": "Đám thành vệ quân lúc nãy đâu rồi?"
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P001",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Thấy con gái thật sự không sao, Trình Giảo Kim dặn dò một câu.",
+      "char_count": 62,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P013",
+          "text": "Trình Lăng Tuyết lắc đầu, may mà dần ca đến kịp lúc."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P014",
+          "text": "Đúng rồi, mẹ con đang ở bên ngoài, con ra tìm bà ấy đi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P002",
+          "text": "Đám thành vệ quân lúc nãy đâu rồi?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P003",
+          "text": "Trình Giảo Kim không thấy bóng dáng thành vệ quân trong điện, liền hỏi Vương Dần, \"Ta bảo bọn họ đi khống chế đám hòa thượng trong chùa rồi.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P002",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Đám thành vệ quân lúc nãy đâu rồi?",
+      "char_count": 34,
+      "word_count": 8,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000541_P014",
+          "text": "Đúng rồi, mẹ con đang ở bên ngoài, con ra tìm bà ấy đi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P001",
+          "text": "Thấy con gái thật sự không sao, Trình Giảo Kim dặn dò một câu."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P003",
+          "text": "Trình Giảo Kim không thấy bóng dáng thành vệ quân trong điện, liền hỏi Vương Dần, \"Ta bảo bọn họ đi khống chế đám hòa thượng trong chùa rồi.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P004",
+          "text": "Vương Dần nói, \"Cũng không biết có phải tất cả hòa thượng đều tham gia hay không.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P003",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Trình Giảo Kim không thấy bóng dáng thành vệ quân trong điện, liền hỏi Vương Dần, \"Ta bảo bọn họ đi khống chế đám hòa thượng trong chùa rồi.\"",
+      "char_count": 141,
+      "word_count": 29,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P001",
+          "text": "Thấy con gái thật sự không sao, Trình Giảo Kim dặn dò một câu."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P002",
+          "text": "Đám thành vệ quân lúc nãy đâu rồi?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P004",
+          "text": "Vương Dần nói, \"Cũng không biết có phải tất cả hòa thượng đều tham gia hay không.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P005",
+          "text": "\"Không được, chuyện lớn thế này phải báo cho bệ hạ một tiếng.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P004",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Vương Dần nói, \"Cũng không biết có phải tất cả hòa thượng đều tham gia hay không.\"",
+      "char_count": 82,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P002",
+          "text": "Đám thành vệ quân lúc nãy đâu rồi?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P003",
+          "text": "Trình Giảo Kim không thấy bóng dáng thành vệ quân trong điện, liền hỏi Vương Dần, \"Ta bảo bọn họ đi khống chế đám hòa thượng trong chùa rồi.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P005",
+          "text": "\"Không được, chuyện lớn thế này phải báo cho bệ hạ một tiếng.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P006",
+          "text": "Trình Giảo Kim lẩm bẩm, định quay người đi ra ngoài."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P005",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "\"Không được, chuyện lớn thế này phải báo cho bệ hạ một tiếng.\"",
+      "char_count": 62,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P003",
+          "text": "Trình Giảo Kim không thấy bóng dáng thành vệ quân trong điện, liền hỏi Vương Dần, \"Ta bảo bọn họ đi khống chế đám hòa thượng trong chùa rồi.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P004",
+          "text": "Vương Dần nói, \"Cũng không biết có phải tất cả hòa thượng đều tham gia hay không.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P006",
+          "text": "Trình Giảo Kim lẩm bẩm, định quay người đi ra ngoài."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P007",
+          "text": "Ta đã sai một binh sĩ đi báo ti rồi."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P006",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Trình Giảo Kim lẩm bẩm, định quay người đi ra ngoài.",
+      "char_count": 52,
+      "word_count": 11,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P004",
+          "text": "Vương Dần nói, \"Cũng không biết có phải tất cả hòa thượng đều tham gia hay không.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P005",
+          "text": "\"Không được, chuyện lớn thế này phải báo cho bệ hạ một tiếng.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P007",
+          "text": "Ta đã sai một binh sĩ đi báo ti rồi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P008",
+          "text": "Vương Dần giữ ông lại, cũng bảo bọn họ đi lục soát hậu viện."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P007",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Ta đã sai một binh sĩ đi báo ti rồi.",
+      "char_count": 36,
+      "word_count": 10,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P005",
+          "text": "\"Không được, chuyện lớn thế này phải báo cho bệ hạ một tiếng.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P006",
+          "text": "Trình Giảo Kim lẩm bẩm, định quay người đi ra ngoài."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P008",
+          "text": "Vương Dần giữ ông lại, cũng bảo bọn họ đi lục soát hậu viện."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P009",
+          "text": "Ta nghi ngờ nơi này không chỉ có một căn phòng bí mật đó đâu."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P008",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Vương Dần giữ ông lại, cũng bảo bọn họ đi lục soát hậu viện.",
+      "char_count": 60,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P006",
+          "text": "Trình Giảo Kim lẩm bẩm, định quay người đi ra ngoài."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P007",
+          "text": "Ta đã sai một binh sĩ đi báo ti rồi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P009",
+          "text": "Ta nghi ngờ nơi này không chỉ có một căn phòng bí mật đó đâu."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P010",
+          "text": "Vương Dần nói xong, hai người cùng đứng trong đại điện chờ đợi."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P009",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Ta nghi ngờ nơi này không chỉ có một căn phòng bí mật đó đâu.",
+      "char_count": 61,
+      "word_count": 15,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P007",
+          "text": "Ta đã sai một binh sĩ đi báo ti rồi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P008",
+          "text": "Vương Dần giữ ông lại, cũng bảo bọn họ đi lục soát hậu viện."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P010",
+          "text": "Vương Dần nói xong, hai người cùng đứng trong đại điện chờ đợi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P011",
+          "text": "Thánh nhân giá lâm, bỗng nhiên từ ngoài sân vang lên một tiếng hô lanh lảnh, ngay sau đó là tiếng của đám khách hành hương."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P010",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Vương Dần nói xong, hai người cùng đứng trong đại điện chờ đợi.",
+      "char_count": 63,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P008",
+          "text": "Vương Dần giữ ông lại, cũng bảo bọn họ đi lục soát hậu viện."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P009",
+          "text": "Ta nghi ngờ nơi này không chỉ có một căn phòng bí mật đó đâu."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P011",
+          "text": "Thánh nhân giá lâm, bỗng nhiên từ ngoài sân vang lên một tiếng hô lanh lảnh, ngay sau đó là tiếng của đám khách hành hương."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P012",
+          "text": "Tham kiến bệ hạ, chi tiết Vương Dần."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P011",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Thánh nhân giá lâm, bỗng nhiên từ ngoài sân vang lên một tiếng hô lanh lảnh, ngay sau đó là tiếng của đám khách hành hương.",
+      "char_count": 123,
+      "word_count": 26,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P009",
+          "text": "Ta nghi ngờ nơi này không chỉ có một căn phòng bí mật đó đâu."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P010",
+          "text": "Vương Dần nói xong, hai người cùng đứng trong đại điện chờ đợi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P012",
+          "text": "Tham kiến bệ hạ, chi tiết Vương Dần."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P013",
+          "text": "Lý Thế Dân cùng hoàng hậu và Vương công công bước vào điện, thấy hai người thì sững sờ thăm kiến bệ hạ, bái kiến hoàng hậu nương nương."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P012",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Tham kiến bệ hạ, chi tiết Vương Dần.",
+      "char_count": 36,
+      "word_count": 8,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P010",
+          "text": "Vương Dần nói xong, hai người cùng đứng trong đại điện chờ đợi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P011",
+          "text": "Thánh nhân giá lâm, bỗng nhiên từ ngoài sân vang lên một tiếng hô lanh lảnh, ngay sau đó là tiếng của đám khách hành hương."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P013",
+          "text": "Lý Thế Dân cùng hoàng hậu và Vương công công bước vào điện, thấy hai người thì sững sờ thăm kiến bệ hạ, bái kiến hoàng hậu nương nương."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P014",
+          "text": "Trình Giảo Kim vội vàng hành lễ, \"Lão Lý, sao ông đến nhanh thế?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P013",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Lý Thế Dân cùng hoàng hậu và Vương công công bước vào điện, thấy hai người thì sững sờ thăm kiến bệ hạ, bái kiến hoàng hậu nương nương.",
+      "char_count": 135,
+      "word_count": 29,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P011",
+          "text": "Thánh nhân giá lâm, bỗng nhiên từ ngoài sân vang lên một tiếng hô lanh lảnh, ngay sau đó là tiếng của đám khách hành hương."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P012",
+          "text": "Tham kiến bệ hạ, chi tiết Vương Dần."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P014",
+          "text": "Trình Giảo Kim vội vàng hành lễ, \"Lão Lý, sao ông đến nhanh thế?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P015",
+          "text": "Vương Dần nhìn Lý Thế Dân, Nạc Nhiên hỏi, \"Lúc nãy trẫm cùng Quan Âm Tỳ đang dạo hội chùa, nghe thấy trước cổng chùa có người bàn tán bên trong có án mạng nên vào xem.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P014",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Trình Giảo Kim vội vàng hành lễ, \"Lão Lý, sao ông đến nhanh thế?\"",
+      "char_count": 65,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P012",
+          "text": "Tham kiến bệ hạ, chi tiết Vương Dần."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P013",
+          "text": "Lý Thế Dân cùng hoàng hậu và Vương công công bước vào điện, thấy hai người thì sững sờ thăm kiến bệ hạ, bái kiến hoàng hậu nương nương."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P015",
+          "text": "Vương Dần nhìn Lý Thế Dân, Nạc Nhiên hỏi, \"Lúc nãy trẫm cùng Quan Âm Tỳ đang dạo hội chùa, nghe thấy trước cổng chùa có người bàn tán bên trong có án mạng nên vào xem.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P016",
+          "text": "Lý Thế Dân nói, sau đó nhìn thi thể và cái đầu dưới đất, \"Rốt cuộc đã xảy ra chuyện gì?"
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P015",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Vương Dần nhìn Lý Thế Dân, Nạc Nhiên hỏi, \"Lúc nãy trẫm cùng Quan Âm Tỳ đang dạo hội chùa, nghe thấy trước cổng chùa có người bàn tán bên trong có án mạng nên vào xem.\"",
+      "char_count": 168,
+      "word_count": 37,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P013",
+          "text": "Lý Thế Dân cùng hoàng hậu và Vương công công bước vào điện, thấy hai người thì sững sờ thăm kiến bệ hạ, bái kiến hoàng hậu nương nương."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P014",
+          "text": "Trình Giảo Kim vội vàng hành lễ, \"Lão Lý, sao ông đến nhanh thế?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P016",
+          "text": "Lý Thế Dân nói, sau đó nhìn thi thể và cái đầu dưới đất, \"Rốt cuộc đã xảy ra chuyện gì?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P017",
+          "text": "Hóa ra là vậy."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P016",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Lý Thế Dân nói, sau đó nhìn thi thể và cái đầu dưới đất, \"Rốt cuộc đã xảy ra chuyện gì?",
+      "char_count": 87,
+      "word_count": 21,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P014",
+          "text": "Trình Giảo Kim vội vàng hành lễ, \"Lão Lý, sao ông đến nhanh thế?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P015",
+          "text": "Vương Dần nhìn Lý Thế Dân, Nạc Nhiên hỏi, \"Lúc nãy trẫm cùng Quan Âm Tỳ đang dạo hội chùa, nghe thấy trước cổng chùa có người bàn tán bên trong có án mạng nên vào xem.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P017",
+          "text": "Hóa ra là vậy."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P018",
+          "text": "Hành gì ông đến nhanh thế?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P017",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Hóa ra là vậy.",
+      "char_count": 14,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P015",
+          "text": "Vương Dần nhìn Lý Thế Dân, Nạc Nhiên hỏi, \"Lúc nãy trẫm cùng Quan Âm Tỳ đang dạo hội chùa, nghe thấy trước cổng chùa có người bàn tán bên trong có án mạng nên vào xem.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P016",
+          "text": "Lý Thế Dân nói, sau đó nhìn thi thể và cái đầu dưới đất, \"Rốt cuộc đã xảy ra chuyện gì?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P018",
+          "text": "Hành gì ông đến nhanh thế?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P019",
+          "text": "Vương Dần lẩm bẩm một câu, sau đó lại kể lại đầu đuôi sự việc một lần nữa."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P018",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Hành gì ông đến nhanh thế?\"",
+      "char_count": 27,
+      "word_count": 6,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P016",
+          "text": "Lý Thế Dân nói, sau đó nhìn thi thể và cái đầu dưới đất, \"Rốt cuộc đã xảy ra chuyện gì?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P017",
+          "text": "Hóa ra là vậy."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P019",
+          "text": "Vương Dần lẩm bẩm một câu, sau đó lại kể lại đầu đuôi sự việc một lần nữa."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P020",
+          "text": "Càn rỡ."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P019",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Vương Dần lẩm bẩm một câu, sau đó lại kể lại đầu đuôi sự việc một lần nữa.",
+      "char_count": 74,
+      "word_count": 18,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P017",
+          "text": "Hóa ra là vậy."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P018",
+          "text": "Hành gì ông đến nhanh thế?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P020",
+          "text": "Càn rỡ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P001",
+          "text": "Nghe xong, Lý Thế Dân lập tức nổi trận lôi đình, ngay tại thành Trường An, ngay dưới chân trẫm lại dám làm ra chuyện đồi bại như thế, thật là không coi trẫm ra gì."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000542_P020",
+      "parent_block_id": "Itad_gcdHHM_S000542",
+      "text_exact": "Càn rỡ.",
+      "char_count": 7,
+      "word_count": 2,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": true
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P018",
+          "text": "Hành gì ông đến nhanh thế?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P019",
+          "text": "Vương Dần lẩm bẩm một câu, sau đó lại kể lại đầu đuôi sự việc một lần nữa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P001",
+          "text": "Nghe xong, Lý Thế Dân lập tức nổi trận lôi đình, ngay tại thành Trường An, ngay dưới chân trẫm lại dám làm ra chuyện đồi bại như thế, thật là không coi trẫm ra gì."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P002",
+          "text": "Vương Dần, cái dân mà ngươi nói đã có người đi kiểm tra chưa?"
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000543_P001",
+      "parent_block_id": "Itad_gcdHHM_S000543",
+      "text_exact": "Nghe xong, Lý Thế Dân lập tức nổi trận lôi đình, ngay tại thành Trường An, ngay dưới chân trẫm lại dám làm ra chuyện đồi bại như thế, thật là không coi trẫm ra gì.",
+      "char_count": 163,
+      "word_count": 36,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P019",
+          "text": "Vương Dần lẩm bẩm một câu, sau đó lại kể lại đầu đuôi sự việc một lần nữa."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P020",
+          "text": "Càn rỡ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P002",
+          "text": "Vương Dần, cái dân mà ngươi nói đã có người đi kiểm tra chưa?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P003",
+          "text": "Trưởng tôn hoàng hậu hỏi."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000543_P002",
+      "parent_block_id": "Itad_gcdHHM_S000543",
+      "text_exact": "Vương Dần, cái dân mà ngươi nói đã có người đi kiểm tra chưa?",
+      "char_count": 61,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000542_P020",
+          "text": "Càn rỡ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P001",
+          "text": "Nghe xong, Lý Thế Dân lập tức nổi trận lôi đình, ngay tại thành Trường An, ngay dưới chân trẫm lại dám làm ra chuyện đồi bại như thế, thật là không coi trẫm ra gì."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P003",
+          "text": "Trưởng tôn hoàng hậu hỏi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P004",
+          "text": "Tiên nhân, đội trưởng thành vệ quân bước vào điện, điện định điện bao cao với Vương Dần, nhưng khi thấy Lý Thế Dân Mặc Long Bảo thì vội vàng hành lễ, tham kiến bệ hạ, đã tìm thấy chưa?"
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000543_P003",
+      "parent_block_id": "Itad_gcdHHM_S000543",
+      "text_exact": "Trưởng tôn hoàng hậu hỏi.",
+      "char_count": 25,
+      "word_count": 5,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P001",
+          "text": "Nghe xong, Lý Thế Dân lập tức nổi trận lôi đình, ngay tại thành Trường An, ngay dưới chân trẫm lại dám làm ra chuyện đồi bại như thế, thật là không coi trẫm ra gì."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P002",
+          "text": "Vương Dần, cái dân mà ngươi nói đã có người đi kiểm tra chưa?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P004",
+          "text": "Tiên nhân, đội trưởng thành vệ quân bước vào điện, điện định điện bao cao với Vương Dần, nhưng khi thấy Lý Thế Dân Mặc Long Bảo thì vội vàng hành lễ, tham kiến bệ hạ, đã tìm thấy chưa?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P005",
+          "text": "Lý thế dân không còn tâm trí đâu mà để ý lễ tiết, vội vàng hỏi, \"Khởi bẩm bệ hạ, tìm thấy rồi.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000543_P004",
+      "parent_block_id": "Itad_gcdHHM_S000543",
+      "text_exact": "Tiên nhân, đội trưởng thành vệ quân bước vào điện, điện định điện bao cao với Vương Dần, nhưng khi thấy Lý Thế Dân Mặc Long Bảo thì vội vàng hành lễ, tham kiến bệ hạ, đã tìm thấy chưa?",
+      "char_count": 184,
+      "word_count": 40,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P002",
+          "text": "Vương Dần, cái dân mà ngươi nói đã có người đi kiểm tra chưa?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P003",
+          "text": "Trưởng tôn hoàng hậu hỏi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P005",
+          "text": "Lý thế dân không còn tâm trí đâu mà để ý lễ tiết, vội vàng hỏi, \"Khởi bẩm bệ hạ, tìm thấy rồi.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P006",
+          "text": "Đội trưởng thần sắc ảm đạm đáp, \"Có chuyện gì?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000543_P005",
+      "parent_block_id": "Itad_gcdHHM_S000543",
+      "text_exact": "Lý thế dân không còn tâm trí đâu mà để ý lễ tiết, vội vàng hỏi, \"Khởi bẩm bệ hạ, tìm thấy rồi.\"",
+      "char_count": 95,
+      "word_count": 23,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P003",
+          "text": "Trưởng tôn hoàng hậu hỏi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P004",
+          "text": "Tiên nhân, đội trưởng thành vệ quân bước vào điện, điện định điện bao cao với Vương Dần, nhưng khi thấy Lý Thế Dân Mặc Long Bảo thì vội vàng hành lễ, tham kiến bệ hạ, đã tìm thấy chưa?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P006",
+          "text": "Đội trưởng thần sắc ảm đạm đáp, \"Có chuyện gì?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P001",
+          "text": "Thấy vẻ mặt của hắn, Lý Thế Dân nhíu mày."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000543_P006",
+      "parent_block_id": "Itad_gcdHHM_S000543",
+      "text_exact": "Đội trưởng thần sắc ảm đạm đáp, \"Có chuyện gì?\"",
+      "char_count": 47,
+      "word_count": 10,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P004",
+          "text": "Tiên nhân, đội trưởng thành vệ quân bước vào điện, điện định điện bao cao với Vương Dần, nhưng khi thấy Lý Thế Dân Mặc Long Bảo thì vội vàng hành lễ, tham kiến bệ hạ, đã tìm thấy chưa?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P005",
+          "text": "Lý thế dân không còn tâm trí đâu mà để ý lễ tiết, vội vàng hỏi, \"Khởi bẩm bệ hạ, tìm thấy rồi.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P001",
+          "text": "Thấy vẻ mặt của hắn, Lý Thế Dân nhíu mày."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P002",
+          "text": "\"Bề hạ, ngài nên tự mình đi xem thì hơn.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000544_P001",
+      "parent_block_id": "Itad_gcdHHM_S000544",
+      "text_exact": "Thấy vẻ mặt của hắn, Lý Thế Dân nhíu mày.",
+      "char_count": 41,
+      "word_count": 10,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P005",
+          "text": "Lý thế dân không còn tâm trí đâu mà để ý lễ tiết, vội vàng hỏi, \"Khởi bẩm bệ hạ, tìm thấy rồi.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P006",
+          "text": "Đội trưởng thần sắc ảm đạm đáp, \"Có chuyện gì?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P002",
+          "text": "\"Bề hạ, ngài nên tự mình đi xem thì hơn.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P003",
+          "text": "Đội trưởng do dự nói, \"Dẫn đường mai sân.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000544_P002",
+      "parent_block_id": "Itad_gcdHHM_S000544",
+      "text_exact": "\"Bề hạ, ngài nên tự mình đi xem thì hơn.\"",
+      "char_count": 41,
+      "word_count": 10,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000543_P006",
+          "text": "Đội trưởng thần sắc ảm đạm đáp, \"Có chuyện gì?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P001",
+          "text": "Thấy vẻ mặt của hắn, Lý Thế Dân nhíu mày."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P003",
+          "text": "Đội trưởng do dự nói, \"Dẫn đường mai sân.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P004",
+          "text": "Khách Hành Hương thấy đám binh sĩ luộc các hòa thượng tập trung lại một chỗ, trong lòng thầm thắc mắc."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000544_P003",
+      "parent_block_id": "Itad_gcdHHM_S000544",
+      "text_exact": "Đội trưởng do dự nói, \"Dẫn đường mai sân.\"",
+      "char_count": 42,
+      "word_count": 9,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P001",
+          "text": "Thấy vẻ mặt của hắn, Lý Thế Dân nhíu mày."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P002",
+          "text": "\"Bề hạ, ngài nên tự mình đi xem thì hơn.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P004",
+          "text": "Khách Hành Hương thấy đám binh sĩ luộc các hòa thượng tập trung lại một chỗ, trong lòng thầm thắc mắc."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P005",
+          "text": "Đang lúc họ xì xào bàn tán, bỗng thấy mấy binh sĩ từ phía hậu viện đi tới."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000544_P004",
+      "parent_block_id": "Itad_gcdHHM_S000544",
+      "text_exact": "Khách Hành Hương thấy đám binh sĩ luộc các hòa thượng tập trung lại một chỗ, trong lòng thầm thắc mắc.",
+      "char_count": 102,
+      "word_count": 21,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P002",
+          "text": "\"Bề hạ, ngài nên tự mình đi xem thì hơn.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P003",
+          "text": "Đội trưởng do dự nói, \"Dẫn đường mai sân.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P005",
+          "text": "Đang lúc họ xì xào bàn tán, bỗng thấy mấy binh sĩ từ phía hậu viện đi tới."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P006",
+          "text": "La lùng là họ chỉ mặc áo lót, còn giáp trụ thì cởi ra."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000544_P005",
+      "parent_block_id": "Itad_gcdHHM_S000544",
+      "text_exact": "Đang lúc họ xì xào bàn tán, bỗng thấy mấy binh sĩ từ phía hậu viện đi tới.",
+      "char_count": 74,
+      "word_count": 18,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P003",
+          "text": "Đội trưởng do dự nói, \"Dẫn đường mai sân.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P004",
+          "text": "Khách Hành Hương thấy đám binh sĩ luộc các hòa thượng tập trung lại một chỗ, trong lòng thầm thắc mắc."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P006",
+          "text": "La lùng là họ chỉ mặc áo lót, còn giáp trụ thì cởi ra."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P001",
+          "text": "Khi đến gần, mọi người mới nhìn rõ hóa ra các binh sĩ đang dìu những cô gái trẻ."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000544_P006",
+      "parent_block_id": "Itad_gcdHHM_S000544",
+      "text_exact": "La lùng là họ chỉ mặc áo lót, còn giáp trụ thì cởi ra.",
+      "char_count": 54,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P004",
+          "text": "Khách Hành Hương thấy đám binh sĩ luộc các hòa thượng tập trung lại một chỗ, trong lòng thầm thắc mắc."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P005",
+          "text": "Đang lúc họ xì xào bàn tán, bỗng thấy mấy binh sĩ từ phía hậu viện đi tới."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P001",
+          "text": "Khi đến gần, mọi người mới nhìn rõ hóa ra các binh sĩ đang dìu những cô gái trẻ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P002",
+          "text": "Ai nấy ánh mắt đều trống rỗng như những con rối đứt dây."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000545_P001",
+      "parent_block_id": "Itad_gcdHHM_S000545",
+      "text_exact": "Khi đến gần, mọi người mới nhìn rõ hóa ra các binh sĩ đang dìu những cô gái trẻ.",
+      "char_count": 80,
+      "word_count": 19,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P005",
+          "text": "Đang lúc họ xì xào bàn tán, bỗng thấy mấy binh sĩ từ phía hậu viện đi tới."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P006",
+          "text": "La lùng là họ chỉ mặc áo lót, còn giáp trụ thì cởi ra."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P002",
+          "text": "Ai nấy ánh mắt đều trống rỗng như những con rối đứt dây."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P003",
+          "text": "Họ để mặc binh sĩ dìu đi trong vô thức."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000545_P002",
+      "parent_block_id": "Itad_gcdHHM_S000545",
+      "text_exact": "Ai nấy ánh mắt đều trống rỗng như những con rối đứt dây.",
+      "char_count": 56,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000544_P006",
+          "text": "La lùng là họ chỉ mặc áo lót, còn giáp trụ thì cởi ra."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P001",
+          "text": "Khi đến gần, mọi người mới nhìn rõ hóa ra các binh sĩ đang dìu những cô gái trẻ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P003",
+          "text": "Họ để mặc binh sĩ dìu đi trong vô thức."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P004",
+          "text": "Trên người khoác tạm áo ngoài của binh sĩ."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000545_P003",
+      "parent_block_id": "Itad_gcdHHM_S000545",
+      "text_exact": "Họ để mặc binh sĩ dìu đi trong vô thức.",
+      "char_count": 39,
+      "word_count": 10,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P001",
+          "text": "Khi đến gần, mọi người mới nhìn rõ hóa ra các binh sĩ đang dìu những cô gái trẻ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P002",
+          "text": "Ai nấy ánh mắt đều trống rỗng như những con rối đứt dây."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P004",
+          "text": "Trên người khoác tạm áo ngoài của binh sĩ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P005",
+          "text": "Thân hình nhỏ nhắn của các cô gái mặc áo khoác nam giới tất nhiên là rộng thùng thỉ."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000545_P004",
+      "parent_block_id": "Itad_gcdHHM_S000545",
+      "text_exact": "Trên người khoác tạm áo ngoài của binh sĩ.",
+      "char_count": 42,
+      "word_count": 9,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P002",
+          "text": "Ai nấy ánh mắt đều trống rỗng như những con rối đứt dây."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P003",
+          "text": "Họ để mặc binh sĩ dìu đi trong vô thức."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P005",
+          "text": "Thân hình nhỏ nhắn của các cô gái mặc áo khoác nam giới tất nhiên là rộng thùng thỉ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P006",
+          "text": "Mỗi bước đi qua những kẽ hở của lớp áo, tất thoáng những mảng da thịt trắng nõn nhưng trên đôi chân trần lại trằng chịt những vết xạo khiến người ta dùng mình."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000545_P005",
+      "parent_block_id": "Itad_gcdHHM_S000545",
+      "text_exact": "Thân hình nhỏ nhắn của các cô gái mặc áo khoác nam giới tất nhiên là rộng thùng thỉ.",
+      "char_count": 84,
+      "word_count": 19,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P003",
+          "text": "Họ để mặc binh sĩ dìu đi trong vô thức."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P004",
+          "text": "Trên người khoác tạm áo ngoài của binh sĩ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P006",
+          "text": "Mỗi bước đi qua những kẽ hở của lớp áo, tất thoáng những mảng da thịt trắng nõn nhưng trên đôi chân trần lại trằng chịt những vết xạo khiến người ta dùng mình."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000546_P001",
+          "text": "Phía sau mấy binh sĩ khiêng thêm vài cô gái trẻ khác."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000545_P006",
+      "parent_block_id": "Itad_gcdHHM_S000545",
+      "text_exact": "Mỗi bước đi qua những kẽ hở của lớp áo, tất thoáng những mảng da thịt trắng nõn nhưng trên đôi chân trần lại trằng chịt những vết xạo khiến người ta dùng mình.",
+      "char_count": 159,
+      "word_count": 34,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P004",
+          "text": "Trên người khoác tạm áo ngoài của binh sĩ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P005",
+          "text": "Thân hình nhỏ nhắn của các cô gái mặc áo khoác nam giới tất nhiên là rộng thùng thỉ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000546_P001",
+          "text": "Phía sau mấy binh sĩ khiêng thêm vài cô gái trẻ khác."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000546_P002",
+          "text": "Trên người họ cũng đắp áo khoác binh sĩ nhưng làn da lại mang một màu trắng bệch quỷ dị."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000546_P001",
+      "parent_block_id": "Itad_gcdHHM_S000546",
+      "text_exact": "Phía sau mấy binh sĩ khiêng thêm vài cô gái trẻ khác.",
+      "char_count": 53,
+      "word_count": 12,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P005",
+          "text": "Thân hình nhỏ nhắn của các cô gái mặc áo khoác nam giới tất nhiên là rộng thùng thỉ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P006",
+          "text": "Mỗi bước đi qua những kẽ hở của lớp áo, tất thoáng những mảng da thịt trắng nõn nhưng trên đôi chân trần lại trằng chịt những vết xạo khiến người ta dùng mình."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000546_P002",
+          "text": "Trên người họ cũng đắp áo khoác binh sĩ nhưng làn da lại mang một màu trắng bệch quỷ dị."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000546_P003",
+          "text": "Có người thậm chí đã chuyển sang màu xám xanh hoặc đe xạm."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000546_P002",
+      "parent_block_id": "Itad_gcdHHM_S000546",
+      "text_exact": "Trên người họ cũng đắp áo khoác binh sĩ nhưng làn da lại mang một màu trắng bệch quỷ dị.",
+      "char_count": 88,
+      "word_count": 20,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000545_P006",
+          "text": "Mỗi bước đi qua những kẽ hở của lớp áo, tất thoáng những mảng da thịt trắng nõn nhưng trên đôi chân trần lại trằng chịt những vết xạo khiến người ta dùng mình."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000546_P001",
+          "text": "Phía sau mấy binh sĩ khiêng thêm vài cô gái trẻ khác."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000546_P003",
+          "text": "Có người thậm chí đã chuyển sang màu xám xanh hoặc đe xạm."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P001",
+          "text": "Nhìn thấy cảnh tượng này, Lý Thế Dân tức giận đến mức không nói nên lời."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000546_P003",
+      "parent_block_id": "Itad_gcdHHM_S000546",
+      "text_exact": "Có người thậm chí đã chuyển sang màu xám xanh hoặc đe xạm.",
+      "char_count": 58,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000546_P001",
+          "text": "Phía sau mấy binh sĩ khiêng thêm vài cô gái trẻ khác."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000546_P002",
+          "text": "Trên người họ cũng đắp áo khoác binh sĩ nhưng làn da lại mang một màu trắng bệch quỷ dị."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P001",
+          "text": "Nhìn thấy cảnh tượng này, Lý Thế Dân tức giận đến mức không nói nên lời."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P002",
+          "text": "Ông nhắm mắt lại, hít sâu mấy hơi thật mạnh mới ngăn được cơ thể đang run rẩy vì phẫn nộ."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000547_P001",
+      "parent_block_id": "Itad_gcdHHM_S000547",
+      "text_exact": "Nhìn thấy cảnh tượng này, Lý Thế Dân tức giận đến mức không nói nên lời.",
+      "char_count": 72,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000546_P002",
+          "text": "Trên người họ cũng đắp áo khoác binh sĩ nhưng làn da lại mang một màu trắng bệch quỷ dị."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000546_P003",
+          "text": "Có người thậm chí đã chuyển sang màu xám xanh hoặc đe xạm."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P002",
+          "text": "Ông nhắm mắt lại, hít sâu mấy hơi thật mạnh mới ngăn được cơ thể đang run rẩy vì phẫn nộ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P003",
+          "text": "Bề hạ."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000547_P002",
+      "parent_block_id": "Itad_gcdHHM_S000547",
+      "text_exact": "Ông nhắm mắt lại, hít sâu mấy hơi thật mạnh mới ngăn được cơ thể đang run rẩy vì phẫn nộ.",
+      "char_count": 89,
+      "word_count": 21,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000546_P003",
+          "text": "Có người thậm chí đã chuyển sang màu xám xanh hoặc đe xạm."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P001",
+          "text": "Nhìn thấy cảnh tượng này, Lý Thế Dân tức giận đến mức không nói nên lời."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P003",
+          "text": "Bề hạ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P004",
+          "text": "Những người này đều được tìm thấy trong mật đạo không có cửa hoặc trong các phòng tối."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000547_P003",
+      "parent_block_id": "Itad_gcdHHM_S000547",
+      "text_exact": "Bề hạ.",
+      "char_count": 6,
+      "word_count": 2,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": true
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P001",
+          "text": "Nhìn thấy cảnh tượng này, Lý Thế Dân tức giận đến mức không nói nên lời."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P002",
+          "text": "Ông nhắm mắt lại, hít sâu mấy hơi thật mạnh mới ngăn được cơ thể đang run rẩy vì phẫn nộ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P004",
+          "text": "Những người này đều được tìm thấy trong mật đạo không có cửa hoặc trong các phòng tối."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P005",
+          "text": "Đội trưởng đứng bên cạnh giải thích, \"Những người được khiêng phía sau đều đã chết."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000547_P004",
+      "parent_block_id": "Itad_gcdHHM_S000547",
+      "text_exact": "Những người này đều được tìm thấy trong mật đạo không có cửa hoặc trong các phòng tối.",
+      "char_count": 86,
+      "word_count": 18,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P002",
+          "text": "Ông nhắm mắt lại, hít sâu mấy hơi thật mạnh mới ngăn được cơ thể đang run rẩy vì phẫn nộ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P003",
+          "text": "Bề hạ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P005",
+          "text": "Đội trưởng đứng bên cạnh giải thích, \"Những người được khiêng phía sau đều đã chết."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P006",
+          "text": "Chúng ta phát hiện mấy cái sân như vậy ở hậu viện, nhưng vì nhân thủ không đủ nên đến giờ vẫn chưa lục soát hết, không biết còn bao nhiêu nơi như thế này nữa."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000547_P005",
+      "parent_block_id": "Itad_gcdHHM_S000547",
+      "text_exact": "Đội trưởng đứng bên cạnh giải thích, \"Những người được khiêng phía sau đều đã chết.",
+      "char_count": 83,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P003",
+          "text": "Bề hạ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P004",
+          "text": "Những người này đều được tìm thấy trong mật đạo không có cửa hoặc trong các phòng tối."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P006",
+          "text": "Chúng ta phát hiện mấy cái sân như vậy ở hậu viện, nhưng vì nhân thủ không đủ nên đến giờ vẫn chưa lục soát hết, không biết còn bao nhiêu nơi như thế này nữa."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P007",
+          "text": "Đi tìm tất cả thành vệ quân ở gần đây tới đây cho trẫm.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000547_P006",
+      "parent_block_id": "Itad_gcdHHM_S000547",
+      "text_exact": "Chúng ta phát hiện mấy cái sân như vậy ở hậu viện, nhưng vì nhân thủ không đủ nên đến giờ vẫn chưa lục soát hết, không biết còn bao nhiêu nơi như thế này nữa.",
+      "char_count": 158,
+      "word_count": 36,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P004",
+          "text": "Những người này đều được tìm thấy trong mật đạo không có cửa hoặc trong các phòng tối."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P005",
+          "text": "Đội trưởng đứng bên cạnh giải thích, \"Những người được khiêng phía sau đều đã chết."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P007",
+          "text": "Đi tìm tất cả thành vệ quân ở gần đây tới đây cho trẫm.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P008",
+          "text": "Lý Thế Dân đưa cho đội trưởng một miếng lệnh bài, hôm nay trẫm phải xem xem cái gọi là thánh địa vật môn này rốt cuộc bẩn thỉu đến mức nào."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000547_P007",
+      "parent_block_id": "Itad_gcdHHM_S000547",
+      "text_exact": "Đi tìm tất cả thành vệ quân ở gần đây tới đây cho trẫm.\"",
+      "char_count": 56,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P005",
+          "text": "Đội trưởng đứng bên cạnh giải thích, \"Những người được khiêng phía sau đều đã chết."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P006",
+          "text": "Chúng ta phát hiện mấy cái sân như vậy ở hậu viện, nhưng vì nhân thủ không đủ nên đến giờ vẫn chưa lục soát hết, không biết còn bao nhiêu nơi như thế này nữa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P008",
+          "text": "Lý Thế Dân đưa cho đội trưởng một miếng lệnh bài, hôm nay trẫm phải xem xem cái gọi là thánh địa vật môn này rốt cuộc bẩn thỉu đến mức nào."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P001",
+          "text": "Rõ."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000547_P008",
+      "parent_block_id": "Itad_gcdHHM_S000547",
+      "text_exact": "Lý Thế Dân đưa cho đội trưởng một miếng lệnh bài, hôm nay trẫm phải xem xem cái gọi là thánh địa vật môn này rốt cuộc bẩn thỉu đến mức nào.",
+      "char_count": 139,
+      "word_count": 32,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P006",
+          "text": "Chúng ta phát hiện mấy cái sân như vậy ở hậu viện, nhưng vì nhân thủ không đủ nên đến giờ vẫn chưa lục soát hết, không biết còn bao nhiêu nơi như thế này nữa."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P007",
+          "text": "Đi tìm tất cả thành vệ quân ở gần đây tới đây cho trẫm.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P001",
+          "text": "Rõ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P002",
+          "text": "Đội trưởng nhận lệnh bài, nhanh chóng chạy ra khỏi chùa."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000548_P001",
+      "parent_block_id": "Itad_gcdHHM_S000548",
+      "text_exact": "Rõ.",
+      "char_count": 3,
+      "word_count": 1,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": true
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P007",
+          "text": "Đi tìm tất cả thành vệ quân ở gần đây tới đây cho trẫm.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P008",
+          "text": "Lý Thế Dân đưa cho đội trưởng một miếng lệnh bài, hôm nay trẫm phải xem xem cái gọi là thánh địa vật môn này rốt cuộc bẩn thỉu đến mức nào."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P002",
+          "text": "Đội trưởng nhận lệnh bài, nhanh chóng chạy ra khỏi chùa."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P003",
+          "text": "Trong một ngôi chùa toàn hòa thượng lại tìm thấy nhiều cô gái trẻ như vậy."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000548_P002",
+      "parent_block_id": "Itad_gcdHHM_S000548",
+      "text_exact": "Đội trưởng nhận lệnh bài, nhanh chóng chạy ra khỏi chùa.",
+      "char_count": 56,
+      "word_count": 11,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000547_P008",
+          "text": "Lý Thế Dân đưa cho đội trưởng một miếng lệnh bài, hôm nay trẫm phải xem xem cái gọi là thánh địa vật môn này rốt cuộc bẩn thỉu đến mức nào."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P001",
+          "text": "Rõ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P003",
+          "text": "Trong một ngôi chùa toàn hòa thượng lại tìm thấy nhiều cô gái trẻ như vậy."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P004",
+          "text": "Ý nghĩa của việc này không nói cũng hiểu."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000548_P003",
+      "parent_block_id": "Itad_gcdHHM_S000548",
+      "text_exact": "Trong một ngôi chùa toàn hòa thượng lại tìm thấy nhiều cô gái trẻ như vậy.",
+      "char_count": 74,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P001",
+          "text": "Rõ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P002",
+          "text": "Đội trưởng nhận lệnh bài, nhanh chóng chạy ra khỏi chùa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P004",
+          "text": "Ý nghĩa của việc này không nói cũng hiểu."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P005",
+          "text": "Khách hành hương bàng hoàng nhìn những cô gái này, không thể tin nổi thánh địa trong lòng mình lại tồn tại một mặt nhơ nhuốc đến thế."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000548_P004",
+      "parent_block_id": "Itad_gcdHHM_S000548",
+      "text_exact": "Ý nghĩa của việc này không nói cũng hiểu.",
+      "char_count": 41,
+      "word_count": 9,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P002",
+          "text": "Đội trưởng nhận lệnh bài, nhanh chóng chạy ra khỏi chùa."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P003",
+          "text": "Trong một ngôi chùa toàn hòa thượng lại tìm thấy nhiều cô gái trẻ như vậy."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P005",
+          "text": "Khách hành hương bàng hoàng nhìn những cô gái này, không thể tin nổi thánh địa trong lòng mình lại tồn tại một mặt nhơ nhuốc đến thế."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P001",
+          "text": "Đám hòa thượng bị lùa tới, nhìn thấy cảnh này, kẻ thì mặt mày kinh hoàng như không thể tin nổi chuyện này lại xảy ra trong chùa."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000548_P005",
+      "parent_block_id": "Itad_gcdHHM_S000548",
+      "text_exact": "Khách hành hương bàng hoàng nhìn những cô gái này, không thể tin nổi thánh địa trong lòng mình lại tồn tại một mặt nhơ nhuốc đến thế.",
+      "char_count": 133,
+      "word_count": 28,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P003",
+          "text": "Trong một ngôi chùa toàn hòa thượng lại tìm thấy nhiều cô gái trẻ như vậy."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P004",
+          "text": "Ý nghĩa của việc này không nói cũng hiểu."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P001",
+          "text": "Đám hòa thượng bị lùa tới, nhìn thấy cảnh này, kẻ thì mặt mày kinh hoàng như không thể tin nổi chuyện này lại xảy ra trong chùa."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P002",
+          "text": "Kẻ thì vẻ mặt từ bi, lẩm bẩm tụng kinh."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000549_P001",
+      "parent_block_id": "Itad_gcdHHM_S000549",
+      "text_exact": "Đám hòa thượng bị lùa tới, nhìn thấy cảnh này, kẻ thì mặt mày kinh hoàng như không thể tin nổi chuyện này lại xảy ra trong chùa.",
+      "char_count": 128,
+      "word_count": 28,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P004",
+          "text": "Ý nghĩa của việc này không nói cũng hiểu."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P005",
+          "text": "Khách hành hương bàng hoàng nhìn những cô gái này, không thể tin nổi thánh địa trong lòng mình lại tồn tại một mặt nhơ nhuốc đến thế."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P002",
+          "text": "Kẻ thì vẻ mặt từ bi, lẩm bẩm tụng kinh."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P003",
+          "text": "Rất nhanh, đội trưởng đã dẫn theo tất cả thành vệ quân tìm được quanh đó tới, trả lại lệnh bài cho Lý Thế Dân rồi dẫn một đoàn binh sĩ tiến về hậu viện."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000549_P002",
+      "parent_block_id": "Itad_gcdHHM_S000549",
+      "text_exact": "Kẻ thì vẻ mặt từ bi, lẩm bẩm tụng kinh.",
+      "char_count": 39,
+      "word_count": 10,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000548_P005",
+          "text": "Khách hành hương bàng hoàng nhìn những cô gái này, không thể tin nổi thánh địa trong lòng mình lại tồn tại một mặt nhơ nhuốc đến thế."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P001",
+          "text": "Đám hòa thượng bị lùa tới, nhìn thấy cảnh này, kẻ thì mặt mày kinh hoàng như không thể tin nổi chuyện này lại xảy ra trong chùa."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P003",
+          "text": "Rất nhanh, đội trưởng đã dẫn theo tất cả thành vệ quân tìm được quanh đó tới, trả lại lệnh bài cho Lý Thế Dân rồi dẫn một đoàn binh sĩ tiến về hậu viện."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P004",
+          "text": "Có thêm người, tốc độ tìm kiếm nhanh hơn hẳn."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000549_P003",
+      "parent_block_id": "Itad_gcdHHM_S000549",
+      "text_exact": "Rất nhanh, đội trưởng đã dẫn theo tất cả thành vệ quân tìm được quanh đó tới, trả lại lệnh bài cho Lý Thế Dân rồi dẫn một đoàn binh sĩ tiến về hậu viện.",
+      "char_count": 152,
+      "word_count": 35,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P001",
+          "text": "Đám hòa thượng bị lùa tới, nhìn thấy cảnh này, kẻ thì mặt mày kinh hoàng như không thể tin nổi chuyện này lại xảy ra trong chùa."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P002",
+          "text": "Kẻ thì vẻ mặt từ bi, lẩm bẩm tụng kinh."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P004",
+          "text": "Có thêm người, tốc độ tìm kiếm nhanh hơn hẳn."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P005",
+          "text": "Chẳng bao lâu sau, liên tục có binh sĩ dìu hoặc khiêng các cô gái trẻ từ bên trong đi ra, đưa họ đến nơi tập trung rồi lại quay vào."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000549_P004",
+      "parent_block_id": "Itad_gcdHHM_S000549",
+      "text_exact": "Có thêm người, tốc độ tìm kiếm nhanh hơn hẳn.",
+      "char_count": 45,
+      "word_count": 10,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P002",
+          "text": "Kẻ thì vẻ mặt từ bi, lẩm bẩm tụng kinh."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P003",
+          "text": "Rất nhanh, đội trưởng đã dẫn theo tất cả thành vệ quân tìm được quanh đó tới, trả lại lệnh bài cho Lý Thế Dân rồi dẫn một đoàn binh sĩ tiến về hậu viện."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P005",
+          "text": "Chẳng bao lâu sau, liên tục có binh sĩ dìu hoặc khiêng các cô gái trẻ từ bên trong đi ra, đưa họ đến nơi tập trung rồi lại quay vào."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P006",
+          "text": "Thỉnh thoảng họ cũng át giải vài tên hòa thượng bị chói chặt ra ngoài."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000549_P005",
+      "parent_block_id": "Itad_gcdHHM_S000549",
+      "text_exact": "Chẳng bao lâu sau, liên tục có binh sĩ dìu hoặc khiêng các cô gái trẻ từ bên trong đi ra, đưa họ đến nơi tập trung rồi lại quay vào.",
+      "char_count": 132,
+      "word_count": 31,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P003",
+          "text": "Rất nhanh, đội trưởng đã dẫn theo tất cả thành vệ quân tìm được quanh đó tới, trả lại lệnh bài cho Lý Thế Dân rồi dẫn một đoàn binh sĩ tiến về hậu viện."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P004",
+          "text": "Có thêm người, tốc độ tìm kiếm nhanh hơn hẳn."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P006",
+          "text": "Thỉnh thoảng họ cũng át giải vài tên hòa thượng bị chói chặt ra ngoài."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P007",
+          "text": "Những tên này kẻ thì sợ hãi, kẻ thì hung tợn, tội trạn đã quá rõ ràng."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000549_P006",
+      "parent_block_id": "Itad_gcdHHM_S000549",
+      "text_exact": "Thỉnh thoảng họ cũng át giải vài tên hòa thượng bị chói chặt ra ngoài.",
+      "char_count": 70,
+      "word_count": 15,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P004",
+          "text": "Có thêm người, tốc độ tìm kiếm nhanh hơn hẳn."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P005",
+          "text": "Chẳng bao lâu sau, liên tục có binh sĩ dìu hoặc khiêng các cô gái trẻ từ bên trong đi ra, đưa họ đến nơi tập trung rồi lại quay vào."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P007",
+          "text": "Những tên này kẻ thì sợ hãi, kẻ thì hung tợn, tội trạn đã quá rõ ràng."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P008",
+          "text": "Sau hơn một canh giờ lục soát toàn bộ hậu viện, tổng cộng có hơn 100 cô gái trẻ, nhưng chỉ còn sống hơn 40 người."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000549_P007",
+      "parent_block_id": "Itad_gcdHHM_S000549",
+      "text_exact": "Những tên này kẻ thì sợ hãi, kẻ thì hung tợn, tội trạn đã quá rõ ràng.",
+      "char_count": 70,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P005",
+          "text": "Chẳng bao lâu sau, liên tục có binh sĩ dìu hoặc khiêng các cô gái trẻ từ bên trong đi ra, đưa họ đến nơi tập trung rồi lại quay vào."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P006",
+          "text": "Thỉnh thoảng họ cũng át giải vài tên hòa thượng bị chói chặt ra ngoài."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P008",
+          "text": "Sau hơn một canh giờ lục soát toàn bộ hậu viện, tổng cộng có hơn 100 cô gái trẻ, nhưng chỉ còn sống hơn 40 người."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P009",
+          "text": "Cuối cùng mấy binh sĩ bước ra, nhưng họ không dìu cô gái nào hay áp giải hòa thượng nào mà cầm một sấp giấy tờ đi tới trước mặt Lý Thế Dân."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000549_P008",
+      "parent_block_id": "Itad_gcdHHM_S000549",
+      "text_exact": "Sau hơn một canh giờ lục soát toàn bộ hậu viện, tổng cộng có hơn 100 cô gái trẻ, nhưng chỉ còn sống hơn 40 người.",
+      "char_count": 113,
+      "word_count": 26,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P006",
+          "text": "Thỉnh thoảng họ cũng át giải vài tên hòa thượng bị chói chặt ra ngoài."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P007",
+          "text": "Những tên này kẻ thì sợ hãi, kẻ thì hung tợn, tội trạn đã quá rõ ràng."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P009",
+          "text": "Cuối cùng mấy binh sĩ bước ra, nhưng họ không dìu cô gái nào hay áp giải hòa thượng nào mà cầm một sấp giấy tờ đi tới trước mặt Lý Thế Dân."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000550_P001",
+          "text": "\"Mời bệ hạ xem qua.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000549_P009",
+      "parent_block_id": "Itad_gcdHHM_S000549",
+      "text_exact": "Cuối cùng mấy binh sĩ bước ra, nhưng họ không dìu cô gái nào hay áp giải hòa thượng nào mà cầm một sấp giấy tờ đi tới trước mặt Lý Thế Dân.",
+      "char_count": 139,
+      "word_count": 33,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P007",
+          "text": "Những tên này kẻ thì sợ hãi, kẻ thì hung tợn, tội trạn đã quá rõ ràng."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P008",
+          "text": "Sau hơn một canh giờ lục soát toàn bộ hậu viện, tổng cộng có hơn 100 cô gái trẻ, nhưng chỉ còn sống hơn 40 người."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000550_P001",
+          "text": "\"Mời bệ hạ xem qua.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000550_P002",
+          "text": "Lý Thế Dân đón lấy xem, hóa ra toàn bộ đều là địa khí, hơn nữa đều là những mảnh đất canh tác màu mỡ nhất quanh thành Trường An."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000550_P001",
+      "parent_block_id": "Itad_gcdHHM_S000550",
+      "text_exact": "\"Mời bệ hạ xem qua.\"",
+      "char_count": 20,
+      "word_count": 5,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P008",
+          "text": "Sau hơn một canh giờ lục soát toàn bộ hậu viện, tổng cộng có hơn 100 cô gái trẻ, nhưng chỉ còn sống hơn 40 người."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P009",
+          "text": "Cuối cùng mấy binh sĩ bước ra, nhưng họ không dìu cô gái nào hay áp giải hòa thượng nào mà cầm một sấp giấy tờ đi tới trước mặt Lý Thế Dân."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000550_P002",
+          "text": "Lý Thế Dân đón lấy xem, hóa ra toàn bộ đều là địa khí, hơn nữa đều là những mảnh đất canh tác màu mỡ nhất quanh thành Trường An."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000550_P003",
+          "text": "Lúc này, nắm đấm của Lý Thế Dân siết chặt, gân xanh trên mũ bàn tay nổi cuồn cuộn."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000550_P002",
+      "parent_block_id": "Itad_gcdHHM_S000550",
+      "text_exact": "Lý Thế Dân đón lấy xem, hóa ra toàn bộ đều là địa khí, hơn nữa đều là những mảnh đất canh tác màu mỡ nhất quanh thành Trường An.",
+      "char_count": 128,
+      "word_count": 30,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000549_P009",
+          "text": "Cuối cùng mấy binh sĩ bước ra, nhưng họ không dìu cô gái nào hay áp giải hòa thượng nào mà cầm một sấp giấy tờ đi tới trước mặt Lý Thế Dân."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000550_P001",
+          "text": "\"Mời bệ hạ xem qua.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000550_P003",
+          "text": "Lúc này, nắm đấm của Lý Thế Dân siết chặt, gân xanh trên mũ bàn tay nổi cuồn cuộn."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000550_P004",
+          "text": "Choi hết đám hòa thượng này lại cho trẫm."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000550_P003",
+      "parent_block_id": "Itad_gcdHHM_S000550",
+      "text_exact": "Lúc này, nắm đấm của Lý Thế Dân siết chặt, gân xanh trên mũ bàn tay nổi cuồn cuộn.",
+      "char_count": 82,
+      "word_count": 19,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000550_P001",
+          "text": "\"Mời bệ hạ xem qua.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000550_P002",
+          "text": "Lý Thế Dân đón lấy xem, hóa ra toàn bộ đều là địa khí, hơn nữa đều là những mảnh đất canh tác màu mỡ nhất quanh thành Trường An."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000550_P004",
+          "text": "Choi hết đám hòa thượng này lại cho trẫm."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000551_P001",
+          "text": "Trẫm phải đích thân thẩm vấn, cần gì phải mang về thẩm vấn cho phiền phức?"
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000550_P004",
+      "parent_block_id": "Itad_gcdHHM_S000550",
+      "text_exact": "Choi hết đám hòa thượng này lại cho trẫm.",
+      "char_count": 41,
+      "word_count": 9,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000550_P002",
+          "text": "Lý Thế Dân đón lấy xem, hóa ra toàn bộ đều là địa khí, hơn nữa đều là những mảnh đất canh tác màu mỡ nhất quanh thành Trường An."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000550_P003",
+          "text": "Lúc này, nắm đấm của Lý Thế Dân siết chặt, gân xanh trên mũ bàn tay nổi cuồn cuộn."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000551_P001",
+          "text": "Trẫm phải đích thân thẩm vấn, cần gì phải mang về thẩm vấn cho phiền phức?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000552_P001",
+          "text": "Vương dần ngắt lời, \"Ta thấy cứ thẩm vấn ngay tại đây đi."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000551_P001",
+      "parent_block_id": "Itad_gcdHHM_S000551",
+      "text_exact": "Trẫm phải đích thân thẩm vấn, cần gì phải mang về thẩm vấn cho phiền phức?",
+      "char_count": 74,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000550_P003",
+          "text": "Lúc này, nắm đấm của Lý Thế Dân siết chặt, gân xanh trên mũ bàn tay nổi cuồn cuộn."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000550_P004",
+          "text": "Choi hết đám hòa thượng này lại cho trẫm."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000552_P001",
+          "text": "Vương dần ngắt lời, \"Ta thấy cứ thẩm vấn ngay tại đây đi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000552_P002",
+          "text": "Thẩm vấn e là không phải chuyện một sớm một chiều, ở đây e là không tiện lắm.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000552_P001",
+      "parent_block_id": "Itad_gcdHHM_S000552",
+      "text_exact": "Vương dần ngắt lời, \"Ta thấy cứ thẩm vấn ngay tại đây đi.",
+      "char_count": 57,
+      "word_count": 13,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000550_P004",
+          "text": "Choi hết đám hòa thượng này lại cho trẫm."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000551_P001",
+          "text": "Trẫm phải đích thân thẩm vấn, cần gì phải mang về thẩm vấn cho phiền phức?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000552_P002",
+          "text": "Thẩm vấn e là không phải chuyện một sớm một chiều, ở đây e là không tiện lắm.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000552_P003",
+          "text": "Lý Thế Dân nhíu mày, \"Yên tâm, ta có cách.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000552_P002",
+      "parent_block_id": "Itad_gcdHHM_S000552",
+      "text_exact": "Thẩm vấn e là không phải chuyện một sớm một chiều, ở đây e là không tiện lắm.\"",
+      "char_count": 78,
+      "word_count": 18,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000551_P001",
+          "text": "Trẫm phải đích thân thẩm vấn, cần gì phải mang về thẩm vấn cho phiền phức?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000552_P001",
+          "text": "Vương dần ngắt lời, \"Ta thấy cứ thẩm vấn ngay tại đây đi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000552_P003",
+          "text": "Lý Thế Dân nhíu mày, \"Yên tâm, ta có cách.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000552_P004",
+          "text": "Vương Dần nói xong liền bước về phía đám hòa thượng."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000552_P003",
+      "parent_block_id": "Itad_gcdHHM_S000552",
+      "text_exact": "Lý Thế Dân nhíu mày, \"Yên tâm, ta có cách.\"",
+      "char_count": 43,
+      "word_count": 10,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000552_P001",
+          "text": "Vương dần ngắt lời, \"Ta thấy cứ thẩm vấn ngay tại đây đi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000552_P002",
+          "text": "Thẩm vấn e là không phải chuyện một sớm một chiều, ở đây e là không tiện lắm.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000552_P004",
+          "text": "Vương Dần nói xong liền bước về phía đám hòa thượng."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000553_P001",
+          "text": "\"Có chắc chắn không đấy.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000552_P004",
+      "parent_block_id": "Itad_gcdHHM_S000552",
+      "text_exact": "Vương Dần nói xong liền bước về phía đám hòa thượng.",
+      "char_count": 52,
+      "word_count": 11,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000552_P002",
+          "text": "Thẩm vấn e là không phải chuyện một sớm một chiều, ở đây e là không tiện lắm.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000552_P003",
+          "text": "Lý Thế Dân nhíu mày, \"Yên tâm, ta có cách.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000553_P001",
+          "text": "\"Có chắc chắn không đấy.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000553_P002",
+          "text": "Trình Giảo Kim không yên tâm hỏi."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000553_P001",
+      "parent_block_id": "Itad_gcdHHM_S000553",
+      "text_exact": "\"Có chắc chắn không đấy.\"",
+      "char_count": 25,
+      "word_count": 5,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000552_P003",
+          "text": "Lý Thế Dân nhíu mày, \"Yên tâm, ta có cách.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000552_P004",
+          "text": "Vương Dần nói xong liền bước về phía đám hòa thượng."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000553_P002",
+          "text": "Trình Giảo Kim không yên tâm hỏi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000553_P003",
+          "text": "Vương Dần không nói gì, đưa tay ra sau lưng ra hiệp."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000553_P002",
+      "parent_block_id": "Itad_gcdHHM_S000553",
+      "text_exact": "Trình Giảo Kim không yên tâm hỏi.",
+      "char_count": 33,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000552_P004",
+          "text": "Vương Dần nói xong liền bước về phía đám hòa thượng."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000553_P001",
+          "text": "\"Có chắc chắn không đấy.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000553_P003",
+          "text": "Vương Dần không nói gì, đưa tay ra sau lưng ra hiệp."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000553_P004",
+          "text": "\"Ok.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000553_P003",
+      "parent_block_id": "Itad_gcdHHM_S000553",
+      "text_exact": "Vương Dần không nói gì, đưa tay ra sau lưng ra hiệp.",
+      "char_count": 52,
+      "word_count": 12,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000553_P001",
+          "text": "\"Có chắc chắn không đấy.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000553_P002",
+          "text": "Trình Giảo Kim không yên tâm hỏi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000553_P004",
+          "text": "\"Ok.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000554_P001",
+          "text": "\"Ồ, kia chẳng phải là tiên nhân sao?\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000553_P004",
+      "parent_block_id": "Itad_gcdHHM_S000553",
+      "text_exact": "\"Ok.\"",
+      "char_count": 5,
+      "word_count": 1,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": true
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000553_P002",
+          "text": "Trình Giảo Kim không yên tâm hỏi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000553_P003",
+          "text": "Vương Dần không nói gì, đưa tay ra sau lưng ra hiệp."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000554_P001",
+          "text": "\"Ồ, kia chẳng phải là tiên nhân sao?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P001",
+          "text": "Lúc này mọi người mới chú ý đến sự hiện diện của Vương Dần xôn xao bàn tán."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000554_P001",
+      "parent_block_id": "Itad_gcdHHM_S000554",
+      "text_exact": "\"Ồ, kia chẳng phải là tiên nhân sao?\"",
+      "char_count": 37,
+      "word_count": 8,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000553_P003",
+          "text": "Vương Dần không nói gì, đưa tay ra sau lưng ra hiệp."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000553_P004",
+          "text": "\"Ok.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P001",
+          "text": "Lúc này mọi người mới chú ý đến sự hiện diện của Vương Dần xôn xao bàn tán."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P002",
+          "text": "Hóa ra tiên nhân đã sớm đoán được ngôi chùa này có vấn đề."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P001",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "Lúc này mọi người mới chú ý đến sự hiện diện của Vương Dần xôn xao bàn tán.",
+      "char_count": 75,
+      "word_count": 18,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000553_P004",
+          "text": "\"Ok.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000554_P001",
+          "text": "\"Ồ, kia chẳng phải là tiên nhân sao?\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P002",
+          "text": "Hóa ra tiên nhân đã sớm đoán được ngôi chùa này có vấn đề."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P003",
+          "text": "Bây giờ ta cho các người một cơ hội, kẻ nào có tham gia thì chủ động đứng ra, lát nữa ta còn cho một cái chết nhẹ nhàng.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P002",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "Hóa ra tiên nhân đã sớm đoán được ngôi chùa này có vấn đề.",
+      "char_count": 58,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000554_P001",
+          "text": "\"Ồ, kia chẳng phải là tiên nhân sao?\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P001",
+          "text": "Lúc này mọi người mới chú ý đến sự hiện diện của Vương Dần xôn xao bàn tán."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P003",
+          "text": "Bây giờ ta cho các người một cơ hội, kẻ nào có tham gia thì chủ động đứng ra, lát nữa ta còn cho một cái chết nhẹ nhàng.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P004",
+          "text": "Vương Dần nhìn đám hòa thượng, \"Nếu không tin ta đi, các ngươi sẽ được thoải mái lắm đấy.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P003",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "Bây giờ ta cho các người một cơ hội, kẻ nào có tham gia thì chủ động đứng ra, lát nữa ta còn cho một cái chết nhẹ nhàng.\"",
+      "char_count": 121,
+      "word_count": 29,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P001",
+          "text": "Lúc này mọi người mới chú ý đến sự hiện diện của Vương Dần xôn xao bàn tán."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P002",
+          "text": "Hóa ra tiên nhân đã sớm đoán được ngôi chùa này có vấn đề."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P004",
+          "text": "Vương Dần nhìn đám hòa thượng, \"Nếu không tin ta đi, các ngươi sẽ được thoải mái lắm đấy.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P005",
+          "text": "\"A Di Đà Phật!\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P004",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "Vương Dần nhìn đám hòa thượng, \"Nếu không tin ta đi, các ngươi sẽ được thoải mái lắm đấy.\"",
+      "char_count": 90,
+      "word_count": 19,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P002",
+          "text": "Hóa ra tiên nhân đã sớm đoán được ngôi chùa này có vấn đề."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P003",
+          "text": "Bây giờ ta cho các người một cơ hội, kẻ nào có tham gia thì chủ động đứng ra, lát nữa ta còn cho một cái chết nhẹ nhàng.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P005",
+          "text": "\"A Di Đà Phật!\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P006",
+          "text": "Tiểu Tăng hoàn toàn không biết gì cả."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P005",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "\"A Di Đà Phật!\"",
+      "char_count": 15,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P003",
+          "text": "Bây giờ ta cho các người một cơ hội, kẻ nào có tham gia thì chủ động đứng ra, lát nữa ta còn cho một cái chết nhẹ nhàng.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P004",
+          "text": "Vương Dần nhìn đám hòa thượng, \"Nếu không tin ta đi, các ngươi sẽ được thoải mái lắm đấy.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P006",
+          "text": "Tiểu Tăng hoàn toàn không biết gì cả."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P007",
+          "text": "Một tiểu hòa thượng đứng bên cạnh vội vàng kêu oan."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P006",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "Tiểu Tăng hoàn toàn không biết gì cả.",
+      "char_count": 37,
+      "word_count": 8,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P004",
+          "text": "Vương Dần nhìn đám hòa thượng, \"Nếu không tin ta đi, các ngươi sẽ được thoải mái lắm đấy.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P005",
+          "text": "\"A Di Đà Phật!\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P007",
+          "text": "Một tiểu hòa thượng đứng bên cạnh vội vàng kêu oan."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P008",
+          "text": "\"A Di Đà Phật, chúng ta thật sự không biết chuyện này.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P007",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "Một tiểu hòa thượng đứng bên cạnh vội vàng kêu oan.",
+      "char_count": 51,
+      "word_count": 11,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P005",
+          "text": "\"A Di Đà Phật!\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P006",
+          "text": "Tiểu Tăng hoàn toàn không biết gì cả."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P008",
+          "text": "\"A Di Đà Phật, chúng ta thật sự không biết chuyện này.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P009",
+          "text": "Đám hòa thượng cũng vội vàng thanh minh."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P008",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "\"A Di Đà Phật, chúng ta thật sự không biết chuyện này.\"",
+      "char_count": 55,
+      "word_count": 12,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P006",
+          "text": "Tiểu Tăng hoàn toàn không biết gì cả."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P007",
+          "text": "Một tiểu hòa thượng đứng bên cạnh vội vàng kêu oan."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P009",
+          "text": "Đám hòa thượng cũng vội vàng thanh minh."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P010",
+          "text": "Làm chuyện táng tận lương tâm thế này, chắc chắn chẳng ai chịu thừa nhận đâu."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P009",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "Đám hòa thượng cũng vội vàng thanh minh.",
+      "char_count": 40,
+      "word_count": 8,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P007",
+          "text": "Một tiểu hòa thượng đứng bên cạnh vội vàng kêu oan."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P008",
+          "text": "\"A Di Đà Phật, chúng ta thật sự không biết chuyện này.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P010",
+          "text": "Làm chuyện táng tận lương tâm thế này, chắc chắn chẳng ai chịu thừa nhận đâu."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P011",
+          "text": "Khách Hành Hương thấy vậy lại bàn tán."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P010",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "Làm chuyện táng tận lương tâm thế này, chắc chắn chẳng ai chịu thừa nhận đâu.",
+      "char_count": 77,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P008",
+          "text": "\"A Di Đà Phật, chúng ta thật sự không biết chuyện này.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P009",
+          "text": "Đám hòa thượng cũng vội vàng thanh minh."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P011",
+          "text": "Khách Hành Hương thấy vậy lại bàn tán."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P012",
+          "text": "Các người mang mấy thứ này cắm xuống bãi đất trống bên cạnh đi.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P011",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "Khách Hành Hương thấy vậy lại bàn tán.",
+      "char_count": 38,
+      "word_count": 8,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P009",
+          "text": "Đám hòa thượng cũng vội vàng thanh minh."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P010",
+          "text": "Làm chuyện táng tận lương tâm thế này, chắc chắn chẳng ai chịu thừa nhận đâu."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P012",
+          "text": "Các người mang mấy thứ này cắm xuống bãi đất trống bên cạnh đi.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P013",
+          "text": "Vương Dần không thèm để ý đến đám hòa thượng, lấy ra mấy ống thép to bằng bắp tay ném xuống đất, bảo đám thành vệ quân bên cạnh."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P012",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "Các người mang mấy thứ này cắm xuống bãi đất trống bên cạnh đi.\"",
+      "char_count": 64,
+      "word_count": 14,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P010",
+          "text": "Làm chuyện táng tận lương tâm thế này, chắc chắn chẳng ai chịu thừa nhận đâu."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P011",
+          "text": "Khách Hành Hương thấy vậy lại bàn tán."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P013",
+          "text": "Vương Dần không thèm để ý đến đám hòa thượng, lấy ra mấy ống thép to bằng bắp tay ném xuống đất, bảo đám thành vệ quân bên cạnh."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P014",
+          "text": "Thành Vệ Quân nhìn Lý Thế Dân, thấy ông gật đầu liền cầm ống thép chạy sang một bên bận rộn, không thừa nhận đúng không?"
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P013",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "Vương Dần không thèm để ý đến đám hòa thượng, lấy ra mấy ống thép to bằng bắp tay ném xuống đất, bảo đám thành vệ quân bên cạnh.",
+      "char_count": 128,
+      "word_count": 29,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P011",
+          "text": "Khách Hành Hương thấy vậy lại bàn tán."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P012",
+          "text": "Các người mang mấy thứ này cắm xuống bãi đất trống bên cạnh đi.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P014",
+          "text": "Thành Vệ Quân nhìn Lý Thế Dân, thấy ông gật đầu liền cầm ống thép chạy sang một bên bận rộn, không thừa nhận đúng không?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P015",
+          "text": "Vương Dần cười lạnh, đi tới trước mặt một tên hòa thượng đang tỏ vẻ từ bi."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P014",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "Thành Vệ Quân nhìn Lý Thế Dân, thấy ông gật đầu liền cầm ống thép chạy sang một bên bận rộn, không thừa nhận đúng không?",
+      "char_count": 120,
+      "word_count": 26,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P012",
+          "text": "Các người mang mấy thứ này cắm xuống bãi đất trống bên cạnh đi.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P013",
+          "text": "Vương Dần không thèm để ý đến đám hòa thượng, lấy ra mấy ống thép to bằng bắp tay ném xuống đất, bảo đám thành vệ quân bên cạnh."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P015",
+          "text": "Vương Dần cười lạnh, đi tới trước mặt một tên hòa thượng đang tỏ vẻ từ bi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P016",
+          "text": "\"Ta nghĩ lát nữa ngươi sẽ rất muốn nói đấy.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P015",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "Vương Dần cười lạnh, đi tới trước mặt một tên hòa thượng đang tỏ vẻ từ bi.",
+      "char_count": 74,
+      "word_count": 17,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P013",
+          "text": "Vương Dần không thèm để ý đến đám hòa thượng, lấy ra mấy ống thép to bằng bắp tay ném xuống đất, bảo đám thành vệ quân bên cạnh."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P014",
+          "text": "Thành Vệ Quân nhìn Lý Thế Dân, thấy ông gật đầu liền cầm ống thép chạy sang một bên bận rộn, không thừa nhận đúng không?"
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P016",
+          "text": "\"Ta nghĩ lát nữa ngươi sẽ rất muốn nói đấy.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P017",
+          "text": "Nói xong, Vương Dần đặt tay phải lên đỉnh đầu tên hòa thượng, thi triển kỹ năng áp chế ác ma."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P016",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "\"Ta nghĩ lát nữa ngươi sẽ rất muốn nói đấy.\"",
+      "char_count": 44,
+      "word_count": 10,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P014",
+          "text": "Thành Vệ Quân nhìn Lý Thế Dân, thấy ông gật đầu liền cầm ống thép chạy sang một bên bận rộn, không thừa nhận đúng không?"
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P015",
+          "text": "Vương Dần cười lạnh, đi tới trước mặt một tên hòa thượng đang tỏ vẻ từ bi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P017",
+          "text": "Nói xong, Vương Dần đặt tay phải lên đỉnh đầu tên hòa thượng, thi triển kỹ năng áp chế ác ma."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P018",
+          "text": "Vì xung quanh có quá nhiều người, để tránh làm khách hành hư kinh hãi, Vương Dần không chịu hồi cánh tay ác ma."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P017",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "Nói xong, Vương Dần đặt tay phải lên đỉnh đầu tên hòa thượng, thi triển kỹ năng áp chế ác ma.",
+      "char_count": 93,
+      "word_count": 21,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P015",
+          "text": "Vương Dần cười lạnh, đi tới trước mặt một tên hòa thượng đang tỏ vẻ từ bi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P016",
+          "text": "\"Ta nghĩ lát nữa ngươi sẽ rất muốn nói đấy.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P018",
+          "text": "Vì xung quanh có quá nhiều người, để tránh làm khách hành hư kinh hãi, Vương Dần không chịu hồi cánh tay ác ma."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P019",
+          "text": "Dù hiệu quả có giảm đi đôi chút, nhưng đối phó với đám hòa thượng này là quá đủ rồi."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P018",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "Vì xung quanh có quá nhiều người, để tránh làm khách hành hư kinh hãi, Vương Dần không chịu hồi cánh tay ác ma.",
+      "char_count": 111,
+      "word_count": 24,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P016",
+          "text": "\"Ta nghĩ lát nữa ngươi sẽ rất muốn nói đấy.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P017",
+          "text": "Nói xong, Vương Dần đặt tay phải lên đỉnh đầu tên hòa thượng, thi triển kỹ năng áp chế ác ma."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P019",
+          "text": "Dù hiệu quả có giảm đi đôi chút, nhưng đối phó với đám hòa thượng này là quá đủ rồi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P020",
+          "text": "Khi kỹ năng được thi triển, vẻ mặt từ bi của tên hòa thượng lập tức biến thành kinh ngạc, rồi chuyển sang vô cùng hoảng sợ, như thể nhìn thấy thứ gì đó cực kỳ đáng sợ."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P019",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "Dù hiệu quả có giảm đi đôi chút, nhưng đối phó với đám hòa thượng này là quá đủ rồi.",
+      "char_count": 84,
+      "word_count": 20,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P017",
+          "text": "Nói xong, Vương Dần đặt tay phải lên đỉnh đầu tên hòa thượng, thi triển kỹ năng áp chế ác ma."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P018",
+          "text": "Vì xung quanh có quá nhiều người, để tránh làm khách hành hư kinh hãi, Vương Dần không chịu hồi cánh tay ác ma."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P020",
+          "text": "Khi kỹ năng được thi triển, vẻ mặt từ bi của tên hòa thượng lập tức biến thành kinh ngạc, rồi chuyển sang vô cùng hoảng sợ, như thể nhìn thấy thứ gì đó cực kỳ đáng sợ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P021",
+          "text": "\"Đừng, đừng qua đây.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P020",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "Khi kỹ năng được thi triển, vẻ mặt từ bi của tên hòa thượng lập tức biến thành kinh ngạc, rồi chuyển sang vô cùng hoảng sợ, như thể nhìn thấy thứ gì đó cực kỳ đáng sợ.",
+      "char_count": 167,
+      "word_count": 38,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P018",
+          "text": "Vì xung quanh có quá nhiều người, để tránh làm khách hành hư kinh hãi, Vương Dần không chịu hồi cánh tay ác ma."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P019",
+          "text": "Dù hiệu quả có giảm đi đôi chút, nhưng đối phó với đám hòa thượng này là quá đủ rồi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P021",
+          "text": "\"Đừng, đừng qua đây.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P001",
+          "text": "Mọi người còn đang ngơ ngác trước sự thay đổi của hắn thì thấy đũng quần hắn ướt đẫm một mảng lớn, hóa ra là sợ đến mức tiểu gia quần."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000555_P021",
+      "parent_block_id": "Itad_gcdHHM_S000555",
+      "text_exact": "\"Đừng, đừng qua đây.\"",
+      "char_count": 21,
+      "word_count": 4,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P019",
+          "text": "Dù hiệu quả có giảm đi đôi chút, nhưng đối phó với đám hòa thượng này là quá đủ rồi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P020",
+          "text": "Khi kỹ năng được thi triển, vẻ mặt từ bi của tên hòa thượng lập tức biến thành kinh ngạc, rồi chuyển sang vô cùng hoảng sợ, như thể nhìn thấy thứ gì đó cực kỳ đáng sợ."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P001",
+          "text": "Mọi người còn đang ngơ ngác trước sự thay đổi của hắn thì thấy đũng quần hắn ướt đẫm một mảng lớn, hóa ra là sợ đến mức tiểu gia quần."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P002",
+          "text": "\"Không, đừng giết ta, đều là ý của Phương Trượng, không liên quan đến ta."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000556_P001",
+      "parent_block_id": "Itad_gcdHHM_S000556",
+      "text_exact": "Mọi người còn đang ngơ ngác trước sự thay đổi của hắn thì thấy đũng quần hắn ướt đẫm một mảng lớn, hóa ra là sợ đến mức tiểu gia quần.",
+      "char_count": 134,
+      "word_count": 31,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P020",
+          "text": "Khi kỹ năng được thi triển, vẻ mặt từ bi của tên hòa thượng lập tức biến thành kinh ngạc, rồi chuyển sang vô cùng hoảng sợ, như thể nhìn thấy thứ gì đó cực kỳ đáng sợ."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P021",
+          "text": "\"Đừng, đừng qua đây.\""
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P002",
+          "text": "\"Không, đừng giết ta, đều là ý của Phương Trượng, không liên quan đến ta."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P003",
+          "text": "Tên hòa thượng kinh hoàng gào thét."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000556_P002",
+      "parent_block_id": "Itad_gcdHHM_S000556",
+      "text_exact": "\"Không, đừng giết ta, đều là ý của Phương Trượng, không liên quan đến ta.",
+      "char_count": 73,
+      "word_count": 15,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000555_P021",
+          "text": "\"Đừng, đừng qua đây.\""
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P001",
+          "text": "Mọi người còn đang ngơ ngác trước sự thay đổi của hắn thì thấy đũng quần hắn ướt đẫm một mảng lớn, hóa ra là sợ đến mức tiểu gia quần."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P003",
+          "text": "Tên hòa thượng kinh hoàng gào thét."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P004",
+          "text": "Hai tay của Quạng loạn xạ trong không trung, lúc đó ta chỉ đánh nàng thôi."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000556_P003",
+      "parent_block_id": "Itad_gcdHHM_S000556",
+      "text_exact": "Tên hòa thượng kinh hoàng gào thét.",
+      "char_count": 35,
+      "word_count": 7,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P001",
+          "text": "Mọi người còn đang ngơ ngác trước sự thay đổi của hắn thì thấy đũng quần hắn ướt đẫm một mảng lớn, hóa ra là sợ đến mức tiểu gia quần."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P002",
+          "text": "\"Không, đừng giết ta, đều là ý của Phương Trượng, không liên quan đến ta."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P004",
+          "text": "Hai tay của Quạng loạn xạ trong không trung, lúc đó ta chỉ đánh nàng thôi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P005",
+          "text": "Đúng là ta đã làm chuyện cầm thú với nàng."
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000556_P004",
+      "parent_block_id": "Itad_gcdHHM_S000556",
+      "text_exact": "Hai tay của Quạng loạn xạ trong không trung, lúc đó ta chỉ đánh nàng thôi.",
+      "char_count": 74,
+      "word_count": 16,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P002",
+          "text": "\"Không, đừng giết ta, đều là ý của Phương Trượng, không liên quan đến ta."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P003",
+          "text": "Tên hòa thượng kinh hoàng gào thét."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P005",
+          "text": "Đúng là ta đã làm chuyện cầm thú với nàng."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P006",
+          "text": "cầu xin ngài, cho ta một cái chết đau đớn đi.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000556_P005",
+      "parent_block_id": "Itad_gcdHHM_S000556",
+      "text_exact": "Đúng là ta đã làm chuyện cầm thú với nàng.",
+      "char_count": 42,
+      "word_count": 10,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P003",
+          "text": "Tên hòa thượng kinh hoàng gào thét."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P004",
+          "text": "Hai tay của Quạng loạn xạ trong không trung, lúc đó ta chỉ đánh nàng thôi."
+        }
+      ],
+      "next_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P006",
+          "text": "cầu xin ngài, cho ta một cái chết đau đớn đi.\""
+        }
+      ]
+    },
+    {
+      "piece_id": "Itad_gcdHHM_S000556_P006",
+      "parent_block_id": "Itad_gcdHHM_S000556",
+      "text_exact": "cầu xin ngài, cho ta một cái chết đau đớn đi.\"",
+      "char_count": 46,
+      "word_count": 11,
+      "hints": {
+        "needs_ai_split_hint": false,
+        "tiny_fragment_hint": false
+      },
+      "prev_context": [
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P004",
+          "text": "Hai tay của Quạng loạn xạ trong không trung, lúc đó ta chỉ đánh nàng thôi."
+        },
+        {
+          "piece_id": "Itad_gcdHHM_S000556_P005",
+          "text": "Đúng là ta đã làm chuyện cầm thú với nàng."
+        }
+      ],
+      "next_context": []
+    }
+  ]
+}
