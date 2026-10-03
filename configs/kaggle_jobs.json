@@ -14,6 +14,13 @@
       "accelerator": null,
       "timeout_seconds": 3600,
       "description": "Download and parse Vietnamese automatic captions for all 16 MayMay source videos; build sentence-safe ~50k-character review packs."
+    },
+    "source16-whisper-consensus-pilot": {
+      "handle": "ahndongo/maymay-source16-whisper-consensus-pilot-v1",
+      "path": "kaggle/gpu/source16_whisper_consensus_pilot",
+      "accelerator": "NvidiaTeslaT4",
+      "timeout_seconds": 10800,
+      "description": "Pilot one locked source with Faster-Whisper large-v3, word timestamps, YouTube-caption consensus, and pause timing features."
     }
   }
 }
