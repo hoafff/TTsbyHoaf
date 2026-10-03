@@ -91,7 +91,13 @@ def cmd_submit(args: argparse.Namespace) -> int:
 def cmd_status(args: argparse.Namespace) -> int:
     kaggle = ensure_kaggle()
     _, job = get_job(args.job)
-    return run([kaggle, "kernels", "status", job["handle"]], cwd=ROOT)
+    rc = run([kaggle, "kernels", "status", job["handle"]], cwd=ROOT)
+    if rc != 0:
+        print(
+            "\nHint: if this job has never been submitted, run:\n"
+            f"  python .\\tools\\kaggle_bridge.py submit {args.job}"
+        )
+    return rc
 
 
 def cmd_logs(args: argparse.Namespace) -> int:
@@ -100,7 +106,13 @@ def cmd_logs(args: argparse.Namespace) -> int:
     cmd = [kaggle, "kernels", "logs", job["handle"]]
     if args.follow:
         cmd += ["--follow", "--interval", str(args.interval)]
-    return run(cmd, cwd=ROOT)
+    rc = run(cmd, cwd=ROOT)
+    if rc != 0:
+        print(
+            "\nHint: logs exist only after the job has been submitted. Run:\n"
+            f"  python .\\tools\\kaggle_bridge.py submit {args.job}"
+        )
+    return rc
 
 
 def cmd_output(args: argparse.Namespace) -> int:
