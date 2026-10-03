@@ -1,0 +1,12 @@
+{
+  "owner": "ahndongo",
+  "jobs": {
+    "source16-audit": {
+      "handle": "ahndongo/maymay-source16-audit-v1",
+      "path": "kaggle/cpu/source16_audit",
+      "accelerator": null,
+      "timeout_seconds": 1800,
+      "description": "Audit metadata and Vietnamese subtitle/caption availability for the 16 locked MayMay source videos."
+    }
+  }
+}
