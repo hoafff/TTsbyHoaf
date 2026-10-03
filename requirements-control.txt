@@ -1,0 +1,8 @@
+# Lightweight local control environment only.
+# Heavy ASR/training dependencies stay on Kaggle jobs.
+kaggle
+huggingface_hub>=1.3,<2.0
+pandas>=2.2,<3.0
+requests>=2.32,<3.0
+rich>=13,<15
+python-dotenv>=1,<2
