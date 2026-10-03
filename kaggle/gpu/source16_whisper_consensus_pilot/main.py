@@ -7,6 +7,7 @@ import subprocess
 import sys
 from difflib import SequenceMatcher
 from pathlib import Path
+import os
 
 import pandas as pd
 
@@ -17,6 +18,8 @@ ROOT = Path("/kaggle/working/source16_whisper_consensus_pilot")
 AUDIO_DIR = ROOT / "audio"
 CAPTION_DIR = ROOT / "youtube_json3"
 OUT_DIR = ROOT / "outputs"
+RUNTIME_INPUT = Path("/kaggle/input/maymay-runtime-secrets")
+HF_TOKEN_FILE = RUNTIME_INPUT / "hf_token.txt"
 
 for p in (ROOT, AUDIO_DIR, CAPTION_DIR, OUT_DIR):
     p.mkdir(parents=True, exist_ok=True)
@@ -56,6 +59,16 @@ def install_deps() -> None:
         sys.executable, "-m", "pip", "install", "-q", "-U",
         "faster-whisper==1.2.1", "av>=11,<19"
     ])
+
+
+def load_hf_auth() -> None:
+    if HF_TOKEN_FILE.exists():
+        token = HF_TOKEN_FILE.read_text(encoding="utf-8-sig").strip()
+        if token:
+            os.environ["HF_TOKEN"] = token
+            print("HF_AUTH_READY", flush=True)
+            return
+    print("HF_AUTH_MISSING", flush=True)
 
 
 def locate_source() -> tuple[Path, Path]:
@@ -98,11 +111,14 @@ def parse_youtube_json3(path: Path) -> pd.DataFrame:
 def transcribe(audio_path: Path) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
     from faster_whisper import WhisperModel
 
+    print("MODEL_LOAD_STARTED", flush=True)
     model = WhisperModel(
         MODEL_SIZE,
         device="cuda",
         compute_type="float16",
     )
+    print("MODEL_LOADED", flush=True)
+    print("TRANSCRIBE_STARTED", flush=True)
 
     segments_gen, info = model.transcribe(
         str(audio_path),
@@ -229,6 +245,7 @@ def main() -> int:
     print("=" * 100)
 
     install_deps()
+    load_hf_auth()
     audio_path, caption_path = locate_source()
 
     captions = parse_youtube_json3(caption_path)
