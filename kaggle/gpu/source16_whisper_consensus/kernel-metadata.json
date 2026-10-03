@@ -1,0 +1,17 @@
+{
+  "id": "ahndongo/maymay-source16-whisper-consensus-v1",
+  "title": "MayMay Source16 Whisper Consensus V1",
+  "code_file": "main.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "machine_shape": "",
+  "dataset_sources": [
+    "ahndongo/maymay-runtime-secrets"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}
