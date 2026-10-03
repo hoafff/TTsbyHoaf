@@ -146,6 +146,10 @@ def main() -> int:
     task_dir = out / "tasks"
     task_dir.mkdir(exist_ok=True)
 
+    # Remove stale task files from earlier packing logic before rebuilding.
+    for old_task in task_dir.glob("semantic_task_*.json"):
+        old_task.unlink()
+
     df = pd.read_csv(src, low_memory=False)
     tasks = build_tasks(df, args.target_chars, args.soft_max_chars)
 
