@@ -9,7 +9,8 @@
   "enable_internet": "true",
   "machine_shape": "",
   "dataset_sources": [
-    "ahndongo/maymay-source16-pilot-audio"
+    "ahndongo/maymay-source16-pilot-audio",
+    "ahndongo/maymay-runtime-secrets"
   ],
   "competition_sources": [],
   "kernel_sources": [],
