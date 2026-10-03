@@ -54,7 +54,7 @@ def similarity(a: str, b: str) -> float:
 def install_deps() -> None:
     run([
         sys.executable, "-m", "pip", "install", "-q", "-U",
-        "yt-dlp[default]", "faster-whisper"
+        "yt-dlp[default]", "faster-whisper==1.2.1", "av>=11,<19"
     ])
 
 
@@ -302,6 +302,13 @@ def main() -> int:
         json.dumps(summary, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
+
+    # Do not keep the ~200 MB downloaded source audio in Kaggle output.
+    # Raw caption provenance is already copied into OUT_DIR above.
+    try:
+        audio_path.unlink(missing_ok=True)
+    except Exception as exc:
+        print("WARN: audio cleanup failed:", exc)
 
     print(json.dumps(summary, ensure_ascii=False, indent=2))
     print("OUTPUT:", OUT_DIR)
