@@ -54,48 +54,24 @@ def similarity(a: str, b: str) -> float:
 def install_deps() -> None:
     run([
         sys.executable, "-m", "pip", "install", "-q", "-U",
-        "yt-dlp[default]", "faster-whisper==1.2.1", "av>=11,<19"
+        "faster-whisper==1.2.1", "av>=11,<19"
     ])
 
 
-def download_source() -> tuple[Path, Path]:
-    url = f"https://www.youtube.com/watch?v={PILOT_VIDEO_ID}"
+def locate_source() -> tuple[Path, Path]:
+    input_root = Path("/kaggle/input/maymay-source16-pilot-audio")
+    audio_path = input_root / f"{PILOT_VIDEO_ID}.webm"
+    caption_path = input_root / f"{PILOT_VIDEO_ID}.vi.json3"
 
-    audio_tmpl = str(AUDIO_DIR / "%(id)s.%(ext)s")
-    run([
-        sys.executable, "-m", "yt_dlp",
-        "--no-playlist",
-        "-f", "bestaudio/best",
-        "--no-warnings",
-        "-o", audio_tmpl,
-        url,
-    ])
+    if not audio_path.exists():
+        raise FileNotFoundError(f"Missing Kaggle input audio: {audio_path}")
+    if not caption_path.exists():
+        raise FileNotFoundError(f"Missing Kaggle input caption: {caption_path}")
 
-    run([
-        sys.executable, "-m", "yt_dlp",
-        "--no-playlist",
-        "--skip-download",
-        "--write-auto-subs",
-        "--sub-langs", "vi",
-        "--sub-format", "json3",
-        "--no-warnings",
-        "-o", str(CAPTION_DIR / "%(id)s.%(ext)s"),
-        url,
-    ])
-
-    audio_matches = sorted(
-        p for p in AUDIO_DIR.glob(f"{PILOT_VIDEO_ID}.*")
-        if p.is_file()
-    )
-    caption_matches = sorted(CAPTION_DIR.glob(f"{PILOT_VIDEO_ID}.vi.json3"))
-
-    if not audio_matches:
-        raise RuntimeError("Audio download did not produce a file.")
-    if not caption_matches:
-        raise RuntimeError("Vietnamese automatic caption JSON3 was not found.")
-
-    return audio_matches[0], caption_matches[0]
-
+    print("Using Kaggle dataset input:", input_root)
+    print("Audio:", audio_path)
+    print("Caption:", caption_path)
+    return audio_path, caption_path
 
 def parse_youtube_json3(path: Path) -> pd.DataFrame:
     obj = json.loads(path.read_text(encoding="utf-8"))
@@ -253,7 +229,7 @@ def main() -> int:
     print("=" * 100)
 
     install_deps()
-    audio_path, caption_path = download_source()
+    audio_path, caption_path = locate_source()
 
     captions = parse_youtube_json3(caption_path)
     whisper_segments, words, whisper_meta = transcribe(audio_path)
@@ -302,13 +278,6 @@ def main() -> int:
         json.dumps(summary, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
-
-    # Do not keep the ~200 MB downloaded source audio in Kaggle output.
-    # Raw caption provenance is already copied into OUT_DIR above.
-    try:
-        audio_path.unlink(missing_ok=True)
-    except Exception as exc:
-        print("WARN: audio cleanup failed:", exc)
 
     print(json.dumps(summary, ensure_ascii=False, indent=2))
     print("OUTPUT:", OUT_DIR)
