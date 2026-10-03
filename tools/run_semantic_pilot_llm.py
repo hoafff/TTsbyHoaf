@@ -154,6 +154,12 @@ def main() -> int:
     parser.add_argument("--sleep", type=float, default=0.2)
     args = parser.parse_args()
 
+    try:
+        from dotenv import load_dotenv
+        load_dotenv(ROOT / ".env")
+    except Exception:
+        pass
+
     base_url = os.environ.get("LLM_BASE_URL", "").strip()
     api_key = os.environ.get("LLM_API_KEY", "").strip()
     model = os.environ.get("LLM_MODEL", "").strip()
@@ -161,7 +167,23 @@ def main() -> int:
     if not base_url or not api_key or not model:
         raise SystemExit(
             "Missing LLM_BASE_URL / LLM_API_KEY / LLM_MODEL. "
-            "Set them in the current terminal environment. Do not commit secrets."
+            "Set them in the shell or create local .env from .env.example. "
+            "Do not commit secrets."
+        )
+
+    placeholder_values = (
+        "YOUR_PROVIDER",
+        "YOUR_SECRET_KEY",
+        "YOUR_MODEL_NAME",
+        "replace_me",
+        "example.com",
+    )
+    combined = f"{base_url}\n{api_key}\n{model}"
+
+    if any(marker.lower() in combined.lower() for marker in placeholder_values):
+        raise SystemExit(
+            "LLM configuration still contains placeholder values. "
+            "Set a real provider BASE_URL, API key, and model before running."
         )
 
     pilot_path = Path(args.pilot_json)
