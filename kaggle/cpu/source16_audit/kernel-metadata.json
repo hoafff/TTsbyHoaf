@@ -1,0 +1,15 @@
+{
+  "id": "ahndongo/maymay-source16-audit-v1",
+  "title": "MayMay Source16 Audit V1",
+  "code_file": "main.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "false",
+  "enable_internet": "true",
+  "machine_shape": "",
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}
