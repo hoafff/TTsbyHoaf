@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "queue": "review_queue/semantic_v2",
+  "result_root": "review_results/semantic_v2",
+  "total_packs": 100,
+  "completed_packs": [
+    "review_pack_0001"
+  ],
+  "completed_count": 1,
+  "next_pack": "review_pack_0002",
+  "last_commit": "dd59cc5202b255f3a1888bdd1831493eb7e37fb9",
+  "totals_so_far": {
+    "reviewed_source_items": 301,
+    "output_segments": 309,
+    "split_pieces": 7,
+    "labels": {
+      "KEEP_CANDIDATE": 221,
+      "DROP_FRAGMENT": 15,
+      "WEIRD_PHRASE": 52,
+      "BROKEN_TEXT": 19,
+      "PARALINGUISTIC": 2,
+      "STUTTER_OR_REPEAT": 0,
+      "PHONETIC_CROWDING_RISK": 0,
+      "NEED_CONTEXT": 0
+    }
+  },
+  "rules": [
+    "Lossless text coverage required.",
+    "No text correction in semantic review stage.",
+    "Only KEEP_CANDIDATE may proceed automatically toward later audio validation.",
+    "WEIRD_PHRASE/BROKEN_TEXT require audio/ASR verification or later text-fix review.",
+    "DROP_FRAGMENT/PARALINGUISTIC are excluded from the clean narration candidate pool."
+  ]
+}
