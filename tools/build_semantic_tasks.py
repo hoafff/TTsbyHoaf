@@ -82,12 +82,22 @@ def build_tasks(df: pd.DataFrame, target_chars: int, soft_max: int) -> list[dict
         current_blocks = []
         current_chars = 0
 
+    current_video = None
+
     for row in df.itertuples(index=False):
+        row_video = str(row.video_id)
+
+        # Never mix two source videos inside one AI task.
+        if current_blocks and current_video is not None and row_video != current_video:
+            flush()
+
+        current_video = row_video
+
         text = str(row.text).strip()
         duration = float(row.end_sec) - float(row.start_sec)
         block = {
             "block_id": str(row.sentence_id),
-            "video_id": str(row.video_id),
+            "video_id": row_video,
             "source_start_sec": float(row.start_sec),
             "source_end_sec": float(row.end_sec),
             "source_duration_sec": duration,
@@ -171,6 +181,7 @@ def main() -> int:
             "Every source block must be completely covered in original order.",
             "Whitespace-normalized concatenated output must equal source text.",
             "Punctuation is evidence, not ground truth.",
+            "A task may contain blocks from only one source video.",
         ],
     }
 
