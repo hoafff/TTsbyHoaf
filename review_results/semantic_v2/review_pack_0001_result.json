@@ -1,0 +1,3972 @@
+{
+  "schema_version": 1,
+  "review_pack_id": "review_pack_0001",
+  "video_id": "RiAsGTSORZ4",
+  "source_sha": "86a1b091649a2c0a350acfaa7ce0c2d0ab601e71",
+  "review_policy": "Direct ChatGPT GitHub review; lossless text; no text correction in this stage.",
+  "reviewed_items": 301,
+  "split_pieces": 7,
+  "label_counts": {
+    "KEEP_CANDIDATE": 221,
+    "DROP_FRAGMENT": 15,
+    "WEIRD_PHRASE": 52,
+    "BROKEN_TEXT": 19,
+    "PARALINGUISTIC": 2
+  },
+  "coverage_ok": true,
+  "items": [
+    {
+      "piece_id": "RiAsGTSORZ4_S000001_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000001",
+      "source_text": "Yên tâm, ta sẽ không đi đâu nữa.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Yên tâm, ta sẽ không đi đâu nữa.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000001_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000001",
+      "source_text": "Vương Dần vội vàng nắm lấy tay Trình Lăng Tuyết, nhẹ giọng trấn an.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần vội vàng nắm lấy tay Trình Lăng Tuyết, nhẹ giọng trấn an.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000001_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000001",
+      "source_text": "Nghe thấy lời hắn, đôi mày đang nhíu chặt của nàng mới dần dã ra, hơi thở cũng trở nên đều đặn hơn.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nghe thấy lời hắn, đôi mày đang nhíu chặt của nàng mới dần dã ra, hơi thở cũng trở nên đều đặn hơn.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000001_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000001",
+      "source_text": "\"Dần ca, đừng bỏ rơi ta.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Dần ca, đừng bỏ rơi ta.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000001_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000001",
+      "source_text": "Nhưng chẳng được bao lâu, Trình Lăng Tuyết lại bắt đầu cau mày nói mê.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nhưng chẳng được bao lâu, Trình Lăng Tuyết lại bắt đầu cau mày nói mê.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000001_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000001",
+      "source_text": "\"Dần ca, huynh đang ở đâu?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Dần ca, huynh đang ở đâu?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000001_P007",
+      "parent_block_id": "RiAsGTSORZ4_S000001",
+      "source_text": "Chẳng lẽ huynh không cần Lăng Tuyết nữa sao?\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Chẳng lẽ huynh không cần Lăng Tuyết nữa sao?\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000001_P008",
+      "parent_block_id": "RiAsGTSORZ4_S000001",
+      "source_text": "Suốt hơn một tiếng đồng hồ sau đó, đôi mày của nàng chưa lúc nào được thả lỏng hoàn toàn.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Suốt hơn một tiếng đồng hồ sau đó, đôi mày của nàng chưa lúc nào được thả lỏng hoàn toàn.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000001_P009",
+      "parent_block_id": "RiAsGTSORZ4_S000001",
+      "source_text": "\"Dần ca, huynh mau về đi.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Dần ca, huynh mau về đi.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000001_P010",
+      "parent_block_id": "RiAsGTSORZ4_S000001",
+      "source_text": "Lang Tuyết nhớ huynh lắm.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Lang Tuyết nhớ huynh lắm.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000001_P011",
+      "parent_block_id": "RiAsGTSORZ4_S000001",
+      "source_text": "Tại sao?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Tại sao?",
+          "label": "DROP_FRAGMENT",
+          "reason_short": "Quá ngắn và phụ thuộc mạnh vào câu kế tiếp; loại để ưu tiên corpus sạch."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000001_P012",
+      "parent_block_id": "RiAsGTSORZ4_S000001",
+      "source_text": "Tại sao huynh vẫn chưa về?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Tại sao huynh vẫn chưa về?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000001_P013",
+      "parent_block_id": "RiAsGTSORZ4_S000001",
+      "source_text": "Dần ca, ba năm rồi, đã ba năm trôi qua rồi, huynh rốt cuộc đã đi đâu?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dần ca, ba năm rồi, đã ba năm trôi qua rồi, huynh rốt cuộc đã đi đâu?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000002_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000002",
+      "source_text": "Nha đầu, xin lỗi nàng, đã để nàng phải chịu khổ rồi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nha đầu, xin lỗi nàng, đã để nàng phải chịu khổ rồi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000002_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000002",
+      "source_text": "Nghe những lời nói mê ấy, Vương Dần biết mấy năm qua nàng sống chẳng hề dễ dàng, lòng không khỏi tự trách.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nghe những lời nói mê ấy, Vương Dần biết mấy năm qua nàng sống chẳng hề dễ dàng, lòng không khỏi tự trách.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000002_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000002",
+      "source_text": "Về việc Trình Lăng Tuyết nói đã ba năm, Vô Dần đoán có lẽ do tốc độ trôi đi của thời gian ở hai thế giới khác nhau.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Về việc Trình Lăng Tuyết nói đã ba năm, Vô Dần đoán có lẽ do tốc độ trôi đi của thời gian ở hai thế giới khác nhau.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Tên/chuỗi từ có dấu hiệu caption sai: 'Vô Dần'."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000002_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000002",
+      "source_text": "Bởi hắn ở thế giới ma pháp và công nghệ kia mới chỉ hơn một năm mà thôi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Bởi hắn ở thế giới ma pháp và công nghệ kia mới chỉ hơn một năm mà thôi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000003_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000003",
+      "source_text": "Nhưng điều đó không còn quan trọng nữa, vì giờ đây hắn đã trở về.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nhưng điều đó không còn quan trọng nữa, vì giờ đây hắn đã trở về.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000003_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000003",
+      "source_text": "Không, ta không tin.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Không, ta không tin.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000003_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000003",
+      "source_text": "Khoảng nửa giờ sau, Trình Lăng Tuyết lại giật mình tỉnh dậy từ ác mộng, bật người ngồi dậy.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Khoảng nửa giờ sau, Trình Lăng Tuyết lại giật mình tỉnh dậy từ ác mộng, bật người ngồi dậy.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000003_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000003",
+      "source_text": "\"Nha đầu, không sao rồi, mọi chuyện đã qua rồi.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Nha đầu, không sao rồi, mọi chuyện đã qua rồi.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000004_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000004",
+      "source_text": "Vương Dần thấy vậy liền nhẹ nhàng ôm nàng vào lòng vỗ về.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần thấy vậy liền nhẹ nhàng ôm nàng vào lòng vỗ về.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000004_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000004",
+      "source_text": "\"Dần ca, huynh thật sự đã về rồi sao?\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Dần ca, huynh thật sự đã về rồi sao?\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000004_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000004",
+      "source_text": "Được Vương Dần ôm lấy, nàng ngẩn người ra một lúc, vừa rồi không phải là mơ chứ?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Được Vương Dần ôm lấy, nàng ngẩn người ra một lúc, vừa rồi không phải là mơ chứ?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000004_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000004",
+      "source_text": "Là thật, dĩ nhiên là thật rồi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Là thật, dĩ nhiên là thật rồi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000004_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000004",
+      "source_text": "Vương Dần dịu dàng đáp, \"Mọi chuyện đã qua rồi, đã qua rồi.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần dịu dàng đáp, \"Mọi chuyện đã qua rồi, đã qua rồi.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000005_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000005",
+      "source_text": "Trình Lăng Tuyết Lạn òa lê khóc, hai tay siết chặt lấy Vương Dần, như thể sợ rằng chỉ cần nới lỏng tay ra là hắn sẽ lại biến mất một lần nữa.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Trình Lăng Tuyết Lạn òa lê khóc, hai tay siết chặt lấy Vương Dần, như thể sợ rằng chỉ cần nới lỏng tay ra là hắn sẽ lại biến mất một lần nữa.",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Nhiều từ bị nhận sai trong cùng câu: 'Lạn òa lê khóc'."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000005_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000005",
+      "source_text": "\"Nha đầu, ta sẽ không bao giờ bỏ lại nàng một mình nữa.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Nha đầu, ta sẽ không bao giờ bỏ lại nàng một mình nữa.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000006_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000006",
+      "source_text": "Vương Dần khẽ nói một câu rồi im lặng.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần khẽ nói một câu rồi im lặng.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000007_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000007",
+      "source_text": "Hắn hiểu rằng Trình Lăng Tuyết đã kìm đánh quá lâu, khóc ra được cũng là chuyện tốt.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Hắn hiểu rằng Trình Lăng Tuyết đã kìm đánh quá lâu, khóc ra được cũng là chuyện tốt.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'kìm đánh quá lâu' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000007_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000007",
+      "source_text": "Nếu cứ ốt ức trong lòng mà không được phát tiết, chắc chắn sẽ tổn hại đến sức khỏe.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nếu cứ ốt ức trong lòng mà không được phát tiết, chắc chắn sẽ tổn hại đến sức khỏe.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'ốt ức' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000007_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000007",
+      "source_text": "Vì vậy, hắn để mặc nàng khóc lóc, trút bỏ hết những buồn khổ và đau thương tích tụ suốt ba năm qua.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vì vậy, hắn để mặc nàng khóc lóc, trút bỏ hết những buồn khổ và đau thương tích tụ suốt ba năm qua.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000007_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000007",
+      "source_text": "Lần này Trình Lăng Tuyết không còn nghẹn lời như trước, nàng vừa khóc vừa kể cho Vương Dần nghe nỗi nhớ nhung ra giết của mình, cuối cùng lại ôm chặt lấy hắn mà chìm vào giấc ngủ sâu.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Lần này Trình Lăng Tuyết không còn nghẹn lời như trước, nàng vừa khóc vừa kể cho Vương Dần nghe nỗi nhớ nhung ra giết của mình, cuối cùng lại ôm chặt lấy hắn mà chìm vào giấc ngủ sâu.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'nỗi nhớ nhung ra giết' có dấu hiệu caption sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000007_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000007",
+      "source_text": "Thấy nàng đã ngủ thiếp đi, Vương Dần định đặt nàng nằm lại xuống giường, nhưng nha đầu này có lẽ vì sợ hắn biến mất nên hai tay vẫn ôm khư khư không buông, sợ làm nàng thức giấc.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thấy nàng đã ngủ thiếp đi, Vương Dần định đặt nàng nằm lại xuống giường,",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Tách tại boundary ngữ nghĩa tự nhiên để tránh clip quá dài."
+        },
+        {
+          "text_exact": "nhưng nha đầu này có lẽ vì sợ hắn biến mất nên hai tay vẫn ôm khư khư không buông, sợ làm nàng thức giấc.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Phần tiếp theo vẫn đủ nghĩa và bảo toàn text."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000007_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000007",
+      "source_text": "Vương Dần đành nằm xuống cạnh nàng, đắp chăn cho cả hai.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần đành nằm xuống cạnh nàng, đắp chăn cho cả hai.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000007_P007",
+      "parent_block_id": "RiAsGTSORZ4_S000007",
+      "source_text": "Lần này Trình Lăng Tuyết không còn gặp ác mộng nữa.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Lần này Trình Lăng Tuyết không còn gặp ác mộng nữa.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000008_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000008",
+      "source_text": "Vương Dần nhân cơ hội này kiểm tra hệ thống mới sau khi nâng cấp, nghe nói là vô cùng lợi hại.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần nhân cơ hội này kiểm tra hệ thống mới sau khi nâng cấp, nghe nói là vô cùng lợi hại.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000008_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000008",
+      "source_text": "Kết quả là vừa nhìn qua, Vương Dần đã giật mình kinh hãi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Kết quả là vừa nhìn qua, Vương Dần đã giật mình kinh hãi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000009_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000009",
+      "source_text": "Cái hệ thống chết tiệt này sau khi nâng cấp chưa bàn đến chuyện có lợi hại hay không, nhưng chủng loại hàng hóa thì nhiều đến mức hoa cả mắt.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Cái hệ thống chết tiệt này sau khi nâng cấp chưa bàn đến chuyện có lợi hại hay không, nhưng chủng loại hàng hóa thì nhiều đến mức hoa cả mắt.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000009_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000009",
+      "source_text": "Nếu trước đây danh mục phân loại đã khiến hắn đau đầu, thì giờ đây nó đã đạt đến mức khiến người ta phát điên.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nếu trước đây danh mục phân loại đã khiến hắn đau đầu, thì giờ đây nó đã đạt đến mức khiến người ta phát điên.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000009_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000009",
+      "source_text": "Cũng may Vương Dần không định xem hết tất cả, nếu không chắc xem đến lúc chết cũng chưa xong.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Cũng may Vương Dần không định xem hết tất cả, nếu không chắc xem đến lúc chết cũng chưa xong.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000010_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000010",
+      "source_text": "Đây rồi, thấy thứ mình cần, mắt vương dần sáng rực lên.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Đây rồi, thấy thứ mình cần, mắt vương dần sáng rực lên.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000010_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000010",
+      "source_text": "Chí năng quản gia, 10 triệu điểm người là nhân tài toàn diện, hội tụ đủ loại kiến thức và năng lực, trợ thủ đắc lực giúp chủ nhân giải quyết mọn ưu phiền.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Chí năng quản gia, 10 triệu điểm người là nhân tài toàn diện, hội tụ đủ loại kiến thức và năng lực, trợ thủ đắc lực giúp chủ nhân giải quyết mọn ưu phiền.",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Mô tả sản phẩm có nhiều cụm sai/thiếu liên kết như '10 triệu điểm người', 'mọn ưu phiền'."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000010_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000010",
+      "source_text": "Vô Dần không chút do dự mua ngay một người, có quản gia rồi, kế hoạch phát triển đại đường của hắn sẽ bớt lo đi rất nhiều, đến lúc đó hắn chỉ cần đưa ra phương hướng đại thể, còn những việc vụng vật cứ giao cho quản gia xử lý là xong, không cần phải tự thân vận động như trước nữa.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vô Dần không chút do dự mua ngay một người, có quản gia rồi, kế hoạch phát triển đại đường của hắn sẽ bớt lo đi rất nhiều, đến lúc đó hắn chỉ cần đưa ra phương hướng đại thể, còn những việc vụng vật cứ giao cho quản gia xử lý là xong, không cần phải tự thân vận động như trước nữa.",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Nhiều lỗi caption trong câu dài: 'Vô Dần', 'việc vụng vật'."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000010_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000010",
+      "source_text": "Thực ra trong lòng Vương Dần vẫn thầm hy vọng, nếu năng lực của quản gia này thật sự xuất chúng, hắn có thể giao phó toàn bộ việc phát triển đại đường cho người này, còn mình thì hoàn toàn được giải thoát.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thực ra trong lòng Vương Dần vẫn thầm hy vọng, nếu năng lực của quản gia này thật sự xuất chúng,",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Tách tại boundary ngữ nghĩa tự nhiên để tránh clip quá dài."
+        },
+        {
+          "text_exact": "hắn có thể giao phó toàn bộ việc phát triển đại đường cho người này, còn mình thì hoàn toàn được giải thoát.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Phần tiếp theo vẫn đủ nghĩa và bảo toàn text."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000010_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000010",
+      "source_text": "Dĩ nhiên, chuyện đó phải đợi hắn kiểm tra xem vị quản gia này thông minh đến mức nào đã.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dĩ nhiên, chuyện đó phải đợi hắn kiểm tra xem vị quản gia này thông minh đến mức nào đã.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000010_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000010",
+      "source_text": "Chủ nhân, sau khi được triệu hồi, vị quản gia liền cung kính cúi người chào Vương Dần.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Chủ nhân, sau khi được triệu hồi, vị quản gia liền cung kính cúi người chào Vương Dần.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000010_P007",
+      "parent_block_id": "RiAsGTSORZ4_S000010",
+      "source_text": "Chà, được đấy.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Chà, được đấy.",
+          "label": "DROP_FRAGMENT",
+          "reason_short": "Câu cảm thán rất ngắn; không cần thiết cho corpus narration sạch."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Nhìn người đàn ông trung niên trước mặt trong chẳng khác gì người thật, Vương Dần cảm thán, đúng là sản phẩm của công nghệ đanh có khác.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nhìn người đàn ông trung niên trước mặt trong chẳng khác gì người thật, Vương Dần cảm thán, đúng là sản phẩm của công nghệ đanh có khác.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Có cụm nhận sai 'trong chẳng', 'công nghệ đanh'."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Tuy nhiên, hắn cũng không quá ngạc nhiên, vì ở thế giới ma pháp và công nghệ trước đó, hắn đã từng thấy những người máy tương tự.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Tuy nhiên, hắn cũng không quá ngạc nhiên, vì ở thế giới ma pháp và công nghệ trước đó, hắn đã từng thấy những người máy tương tự.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Hồi mới sang đó, hắn còn nhầm tưởng những người máy bán hàng trong trung tâm thương mại là người thật, vì họ quá giống.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Hồi mới sang đó, hắn còn nhầm tưởng những người máy bán hàng trong trung tâm thương mại là người thật, vì họ quá giống.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "\"Ngươi ra ngoài lập một bản kế hoạch phát triển đại đường đi, đợi trời sáng ta sẽ kiểm tra.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Ngươi ra ngoài lập một bản kế hoạch phát triển đại đường đi, đợi trời sáng ta sẽ kiểm tra.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Vương Dần Hạ thấp giọng dặn dò quản gia rồi lấy ra một cây bút và một cuốn sổ đưa cho ông ta.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần Hạ thấp giọng dặn dò quản gia rồi lấy ra một cây bút và một cuốn sổ đưa cho ông ta.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Tuân lệnh chủ nhân.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Tuân lệnh chủ nhân.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P007",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Quản gia nhận lấy giấy bút, khẽ đáp rồi đi ra ngoài.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Quản gia nhận lấy giấy bút, khẽ đáp rồi đi ra ngoài.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P008",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Vương Dần khá hài lòng với ấn tượng ban đầu về vị quản gia này.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần khá hài lòng với ấn tượng ban đầu về vị quản gia này.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P009",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Hắn nói nhỏ vì sợ làm phiền Trình Lăng Tuyết.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Hắn nói nhỏ vì sợ làm phiền Trình Lăng Tuyết.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P010",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Quản gia cũng lập tức hạ tông giọng theo, bước đi rất nhẹ nhàng, thậm chí còn biết khép cửa phòng lại một cách êm ái.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Quản gia cũng lập tức hạ tông giọng theo, bước đi rất nhẹ nhàng, thậm chí còn biết khép cửa phòng lại một cách êm ái.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P011",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Từ những hành động nhỏ này, có thể thấy trí thông minh của quản gia chắc chắn không hề thấp.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Từ những hành động nhỏ này, có thể thấy trí thông minh của quản gia chắc chắn không hề thấp.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P012",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Sáng hôm sau, ưng.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Sáng hôm sau, ưng.",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Câu 'Sáng hôm sau, ưng.' rõ ràng bị caption chen từ sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P013",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Trình Lăng Tuyết mơ màng tỉnh giấc, vừa mở mắt ra đã thấy gương mặt quen thuộc của Vương Dần.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Trình Lăng Tuyết mơ màng tỉnh giấc, vừa mở mắt ra đã thấy gương mặt quen thuộc của Vương Dần.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P014",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "\"Nha đầu, chào buổi sáng.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Nha đầu, chào buổi sáng.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P015",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Thấy nàng tỉnh dậy, Vương Dần mỉm cười chào hỏi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thấy nàng tỉnh dậy, Vương Dần mỉm cười chào hỏi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P016",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Dần ca.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dần ca.",
+          "label": "DROP_FRAGMENT",
+          "reason_short": "Vocative độc lập quá ngắn."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P017",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Trình Lăng Tuyết chớp chớp mắt, ngẩn ngươi ra một lúc rồi lập tức lộ vẻ mừng rỡ khô xiết.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Trình Lăng Tuyết chớp chớp mắt, ngẩn ngươi ra một lúc rồi lập tức lộ vẻ mừng rỡ khô xiết.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Có các cụm sai 'ngẩn ngươi', 'khô xiết'."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P018",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Lại là thật, ta không phải đang nằm mơ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Lại là thật, ta không phải đang nằm mơ.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P019",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Nàng phản ứng như vậy cũng không lạ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nàng phản ứng như vậy cũng không lạ.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P020",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Bởi suốt ba năm qua, nàng đã mơ thấy hắn trở về không biết bao nhiêu lần, nhưng tỉnh dậy lại chỉ thấy hư vô, trong lòng nàng vẫn còn nỗi sợ hãi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Bởi suốt ba năm qua, nàng đã mơ thấy hắn trở về không biết bao nhiêu lần, nhưng tỉnh dậy lại chỉ thấy hư vô, trong lòng nàng vẫn còn nỗi sợ hãi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P021",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Sợ rằng tất cả những chuyện ngày hôm qua vẫn chỉ là một giấc mơ đẹp.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Sợ rằng tất cả những chuyện ngày hôm qua vẫn chỉ là một giấc mơ đẹp.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P022",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Dĩ nhiên là thật rồi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dĩ nhiên là thật rồi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000011_P023",
+      "parent_block_id": "RiAsGTSORZ4_S000011",
+      "source_text": "Vương Dần nhẹ nhàng chạm chán mình vào trán nàng.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần nhẹ nhàng chạm chán mình vào trán nàng.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'chạm chán mình vào trán nàng' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000012_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000012",
+      "source_text": "Nếu tỉnh rồi thì dậy rửa mặt rồi ăn sáng thôi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nếu tỉnh rồi thì dậy rửa mặt rồi ăn sáng thôi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000012_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000012",
+      "source_text": "Vâng.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vâng.",
+          "label": "DROP_FRAGMENT",
+          "reason_short": "Một từ độc lập; loại theo tiêu chí tránh fragment cực ngắn."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000012_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000012",
+      "source_text": "Trình Lăng Tuyết khẽ đáp.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Trình Lăng Tuyết khẽ đáp.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000012_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000012",
+      "source_text": "Đi thôi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Đi thôi.",
+          "label": "DROP_FRAGMENT",
+          "reason_short": "Câu 2 từ quá ngắn cho corpus narration ưu tiên sạch."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000012_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000012",
+      "source_text": "Đi ăn sáng nào.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Đi ăn sáng nào.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000012_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000012",
+      "source_text": "Chưa đợi nàng kịp cử động, Vương Dần đã bế thốc nàng lên đi về phía phòng vệ sinh.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Chưa đợi nàng kịp cử động, Vương Dần đã bế thốc nàng lên đi về phía phòng vệ sinh.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000012_P007",
+      "parent_block_id": "RiAsGTSORZ4_S000012",
+      "source_text": "Trình Lăng Tuyết ban đầu có chút giật mình trước hành động của hắn, nhưng ngay sau đó nàng liền ôm chặt lấy cổ hắn, rúc vào lồng ngực ấm áp.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Trình Lăng Tuyết ban đầu có chút giật mình trước hành động của hắn, nhưng ngay sau đó nàng liền ôm chặt lấy cổ hắn, rúc vào lồng ngực ấm áp.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000012_P008",
+      "parent_block_id": "RiAsGTSORZ4_S000012",
+      "source_text": "Cảm nhận hơi ấm từ lồng ngực Vương Dần, nàng biết rằng cơn ác mộng kéo dài suốt ba năm qua rốt cuộc đã thực sự kết thúc.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Cảm nhận hơi ấm từ lồng ngực Vương Dần, nàng biết rằng cơn ác mộng kéo dài suốt ba năm qua rốt cuộc đã thực sự kết thúc.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000012_P009",
+      "parent_block_id": "RiAsGTSORZ4_S000012",
+      "source_text": "\"Chủ nhân, phu nhân.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Chủ nhân, phu nhân.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000013_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000013",
+      "source_text": "Khi hai người đi ngang qua phòng khách, vị quản gia Chí Năng lập tức cung kính cúi chào.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Khi hai người đi ngang qua phòng khách, vị quản gia Chí Năng lập tức cung kính cúi chào.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000013_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000013",
+      "source_text": "Dần ca, ông ấy là ai vậy?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dần ca, ông ấy là ai vậy?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000013_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000013",
+      "source_text": "Thấy quản gia, Trình Lăng Tuyết ngẩn người hỏi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thấy quản gia, Trình Lăng Tuyết ngẩn người hỏi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000013_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000013",
+      "source_text": "Ông ấy không phải là người?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Ông ấy không phải là người?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000013_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000013",
+      "source_text": "Vương Dần thuận miệng đáp một câu.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần thuận miệng đáp một câu.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000013_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000013",
+      "source_text": "Được rồi, đừng để ý đến ông ta, chúng ta đi rửa mặt trước đã.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Được rồi, đừng để ý đến ông ta, chúng ta đi rửa mặt trước đã.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000013_P007",
+      "parent_block_id": "RiAsGTSORZ4_S000013",
+      "source_text": "Ồ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Ồ.",
+          "label": "DROP_FRAGMENT",
+          "reason_short": "Cảm thán một từ độc lập."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000013_P008",
+      "parent_block_id": "RiAsGTSORZ4_S000013",
+      "source_text": "Nghe Vương Dần nói vậy, Trình Lăng Tuyết cũng không hỏi thêm trong thâm tâm nàng.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nghe Vương Dần nói vậy, Trình Lăng Tuyết cũng không hỏi thêm trong thâm tâm nàng.",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Kết cấu 'không hỏi thêm trong thâm tâm nàng' cho thấy boundary/text bị hỏng."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000013_P009",
+      "parent_block_id": "RiAsGTSORZ4_S000013",
+      "source_text": "Vương Dần nói sao thì là vậy, nàng chẳng cần phải suy nghĩ nhiều làm gì.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần nói sao thì là vậy, nàng chẳng cần phải suy nghĩ nhiều làm gì.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000013_P010",
+      "parent_block_id": "RiAsGTSORZ4_S000013",
+      "source_text": "Thôi chết, đang lúc đánh răng, Trình Lăng Tuyết bỗng dừng lại, lo lắng nhìn Vương Dần.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thôi chết, đang lúc đánh răng, Trình Lăng Tuyết bỗng dừng lại, lo lắng nhìn Vương Dần.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000013_P011",
+      "parent_block_id": "RiAsGTSORZ4_S000013",
+      "source_text": "Dần ca, còn bọn Sử Mặc thì sao?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dần ca, còn bọn Sử Mặc thì sao?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000013_P012",
+      "parent_block_id": "RiAsGTSORZ4_S000013",
+      "source_text": "Sử Mặc bọn họ làm sao?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Sử Mặc bọn họ làm sao?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000014_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000014",
+      "source_text": "Vương Dần ngơ ngác nhìn nàng rồi lẩm bẩm, \"Nhất mới nhớ, hôm qua hình như không thấy bọn chúng đâu.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần ngơ ngác nhìn nàng rồi lẩm bẩm, \"Nhất mới nhớ, hôm qua hình như không thấy bọn chúng đâu.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'Nhất mới nhớ' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000014_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000014",
+      "source_text": "Mấy tên này thật là làm việc quá tắc trách, cả bọn bá ca nữa, không biết chạy đi đâu mất rồi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Mấy tên này thật là làm việc quá tắc trách, cả bọn bá ca nữa, không biết chạy đi đâu mất rồi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000014_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000014",
+      "source_text": "Không được, lát nữa phải giáo huấn bọn chúng một trận mới được.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Không được, lát nữa phải giáo huấn bọn chúng một trận mới được.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000014_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000014",
+      "source_text": "Hôm qua vì mới về nên Vương Dần chưa kịp nghĩ nhiều, Dương Ngẫm lại mới thấy lạ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Hôm qua vì mới về nên Vương Dần chưa kịp nghĩ nhiều, Dương Ngẫm lại mới thấy lạ.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'Dương Ngẫm lại' có dấu hiệu caption sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000014_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000014",
+      "source_text": "Với thực lực của bọn Trình Sử Mặc, lẽ nào lại để đám thế gia đánh vào tận hoàng cung?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Với thực lực của bọn Trình Sử Mặc, lẽ nào lại để đám thế gia đánh vào tận hoàng cung?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000014_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000014",
+      "source_text": "Mấy tên nhóc này không thể phạm sai lầm ngớ ngẩn như vậy trong chuyện đại sự được.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Mấy tên nhóc này không thể phạm sai lầm ngớ ngẩn như vậy trong chuyện đại sự được.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000014_P007",
+      "parent_block_id": "RiAsGTSORZ4_S000014",
+      "source_text": "Hơn nữa không chỉ bọn Sử Mặc, ngay cả đám bá ca Ảnh Tử cũng chẳng thấy bóng dáng.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Hơn nữa không chỉ bọn Sử Mặc, ngay cả đám bá ca Ảnh Tử cũng chẳng thấy bóng dáng.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000014_P008",
+      "parent_block_id": "RiAsGTSORZ4_S000014",
+      "source_text": "Chuyện này quá đỗi bất thường.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Chuyện này quá đỗi bất thường.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000014_P009",
+      "parent_block_id": "RiAsGTSORZ4_S000014",
+      "source_text": "Bá ca và Củ Cải thì không nói, nhưng thái qua, Hùng Đại và Vượng Tài đều là những trung thần tiêu biểu.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Bá ca và Củ Cải thì không nói, nhưng thái qua, Hùng Đại và Vượng Tài đều là những trung thần tiêu biểu.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000014_P010",
+      "parent_block_id": "RiAsGTSORZ4_S000014",
+      "source_text": "Và chuyện như vậy, lẽ nào chúng lại khoanh tay đứng nhìn?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Và chuyện như vậy, lẽ nào chúng lại khoanh tay đứng nhìn?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000014_P011",
+      "parent_block_id": "RiAsGTSORZ4_S000014",
+      "source_text": "Càng nghĩ Vương Dần càng thấy có điều gì đó không ổn.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Càng nghĩ Vương Dần càng thấy có điều gì đó không ổn.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000014_P012",
+      "parent_block_id": "RiAsGTSORZ4_S000014",
+      "source_text": "Không phải đâu.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Không phải đâu.",
+          "label": "DROP_FRAGMENT",
+          "reason_short": "Câu đáp quá ngắn; ưu tiên bỏ để corpus sạch hơn."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000014_P013",
+      "parent_block_id": "RiAsGTSORZ4_S000014",
+      "source_text": "Dần Ca nghe thiếp nói này, Trình Lăng Tuyết lắc đầu, vội vàng kể lại tình trạng của bốn anh em Trình Xử Mặc và năm con linh thú cho Vương Dần nghe.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dần Ca nghe thiếp nói này, Trình Lăng Tuyết lắc đầu, vội vàng kể lại tình trạng của bốn anh em Trình Xử Mặc và năm con linh thú cho Vương Dần nghe.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000014_P014",
+      "parent_block_id": "RiAsGTSORZ4_S000014",
+      "source_text": "Hóa ra là vậy.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Hóa ra là vậy.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000014_P015",
+      "parent_block_id": "RiAsGTSORZ4_S000014",
+      "source_text": "Nghe xong, Vương Dần gật đầu vỡ lẽ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nghe xong, Vương Dần gật đầu vỡ lẽ.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000014_P016",
+      "parent_block_id": "RiAsGTSORZ4_S000014",
+      "source_text": "Thảo nào bọn chúng và đám linh thú không xuất hiện, hóa ra là gặp rắc rối rồi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thảo nào bọn chúng và đám linh thú không xuất hiện, hóa ra là gặp rắc rối rồi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000014_P017",
+      "parent_block_id": "RiAsGTSORZ4_S000014",
+      "source_text": "Dần ca, huynh mau cứu bọn Sử Mặc đi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dần ca, huynh mau cứu bọn Sử Mặc đi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000014_P018",
+      "parent_block_id": "RiAsGTSORZ4_S000014",
+      "source_text": "Trình Lăng Tuyết khẩn khoản cầu xin, \"Huynh nhất định có cách đúng không?\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Trình Lăng Tuyết khẩn khoản cầu xin, \"Huynh nhất định có cách đúng không?\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000015_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000015",
+      "source_text": "Lúc này nàng cảm thấy vô cùng ái náy, vì hôm qua mải vui mừng mà quên mất các em mình.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Lúc này nàng cảm thấy vô cùng ái náy, vì hôm qua mải vui mừng mà quên mất các em mình.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000015_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000015",
+      "source_text": "Nàng thấy mình thật ích kỷ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nàng thấy mình thật ích kỷ.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000015_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000015",
+      "source_text": "\"Ngốc ạ, dĩ nhiên là có cách rồi.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Ngốc ạ, dĩ nhiên là có cách rồi.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000015_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000015",
+      "source_text": "Vương Dần xoa đầu nàng, \"Đừng nói là bọn chúng còn sống, dù có chết rồi, ta cũng cứu về được.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần xoa đầu nàng, \"Đừng nói là bọn chúng còn sống, dù có chết rồi, ta cũng cứu về được.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000015_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000015",
+      "source_text": "Nàng cứ yên tâm cây cao gối mà ngủ đi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nàng cứ yên tâm cây cao gối mà ngủ đi.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'cây cao gối' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000015_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000015",
+      "source_text": "Nghe Vương Dần khẳng định trắc nịch, Trình Lăng Tuyết rốt cuộc cũng nhẹ lòng.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nghe Vương Dần khẳng định trắc nịch, Trình Lăng Tuyết rốt cuộc cũng nhẹ lòng.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Từ 'trắc nịch' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000016_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000016",
+      "source_text": "Trong mắt nàng, Vương Dần chính là hiện thân của sự toàn năng.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Trong mắt nàng, Vương Dần chính là hiện thân của sự toàn năng.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000016_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000016",
+      "source_text": "Hắn đã nói có cách thì chắc chắn sẽ ổn.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Hắn đã nói có cách thì chắc chắn sẽ ổn.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000016_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000016",
+      "source_text": "\"Được rồi, mau rửa mặt đi, lát nữa ăn sáng xong chúng ta đi thăm bọn chúng.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Được rồi, mau rửa mặt đi, lát nữa ăn sáng xong chúng ta đi thăm bọn chúng.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000016_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000016",
+      "source_text": "Vương Dần vỗ nhẹ đầu nàng, dịu dàng nói, hắn không hề nói khoác, vì tối qua lúc rảnh rỗi, hắn đã phát hiện trong thương trường hệ thống có những món đồ cực kỳ lợi hại.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần vỗ nhẹ đầu nàng, dịu dàng nói, hắn không hề nói khoác, vì tối qua lúc rảnh rỗi, hắn đã phát hiện trong thương trường hệ thống có những món đồ cực kỳ lợi hại.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000016_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000016",
+      "source_text": "Loại thuốc có thể cải tử hoàn sinh thật sự tồn tại và nó không giống như linh hồn chi thạch, đại chỉ có tác dụng trong vòng 1 giờ sau khi chết.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Loại thuốc có thể cải tử hoàn sinh thật sự tồn tại và nó không giống như linh hồn chi thạch, đại chỉ có tác dụng trong vòng 1 giờ sau khi chết.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'đại chỉ có tác dụng' có dấu hiệu caption sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000016_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000016",
+      "source_text": "Dĩ nhiên, món đồ đó cũng có hạn chế, thi thể phải còn nguyên vẹn, nếu chết đã lâu, thi thể thối giữa hoặc không còn dấu vết thì cũng chịu.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dĩ nhiên, món đồ đó cũng có hạn chế, thi thể phải còn nguyên vẹn, nếu chết đã lâu, thi thể thối giữa hoặc không còn dấu vết thì cũng chịu.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'thi thể thối giữa' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000016_P007",
+      "parent_block_id": "RiAsGTSORZ4_S000016",
+      "source_text": "Nhưng chuyện đó không thành vấn đề, vì bọn Trình Sử Mặc vẫn còn sống sờ sờ ra đó mà.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nhưng chuyện đó không thành vấn đề, vì bọn Trình Sử Mặc vẫn còn sống sờ sờ ra đó mà.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000016_P008",
+      "parent_block_id": "RiAsGTSORZ4_S000016",
+      "source_text": "Nhìn Vương Dần lấy ra những món điểm tâm quen thuộc, lòng Trình Lăng Tuyết dâng lên niềm cảm khái khôn nguôi, đồ vật quen thuộc, người xưa vẫn đây, cơn ác mộng thực sự đã kết thúc rồi, duy chỉ có vị quản gia trong phòng là hơi lạ lẫm, nhưng lúc này nàng đang đắm chìm trong niềm vui hội ngộ nên cũng chẳng bận tâm.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nhìn Vương Dần lấy ra những món điểm tâm quen thuộc, lòng Trình Lăng Tuyết dâng lên niềm cảm khái khôn nguôi,",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Tách tại boundary ngữ nghĩa tự nhiên để tránh clip quá dài."
+        },
+        {
+          "text_exact": "đồ vật quen thuộc, người xưa vẫn đây, cơn ác mộng thực sự đã kết thúc rồi,",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Phần tiếp theo vẫn đủ nghĩa và bảo toàn text."
+        },
+        {
+          "text_exact": "duy chỉ có vị quản gia trong phòng là hơi lạ lẫm, nhưng lúc này nàng đang đắm chìm trong niềm vui hội ngộ nên cũng chẳng bận tâm.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Phần tiếp theo vẫn đủ nghĩa và bảo toàn text."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000016_P009",
+      "parent_block_id": "RiAsGTSORZ4_S000016",
+      "source_text": "Tại một ngôi nhà dân ngoại thành Trường An, quả nhiên là vậy.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Tại một ngôi nhà dân ngoại thành Trường An, quả nhiên là vậy.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000017_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000017",
+      "source_text": "Cảm nhận luồng khí tức ác ma chi lực còn sót lại cho người Trình Sử Mặc và những người khác, Vương Dần thầm gật đầu.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Cảm nhận luồng khí tức ác ma chi lực còn sót lại cho người Trình Sử Mặc và những người khác, Vương Dần thầm gật đầu.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'còn sót lại cho người' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000017_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000017",
+      "source_text": "Vừa rồi nghe Trình Lăng Tuyết kể lại tình hình lúc hắn biến mất ở U Châu, hắn đã đoán ra 8 ch9 phần m là do ác ma chipc tiêu tán từ người hắn đã xâm nhập vào cơ thể bọn họ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vừa rồi nghe Trình Lăng Tuyết kể lại tình hình lúc hắn biến mất ở U Châu, hắn đã đoán ra 8 ch9 phần m là do ác ma chipc tiêu tán từ người hắn đã xâm nhập vào cơ thể bọn họ.",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Caption hỏng nặng với chuỗi '8 ch9 phần m', 'chipc'."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000017_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000017",
+      "source_text": "Cũng may trước đó bọn họ đã được cường hóa bằng dược tể, thể chất và tinh thần đều vượt xa người thường, nếu không e là đã sớm mất mạng rồi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Cũng may trước đó bọn họ đã được cường hóa bằng dược tể, thể chất và tinh thần đều vượt xa người thường, nếu không e là đã sớm mất mạng rồi.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Từ 'dược tể' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000017_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000017",
+      "source_text": "Chuyện sau đó trở nên đơn giản hơn nhiều.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Chuyện sau đó trở nên đơn giản hơn nhiều.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000017_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000017",
+      "source_text": "Vương Dần lần lượt chạm tay vào người bốn huynh đệ, thu hồi toàn bộ luồng ác ma chi lực còn sót lại.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần lần lượt chạm tay vào người bốn huynh đệ, thu hồi toàn bộ luồng ác ma chi lực còn sót lại.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000017_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000017",
+      "source_text": "Dần ca, tỷ tỷ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dần ca, tỷ tỷ.",
+          "label": "DROP_FRAGMENT",
+          "reason_short": "Lời gọi ngắn, phụ thuộc ngữ cảnh và không đủ giàu ngữ âm."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000017_P007",
+      "parent_block_id": "RiAsGTSORZ4_S000017",
+      "source_text": "Ngay khi ác ma chi được rút ra, bốn anh em lập tức tỉnh lại.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Ngay khi ác ma chi được rút ra, bốn anh em lập tức tỉnh lại.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'ác ma chi' có vẻ bị thiếu từ."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000017_P008",
+      "parent_block_id": "RiAsGTSORZ4_S000017",
+      "source_text": "Thấy Vương Dần vào Trình Lăng Tuyết trước mặt, h mẩn người ra một lúc rồi vỡ òa kích động.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thấy Vương Dần vào Trình Lăng Tuyết trước mặt, h mẩn người ra một lúc rồi vỡ òa kích động.",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Caption hỏng nặng: 'Vương Dần vào...', 'h mẩn người'."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000017_P009",
+      "parent_block_id": "RiAsGTSORZ4_S000017",
+      "source_text": "Dần ca, huynh về từ bao giờ thế?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dần ca, huynh về từ bao giờ thế?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000017_P010",
+      "parent_block_id": "RiAsGTSORZ4_S000017",
+      "source_text": "Hôm qua mới về.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Hôm qua mới về.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000018_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000018",
+      "source_text": "Vương Dần mỉm cười nhìn họ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần mỉm cười nhìn họ.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000018_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000018",
+      "source_text": "Được rồi, đừng đứng ngây ra đó nữa, về nhà thôi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Được rồi, đừng đứng ngây ra đó nữa, về nhà thôi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000019_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000019",
+      "source_text": "Vâng.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vâng.",
+          "label": "DROP_FRAGMENT",
+          "reason_short": "Một từ độc lập; loại theo tiêu chí fragment."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000019_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000019",
+      "source_text": "Bốn huynh đệ gật đầu Ly A Liện hớn hở đi theo Vương Dần về phía Trường An.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Bốn huynh đệ gật đầu Ly A Liện hớn hở đi theo Vương Dần về phía Trường An.",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Có chuỗi vô nghĩa 'Ly A Liện' chen giữa câu."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000020_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000020",
+      "source_text": "Trên đường đi, họ không ngừng hỏi han Vương Dần về những chuyện đã xảy ra trong suốt thời gian hắn mất tích.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Trên đường đi, họ không ngừng hỏi han Vương Dần về những chuyện đã xảy ra trong suốt thời gian hắn mất tích.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000020_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000020",
+      "source_text": "Thấy Trình Lăng Tuyết cũng tò mò, Vương Dần bành kể lại hành trình của mình ở thế giới ma pháp và công nghệ kia.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thấy Trình Lăng Tuyết cũng tò mò, Vương Dần bành kể lại hành trình của mình ở thế giới ma pháp và công nghệ kia.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'bành kể' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000020_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000020",
+      "source_text": "Dĩ nhiên, hắn rất khôn ngoan khi giấu nhẹn chuyện về Vương Oánh Oánh và Ngụi Dao Giao.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dĩ nhiên, hắn rất khôn ngoan khi giấu nhẹn chuyện về Vương Oánh Oánh và Ngụi Dao Giao.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Có cụm 'giấu nhẹn' và tên riêng cần xác minh bằng audio/ASR."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000020_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000020",
+      "source_text": "Hai cô gái từng thầm thương trộm nhớ mình.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Hai cô gái từng thầm thương trộm nhớ mình.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000021_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000021",
+      "source_text": "Dù giữa họ chẳng có chuyện gì nhưng nói ra chỉ tổ làm Trình Lang Tuyết thêm phiền lòng mà thôi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dù giữa họ chẳng có chuyện gì nhưng nói ra chỉ tổ làm Trình Lang Tuyết thêm phiền lòng mà thôi.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Tên 'Trình Lang Tuyết' lệch so với ngữ cảnh nhất quán."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000021_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000021",
+      "source_text": "Dần ca, Huynh đúng là lợi hại thật, đi đâu cũng làm nên chuyện lớn.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dần ca, Huynh đúng là lợi hại thật, đi đâu cũng làm nên chuyện lớn.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000021_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000021",
+      "source_text": "Ngay kể Vương Dần đầu tiên trở thành người giàu nhất tội ác chi thành, sau đó còn dẹp tan cả tu chân giới.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Ngay kể Vương Dần đầu tiên trở thành người giàu nhất tội ác chi thành, sau đó còn dẹp tan cả tu chân giới.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Mở câu 'Ngay kể' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000021_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000021",
+      "source_text": "Bốn huynh đệ nhìn hắn với ánh mắt đầy sùng bái.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Bốn huynh đệ nhìn hắn với ánh mắt đầy sùng bái.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000021_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000021",
+      "source_text": "Chuyện đó là đương nhiên.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Chuyện đó là đương nhiên.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000022_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000022",
+      "source_text": "Vương Dần đắc ý gật đầu.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần đắc ý gật đầu.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000022_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000022",
+      "source_text": "Mấy chuyện đó đối với ta chỉ là chuyện nhỏ thôi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Mấy chuyện đó đối với ta chỉ là chuyện nhỏ thôi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000022_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000022",
+      "source_text": "Thao tác cơ bản.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thao tác cơ bản.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000022_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000022",
+      "source_text": "Chỉ là thao tác cơ bản thôi mà.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Chỉ là thao tác cơ bản thôi mà.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000022_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000022",
+      "source_text": "20 phút sau.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "20 phút sau.",
+          "label": "DROP_FRAGMENT",
+          "reason_short": "Mốc thời gian quá ngắn; không cần thành clip train riêng."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000022_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000022",
+      "source_text": "O, có gì đó sai sai.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "O, có gì đó sai sai.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Interjection 'O' có dấu hiệu caption sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000023_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000023",
+      "source_text": "Trình Sử Lượng nhanh chí nhận ra điểm lạ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Trình Sử Lượng nhanh chí nhận ra điểm lạ.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'nhanh chí' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000023_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000023",
+      "source_text": "Sao đi nãy giờ mà chúng ta vẫn chưa thấy buồn ngủ nhỉ?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Sao đi nãy giờ mà chúng ta vẫn chưa thấy buồn ngủ nhỉ?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000023_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000023",
+      "source_text": "Đúng thế, để nói ta mới nhớ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Đúng thế, để nói ta mới nhớ.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'để nói ta mới nhớ' có dấu hiệu thiếu/sai từ."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000023_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000023",
+      "source_text": "Ba người còn lại cũng phụ họa.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Ba người còn lại cũng phụ họa.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000024_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000024",
+      "source_text": "Bình thường tầm này là chúng ta phải lan ra ngủ rồi chứ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Bình thường tầm này là chúng ta phải lan ra ngủ rồi chứ.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'lan ra ngủ' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000024_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000024",
+      "source_text": "Các ngươi thiếu tâm nhãn à?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Các ngươi thiếu tâm nhãn à?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000024_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000024",
+      "source_text": "Vương Dần đầy vạch đen trên đầu.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần đầy vạch đen trên đầu.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000024_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000024",
+      "source_text": "Ta đã về rồi thì dĩ nhiên phải giải quyết xong cho các ngươi chứ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Ta đã về rồi thì dĩ nhiên phải giải quyết xong cho các ngươi chứ.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000024_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000024",
+      "source_text": "Đúng nhỉ?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Đúng nhỉ?",
+          "label": "DROP_FRAGMENT",
+          "reason_short": "Câu hỏi 2 từ rất ngắn; bỏ để tăng độ sạch."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000024_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000024",
+      "source_text": "Bốn huynh đệ vỡ lẽ rồi trưng ra bộ mặt nịnh bợ, cười y hì với Vương Dần.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Bốn huynh đệ vỡ lẽ rồi trưng ra bộ mặt nịnh bợ, cười y hì với Vương Dần.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'cười y hì' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000024_P007",
+      "parent_block_id": "RiAsGTSORZ4_S000024",
+      "source_text": "Vừa nãy thấy Dần Ca về mừng quá nên bọn đệ quên khuấy mất.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vừa nãy thấy Dần Ca về mừng quá nên bọn đệ quên khuấy mất.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000024_P008",
+      "parent_block_id": "RiAsGTSORZ4_S000024",
+      "source_text": "Hắc hắc, Hoài Ngọc để thay đổi rồi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Hắc hắc, Hoài Ngọc để thay đổi rồi.",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Câu 'Hoài Ngọc để thay đổi rồi' không thành nghĩa trong ngữ cảnh."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000024_P009",
+      "parent_block_id": "RiAsGTSORZ4_S000024",
+      "source_text": "Thấy ngay cả Tần Hoài Ngọc cũng làm bộ mặt nịnh bợ cười với mình, Vương Dần giả vừa đau lòng để bị bọn chúng làm hư mất rồi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thấy ngay cả Tần Hoài Ngọc cũng làm bộ mặt nịnh bợ cười với mình, Vương Dần giả vừa đau lòng để bị bọn chúng làm hư mất rồi.",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Cấu trúc câu hỏng nặng, nhiều từ sai/mất."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000024_P010",
+      "parent_block_id": "RiAsGTSORZ4_S000024",
+      "source_text": "Sau khi trở về, bốn huynh đệ ai nấy đều về nhà mình.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Sau khi trở về, bốn huynh đệ ai nấy đều về nhà mình.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000024_P011",
+      "parent_block_id": "RiAsGTSORZ4_S000024",
+      "source_text": "Dù rất muốn ở bên vương dần thêm chút nữa, nhưng giờ đã bình phục hoàn toàn, họ phải về báo bình an cho gia đình trước.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dù rất muốn ở bên vương dần thêm chút nữa, nhưng giờ đã bình phục hoàn toàn, họ phải về báo bình an cho gia đình trước.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000024_P012",
+      "parent_block_id": "RiAsGTSORZ4_S000024",
+      "source_text": "Dỗ sao thời gian qua, người thân đã phải lo lắng cho họ rất nhiều.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dỗ sao thời gian qua, người thân đã phải lo lắng cho họ rất nhiều.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Mở câu 'Dỗ sao thời gian qua' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000024_P013",
+      "parent_block_id": "RiAsGTSORZ4_S000024",
+      "source_text": "Tất nhiên việc Lý Thế Dân và những người khác đang đứng trước cửa nhà Vương Dần cũng là một lý do khiến họ nhanh chóng rời đi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Tất nhiên việc Lý Thế Dân và những người khác đang đứng trước cửa nhà Vương Dần cũng là một lý do khiến họ nhanh chóng rời đi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000024_P014",
+      "parent_block_id": "RiAsGTSORZ4_S000024",
+      "source_text": "Tham kiến bệ hạ, thầy Ly Thế Dân, Trình Lăng Tuyết và bốn huynh đệ vội vàng cung kính hành lễ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Tham kiến bệ hạ, thầy Ly Thế Dân, Trình Lăng Tuyết và bốn huynh đệ vội vàng cung kính hành lễ.",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Câu chứa chuỗi sai 'thầy Ly Thế Dân' và boundary hội thoại lẫn narration."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000025_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000025",
+      "source_text": "Vương Dần, bọn trẻ không sao rồi chứ?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần, bọn trẻ không sao rồi chứ?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Nhìn thấy bốn huynh đệ đứng sau lưng Vương Dần, Lý Thế Dân, Trinh Giảo Kim và Tần Quỳnh không khỏi lo lắng hỏi lại cho chắc.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nhìn thấy bốn huynh đệ đứng sau lưng Vương Dần, Lý Thế Dân, Trinh Giảo Kim và Tần Quỳnh không khỏi lo lắng hỏi lại cho chắc.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Tên 'Trinh Giảo Kim' cần xác minh; lệch dạng tên nhất quán."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Hôm nay họ đến tìm Vương Dần, ngoài việc bàn bạc đại sự, còn định nhờ hắn ra tay chữa trị cho bốn đứa trẻ, nhưng nhìn tình hình hiện tại, có vẻ như mọi chuyện đã được giải quyết xong xuôi, yên tâm, bọn chúng lại khỏe mạnh, nhảy nhớt tưng bừng như trước rồi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Hôm nay họ đến tìm Vương Dần, ngoài việc bàn bạc đại sự, còn định nhờ hắn ra tay chữa trị cho bốn đứa trẻ, nhưng nhìn tình hình hiện tại, có vẻ như mọi chuyện đã được giải quyết xong xuôi, yên tâm, bọn chúng lại khỏe mạnh, nhảy nhớt tưng bừng như trước rồi.",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Câu dài có nhiều lỗi như 'nhảy nhớt' và cấu trúc ghép bất thường."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Vương Dần khẳng định trắc nịch, nghe vậy, mọi người mới hoàn toàn yên tâm, đặc biệt là Trình Giảo Kim và Tần Quỳnh tảng đá đè nặng trong lòng bấy lâu nay rốt cuộc cũng được chút bỏ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần khẳng định trắc nịch, nghe vậy, mọi người mới hoàn toàn yên tâm, đặc biệt là Trình Giảo Kim và Tần Quỳnh tảng đá đè nặng trong lòng bấy lâu nay rốt cuộc cũng được chút bỏ.",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Nhiều lỗi: 'trắc nịch', thiếu boundary, 'chút bỏ'."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Thôi con về báo tin vui cho nơ đây.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thôi con về báo tin vui cho nơ đây.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'nơ đây' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Sau khi chào hỏi, bốn huynh đệ xin phép cha mình rồi hớn hở rời đi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Sau khi chào hỏi, bốn huynh đệ xin phép cha mình rồi hớn hở rời đi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Ở cạnh vị hoàng đế như Lý Thế Dân, bọn họ Trung Quy vẫn thấy có chút không tự nhiên.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Ở cạnh vị hoàng đế như Lý Thế Dân, bọn họ Trung Quy vẫn thấy có chút không tự nhiên.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'Trung Quy' có dấu hiệu nhận sai trong ngữ cảnh."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P007",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Được rồi, đừng đứng ngây ra đó nữa, vào nhà đi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Được rồi, đừng đứng ngây ra đó nữa, vào nhà đi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P008",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Vương Dần chào hỏi Lý Thế Dân và mọi người rồi dẫn đầu đi vào trong.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần chào hỏi Lý Thế Dân và mọi người rồi dẫn đầu đi vào trong.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P009",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Việc họ đến tìm không nằm ngoài dự tính của Vương Dần.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Việc họ đến tìm không nằm ngoài dự tính của Vương Dần.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P010",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Theo hắn nghĩ, lẽ ra họ phải đến từ hôm qua.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Theo hắn nghĩ, lẽ ra họ phải đến từ hôm qua.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P011",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Sở dĩ hôm nay mới tới chắc là vì thấy hắn và Chỉ Lăng Tuyết có nhiều điều muốn nói nên cố ý dành không gian riêng cho hai người.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Sở dĩ hôm nay mới tới chắc là vì thấy hắn và Chỉ Lăng Tuyết có nhiều điều muốn nói nên cố ý dành không gian riêng cho hai người.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Tên 'Chỉ Lăng Tuyết' lệch ngữ cảnh nhất quán."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P012",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Trước sự tinh ý này, Vương Dần cảm thấy rất hài lòng.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Trước sự tinh ý này, Vương Dần cảm thấy rất hài lòng.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P013",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Vào đến phòng khách biệt thự, Trình Lăng Tuyết nhanh nhận pha trà rồi đặt lên bàn cho mọi người, sau đó định lui sang một bên, nhưng Vương Dần đã nhanh tay kéo nàng ngồi xuống cạnh mình, còn đưa tay ôm lấy eo nàng.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vào đến phòng khách biệt thự, Trình Lăng Tuyết nhanh nhận pha trà rồi đặt lên bàn cho mọi người, sau đó định lui sang một bên, nhưng Vương Dần đã nhanh tay kéo nàng ngồi xuống cạnh mình, còn đưa tay ôm lấy eo nàng.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'nhanh nhận pha trà' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P014",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Dần ca, đừng thế mà, đông người lắm.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dần ca, đừng thế mà, đông người lắm.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P015",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Trình Lăng Tuyết vừa thạnh vừa ngượng, cúi đầu nhỏ giọng này nhỉ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Trình Lăng Tuyết vừa thạnh vừa ngượng, cúi đầu nhỏ giọng này nhỉ.",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Câu hỏng: 'vừa thạnh vừa ngượng' và phần đuôi 'này nhỉ' lệch ngữ cảnh."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P016",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Sợ gì chứ?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Sợ gì chứ?",
+          "label": "DROP_FRAGMENT",
+          "reason_short": "Câu 3 từ rất ngắn; ưu tiên loại trong corpus narration sạch."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P017",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Chúng ta đường đường chính chính, có gì mà phải giấu giếm?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Chúng ta đường đường chính chính, có gì mà phải giấu giếm?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P018",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Vương Dần thản nhiên đáp.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần thản nhiên đáp.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P019",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Lý Thế Dân và Tần Quỳnh nhìn nhau mỉm cười đầy ẩn ý.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Lý Thế Dân và Tần Quỳnh nhìn nhau mỉm cười đầy ẩn ý.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P020",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Xem ra chẳng mấy chốc nữa là được sang nhà Trình Giảo Kim uống rượu mừng rồi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Xem ra chẳng mấy chốc nữa là được sang nhà Trình Giảo Kim uống rượu mừng rồi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000026_P021",
+      "parent_block_id": "RiAsGTSORZ4_S000026",
+      "source_text": "Cái thằng danh này.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Cái thằng danh này.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'thằng danh' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000027_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000027",
+      "source_text": "Thấy Vương Dần ngang nhiên ôm con gái mình ngay trước mặt, Trình Giảo Kim trừng mắt nhìn hắn một cái, nhưng trong lòng ông lại thầm vui sướng.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thấy Vương Dần ngang nhiên ôm con gái mình ngay trước mặt, Trình Giảo Kim trừng mắt nhìn hắn một cái, nhưng trong lòng ông lại thầm vui sướng.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000027_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000027",
+      "source_text": "Chuyện đại sự chắc sắp thành rồi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Chuyện đại sự chắc sắp thành rồi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000027_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000027",
+      "source_text": "Ồ, Vương Dần, vị này là lúc này Lý Thế Dân mới chú ý đến vị quản gia chí năng đang đứng trong góc, tò mò hỏi, \"Người đâu?\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Ồ, Vương Dần, vị này là lúc này Lý Thế Dân mới chú ý đến vị quản gia chí năng đang đứng trong góc, tò mò hỏi, \"Người đâu?\"",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Narration và hội thoại bị dính thành câu không hoàn chỉnh."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000027_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000027",
+      "source_text": "Vương Dần vẫy tay gọi quản gia, rồi chợt nhớ ra điều gì đó.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần vẫy tay gọi quản gia, rồi chợt nhớ ra điều gì đó.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000027_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000027",
+      "source_text": "\"Đúng rồi, ngươi tên là gì nhỉ?\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Đúng rồi, ngươi tên là gì nhỉ?\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000027_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000027",
+      "source_text": "Thấy hành động của Vương Dần, Lý Thế Dân và mọi người đầy vạch đen trên đầu.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thấy hành động của Vương Dần, Lý Thế Dân và mọi người đầy vạch đen trên đầu.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000027_P007",
+      "parent_block_id": "RiAsGTSORZ4_S000027",
+      "source_text": "Người ở trong nhà ngươi nãy giờ mà ngươi còn chẳng biết tên người ta, cái tâm của ngươi cũng lớn quá rồi đấy.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Người ở trong nhà ngươi nãy giờ mà ngươi còn chẳng biết tên người ta, cái tâm của ngươi cũng lớn quá rồi đấy.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000027_P008",
+      "parent_block_id": "RiAsGTSORZ4_S000027",
+      "source_text": "Thưa chủ nhân, ngài vẫn chưa đặt tên cho tôi, nhưng hiện tại tôi chưa có tên.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thưa chủ nhân, ngài vẫn chưa đặt tên cho tôi, nhưng hiện tại tôi chưa có tên.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000027_P009",
+      "parent_block_id": "RiAsGTSORZ4_S000027",
+      "source_text": "Quản gia tiến tới cung kính đáp lời Vương Dần rồi quay sang chào Lý Thế Dân và những người khác.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Quản gia tiến tới cung kính đáp lời Vương Dần rồi quay sang chào Lý Thế Dân và những người khác.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000027_P010",
+      "parent_block_id": "RiAsGTSORZ4_S000027",
+      "source_text": "Bái kiến bệ hạ, bái kiến Lô Quốc công, Dược Quốc công, ngươi biết họ sao?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Bái kiến bệ hạ, bái kiến Lô Quốc công, Dược Quốc công, ngươi biết họ sao?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000028_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000028",
+      "source_text": "Lần này đến lược Vương Dần ngẩn người, nhưng trước đây ngươi chưa từng gặp họ mà.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Lần này đến lược Vương Dần ngẩn người, nhưng trước đây ngươi chưa từng gặp họ mà.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'đến lược' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000028_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000028",
+      "source_text": "Thưa chủ nhân, trong cơ sở dữ liệu của tôi có thông tin về họ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thưa chủ nhân, trong cơ sở dữ liệu của tôi có thông tin về họ.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000028_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000028",
+      "source_text": "Quản gia thành thật trả lời, \"Hóa ra là vậy.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Quản gia thành thật trả lời, \"Hóa ra là vậy.\"",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'vỡ lãi' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000029_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000029",
+      "source_text": "Vương Dần gật đầu vỡ lãi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần gật đầu vỡ lãi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000029_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000029",
+      "source_text": "\"Được rồi, nếu ngươi chưa có tên, vậy cứ gọi là quản gia số một đi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Được rồi, nếu ngươi chưa có tên, vậy cứ gọi là quản gia số một đi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000029_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000029",
+      "source_text": "Về khoản đặt tên, Vương Dần vốn chẳng có khiếu, và lại hắn thấy tên gọi cũng chỉ là một danh hiệu mà thôi.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Về khoản đặt tên, Vương Dần vốn chẳng có khiếu, và lại hắn thấy tên gọi cũng chỉ là một danh hiệu mà thôi.\"",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'và lại hắn thấy' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000029_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000029",
+      "source_text": "\"Không, Vương Dần, rốt cuộc chuyện này là thế nào?\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Không, Vương Dần, rốt cuộc chuyện này là thế nào?\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000029_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000029",
+      "source_text": "Lý Thế Dân và mọi người càng lúc càng thấy khó hiểu.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Lý Thế Dân và mọi người càng lúc càng thấy khó hiểu.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000030_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000030",
+      "source_text": "\"Nào, để ta giới thiệu với mọi người.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Nào, để ta giới thiệu với mọi người.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000031_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000031",
+      "source_text": "Vương Dần chỉ vào vị quản gia, \"Đây là quản gia số một.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần chỉ vào vị quản gia, \"Đây là quản gia số một.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000031_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000031",
+      "source_text": "Lý Thế Dân và mọi người lại một lần nữa cạn lời, \"Ngươi nói thế thì cũng như không nói vậy.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Lý Thế Dân và mọi người lại một lần nữa cạn lời, \"Ngươi nói thế thì cũng như không nói vậy.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000032_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000032",
+      "source_text": "\"Đúng rồi, bản kế hoạch phát triển ta giao cho ngươi tối qua làm đến đâu rồi?\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Đúng rồi, bản kế hoạch phát triển ta giao cho ngươi tối qua làm đến đâu rồi?\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000033_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000033",
+      "source_text": "Vương Dần Dực nhớ tới nhiệm vụ đã giao, liền hỏi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần Dực nhớ tới nhiệm vụ đã giao, liền hỏi.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Tên/cụm 'Vương Dần Dực nhớ' có dấu hiệu caption sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000033_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000033",
+      "source_text": "Quản gia số một vội vàng lấy cuốn sổ trên bàn, cung kính dâng lên, \"Mời chủ nhân xem qua.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Quản gia số một vội vàng lấy cuốn sổ trên bàn, cung kính dâng lên, \"Mời chủ nhân xem qua.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000033_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000033",
+      "source_text": "Vương Dần nhận lấy cuốn sổ rồi lật xem, càng xem mắt hắn càng sáng rực.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần nhận lấy cuốn sổ rồi lật xem, càng xem mắt hắn càng sáng rực.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000033_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000033",
+      "source_text": "\"Trời ạ, đúng là sản phẩm công nghệ đen có khác, lợi hại quá mức tưởng tượng.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Trời ạ, đúng là sản phẩm công nghệ đen có khác, lợi hại quá mức tưởng tượng.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000033_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000033",
+      "source_text": "Những kế hoạch phát triển ghi trong đó, theo Vương Dần thấy đơn giản là quá hoàn mỹ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Những kế hoạch phát triển ghi trong đó, theo Vương Dần thấy đơn giản là quá hoàn mỹ.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000033_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000033",
+      "source_text": "Rất nhiều điều hắn chưa từng nghĩ tới đều được quản gia số một lịch kê chi tiết.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Rất nhiều điều hắn chưa từng nghĩ tới đều được quản gia số một lịch kê chi tiết.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'lịch kê' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000033_P007",
+      "parent_block_id": "RiAsGTSORZ4_S000033",
+      "source_text": "So với bản kế hoạch này, những việc hắn làm trước đây chẳng khác nào trò trẻ con so với nhà khoa học đại tải.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "So với bản kế hoạch này, những việc hắn làm trước đây chẳng khác nào trò trẻ con so với nhà khoa học đại tải.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'nhà khoa học đại tải' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000033_P008",
+      "parent_block_id": "RiAsGTSORZ4_S000033",
+      "source_text": "Được rồi, đừng có ngó nghiêng nữa, tự xem đi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Được rồi, đừng có ngó nghiêng nữa, tự xem đi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000033_P009",
+      "parent_block_id": "RiAsGTSORZ4_S000033",
+      "source_text": "Thấy Lý Thế Dân tò mò đến mức đứng ngồi không yên, Vương Dần liền đưa cuốn sổ cho ông.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thấy Lý Thế Dân tò mò đến mức đứng ngồi không yên, Vương Dần liền đưa cuốn sổ cho ông.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000033_P010",
+      "parent_block_id": "RiAsGTSORZ4_S000033",
+      "source_text": "Lý Thế Dân nhận lấy vội vàng lật xem.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Lý Thế Dân nhận lấy vội vàng lật xem.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000033_P011",
+      "parent_block_id": "RiAsGTSORZ4_S000033",
+      "source_text": "Càng xem, mắt ông càng sáng, lòng càng thêm kinh hãi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Càng xem, mắt ông càng sáng, lòng càng thêm kinh hãi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000034_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000034",
+      "source_text": "Cái này, cái này thực sự quá lợi hại, cảm giác còn toàn diện hơn cả một vị hoàng đế như trẫm nữa.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Cái này, cái này thực sự quá lợi hại, cảm giác còn toàn diện hơn cả một vị hoàng đế như trẫm nữa.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000034_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000034",
+      "source_text": "Nghĩ đến đây, Lý Thế Dân nghi hoặc nhìn vị quản gia một cái, người này trước đây không lẽ từng làm hoàng đế sao?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nghĩ đến đây, Lý Thế Dân nghi hoặc nhìn vị quản gia một cái, người này trước đây không lẽ từng làm hoàng đế sao?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000034_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000034",
+      "source_text": "Sau khi hết nghi ngờ, ông lại tiếp tục cúi đầu nghiên cứu kỹ bản kế hoạch.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Sau khi hết nghi ngờ, ông lại tiếp tục cúi đầu nghiên cứu kỹ bản kế hoạch.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000034_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000034",
+      "source_text": "Xem xong, Lý Thế Dân thậm chí còn nảy ra ý định muốn nẫng tay trên của Vương Dần.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Xem xong, Lý Thế Dân thậm chí còn nảy ra ý định muốn nẫng tay trên của Vương Dần.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000034_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000034",
+      "source_text": "Theo ông, người đàn ông xa lạ này tuyệt đối là một nhân tài hiếm có, nếu có thể lôi kéo về phe mình thì còn gì bằng.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Theo ông, người đàn ông xa lạ này tuyệt đối là một nhân tài hiếm có, nếu có thể lôi kéo về phe mình thì còn gì bằng.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000034_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000034",
+      "source_text": "Tất nhiên Lý Thế Dân cũng chỉ dám nghĩ thầm trong bụng, chứ tuyệt đối không dám làm thật.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Tất nhiên Lý Thế Dân cũng chỉ dám nghĩ thầm trong bụng, chứ tuyệt đối không dám làm thật.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000034_P007",
+      "parent_block_id": "RiAsGTSORZ4_S000034",
+      "source_text": "Nhất là sau khi chứng kiến hình dạng chân ma nhân và chiêu thứ nguyên trảm của Vương Dần ngày hôm qua, phải biết rằng hiện tại mùi máu tanh trong cung vẫn chưa tan hết, khiến người ta không dám ở lại lâu.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nhất là sau khi chứng kiến hình dạng chân ma nhân và chiêu thứ nguyên trảm của Vương Dần ngày hôm qua,",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Tách tại boundary ngữ nghĩa tự nhiên để tránh clip quá dài."
+        },
+        {
+          "text_exact": "phải biết rằng hiện tại mùi máu tanh trong cung vẫn chưa tan hết, khiến người ta không dám ở lại lâu.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Phần tiếp theo vẫn đủ nghĩa và bảo toàn text."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000034_P008",
+      "parent_block_id": "RiAsGTSORZ4_S000034",
+      "source_text": "\"Lão Lý, ngươi thấy bản kế hoạch phát triển đại đường này thế nào?\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Lão Lý, ngươi thấy bản kế hoạch phát triển đại đường này thế nào?\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000034_P009",
+      "parent_block_id": "RiAsGTSORZ4_S000034",
+      "source_text": "Đợi Lý Thế Dân xem xong, Vương Dần mỉm cười hỏi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Đợi Lý Thế Dân xem xong, Vương Dần mỉm cười hỏi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000034_P010",
+      "parent_block_id": "RiAsGTSORZ4_S000034",
+      "source_text": "Dù hắn thấy hay nhưng vẫn muốn xác nhận xem nó có phù hợp với tình hình thực tế của Đại Đường hay không.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dù hắn thấy hay nhưng vẫn muốn xác nhận xem nó có phù hợp với tình hình thực tế của Đại Đường hay không.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000034_P011",
+      "parent_block_id": "RiAsGTSORZ4_S000034",
+      "source_text": "Ngoài hai chữ hoàn mỹ, trẫng không còn từ nào khác để diễn tả.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Ngoài hai chữ hoàn mỹ, trẫng không còn từ nào khác để diễn tả.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Từ 'trẫng' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000035_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000035",
+      "source_text": "Lý Thế Dân phấn khích nói, \"Nếu đã vậy, sau này chuyện phát triển Đại Đường, ngươi cứ việc bàn bạc với quản gia số một đi.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Lý Thế Dân phấn khích nói, \"Nếu đã vậy, sau này chuyện phát triển Đại Đường, ngươi cứ việc bàn bạc với quản gia số một đi.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000035_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000035",
+      "source_text": "Vương Dần nghe vậy liền lộ vẻ vui mừng.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần nghe vậy liền lộ vẻ vui mừng.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000035_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000035",
+      "source_text": "\"Sướng quá, từ nay về sau ta có thể yên tâm làm một con cá mạn rồi.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Sướng quá, từ nay về sau ta có thể yên tâm làm một con cá mạn rồi.\"",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'cá mạn' cần xác minh; có dấu hiệu sai từ."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000036_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000036",
+      "source_text": "Nghe Vương Dần nói thế, khóe miệng Lý Thế Dân và mọi người không khỏi giật giật.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nghe Vương Dần nói thế, khóe miệng Lý Thế Dân và mọi người không khỏi giật giật.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000036_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000036",
+      "source_text": "\"Ngươi lười biếm một cách công khai như vậy mà coi được sao?\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Ngươi lười biếm một cách công khai như vậy mà coi được sao?\"",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Từ 'lười biếm' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000036_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000036",
+      "source_text": "\"Chủ nhân.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Chủ nhân.\"",
+          "label": "DROP_FRAGMENT",
+          "reason_short": "Vocative hai từ độc lập; bỏ để tránh clip quá ngắn."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000036_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000036",
+      "source_text": "Đột nhiên giọng nói của quản gia số một vang lên trực tiếp trong đầu Vương Dần.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Đột nhiên giọng nói của quản gia số một vang lên trực tiếp trong đầu Vương Dần.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000036_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000036",
+      "source_text": "Nếu muốn thực hiện theo bản kế hoạch này, cần có sự hỗ trợ về kỹ thuật và vật phẩm từ Thương Thành hệ thống.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nếu muốn thực hiện theo bản kế hoạch này, cần có sự hỗ trợ về kỹ thuật và vật phẩm từ Thương Thành hệ thống.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000036_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000036",
+      "source_text": "Nếu tôi muốn sử dụng, cần có sự cho phép mua và sử dụng của ngài.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nếu tôi muốn sử dụng, cần có sự cho phép mua và sử dụng của ngài.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000036_P007",
+      "parent_block_id": "RiAsGTSORZ4_S000036",
+      "source_text": "Ý ngươi là nếu ta cấp quyền cho ngươi, sau này việc mua đồ không cần ta phải nhúng tay vào nữa.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Ý ngươi là nếu ta cấp quyền cho ngươi, sau này việc mua đồ không cần ta phải nhúng tay vào nữa.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000036_P008",
+      "parent_block_id": "RiAsGTSORZ4_S000036",
+      "source_text": "Vương Dần ngẩn người hỏi lại.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần ngẩn người hỏi lại.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000036_P009",
+      "parent_block_id": "RiAsGTSORZ4_S000036",
+      "source_text": "Còn việc quản gia số một có thể liên lạc trực tiếp trong đầu mình, hắn không thấy lạ, dù sao cũng là sản phẩm công nghệ đen của hệ thống mới mà.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Còn việc quản gia số một có thể liên lạc trực tiếp trong đầu mình, hắn không thấy lạ, dù sao cũng là sản phẩm công nghệ đen của hệ thống mới mà.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000036_P010",
+      "parent_block_id": "RiAsGTSORZ4_S000036",
+      "source_text": "\"Đúng vậy, thưa chủ nhân.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Đúng vậy, thưa chủ nhân.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000036_P011",
+      "parent_block_id": "RiAsGTSORZ4_S000036",
+      "source_text": "Quản gia số một khẳng định vậy ta phải làm thế nào?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Quản gia số một khẳng định vậy ta phải làm thế nào?",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Narration và lời hỏi bị dính, thiếu boundary rõ ràng."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000037_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000037",
+      "source_text": "Vương Dần hào hứng hỏi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần hào hứng hỏi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000037_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000037",
+      "source_text": "Nói thật, chức năng này hắn chưa từng nghĩ tới.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nói thật, chức năng này hắn chưa từng nghĩ tới.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000037_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000037",
+      "source_text": "Nếu làm được, hắn có thể hoàn toàn trở thành một ông chủ rảnh tay.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nếu làm được, hắn có thể hoàn toàn trở thành một ông chủ rảnh tay.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000037_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000037",
+      "source_text": "Chỉ cần trong lòng ngài đồng ý là được.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Chỉ cần trong lòng ngài đồng ý là được.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000037_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000037",
+      "source_text": "Quản gia số một thành thật trả lời.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Quản gia số một thành thật trả lời.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000037_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000037",
+      "source_text": "Được, ta đồng ý cấp quyền cho quản gia số một mua và sử dụng vật phẩm trong Thương Thành hệ thống.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Được, ta đồng ý cấp quyền cho quản gia số một mua và sử dụng vật phẩm trong Thương Thành hệ thống.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000038_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000038",
+      "source_text": "Vương Dần thầm nhủ trong lòng.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần thầm nhủ trong lòng.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000038_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000038",
+      "source_text": "Tinh, cấp quyền thành công, ký chủ có thể thu hồi quyền hạn bất cứ lúc nào.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Tinh, cấp quyền thành công, ký chủ có thể thu hồi quyền hạn bất cứ lúc nào.",
+          "label": "PARALINGUISTIC",
+          "reason_short": "Mở đầu giống âm báo hệ thống/onomatopoeia; không đưa thẳng vào phonemic narration."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000038_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000038",
+      "source_text": "Giọng nói của hệ thống vang lên trong đầu Vương Dần.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Giọng nói của hệ thống vang lên trong đầu Vương Dần.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000039_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000039",
+      "source_text": "Hô, lão tử rốt cuộc cũng được ra ngoài rồi, cái phòng tố chết tiệt đó thật không phải chỗ cho hệ thống ở.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Hô, lão tử rốt cuộc cũng được ra ngoài rồi, cái phòng tố chết tiệt đó thật không phải chỗ cho hệ thống ở.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Có cụm 'phòng tố' và interjection cần xác minh."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000039_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000039",
+      "source_text": "Ký chủ, ngươi đúng là quá tàn nhẫn, ta nói cho ngươi biết.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Ký chủ, ngươi đúng là quá tàn nhẫn, ta nói cho ngươi biết.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000039_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000039",
+      "source_text": "Ngắt liên lạc nghe thấy cái hệ thống lắm lời lại bắt đầu làm nhảm, Vương Dần thầm ra lệnh.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Ngắt liên lạc nghe thấy cái hệ thống lắm lời lại bắt đầu làm nhảm, Vương Dần thầm ra lệnh.",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Thiếu boundary giữa mệnh lệnh và narration."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000039_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000039",
+      "source_text": "Thế giới lập tức trở lại thanh tịnh, quản gia số một, phạm vi liên lạc giữa ngươi và ta là bao xa?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thế giới lập tức trở lại thanh tịnh,",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Tách tại boundary ngữ nghĩa tự nhiên để tránh clip quá dài."
+        },
+        {
+          "text_exact": "quản gia số một, phạm vi liên lạc giữa ngươi và ta là bao xa?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Phần tiếp theo vẫn đủ nghĩa và bảo toàn text."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000039_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000039",
+      "source_text": "Vương Dần bỗng nhớ ra điều gì đó, liền hỏi thầm, chỉ cần ở trong cùng một vị diện, tôi đều có thể thông qua hệ thống để liên lạc với chủ nhân.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần bỗng nhớ ra điều gì đó, liền hỏi thầm,",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Tách tại boundary ngữ nghĩa tự nhiên để tránh clip quá dài."
+        },
+        {
+          "text_exact": "chỉ cần ở trong cùng một vị diện, tôi đều có thể thông qua hệ thống để liên lạc với chủ nhân.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Phần tiếp theo vẫn đủ nghĩa và bảo toàn text."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000039_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000039",
+      "source_text": "Quản gia số một thành thật đáp, \"Tuyệt vời.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Quản gia số một thành thật đáp, \"Tuyệt vời.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000040_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000040",
+      "source_text": "Vương Dần sướng dân.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần sướng dân.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'sướng dân' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000040_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000040",
+      "source_text": "Phải biết rằng hiện tại đồ đạc trong Thương Thành hệ thống có thể mua với số lượng lớn, hơn nữa hệ thống mới còn cung cấp nhiều thứ toàn diện hơn.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Phải biết rằng hiện tại đồ đạc trong Thương Thành hệ thống có thể mua với số lượng lớn, hơn nữa hệ thống mới còn cung cấp nhiều thứ toàn diện hơn.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000040_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000040",
+      "source_text": "Việc đưa Đại Đường tiến lên xã hội công nghiệp giờ đây chỉ là chuyện trong tầm tay, đừng nói là xã hội công nghiệp, ngay cả xã hội công nghệ cao cũng chẳng còn xa nữa.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Việc đưa Đại Đường tiến lên xã hội công nghiệp giờ đây chỉ là chuyện trong tầm tay, đừng nói là xã hội công nghiệp, ngay cả xã hội công nghệ cao cũng chẳng còn xa nữa.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000040_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000040",
+      "source_text": "Hơn nữa, giờ đây Vương Dần đã có Diêm Ma Đao, có thể suy không qua các thế giới khác nhau, nếu cần, hắn có thể sang thế giới khác để chiêu mộ nhân tài.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Hơn nữa, giờ đây Vương Dần đã có Diêm Ma Đao, có thể suy không qua các thế giới khác nhau, nếu cần, hắn có thể sang thế giới khác để chiêu mộ nhân tài.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'suy không' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000040_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000040",
+      "source_text": "Nhưng quan trọng nhất là, bất kể đại đường phát triển đến mức nào, từ nay về sau Vương Dần sẽ hoàn toàn được thành thời.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nhưng quan trọng nhất là, bất kể đại đường phát triển đến mức nào, từ nay về sau Vương Dần sẽ hoàn toàn được thành thời.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'được thành thời' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000040_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000040",
+      "source_text": "\"Tiểu tử, ngươi tự nhiên cười cái gì thế?\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Tiểu tử, ngươi tự nhiên cười cái gì thế?\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000040_P007",
+      "parent_block_id": "RiAsGTSORZ4_S000040",
+      "source_text": "Thấy Vương Dần cứ tủm tỉm cười một mình, Trinh Giảo Kim tò mò hỏi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thấy Vương Dần cứ tủm tỉm cười một mình, Trinh Giảo Kim tò mò hỏi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000040_P008",
+      "parent_block_id": "RiAsGTSORZ4_S000040",
+      "source_text": "\"Không có gì.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Không có gì.\"",
+          "label": "DROP_FRAGMENT",
+          "reason_short": "Câu 3 từ rất ngắn; ưu tiên loại."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000040_P009",
+      "parent_block_id": "RiAsGTSORZ4_S000040",
+      "source_text": "Vương Dần cười hì hì, rồi quay sang nói với Lý Thế Dân, \"Lão Lý, sau này quản gia số một sẽ đi theo ngươi, mọi việc liên quan đến phát triển Đại Đường, ta giao toàn quyền cho ông ấy xử lý.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần cười hì hì, rồi quay sang nói với Lý Thế Dân,",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Tách tại boundary ngữ nghĩa tự nhiên để tránh clip quá dài."
+        },
+        {
+          "text_exact": "\"Lão Lý, sau này quản gia số một sẽ đi theo ngươi, mọi việc liên quan đến phát triển Đại Đường, ta giao toàn quyền cho ông ấy xử lý.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Phần tiếp theo vẫn đủ nghĩa và bảo toàn text."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000040_P010",
+      "parent_block_id": "RiAsGTSORZ4_S000040",
+      "source_text": "\"Thật sao?\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Thật sao?\"",
+          "label": "DROP_FRAGMENT",
+          "reason_short": "Câu hỏi 2 từ rất ngắn; ưu tiên loại."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000040_P011",
+      "parent_block_id": "RiAsGTSORZ4_S000040",
+      "source_text": "Lý Thế Dân mừng rỡ ra mặt, lúc trước ông còn đang nghĩ cách lôi kéo nhân tài, không ngờ Vương Dần lại hào phóng đem tặng luôn cho mình.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Lý Thế Dân mừng rỡ ra mặt, lúc trước ông còn đang nghĩ cách lôi kéo nhân tài, không ngờ Vương Dần lại hào phóng đem tặng luôn cho mình.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000040_P012",
+      "parent_block_id": "RiAsGTSORZ4_S000040",
+      "source_text": "\"Dĩ nhiên, sau này có chuyện gì cứ tìm ông ấy là được.\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Dĩ nhiên, sau này có chuyện gì cứ tìm ông ấy là được.\"",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000040_P013",
+      "parent_block_id": "RiAsGTSORZ4_S000040",
+      "source_text": "Vương Dần gật đầu mà nói mới nhớ, \"Hôm nay các ngươi đến tìm ta có việc gì thế?\"",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần gật đầu mà nói mới nhớ, \"Hôm nay các ngươi đến tìm ta có việc gì thế?\"",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'gật đầu mà nói mới nhớ' có dấu hiệu caption sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000040_P014",
+      "parent_block_id": "RiAsGTSORZ4_S000040",
+      "source_text": "Nghe Vương Dần hỏi, ba người kia đầy vạch đen trên đầu.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nghe Vương Dần hỏi, ba người kia đầy vạch đen trên đầu.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000040_P015",
+      "parent_block_id": "RiAsGTSORZ4_S000040",
+      "source_text": "Hóa ra đến tận bây giờ tiểu tử ngươi mới nhớ ra chuyện này à?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Hóa ra đến tận bây giờ tiểu tử ngươi mới nhớ ra chuyện này à?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000040_P016",
+      "parent_block_id": "RiAsGTSORZ4_S000040",
+      "source_text": "Giờ thì chắc là không còn việc gì nữa rồi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Giờ thì chắc là không còn việc gì nữa rồi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000040_P017",
+      "parent_block_id": "RiAsGTSORZ4_S000040",
+      "source_text": "Lý Thế Dân nhìn quản gia số một đứng cạnh, mỉm cười đáp.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Lý Thế Dân nhìn quản gia số một đứng cạnh, mỉm cười đáp.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000040_P018",
+      "parent_block_id": "RiAsGTSORZ4_S000040",
+      "source_text": "Vốn dĩ ông đến tìm Vương Dần là để bàn cách đối phó với những hệ lụi sau khi các thế gia bị tiêu diệt.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vốn dĩ ông đến tìm Vương Dần là để bàn cách đối phó với những hệ lụi sau khi các thế gia bị tiêu diệt.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Từ 'hệ lụi' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000041_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000041",
+      "source_text": "Nhưng những điều đó ông đã thấy trong cuốn sổ kế hoạch rồi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nhưng những điều đó ông đã thấy trong cuốn sổ kế hoạch rồi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000041_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000041",
+      "source_text": "Con Trinh Giào Kim và Tần Quỳnh đến chủ yếu là nhiều vương dần cứu con mình, nhưng giờ bọn trẻ đã bình phục nên cũng không cần thiết nữa.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Con Trinh Giào Kim và Tần Quỳnh đến chủ yếu là nhiều vương dần cứu con mình, nhưng giờ bọn trẻ đã bình phục nên cũng không cần thiết nữa.",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Nhiều lỗi trong cùng câu: 'Trinh Giào Kim', 'nhiều vương dần'."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000042_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000042",
+      "source_text": "Nếu không còn việc gì thì các vị về trước đi.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Nếu không còn việc gì thì các vị về trước đi.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000042_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000042",
+      "source_text": "Vương Dần nhìn mấy người họ, chẳng lẽ các vị định ở lại ăn trực cơm sao?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần nhìn mấy người họ, chẳng lẽ các vị định ở lại ăn trực cơm sao?",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000042_P003",
+      "parent_block_id": "RiAsGTSORZ4_S000042",
+      "source_text": "Cái thằng giai này.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Cái thằng giai này.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'thằng giai' cần xác minh; có dấu hiệu sai từ."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000042_P004",
+      "parent_block_id": "RiAsGTSORZ4_S000042",
+      "source_text": "Ba người nghe vậy liền trừng mắt nhìn Vương Dần, nhưng cuối cùng vẫn lùi Thủy ra về.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Ba người nghe vậy liền trừng mắt nhìn Vương Dần, nhưng cuối cùng vẫn lùi Thủy ra về.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'lùi Thủy ra về' có dấu hiệu caption sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000042_P005",
+      "parent_block_id": "RiAsGTSORZ4_S000042",
+      "source_text": "Dù sao Vương Dần cũng mới về, chắc hẳn hắn và Trình Lăng Tuyết còn nhiều điều muốn tâm sự.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Dù sao Vương Dần cũng mới về, chắc hẳn hắn và Trình Lăng Tuyết còn nhiều điều muốn tâm sự.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000042_P006",
+      "parent_block_id": "RiAsGTSORZ4_S000042",
+      "source_text": "Lý thế dân trước khi đi, ngoài việc mang theo quản gia số một, còn tiện tay nhất luôn cuốn sổ kế hoạch vào tay áo, lát nữa về họp với đám cố vấn.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Lý thế dân trước khi đi, ngoài việc mang theo quản gia số một, còn tiện tay nhất luôn cuốn sổ kế hoạch vào tay áo, lát nữa về họp với đám cố vấn.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Cụm 'tiện tay nhất luôn' có dấu hiệu nhận sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000042_P007",
+      "parent_block_id": "RiAsGTSORZ4_S000042",
+      "source_text": "Thứ này chắc chắn sẽ là vật báu.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Thứ này chắc chắn sẽ là vật báu.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000042_P008",
+      "parent_block_id": "RiAsGTSORZ4_S000042",
+      "source_text": "Rốt cuộc cũng yên tĩnh.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Rốt cuộc cũng yên tĩnh.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000042_P009",
+      "parent_block_id": "RiAsGTSORZ4_S000042",
+      "source_text": "Sau khi Lý Thế Dân và mọi người rời đi, Vương Dần vươn vai một cái rồi bất ngờ ôm trầm lấy Trình Lăng Tuyết vào lòng.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Sau khi Lý Thế Dân và mọi người rời đi, Vương Dần vươn vai một cái rồi bất ngờ ôm trầm lấy Trình Lăng Tuyết vào lòng.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000042_P010",
+      "parent_block_id": "RiAsGTSORZ4_S000042",
+      "source_text": "O Dần ca, huynh làm gì thế?",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "O Dần ca, huynh làm gì thế?",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Interjection 'O' có dấu hiệu caption sai."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000043_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000043",
+      "source_text": "Trình Lăng Tuyết bị cái ôm đột ngột làm cho bối rối, dù nàng rất thích cảm giác được hắn ôm, nhưng hành động này vẫn khiến nàng thấy quá đỗi bất ngờ.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Trình Lăng Tuyết bị cái ôm đột ngột làm cho bối rối, dù nàng rất thích cảm giác được hắn ôm, nhưng hành động này vẫn khiến nàng thấy quá đỗi bất ngờ.",
+          "label": "KEEP_CANDIDATE",
+          "reason_short": "Câu đủ nghĩa, độ dài hợp lý và không thấy lỗi text rõ ràng ở lượt review này."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000043_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000043",
+      "source_text": "Vương Dần ôm chặt lấy nàng, khẽ cọ mặt mình vào mặt nàng, rồi thốt ra một câu mà Trình Lang Tuyết đã mong chờ từ rất lâu.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Vương Dần ôm chặt lấy nàng, khẽ cọ mặt mình vào mặt nàng, rồi thốt ra một câu mà Trình Lang Tuyết đã mong chờ từ rất lâu.",
+          "label": "WEIRD_PHRASE",
+          "reason_short": "Tên 'Trình Lang Tuyết' lệch ngữ cảnh nhất quán."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000044_P001",
+      "parent_block_id": "RiAsGTSORZ4_S000044",
+      "source_text": "\"Nha đầu, chúng ta kết hôn đi, hoàn thành.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "\"Nha đầu, chúng ta kết hôn đi, hoàn thành.",
+          "label": "BROKEN_TEXT",
+          "reason_short": "Câu cầu hôn bị dính thêm từ 'hoàn thành', cần đối chiếu audio."
+        }
+      ]
+    },
+    {
+      "piece_id": "RiAsGTSORZ4_S000044_P002",
+      "parent_block_id": "RiAsGTSORZ4_S000044",
+      "source_text": "Ah.",
+      "status": "REVIEWED",
+      "segments": [
+        {
+          "text_exact": "Ah.",
+          "label": "PARALINGUISTIC",
+          "reason_short": "Âm cảm thán không-lexical độc lập; loại khỏi narration train."
+        }
+      ]
+    }
+  ]
+}
