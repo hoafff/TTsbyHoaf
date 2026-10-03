@@ -5,23 +5,28 @@
   "total_packs": 100,
   "completed_packs": [
     "review_pack_0001",
-    "review_pack_0002"
+    "review_pack_0002",
+    "review_pack_0003",
+    "review_pack_0004",
+    "review_pack_0005",
+    "review_pack_0006",
+    "review_pack_0007"
   ],
-  "completed_count": 2,
-  "next_pack": "review_pack_0003",
-  "last_commit": "1e9a65813305141ab5b4a037bf0df9d8defb8e00",
+  "completed_count": 7,
+  "next_pack": "review_pack_0008",
+  "last_commit": "4bd823686f8b6234df1029fb89b6bd161bf0c18c",
   "totals_so_far": {
-    "reviewed_source_items": 905,
-    "output_segments": 929,
-    "split_pieces": 23,
+    "reviewed_source_items": 3957,
+    "output_segments": 4003,
+    "split_pieces": 44,
     "labels": {
-      "KEEP_CANDIDATE": 634,
-      "DROP_FRAGMENT": 27,
-      "WEIRD_PHRASE": 193,
-      "BROKEN_TEXT": 66,
-      "PARALINGUISTIC": 9,
-      "STUTTER_OR_REPEAT": 0,
-      "PHONETIC_CROWDING_RISK": 0,
+      "KEEP_CANDIDATE": 3052,
+      "DROP_FRAGMENT": 92,
+      "WEIRD_PHRASE": 702,
+      "BROKEN_TEXT": 81,
+      "PARALINGUISTIC": 39,
+      "STUTTER_OR_REPEAT": 14,
+      "PHONETIC_CROWDING_RISK": 23,
       "NEED_CONTEXT": 0
     }
   },
@@ -31,5 +36,6 @@
     "Only KEEP_CANDIDATE may proceed automatically toward later audio validation.",
     "WEIRD_PHRASE/BROKEN_TEXT require audio/ASR verification or later text-fix review.",
     "DROP_FRAGMENT/PARALINGUISTIC are excluded from the clean narration candidate pool."
-  ]
+  ],
+  "review_note": "Packs 0003-0007 use conservative direct GitHub review with shared surface-error rules learned from the same source, plus lossless splitting and risk-only phonetic/repetition flags. No text is corrected in this stage."
 }
