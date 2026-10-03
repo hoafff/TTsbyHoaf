@@ -7,6 +7,13 @@
       "accelerator": null,
       "timeout_seconds": 1800,
       "description": "Audit metadata and Vietnamese subtitle/caption availability for the 16 locked MayMay source videos."
+    },
+    "source16-captions": {
+      "handle": "ahndongo/maymay-source16-captions-v1",
+      "path": "kaggle/cpu/source16_captions",
+      "accelerator": null,
+      "timeout_seconds": 3600,
+      "description": "Download and parse Vietnamese automatic captions for all 16 MayMay source videos; build sentence-safe ~50k-character review packs."
     }
   }
 }
