@@ -1,7 +1,7 @@
 {
   "project": "TTsbyHoaf",
   "mainline": "16-source V2 rebuild",
-  "current_stage": "semantic_sentence_planning_preparation",
+  "current_stage": "semantic_qc_pilot_preparation",
   "piper_checkpoint_state": {
     "latest_training_stage": "epoch_009_step_021920",
     "resume_training": false,
@@ -9,12 +9,11 @@
   },
   "old_v1_policy": "8974 old clips are regression/failure references only.",
   "next_actions": [
-    "build lossless semantic segmentation task packs",
-    "choose/configure an LLM execution provider",
-    "run segmentation+labeling with no text rewriting",
-    "validate exact text coverage",
-    "map approved semantic segments back to caption-event provenance",
-    "then begin raw-audio ingest/alignment and fresh recut"
+    "build deterministic semantic QC pilot across all 16 sources",
+    "run pilot through chosen LLM/API",
+    "validate zero text loss/addition",
+    "inspect split and label quality",
+    "only then scale LLM review to full 16-source text"
   ],
   "caption_qc": {
     "punctuation_units": 7791,
@@ -25,5 +24,16 @@
     "event_gap_max_sec": 0.159,
     "issue": "YouTube auto-caption punctuation is sparse and JSON3 events overlap heavily, so punctuation-only sentence cuts and event-gap pause detection are invalid.",
     "decision": "Use lossless AI semantic segmentation first; validate 100% source-text coverage before timestamp mapping, text cleanup, or audio alignment."
+  },
+  "semantic_tasks_v2": {
+    "parent_blocks": 7791,
+    "presegmented_pieces": 65167,
+    "tasks": 598,
+    "pieces_needing_ai_split_hint": 2026,
+    "tiny_fragment_hints": 2164,
+    "piece_chars_p50": 71,
+    "piece_chars_p90": 144,
+    "piece_chars_p99": 233,
+    "lossless_parent_coverage_errors": 0
   }
 }
