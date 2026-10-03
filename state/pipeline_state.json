@@ -1,7 +1,7 @@
 {
   "project": "TTsbyHoaf",
   "mainline": "16-source V2 rebuild",
-  "current_stage": "semantic_pilot_llm_ready",
+  "current_stage": "git_direct_semantic_review_queue",
   "piper_checkpoint_state": {
     "latest_training_stage": "epoch_009_step_021920",
     "resume_training": false,
@@ -9,11 +9,11 @@
   },
   "old_v1_policy": "8974 old clips are regression/failure references only.",
   "next_actions": [
-    "configure one OpenAI-compatible LLM endpoint locally",
-    "run first 24 semantic pilot items",
-    "validate exact text coverage and label quality",
-    "inspect false positives and split quality",
-    "only then run remaining pilot items and full semantic review"
+    "export compact review_queue/semantic_v2 packs locally",
+    "commit and push review_queue/semantic_v2 to GitHub",
+    "ChatGPT review packs directly from GitHub in batches",
+    "commit structured review results and progress to GitHub",
+    "validate lossless coverage before timestamp mapping/audio alignment"
   ],
   "caption_qc": {
     "punctuation_units": 7791,
@@ -46,5 +46,10 @@
       "REPEAT_OR_CROWDING": 32
     },
     "status": "ready_for_llm_pilot"
+  },
+  "llm_execution_policy": {
+    "mainline": "ChatGPT reads versioned review packs directly from GitHub and commits structured results back to GitHub.",
+    "external_api": "optional_only",
+    "paid_api_required": false
   }
 }
