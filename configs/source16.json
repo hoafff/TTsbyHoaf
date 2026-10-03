@@ -1,0 +1,43 @@
+{
+  "project": "MAYMAY_TRAIN_SAFE_V2",
+  "playlist_url": "https://youtube.com/playlist?list=PLHC__6PIJZvQ&si=w3hF5NeECgrud-4J",
+  "keep_source_ids": [
+    "RiAsGTSORZ4",
+    "HdbsrkbYzHM",
+    "-XC3WibmUKQ",
+    "YaxBsFrzwZE",
+    "I29SlhGqXgg",
+    "0_gFaWnMiCY",
+    "Pf9QTip2hqI",
+    "S9YN9llAFv4",
+    "arAbGLeCUsU",
+    "E_AgFYj41Nk",
+    "vimmfFJdrYM",
+    "hDNesxEPAws",
+    "HAe5kdfMP9U",
+    "Itad_gcdHHM",
+    "0Wjq6gqd1Sc",
+    "9XJ78IeFBxY"
+  ],
+  "exclude_source_ids": [
+    "0nJXkX0L3kQ"
+  ],
+  "text_review": {
+    "target_chars": 50000,
+    "soft_min_chars": 40000,
+    "soft_max_chars": 60000,
+    "hard_rule": "never_split_inside_sentence",
+    "context_overlap_sentences": 3
+  },
+  "final_training_audio": {
+    "sample_rate": 22050,
+    "channels": 1,
+    "encoding": "PCM16 WAV"
+  },
+  "storage": {
+    "github": "code/config/state/docs only",
+    "huggingface_repo": "hoa748/TTSbyMayMay",
+    "kaggle_dataset": "raw source audio + final train dataset",
+    "local": "control + small review samples"
+  }
+}
