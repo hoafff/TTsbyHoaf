@@ -1,7 +1,7 @@
 {
   "project": "TTsbyHoaf",
   "mainline": "16-source V2 rebuild",
-  "current_stage": "local_control_environment_setup",
+  "current_stage": "semantic_sentence_planning_preparation",
   "piper_checkpoint_state": {
     "latest_training_stage": "epoch_009_step_021920",
     "resume_training": false,
@@ -9,12 +9,21 @@
   },
   "old_v1_policy": "8974 old clips are regression/failure references only.",
   "next_actions": [
-    "create local Python 3.11 virtualenv",
-    "install lightweight control requirements",
-    "update FFmpeg to a current build",
-    "authenticate Kaggle CLI",
-    "verify Hugging Face access",
-    "build Kaggle CPU/GPU job bridge",
-    "audit transcript availability for all 16 sources"
-  ]
+    "build lossless semantic segmentation task packs",
+    "choose/configure an LLM execution provider",
+    "run segmentation+labeling with no text rewriting",
+    "validate exact text coverage",
+    "map approved semantic segments back to caption-event provenance",
+    "then begin raw-audio ingest/alignment and fresh recut"
+  ],
+  "caption_qc": {
+    "punctuation_units": 7791,
+    "total_text_chars": 5243453,
+    "median_unit_chars": 469,
+    "median_unit_duration_sec": 25.2,
+    "event_gap_median_sec": -1.881,
+    "event_gap_max_sec": 0.159,
+    "issue": "YouTube auto-caption punctuation is sparse and JSON3 events overlap heavily, so punctuation-only sentence cuts and event-gap pause detection are invalid.",
+    "decision": "Use lossless AI semantic segmentation first; validate 100% source-text coverage before timestamp mapping, text cleanup, or audio alignment."
+  }
 }
