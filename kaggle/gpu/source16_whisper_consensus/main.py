@@ -358,7 +358,7 @@ def transcribe(model, audio_path: Path) -> tuple[pd.DataFrame, pd.DataFrame, dic
         "model": MODEL_SIZE,
         "word_timestamps": True,
         "vad_filter": True,
-        "beam_size": 5,
+        "beam_size": BEAM_SIZE,
     }
     return pd.DataFrame(segment_rows), pd.DataFrame(word_rows), meta
 
