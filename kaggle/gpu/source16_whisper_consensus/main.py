@@ -4,8 +4,10 @@ import html
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
+import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from difflib import SequenceMatcher
 from pathlib import Path
