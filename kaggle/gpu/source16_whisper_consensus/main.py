@@ -180,10 +180,27 @@ def checkpoint_source(state: dict, video_id: str, summary: dict) -> None:
     if not src.exists():
         raise RuntimeError(f"Missing source output before checkpoint: {src}")
 
+    # Keep only GPU-expensive / expensive-to-recompute artifacts.
+    # Captions already live in the durable media dataset; pause/consensus tables
+    # are deterministic CPU derivatives and are rebuilt after restore.
+    keep_files = (
+        "SUMMARY.json",
+        "WHISPER_SEGMENTS.csv",
+        "WHISPER_WORDS.csv",
+    )
+
     dst = CHECKPOINT_OUTPUT_DIR / video_id
     if dst.exists():
         shutil.rmtree(dst)
-    shutil.copytree(src, dst)
+    dst.mkdir(parents=True, exist_ok=True)
+
+    for name in keep_files:
+        source_file = src / name
+        if not source_file.exists():
+            raise RuntimeError(
+                f"Missing required expensive artifact before checkpoint: {source_file}"
+            )
+        shutil.copyfile(source_file, dst / name)
 
     completed = set(str(x) for x in state.get("completed", []))
     completed.add(video_id)
@@ -250,8 +267,6 @@ def restore_checkpoint() -> tuple[dict, bool]:
         "SUMMARY.json",
         "WHISPER_SEGMENTS.csv",
         "WHISPER_WORDS.csv",
-        "PAUSE_FEATURES.csv",
-        "CONSENSUS_BUCKETS_30S.csv",
     }
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -270,7 +285,41 @@ def restore_checkpoint() -> tuple[dict, bool]:
         dst = OUT_DIR / video_id
         if dst.exists():
             shutil.rmtree(dst)
-        shutil.copytree(src, dst)
+        dst.mkdir(parents=True, exist_ok=True)
+        for name in required:
+            shutil.copyfile(src / name, dst / name)
+
+        # Rebuild cheap deterministic artifacts from durable media captions +
+        # checkpointed Whisper timestamps. No GPU/Whisper inference is repeated.
+        _, caption_path = find_source_input(video_id)
+        captions = parse_youtube_json3(caption_path)
+        whisper_segments = pd.read_csv(dst / "WHISPER_SEGMENTS.csv")
+        words = pd.read_csv(dst / "WHISPER_WORDS.csv")
+        pause_features = build_pause_features(words)
+        consensus = build_consensus_buckets(whisper_segments, captions)
+
+        captions.to_csv(
+            dst / "YOUTUBE_CAPTION_EVENTS.csv",
+            index=False,
+            encoding="utf-8-sig",
+        )
+        pause_features.to_csv(
+            dst / "PAUSE_FEATURES.csv",
+            index=False,
+            encoding="utf-8-sig",
+        )
+        consensus.to_csv(
+            dst / "CONSENSUS_BUCKETS_30S.csv",
+            index=False,
+            encoding="utf-8-sig",
+        )
+        if not consensus.empty:
+            consensus.nsmallest(20, "token_similarity").to_csv(
+                dst / "CONSENSUS_BUCKETS_LOWEST_20.csv",
+                index=False,
+                encoding="utf-8-sig",
+            )
+        (dst / caption_path.name).write_bytes(caption_path.read_bytes())
 
         if video_id not in state.get("summaries", {}):
             state.setdefault("summaries", {})[video_id] = json.loads(
