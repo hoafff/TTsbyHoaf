@@ -27,7 +27,17 @@
       "path": "kaggle/gpu/source16_whisper_consensus",
       "accelerator": "NvidiaTeslaT4",
       "timeout_seconds": 43200,
-      "description": "Run Faster-Whisper large-v3 across all 16 locked sources using private YouTube cookies; export text consensus and word timing features."
+      "description": "Run Faster-Whisper large-v3 across all 16 locked sources using private YouTube cookies; export text consensus and word timing features.",
+      "critical_run": true,
+      "checkpoint_required": true,
+      "checkpoint_handle": "ahndongo/maymay-source16-whisper-checkpoint",
+      "checkpoint_markers": [
+        "CHECKPOINT_HANDLE",
+        "restore_checkpoint",
+        "persist_checkpoint",
+        "CHECKPOINT_SAVED",
+        "RESUME_PLAN"
+      ]
     }
   }
 }
