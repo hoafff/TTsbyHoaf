@@ -38,10 +38,29 @@ def locate(stage: Path, video_id: str) -> tuple[Path | None, Path | None]:
     return audio, caption if caption.exists() else None
 
 
-def preflight(base: list[str], cookie: Path, video_id: str) -> None:
+def try_cmd(cmd: list[str]) -> bool:
+    print("$ " + " ".join(str(x) for x in cmd), flush=True)
+    proc = subprocess.run(cmd, cwd=str(ROOT))
+    return proc.returncode == 0
+
+
+def preflight(base: list[str], cookie: Path, video_id: str) -> str:
     url = f"https://www.youtube.com/watch?v={video_id}"
-    print("LOCAL_YOUTUBE_PREFLIGHT", video_id, flush=True)
-    run(base + [
+
+    print("LOCAL_YOUTUBE_PREFLIGHT_ANON", video_id, flush=True)
+    anon_cmd = base + [
+        "--no-playlist",
+        "--no-warnings",
+        "--skip-download",
+        "--print", "%(id)s",
+        url,
+    ]
+    if try_cmd(anon_cmd):
+        print("LOCAL_YOUTUBE_PREFLIGHT_OK mode=anonymous", video_id, flush=True)
+        return "anonymous"
+
+    print("LOCAL_YOUTUBE_PREFLIGHT_COOKIE", video_id, flush=True)
+    cookie_cmd = base + [
         "--cookies", str(cookie),
         "--no-playlist",
         "--no-warnings",
@@ -49,8 +68,15 @@ def preflight(base: list[str], cookie: Path, video_id: str) -> None:
         "--extractor-args", "youtube:player_client=default,web_embedded",
         "--print", "%(id)s",
         url,
-    ])
-    print("LOCAL_YOUTUBE_PREFLIGHT_OK", video_id, flush=True)
+    ]
+    if try_cmd(cookie_cmd):
+        print("LOCAL_YOUTUBE_PREFLIGHT_OK mode=cookie", video_id, flush=True)
+        return "cookie"
+
+    raise RuntimeError(
+        "YouTube preflight failed in both anonymous and cookie modes. "
+        "Refresh browser cookies only if anonymous access is also blocked."
+    )
 
 
 def main() -> int:
@@ -76,7 +102,7 @@ def main() -> int:
         base = [yt]
 
     ids = load_ids()
-    preflight(base, cookie, ids[0])
+    auth_mode = preflight(base, cookie, ids[0])
     failures: list[dict] = []
     manifest: list[dict] = []
 
@@ -101,11 +127,16 @@ def main() -> int:
         print(f"[{idx:02d}/{len(ids):02d}] DOWNLOAD {video_id}", flush=True)
         url = f"https://www.youtube.com/watch?v={video_id}"
         cmd = base + [
-            "--cookies", str(cookie),
             "--no-playlist",
             "--retries", "5",
             "--fragment-retries", "5",
-            "--extractor-args", "youtube:player_client=default,web_embedded",
+        ]
+        if auth_mode == "cookie":
+            cmd += [
+                "--cookies", str(cookie),
+                "--extractor-args", "youtube:player_client=default,web_embedded",
+            ]
+        cmd += [
             "--write-auto-subs",
             "--sub-langs", "vi",
             "--sub-format", "json3",
@@ -140,6 +171,7 @@ def main() -> int:
         json.dumps(
             {
                 "dataset_id": DATASET_ID,
+                "youtube_auth_mode": auth_mode,
                 "sources_total": len(ids),
                 "sources_ready": len(manifest),
                 "sources_failed": len(failures),
