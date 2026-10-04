@@ -5,6 +5,7 @@ import json
 import shutil
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -115,6 +116,77 @@ def cmd_logs(args: argparse.Namespace) -> int:
     return rc
 
 
+def cmd_watch(args: argparse.Namespace) -> int:
+    """Poll Kaggle logs + status so live viewing survives dropped log streams."""
+    kaggle = ensure_kaggle()
+    _, job = get_job(args.job)
+    handle = job["handle"]
+
+    seen: set[tuple[str, str, str]] = set()
+    last_status = None
+    terminal = ("COMPLETE", "ERROR", "CANCEL_ACKNOWLEDGED", "CANCELLED")
+
+    print(f"WATCHING {handle} every {args.interval}s (Ctrl+C stops local watching only)", flush=True)
+
+    try:
+        while True:
+            logs = subprocess.run(
+                [kaggle, "kernels", "logs", handle],
+                cwd=str(ROOT),
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+            )
+
+            raw = (logs.stdout or "").strip()
+            if raw:
+                try:
+                    entries = json.loads(raw)
+                    if isinstance(entries, list):
+                        for item in entries:
+                            key = (
+                                str(item.get("stream_name", "")),
+                                str(item.get("time", "")),
+                                str(item.get("data", "")),
+                            )
+                            if key in seen:
+                                continue
+                            seen.add(key)
+                            data = str(item.get("data", ""))
+                            if data:
+                                print(data, end="" if data.endswith("\n") else "\n", flush=True)
+                except json.JSONDecodeError:
+                    # Some Kaggle CLI versions may return plain text instead of JSON.
+                    key = ("raw", "", raw)
+                    if key not in seen:
+                        seen.add(key)
+                        print(raw, flush=True)
+
+            st = subprocess.run(
+                [kaggle, "kernels", "status", handle],
+                cwd=str(ROOT),
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+            )
+            status_text = (st.stdout or "").strip()
+            if status_text and status_text != last_status:
+                print(f"\n[STATUS] {status_text}", flush=True)
+                last_status = status_text
+
+            if any(x in status_text for x in terminal):
+                return 0 if "COMPLETE" in status_text else 1
+
+            time.sleep(args.interval)
+    except KeyboardInterrupt:
+        print("\nStopped local watcher. Kaggle kernel is not cancelled.", flush=True)
+        return 0
+
+
 def cmd_output(args: argparse.Namespace) -> int:
     kaggle = ensure_kaggle()
     _, job = get_job(args.job)
@@ -180,6 +252,11 @@ def build_parser() -> argparse.ArgumentParser:
     sp.add_argument("-f", "--follow", action="store_true")
     sp.add_argument("--interval", type=int, default=10)
     sp.set_defaults(func=cmd_logs)
+
+    sp = sub.add_parser("watch", help="Robust live logs + status polling; survives dropped streams.")
+    sp.add_argument("job")
+    sp.add_argument("--interval", type=int, default=10)
+    sp.set_defaults(func=cmd_watch)
 
     sp = sub.add_parser("files", help="List output files for the latest run.")
     sp.add_argument("job")
