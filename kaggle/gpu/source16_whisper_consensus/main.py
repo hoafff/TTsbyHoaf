@@ -216,34 +216,36 @@ def record_checkpoint_failure(state: dict, video_id: str, failure: dict) -> None
     persist_checkpoint(state, f"failed {video_id}")
 
 
-def restore_checkpoint() -> tuple[dict, bool]:
-    import kagglehub
-    from kagglehub.exceptions import KaggleApiHTTPError
+def find_mounted_checkpoint_dir() -> Path | None:
+    root = Path("/kaggle/input")
+    if not root.exists():
+        return None
 
+    candidates = sorted(
+        p.parent
+        for p in root.rglob("state.json")
+        if "maymay-source16-whisper-checkpoint" in str(p).lower()
+    )
+    return candidates[0] if candidates else None
+
+
+def restore_checkpoint() -> tuple[dict, bool]:
     if CHECKPOINT_DIR.exists():
         shutil.rmtree(CHECKPOINT_DIR)
     CHECKPOINT_DIR.parent.mkdir(parents=True, exist_ok=True)
 
-    created = False
-    try:
-        print("CHECKPOINT_RESTORE_STARTED", CHECKPOINT_HANDLE, flush=True)
-        kagglehub.dataset_download(
-            CHECKPOINT_HANDLE,
-            force_download=True,
-            output_dir=str(CHECKPOINT_DIR),
+    print("CHECKPOINT_RESTORE_STARTED", CHECKPOINT_HANDLE, flush=True)
+    mounted = find_mounted_checkpoint_dir()
+    if mounted is None:
+        raise RuntimeError(
+            "Checkpoint dataset is not mounted. Bootstrap the private checkpoint "
+            "dataset locally and attach ahndongo/maymay-source16-whisper-checkpoint "
+            "before running this kernel."
         )
-        print("CHECKPOINT_RESTORE_DOWNLOADED", CHECKPOINT_HANDLE, flush=True)
-    except KaggleApiHTTPError as exc:
-        status_code = getattr(getattr(exc, "response", None), "status_code", None)
-        if status_code != 404:
-            raise
-        CHECKPOINT_DIR.mkdir(parents=True, exist_ok=True)
-        CHECKPOINT_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-        state = fresh_checkpoint_state()
-        write_checkpoint_state(state)
-        print("CHECKPOINT_REMOTE_NOT_FOUND; bootstrapping new checkpoint dataset.", flush=True)
-        created = True
-        return state, created
+
+    shutil.copytree(mounted, CHECKPOINT_DIR)
+    print("CHECKPOINT_RESTORE_MOUNTED", mounted, flush=True)
+    created = False
 
     if not CHECKPOINT_STATE_PATH.exists():
         raise RuntimeError(
