@@ -46,14 +46,34 @@ HF_TOKEN_PATH = SECRETS_DIR / "hf_token.txt"
 def find_input_file(filename: str, preferred: Path) -> Path | None:
     if preferred.exists():
         return preferred
+
     root = Path("/kaggle/input")
-    matches = sorted(root.glob(f"*/{filename}")) if root.exists() else []
+    if not root.exists():
+        print("KAGGLE_INPUT_MISSING", flush=True)
+        return None
+
+    # Kaggle can expose attached datasets either directly under /kaggle/input/<slug>
+    # or under newer nested layouts such as /kaggle/input/datasets/... .
+    matches = sorted(
+        p for p in root.rglob(filename)
+        if p.is_file()
+    )
     if matches:
-        print(f"DISCOVERED_INPUT {filename}: {matches[0]}", flush=True)
+        for p in matches[:10]:
+            print(f"DISCOVERED_INPUT_CANDIDATE {filename}: {p}", flush=True)
         return matches[0]
-    if root.exists():
-        mounted = sorted(str(p) for p in root.iterdir())
-        print("KAGGLE_INPUT_DIRS:", mounted, flush=True)
+
+    mounted = []
+    for p in root.rglob("*"):
+        try:
+            rel = p.relative_to(root)
+        except ValueError:
+            continue
+        if len(rel.parts) <= 4:
+            mounted.append(str(p))
+        if len(mounted) >= 100:
+            break
+    print("KAGGLE_INPUT_TREE_SAMPLE:", mounted, flush=True)
     return None
 
 for p in (ROOT, AUDIO_DIR, CAPTION_DIR, OUT_DIR):
