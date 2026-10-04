@@ -9,6 +9,7 @@
   "enable_internet": "true",
   "machine_shape": "",
   "dataset_sources": [
+    "ahndongo/maymay-source16-media",
     "ahndongo/maymay-runtime-secrets"
   ],
   "competition_sources": [],
