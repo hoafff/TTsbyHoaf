@@ -10,7 +10,8 @@
   "machine_shape": "",
   "dataset_sources": [
     "ahndongo/maymay-source16-media",
-    "ahndongo/maymay-runtime-secrets"
+    "ahndongo/maymay-runtime-secrets",
+    "ahndongo/maymay-source16-whisper-checkpoint"
   ],
   "competition_sources": [],
   "kernel_sources": [],
