@@ -151,28 +151,38 @@ def download_source(video_id: str, cookie_path: Path) -> tuple[Path, Path]:
     for old in CAPTION_DIR.glob(f"{video_id}.*"):
         old.unlink(missing_ok=True)
 
+    local_cookie = COOKIE_WORK_DIR / f"{video_id}.txt"
+    shutil.copyfile(cookie_path, local_cookie)
+
     audio_tmpl = str(AUDIO_DIR / "%(id)s.%(ext)s")
     common = [
         sys.executable, "-m", "yt_dlp",
-        "--cookies", str(cookie_path),
+        "--cookies", str(local_cookie),
         "--no-playlist",
         "--no-warnings",
+        "--retries", "3",
     ]
 
-    run(common + [
-        "-f", "bestaudio/best",
-        "-o", audio_tmpl,
-        url,
-    ])
+    try:
+        with DOWNLOAD_LOCK:
+            print("DOWNLOAD_STARTED", video_id, flush=True)
+            run(common + [
+                "-f", "bestaudio/best",
+                "-o", audio_tmpl,
+                url,
+            ])
 
-    run(common + [
-        "--skip-download",
-        "--write-auto-subs",
-        "--sub-langs", "vi",
-        "--sub-format", "json3",
-        "-o", str(CAPTION_DIR / "%(id)s.%(ext)s"),
-        url,
-    ])
+            run(common + [
+                "--skip-download",
+                "--write-auto-subs",
+                "--sub-langs", "vi",
+                "--sub-format", "json3",
+                "-o", str(CAPTION_DIR / "%(id)s.%(ext)s"),
+                url,
+            ])
+            print("DOWNLOAD_DONE", video_id, flush=True)
+    finally:
+        local_cookie.unlink(missing_ok=True)
 
     audio_matches = sorted(
         p for p in AUDIO_DIR.glob(f"{video_id}.*")
@@ -504,7 +514,7 @@ def main() -> int:
         "gpu_indices": gpu_indices,
         "parallel_transcriptions": max_parallel,
         "cookie_input": "private Kaggle dataset",
-        "hf_token_present": HF_TOKEN_PATH.exists(),
+        "hf_token_present": bool(os.environ.get("HF_TOKEN")),
         "sources": all_summaries,
         "failures": failures,
     }
