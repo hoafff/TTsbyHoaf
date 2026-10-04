@@ -126,32 +126,96 @@ def main() -> int:
 
         print(f"[{idx:02d}/{len(ids):02d}] DOWNLOAD {video_id}", flush=True)
         url = f"https://www.youtube.com/watch?v={video_id}"
-        cmd = base + [
-            "--no-playlist",
-            "--retries", "5",
-            "--fragment-retries", "5",
-        ]
-        if auth_mode == "cookie":
-            cmd += [
-                "--cookies", str(cookie),
-                "--extractor-args", "youtube:player_client=default,web_embedded",
-            ]
-        cmd += [
-            "--write-auto-subs",
-            "--sub-langs", "vi",
-            "--sub-format", "json3",
-            "-f", "bestaudio/best",
-            "-o", str(stage / "%(id)s.%(ext)s"),
-            url,
-        ]
 
         try:
-            run(cmd)
+            audio, caption = locate(stage, video_id)
+
+            if caption is None:
+                cap_cmd = base + [
+                    "--no-playlist",
+                    "--retries", "5",
+                    "--fragment-retries", "5",
+                ]
+                if auth_mode == "cookie":
+                    cap_cmd += [
+                        "--cookies", str(cookie),
+                        "--extractor-args", "youtube:player_client=default,web_embedded",
+                    ]
+                cap_cmd += [
+                    "--skip-download",
+                    "--write-auto-subs",
+                    "--sub-langs", "vi",
+                    "--sub-format", "json3",
+                    "-o", str(stage / "%(id)s.%(ext)s"),
+                    url,
+                ]
+                run(cap_cmd)
+
+            audio, caption = locate(stage, video_id)
+
+            if audio is None:
+                strategies = [
+                    ("m4a-140", ["-f", "140/bestaudio/best"]),
+                    (
+                        "android-m4a",
+                        [
+                            "--extractor-args", "youtube:player_client=android",
+                            "-f", "140/bestaudio/best",
+                        ],
+                    ),
+                    (
+                        "hls-audio",
+                        [
+                            "-f",
+                            "ba[protocol^=m3u8]/bestaudio/best",
+                        ],
+                    ),
+                ]
+
+                last_error = None
+                for strategy_name, strategy_args in strategies:
+                    print(
+                        f"AUDIO_ATTEMPT {video_id} strategy={strategy_name}",
+                        flush=True,
+                    )
+                    audio_cmd = base + [
+                        "--no-playlist",
+                        "--retries", "5",
+                        "--fragment-retries", "5",
+                    ]
+                    if auth_mode == "cookie":
+                        audio_cmd += ["--cookies", str(cookie)]
+                    audio_cmd += strategy_args + [
+                        "-o", str(stage / "%(id)s.%(ext)s"),
+                        url,
+                    ]
+                    try:
+                        run(audio_cmd)
+                        audio, caption = locate(stage, video_id)
+                        if audio is not None:
+                            print(
+                                f"AUDIO_READY {video_id} strategy={strategy_name} file={audio.name}",
+                                flush=True,
+                            )
+                            break
+                    except Exception as exc:
+                        last_error = exc
+                        print(
+                            f"AUDIO_FAILED {video_id} strategy={strategy_name}: {exc}",
+                            flush=True,
+                        )
+
+                if audio is None:
+                    raise RuntimeError(
+                        f"All audio fallback strategies failed for {video_id}: {last_error}"
+                    )
+
             audio, caption = locate(stage, video_id)
             if not audio or not caption:
                 raise RuntimeError(
-                    f"Incomplete source after yt-dlp: audio={audio}, caption={caption}"
+                    f"Incomplete source after staging: audio={audio}, caption={caption}"
                 )
+
             manifest.append({
                 "video_id": video_id,
                 "audio": audio.name,
