@@ -54,3 +54,5 @@ review/audio/
 
 # Kaggle downloaded outputs
 kaggle_output/
+# Local Kaggle staging
+kaggle_stage/

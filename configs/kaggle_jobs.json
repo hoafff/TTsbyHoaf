@@ -45,6 +45,13 @@
       "accelerator": null,
       "timeout_seconds": 3600,
       "description": "Build a CPU-only TTS cut plan from the durable Source16 Whisper checkpoint plus staged source media; no audio is cut in this stage."
+    },
+    "source16-cut-pilot": {
+      "handle": "ahndongo/maymay-source16-cut-pilot-v1",
+      "path": "kaggle/cpu/source16_cut_pilot",
+      "accelerator": null,
+      "timeout_seconds": 3600,
+      "description": "Cut the QC-selected 160-clip Source16 listening pilot on Kaggle CPU; verify each WAV duration before any bulk slicing."
     }
   }
 }
