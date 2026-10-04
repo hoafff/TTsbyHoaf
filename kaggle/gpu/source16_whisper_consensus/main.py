@@ -42,6 +42,20 @@ SECRETS_DIR = Path("/kaggle/input/maymay-runtime-secrets")
 COOKIE_PATH = SECRETS_DIR / "cookies.txt"
 HF_TOKEN_PATH = SECRETS_DIR / "hf_token.txt"
 
+
+def find_input_file(filename: str, preferred: Path) -> Path | None:
+    if preferred.exists():
+        return preferred
+    root = Path("/kaggle/input")
+    matches = sorted(root.glob(f"*/{filename}")) if root.exists() else []
+    if matches:
+        print(f"DISCOVERED_INPUT {filename}: {matches[0]}", flush=True)
+        return matches[0]
+    if root.exists():
+        mounted = sorted(str(p) for p in root.iterdir())
+        print("KAGGLE_INPUT_DIRS:", mounted, flush=True)
+    return None
+
 for p in (ROOT, AUDIO_DIR, CAPTION_DIR, OUT_DIR):
     p.mkdir(parents=True, exist_ok=True)
 
@@ -83,23 +97,29 @@ def install_deps() -> None:
 
 
 def configure_hf_token() -> None:
-    if HF_TOKEN_PATH.exists():
-        token = HF_TOKEN_PATH.read_text(encoding="utf-8-sig").strip()
+    token_path = find_input_file("hf_token.txt", HF_TOKEN_PATH)
+    if token_path is not None:
+        token = token_path.read_text(encoding="utf-8-sig").strip()
         if token:
             os.environ["HF_TOKEN"] = token
             os.environ["HUGGING_FACE_HUB_TOKEN"] = token
-            print("HF token loaded from private Kaggle input.", flush=True)
+            print("HF_AUTH_READY", flush=True)
             return
-    print("HF token not present; continuing with unauthenticated HF access.", flush=True)
+    print("HF_AUTH_MISSING; continuing with unauthenticated HF access.", flush=True)
 
 
-def require_cookie() -> None:
-    if not COOKIE_PATH.exists():
-        raise FileNotFoundError(f"Missing private cookie input: {COOKIE_PATH}")
-    print("Using private YouTube cookie input:", COOKIE_PATH, flush=True)
+def require_cookie() -> Path:
+    cookie_path = find_input_file("cookies.txt", COOKIE_PATH)
+    if cookie_path is None:
+        raise FileNotFoundError(
+            "Missing private cookies.txt under /kaggle/input. "
+            "Ensure ahndongo/maymay-runtime-secrets is READY before submitting."
+        )
+    print("COOKIE_AUTH_READY:", cookie_path, flush=True)
+    return cookie_path
 
 
-def download_source(video_id: str) -> tuple[Path, Path]:
+def download_source(video_id: str, cookie_path: Path) -> tuple[Path, Path]:
     url = f"https://www.youtube.com/watch?v={video_id}"
 
     for old in AUDIO_DIR.glob(f"{video_id}.*"):
@@ -110,7 +130,7 @@ def download_source(video_id: str) -> tuple[Path, Path]:
     audio_tmpl = str(AUDIO_DIR / "%(id)s.%(ext)s")
     common = [
         sys.executable, "-m", "yt_dlp",
-        "--cookies", str(COOKIE_PATH),
+        "--cookies", str(cookie_path),
         "--no-playlist",
         "--no-warnings",
     ]
@@ -336,14 +356,14 @@ def quantiles(series: pd.Series) -> dict:
     }
 
 
-def process_one(model, video_id: str) -> dict:
+def process_one(model, video_id: str, cookie_path: Path) -> dict:
     print("=" * 100, flush=True)
     print("SOURCE:", video_id, flush=True)
 
     source_dir = OUT_DIR / video_id
     source_dir.mkdir(parents=True, exist_ok=True)
 
-    audio_path, caption_path = download_source(video_id)
+    audio_path, caption_path = download_source(video_id, cookie_path)
     captions = parse_youtube_json3(caption_path)
     print("TRANSCRIBE_STARTED", video_id, flush=True)
     whisper_segments, words, whisper_meta = transcribe(model, audio_path)
@@ -410,7 +430,7 @@ def main() -> int:
     print("=" * 100)
 
     install_deps()
-    require_cookie()
+    cookie_path = require_cookie()
     configure_hf_token()
 
     gpu_indices = detect_gpu_indices()
@@ -424,7 +444,7 @@ def main() -> int:
 
     with ThreadPoolExecutor(max_workers=max_parallel) as pool:
         future_to_video = {
-            pool.submit(process_one, model, video_id): video_id
+            pool.submit(process_one, model, video_id, cookie_path): video_id
             for video_id in KEEP_16
         }
         done_count = 0
