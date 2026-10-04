@@ -69,6 +69,39 @@ def cmd_submit(args: argparse.Namespace) -> int:
     if not metadata.exists():
         raise SystemExit(f"Missing kernel metadata: {metadata}")
 
+    # Refuse to stack a new run on top of an active one.
+    status_probe = subprocess.run(
+        [kaggle, "kernels", "status", job["handle"]],
+        cwd=str(ROOT),
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+    )
+    status_text = (status_probe.stdout or "").strip()
+    status_upper = status_text.upper()
+    if status_probe.returncode == 0 and any(
+        token in status_upper for token in ("RUNNING", "QUEUED", "PENDING")
+    ):
+        print(status_text, flush=True)
+        print(
+            "REFUSING_SUBMIT_ACTIVE_KERNEL: stop the current Kaggle run first, "
+            "then submit again.",
+            flush=True,
+        )
+        return 3
+
+    # Compile-check Python kernel source before spending a Kaggle version/GPU run.
+    meta = json.loads(metadata.read_text(encoding="utf-8"))
+    code_file = job_dir / str(meta.get("code_file", ""))
+    if not code_file.exists():
+        raise SystemExit(f"Missing kernel code_file: {code_file}")
+    if code_file.suffix.lower() == ".py":
+        source = code_file.read_text(encoding="utf-8")
+        compile(source, str(code_file), "exec")
+        print(f"LOCAL_CODE_PREFLIGHT_OK {code_file}", flush=True)
+
     cmd = [
         kaggle,
         "kernels",
