@@ -43,6 +43,8 @@ OUT_DIR = ROOT / "outputs"
 SECRETS_DIR = Path("/kaggle/input/maymay-runtime-secrets")
 COOKIE_PATH = SECRETS_DIR / "cookies.txt"
 HF_TOKEN_PATH = SECRETS_DIR / "hf_token.txt"
+COOKIE_WORK_DIR = ROOT / "runtime_cookie_copies"
+DOWNLOAD_LOCK = threading.Lock()
 
 
 def find_input_file(filename: str, preferred: Path) -> Path | None:
@@ -78,7 +80,7 @@ def find_input_file(filename: str, preferred: Path) -> Path | None:
     print("KAGGLE_INPUT_TREE_SAMPLE:", mounted, flush=True)
     return None
 
-for p in (ROOT, AUDIO_DIR, CAPTION_DIR, OUT_DIR):
+for p in (ROOT, AUDIO_DIR, CAPTION_DIR, OUT_DIR, COOKIE_WORK_DIR):
     p.mkdir(parents=True, exist_ok=True)
 
 
