@@ -134,9 +134,42 @@ def cmd_submit(args: argparse.Namespace) -> int:
             )
             return 6
 
+        checkpoint_handle = str(job.get("checkpoint_handle", "")).strip()
+        if not checkpoint_handle:
+            print(
+                "REFUSING_CHECKPOINT_JOB_WITHOUT_HANDLE: checkpoint_handle is required.",
+                flush=True,
+            )
+            return 7
+
+        checkpoint_probe = subprocess.run(
+            [kaggle, "datasets", "files", checkpoint_handle],
+            cwd=str(ROOT),
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+        )
+        checkpoint_listing = checkpoint_probe.stdout or ""
+        if checkpoint_probe.returncode != 0 or "state.json" not in checkpoint_listing:
+            print(checkpoint_listing.strip(), flush=True)
+            print(
+                "REFUSING_SUBMIT_CHECKPOINT_DATASET_NOT_READY: "
+                f"{checkpoint_handle} must exist and contain state.json. "
+                "Run the checkpoint bootstrap first.",
+                flush=True,
+            )
+            return 8
+
         print(
             "CHECKPOINT_CODE_PREFLIGHT_OK "
-            + str(job.get("checkpoint_handle", "(handle not recorded)")),
+            + checkpoint_handle,
+            flush=True,
+        )
+        print(
+            "CHECKPOINT_DATASET_PREFLIGHT_OK "
+            + checkpoint_handle,
             flush=True,
         )
 
