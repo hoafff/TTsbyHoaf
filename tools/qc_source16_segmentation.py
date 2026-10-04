@@ -156,7 +156,11 @@ def build_pilot(df: pd.DataFrame, per_source: int) -> pd.DataFrame:
                 break
 
         if len(deduped) < per_source:
-            fill = src[~src["clip_id"].astype(str).isin(seen)].sort_values(
+            pilot_eligible = src[
+                src["decision"].isin(KEEP_DECISIONS | {"REVIEW"})
+                & ~src["clip_id"].astype(str).isin(seen)
+            ]
+            fill = pilot_eligible.sort_values(
                 ["quality_score", "raw_start_sec"], kind="stable"
             )
             for _, r in fill.iterrows():
@@ -284,8 +288,10 @@ def main() -> int:
         | (df["cut_end_sec"] <= df["cut_start_sec"])
         | (df["cut_start_sec"] < -1e-6)
     ].copy()
-    if not invalid_interval.empty:
-        structural.append(f"invalid_intervals={len(invalid_interval)}")
+    invalid_drop = invalid_interval[invalid_interval["decision"] == "DROP"].copy()
+    invalid_active = invalid_interval[invalid_interval["decision"] != "DROP"].copy()
+    if not invalid_active.empty:
+        structural.append(f"invalid_active_intervals={len(invalid_active)}")
 
     empty_text = df[df["text"].str.strip().eq("")].copy()
     if not empty_text.empty:
@@ -368,6 +374,9 @@ def main() -> int:
         "keep_quality_score": quantiles(keep["quality_score"]),
         "keep_word_probability": quantiles(keep["mean_word_probability"]),
         "suspicious_keep_rows": int(len(suspicious_keep)),
+        "invalid_interval_rows": int(len(invalid_interval)),
+        "invalid_drop_rows": int(len(invalid_drop)),
+        "invalid_active_rows": int(len(invalid_active)),
         "overlap_pairs_gt_50ms": int(len(overlaps)),
         "severe_overlap_pairs_gt_250ms": int(len(severe_overlap)),
         "pilot_rows": int(len(pilot)),
