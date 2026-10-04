@@ -116,7 +116,7 @@ def similarity(a: str, b: str) -> float:
 def install_deps() -> None:
     run([
         sys.executable, "-m", "pip", "install", "-q", "-U",
-        "yt-dlp[default]", "faster-whisper==1.2.1", "av>=11,<19"
+        "faster-whisper==1.2.1", "av>=11,<19"
     ])
 
 
@@ -141,6 +141,35 @@ def require_cookie() -> Path:
         )
     print("COOKIE_AUTH_READY:", cookie_path, flush=True)
     return cookie_path
+
+
+def find_source_input(video_id: str) -> tuple[Path, Path]:
+    root = Path("/kaggle/input")
+    if not root.exists():
+        raise FileNotFoundError("/kaggle/input is missing")
+
+    caption_matches = sorted(
+        p for p in root.rglob(f"{video_id}.vi.json3")
+        if p.is_file()
+    )
+    audio_matches = []
+    for p in root.rglob(f"{video_id}.*"):
+        if not p.is_file():
+            continue
+        if p.name == f"{video_id}.vi.json3":
+            continue
+        if p.suffix.lower() in {".json3", ".json", ".txt", ".csv", ".part", ".ytdl"}:
+            continue
+        audio_matches.append(p)
+    audio_matches = sorted(audio_matches)
+
+    if not audio_matches:
+        raise FileNotFoundError(f"Missing staged audio for {video_id} under /kaggle/input")
+    if not caption_matches:
+        raise FileNotFoundError(f"Missing staged caption for {video_id} under /kaggle/input")
+
+    print(f"STAGED_SOURCE_READY {video_id}: {audio_matches[0]} | {caption_matches[0]}", flush=True)
+    return audio_matches[0], caption_matches[0]
 
 
 def download_source(video_id: str, cookie_path: Path) -> tuple[Path, Path]:
@@ -413,14 +442,14 @@ def quantiles(series: pd.Series) -> dict:
     }
 
 
-def process_one(model, video_id: str, cookie_path: Path) -> dict:
+def process_one(model, video_id: str) -> dict:
     print("=" * 100, flush=True)
     print("SOURCE:", video_id, flush=True)
 
     source_dir = OUT_DIR / video_id
     source_dir.mkdir(parents=True, exist_ok=True)
 
-    audio_path, caption_path = download_source(video_id, cookie_path)
+    audio_path, caption_path = find_source_input(video_id)
     captions = parse_youtube_json3(caption_path)
     print("TRANSCRIBE_STARTED", video_id, flush=True)
     whisper_segments, words, whisper_meta = transcribe(model, audio_path)
@@ -471,10 +500,6 @@ def process_one(model, video_id: str, cookie_path: Path) -> dict:
         encoding="utf-8",
     )
 
-    audio_path.unlink(missing_ok=True)
-    for tmp in CAPTION_DIR.glob(f"{video_id}.*"):
-        tmp.unlink(missing_ok=True)
-
     print(json.dumps(summary, ensure_ascii=False, indent=2), flush=True)
     return summary
 
@@ -487,9 +512,12 @@ def main() -> int:
     print("=" * 100)
 
     install_deps()
-    cookie_path = require_cookie()
     configure_hf_token()
-    youtube_preflight(cookie_path)
+
+    # Fail fast if any staged media/caption pair is missing.
+    for video_id in KEEP_16:
+        find_source_input(video_id)
+    print("STAGED_MEDIA_PREFLIGHT_OK", len(KEEP_16), flush=True)
 
     gpu_indices = detect_gpu_indices()
     print("GPU_INDICES:", gpu_indices, flush=True)
@@ -502,7 +530,7 @@ def main() -> int:
 
     with ThreadPoolExecutor(max_workers=max_parallel) as pool:
         future_to_video = {
-            pool.submit(process_one, model, video_id, cookie_path): video_id
+            pool.submit(process_one, model, video_id): video_id
             for video_id in KEEP_16
         }
         done_count = 0
@@ -537,7 +565,7 @@ def main() -> int:
         "bucket_seconds": BUCKET_SEC,
         "gpu_indices": gpu_indices,
         "parallel_transcriptions": max_parallel,
-        "cookie_input": "private Kaggle dataset",
+        "media_input": "private Kaggle dataset ahndongo/maymay-source16-media",
         "hf_token_present": bool(os.environ.get("HF_TOKEN")),
         "sources": all_summaries,
         "failures": failures,
