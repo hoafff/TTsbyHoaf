@@ -6,6 +6,7 @@ import os
 import re
 import subprocess
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from difflib import SequenceMatcher
 from pathlib import Path
 
@@ -31,6 +32,8 @@ KEEP_16 = [
 ]
 
 MODEL_SIZE = "large-v3"
+BUCKET_SEC = 30
+PROGRESS_EVERY_SEGMENTS = 500
 ROOT = Path("/kaggle/working/source16_whisper_consensus")
 AUDIO_DIR = ROOT / "audio"
 CAPTION_DIR = ROOT / "youtube_json3"
@@ -63,13 +66,13 @@ def lexical_norm(text: str) -> str:
 
 
 def similarity(a: str, b: str) -> float:
-    aa = lexical_norm(a)
-    bb = lexical_norm(b)
+    aa = lexical_norm(a).split()
+    bb = lexical_norm(b).split()
     if not aa and not bb:
         return 1.0
     if not aa or not bb:
         return 0.0
-    return SequenceMatcher(None, aa, bb).ratio()
+    return SequenceMatcher(None, aa, bb, autojunk=False).ratio()
 
 
 def install_deps() -> None:
@@ -163,14 +166,33 @@ def parse_youtube_json3(path: Path) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def load_model():
+def detect_gpu_indices() -> list[int]:
+    try:
+        p = subprocess.run(
+            ["nvidia-smi", "--query-gpu=index", "--format=csv,noheader"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            check=True,
+        )
+        ids = [int(x.strip()) for x in p.stdout.splitlines() if x.strip().isdigit()]
+        return ids or [0]
+    except Exception:
+        return [0]
+
+
+def load_model(gpu_indices: list[int]):
     from faster_whisper import WhisperModel
-    print("Loading Faster-Whisper model:", MODEL_SIZE, flush=True)
-    return WhisperModel(
+    print("MODEL_LOAD_STARTED", MODEL_SIZE, "GPUS", gpu_indices, flush=True)
+    model = WhisperModel(
         MODEL_SIZE,
         device="cuda",
+        device_index=gpu_indices if len(gpu_indices) > 1 else gpu_indices[0],
         compute_type="float16",
+        num_workers=max(1, len(gpu_indices)),
     )
+    print("MODEL_LOADED", flush=True)
+    return model
 
 
 def transcribe(model, audio_path: Path) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
@@ -185,7 +207,15 @@ def transcribe(model, audio_path: Path) -> tuple[pd.DataFrame, pd.DataFrame, dic
     segment_rows = []
     word_rows = []
 
-    for seg in segments_gen:
+    for seg_no, seg in enumerate(segments_gen, start=1):
+        if seg_no == 1:
+            print("TRANSCRIBE_FIRST_SEGMENT", audio_path.name, flush=True)
+        if seg_no % PROGRESS_EVERY_SEGMENTS == 0:
+            print(
+                f"TRANSCRIBE_PROGRESS {audio_path.name} segments={seg_no} t={float(seg.end):.1f}s",
+                flush=True,
+            )
+
         segment_rows.append({
             "segment_id": int(seg.id),
             "start_sec": float(seg.start),
@@ -226,19 +256,29 @@ def transcribe(model, audio_path: Path) -> tuple[pd.DataFrame, pd.DataFrame, dic
     return pd.DataFrame(segment_rows), pd.DataFrame(word_rows), meta
 
 
-def overlap_text(captions: pd.DataFrame, start: float, end: float) -> str:
-    if captions.empty:
-        return ""
-    g = captions[(captions["end_sec"] > start) & (captions["start_sec"] < end)]
-    return clean_ws(" ".join(g["text"].astype(str).tolist()))
+def bucket_text(df: pd.DataFrame, text_col: str, bucket_sec: int = BUCKET_SEC) -> dict[int, str]:
+    if df.empty:
+        return {}
+    mid = (pd.to_numeric(df["start_sec"]) + pd.to_numeric(df["end_sec"])) / 2.0
+    tmp = df.copy()
+    tmp["_bucket"] = (mid // bucket_sec).astype(int)
+    return {
+        int(k): " ".join(g[text_col].astype(str).tolist())
+        for k, g in tmp.groupby("_bucket", sort=True)
+    }
 
 
-def build_consensus(whisper_segments: pd.DataFrame, captions: pd.DataFrame) -> pd.DataFrame:
+def build_consensus_buckets(
+    whisper_segments: pd.DataFrame,
+    captions: pd.DataFrame,
+) -> pd.DataFrame:
+    yt_b = bucket_text(captions, "text")
+    ws_b = bucket_text(whisper_segments, "text")
+    common = sorted(set(yt_b) & set(ws_b))
+
     rows = []
-    for row in whisper_segments.itertuples(index=False):
-        yt_text = overlap_text(captions, float(row.start_sec), float(row.end_sec))
-        score = similarity(str(row.text), yt_text)
-
+    for bucket in common:
+        score = similarity(yt_b[bucket], ws_b[bucket])
         if score >= 0.85:
             band = "HIGH"
         elif score >= 0.65:
@@ -247,12 +287,12 @@ def build_consensus(whisper_segments: pd.DataFrame, captions: pd.DataFrame) -> p
             band = "LOW"
 
         rows.append({
-            "segment_id": int(row.segment_id),
-            "start_sec": float(row.start_sec),
-            "end_sec": float(row.end_sec),
-            "whisper_text": str(row.text),
-            "youtube_text_overlap": yt_text,
-            "lexical_similarity": score,
+            "bucket": int(bucket),
+            "start_sec": float(bucket * BUCKET_SEC),
+            "end_sec": float((bucket + 1) * BUCKET_SEC),
+            "youtube_text": yt_b[bucket],
+            "whisper_text": ws_b[bucket],
+            "token_similarity": float(score),
             "match_band": band,
         })
     return pd.DataFrame(rows)
@@ -262,15 +302,25 @@ def build_pause_features(words: pd.DataFrame) -> pd.DataFrame:
     if words.empty:
         return words.copy()
 
-    out = words.copy()
-    out["gap_before_sec"] = pd.to_numeric(out["gap_before_sec"], errors="coerce")
-    valid = out["gap_before_sec"].dropna()
-    if len(valid) >= 5:
-        out.loc[valid.index, "gap_before_percentile"] = valid.rank(method="average", pct=True)
-    else:
-        out["gap_before_percentile"] = None
-    return out
+    out = words.sort_values(["start_sec", "end_sec"], kind="stable").reset_index(drop=True).copy()
+    out["prev_end_sec_global"] = pd.to_numeric(out["end_sec"], errors="coerce").shift(1)
+    out["gap_before_global_sec"] = (
+        pd.to_numeric(out["start_sec"], errors="coerce") - out["prev_end_sec_global"]
+    ).clip(lower=0)
+    out["cross_segment_boundary"] = (
+        pd.to_numeric(out["segment_id"], errors="coerce")
+        != pd.to_numeric(out["segment_id"], errors="coerce").shift(1)
+    )
 
+    valid = out["gap_before_global_sec"].dropna()
+    if len(valid) >= 5:
+        out.loc[valid.index, "gap_before_global_percentile"] = valid.rank(
+            method="average", pct=True
+        )
+    else:
+        out["gap_before_global_percentile"] = None
+
+    return out
 
 def quantiles(series: pd.Series) -> dict:
     s = pd.to_numeric(series, errors="coerce").dropna()
@@ -281,6 +331,7 @@ def quantiles(series: pd.Series) -> dict:
         "p90": float(s.quantile(0.90)),
         "p95": float(s.quantile(0.95)),
         "p99": float(s.quantile(0.99)),
+        "p999": float(s.quantile(0.999)),
         "max": float(s.max()),
     }
 
@@ -294,15 +345,23 @@ def process_one(model, video_id: str) -> dict:
 
     audio_path, caption_path = download_source(video_id)
     captions = parse_youtube_json3(caption_path)
+    print("TRANSCRIBE_STARTED", video_id, flush=True)
     whisper_segments, words, whisper_meta = transcribe(model, audio_path)
-    consensus = build_consensus(whisper_segments, captions)
+    print("TRANSCRIBE_DONE", video_id, flush=True)
+    consensus = build_consensus_buckets(whisper_segments, captions)
     pause_features = build_pause_features(words)
 
     captions.to_csv(source_dir / "YOUTUBE_CAPTION_EVENTS.csv", index=False, encoding="utf-8-sig")
     whisper_segments.to_csv(source_dir / "WHISPER_SEGMENTS.csv", index=False, encoding="utf-8-sig")
     words.to_csv(source_dir / "WHISPER_WORDS.csv", index=False, encoding="utf-8-sig")
     pause_features.to_csv(source_dir / "PAUSE_FEATURES.csv", index=False, encoding="utf-8-sig")
-    consensus.to_csv(source_dir / "CONSENSUS_WINDOWS.csv", index=False, encoding="utf-8-sig")
+    consensus.to_csv(source_dir / "CONSENSUS_BUCKETS_30S.csv", index=False, encoding="utf-8-sig")
+    if not consensus.empty:
+        consensus.nsmallest(20, "token_similarity").to_csv(
+            source_dir / "CONSENSUS_BUCKETS_LOWEST_20.csv",
+            index=False,
+            encoding="utf-8-sig",
+        )
     (source_dir / caption_path.name).write_bytes(caption_path.read_bytes())
 
     match_counts = (
@@ -318,11 +377,13 @@ def process_one(model, video_id: str) -> dict:
         "whisper_segments": int(len(whisper_segments)),
         "whisper_words": int(len(words)),
         "match_band_counts": {str(k): int(v) for k, v in match_counts.items()},
-        "global_whisper_vs_youtube_similarity": similarity(
-            " ".join(whisper_segments["text"].astype(str).tolist()),
-            " ".join(captions["text"].astype(str).tolist()),
+        "bucket_similarity_mean": (
+            float(consensus["token_similarity"].mean()) if not consensus.empty else None
         ),
-        "gap_before_sec_quantiles": quantiles(pause_features.get("gap_before_sec", pd.Series(dtype=float))),
+        "bucket_seconds": BUCKET_SEC,
+        "gap_before_global_sec_quantiles": quantiles(
+            pause_features.get("gap_before_global_sec", pd.Series(dtype=float))
+        ),
         "word_duration_sec_quantiles": quantiles(pause_features.get("duration_sec", pd.Series(dtype=float))),
         "whisper": whisper_meta,
         "status": "OK",
@@ -351,22 +412,42 @@ def main() -> int:
     install_deps()
     require_cookie()
     configure_hf_token()
-    model = load_model()
+
+    gpu_indices = detect_gpu_indices()
+    print("GPU_INDICES:", gpu_indices, flush=True)
+    model = load_model(gpu_indices)
 
     all_summaries = []
     failures = []
+    max_parallel = max(1, len(gpu_indices))
+    print("PARALLEL_TRANSCRIPTIONS:", max_parallel, flush=True)
 
-    for idx, video_id in enumerate(KEEP_16, start=1):
-        print(f"[{idx:02d}/{len(KEEP_16):02d}] {video_id}", flush=True)
-        try:
-            all_summaries.append(process_one(model, video_id))
-        except Exception as exc:
-            failures.append({
-                "video_id": video_id,
-                "error_type": type(exc).__name__,
-                "error": str(exc),
-            })
-            print("FAILED:", video_id, repr(exc), flush=True)
+    with ThreadPoolExecutor(max_workers=max_parallel) as pool:
+        future_to_video = {
+            pool.submit(process_one, model, video_id): video_id
+            for video_id in KEEP_16
+        }
+        done_count = 0
+        for future in as_completed(future_to_video):
+            video_id = future_to_video[future]
+            done_count += 1
+            try:
+                summary = future.result()
+                all_summaries.append(summary)
+                print(
+                    f"SOURCE_COMPLETE [{done_count:02d}/{len(KEEP_16):02d}] {video_id}",
+                    flush=True,
+                )
+            except Exception as exc:
+                failures.append({
+                    "video_id": video_id,
+                    "error_type": type(exc).__name__,
+                    "error": str(exc),
+                })
+                print(
+                    f"SOURCE_FAILED [{done_count:02d}/{len(KEEP_16):02d}] {video_id}: {repr(exc)}",
+                    flush=True,
+                )
 
     overall = {
         "stage": "SOURCE16_WHISPER_CONSENSUS_V1",
@@ -375,6 +456,9 @@ def main() -> int:
         "sources_failed": len(failures),
         "model": MODEL_SIZE,
         "word_timestamps": True,
+        "bucket_seconds": BUCKET_SEC,
+        "gpu_indices": gpu_indices,
+        "parallel_transcriptions": max_parallel,
         "cookie_input": "private Kaggle dataset",
         "hf_token_present": HF_TOKEN_PATH.exists(),
         "sources": all_summaries,
