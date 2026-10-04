@@ -101,6 +101,44 @@ def cmd_submit(args: argparse.Namespace) -> int:
         source = code_file.read_text(encoding="utf-8")
         compile(source, str(code_file), "exec")
         print(f"LOCAL_CODE_PREFLIGHT_OK {code_file}", flush=True)
+    else:
+        source = code_file.read_text(encoding="utf-8", errors="replace")
+
+    configured_timeout = int(job.get("timeout_seconds", 0) or 0)
+    long_or_critical = bool(job.get("critical_run")) or configured_timeout >= 7200
+
+    if long_or_critical and not bool(job.get("checkpoint_required")):
+        print(
+            "REFUSING_LONG_RUN_WITHOUT_CHECKPOINT: this job is long/critical "
+            "but checkpoint_required is not enabled in configs/kaggle_jobs.json.",
+            flush=True,
+        )
+        return 4
+
+    if bool(job.get("checkpoint_required")):
+        markers = [str(x) for x in job.get("checkpoint_markers", []) if str(x)]
+        if not markers:
+            print(
+                "REFUSING_CHECKPOINT_JOB_WITHOUT_MARKERS: define checkpoint_markers "
+                "in configs/kaggle_jobs.json so submit can verify the checkpoint path.",
+                flush=True,
+            )
+            return 5
+
+        missing_markers = [marker for marker in markers if marker not in source]
+        if missing_markers:
+            print(
+                "REFUSING_CHECKPOINT_PREFLIGHT_FAILED: missing markers "
+                + ", ".join(missing_markers),
+                flush=True,
+            )
+            return 6
+
+        print(
+            "CHECKPOINT_CODE_PREFLIGHT_OK "
+            + str(job.get("checkpoint_handle", "(handle not recorded)")),
+            flush=True,
+        )
 
     cmd = [
         kaggle,
