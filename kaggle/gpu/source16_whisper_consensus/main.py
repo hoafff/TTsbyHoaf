@@ -35,6 +35,7 @@ KEEP_16 = [
 
 MODEL_SIZE = "large-v3"
 BUCKET_SEC = 30
+BEAM_SIZE = 1
 PROGRESS_EVERY_SEGMENTS = 500
 ROOT = Path("/kaggle/working/source16_whisper_consensus")
 AUDIO_DIR = ROOT / "audio"
@@ -305,7 +306,7 @@ def transcribe(model, audio_path: Path) -> tuple[pd.DataFrame, pd.DataFrame, dic
     segments_gen, info = model.transcribe(
         str(audio_path),
         language="vi",
-        beam_size=5,
+        beam_size=BEAM_SIZE,
         word_timestamps=True,
         vad_filter=True,
     )
@@ -509,6 +510,7 @@ def main() -> int:
     print("SOURCE16 FASTER-WHISPER CONSENSUS")
     print("sources:", len(KEEP_16))
     print("model:", MODEL_SIZE)
+    print("beam_size:", BEAM_SIZE)
     print("=" * 100)
 
     install_deps()
@@ -562,6 +564,7 @@ def main() -> int:
         "sources_failed": len(failures),
         "model": MODEL_SIZE,
         "word_timestamps": True,
+        "beam_size": BEAM_SIZE,
         "bucket_seconds": BUCKET_SEC,
         "gpu_indices": gpu_indices,
         "parallel_transcriptions": max_parallel,
