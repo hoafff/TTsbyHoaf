@@ -89,3 +89,7 @@ Before submitting a replacement run, explicitly check the remote job status and 
 
 Do not skip these rules because a run "should finish soon", "probably will not disconnect", or has succeeded before.
 If a run qualifies as long/critical, checkpoint + resume safety is part of the implementation, not an optional improvement.
+
+## 10. TTS project decision ledger
+
+For Source16/TTS data-preparation work, read `docs/TTS_PIPELINE_DECISIONS.md` before proposing, implementing, or changing pipeline behavior. Treat that file as the durable project-memory ledger for user-approved decisions. Update it whenever a later user decision changes those rules.
