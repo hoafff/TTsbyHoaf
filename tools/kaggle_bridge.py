@@ -179,6 +179,43 @@ def cmd_watch(args: argparse.Namespace) -> int:
                 last_status = status_text
 
             if any(x in status_text for x in terminal):
+                # Kaggle may publish the final traceback a few seconds after status flips.
+                time.sleep(3)
+                final_logs = subprocess.run(
+                    [kaggle, "kernels", "logs", handle],
+                    cwd=str(ROOT),
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.STDOUT,
+                    text=True,
+                    encoding="utf-8",
+                    errors="replace",
+                )
+                final_raw = (final_logs.stdout or "").strip()
+                if final_raw:
+                    try:
+                        entries = json.loads(final_raw)
+                        if isinstance(entries, list):
+                            for item in entries:
+                                key = (
+                                    str(item.get("stream_name", "")),
+                                    str(item.get("time", "")),
+                                    str(item.get("data", "")),
+                                )
+                                if key in seen:
+                                    continue
+                                seen.add(key)
+                                data = str(item.get("data", ""))
+                                if data:
+                                    print(
+                                        data,
+                                        end="" if data.endswith("\n") else "\n",
+                                        flush=True,
+                                    )
+                    except json.JSONDecodeError:
+                        key = ("raw-final", "", final_raw)
+                        if key not in seen:
+                            seen.add(key)
+                            print(final_raw, flush=True)
                 return 0 if "COMPLETE" in status_text else 1
 
             time.sleep(args.interval)
