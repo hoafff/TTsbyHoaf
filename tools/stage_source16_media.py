@@ -38,6 +38,21 @@ def locate(stage: Path, video_id: str) -> tuple[Path | None, Path | None]:
     return audio, caption if caption.exists() else None
 
 
+def preflight(base: list[str], cookie: Path, video_id: str) -> None:
+    url = f"https://www.youtube.com/watch?v={video_id}"
+    print("LOCAL_YOUTUBE_PREFLIGHT", video_id, flush=True)
+    run(base + [
+        "--cookies", str(cookie),
+        "--no-playlist",
+        "--no-warnings",
+        "--skip-download",
+        "--extractor-args", "youtube:player_client=default,web_embedded",
+        "--print", "%(id)s",
+        url,
+    ])
+    print("LOCAL_YOUTUBE_PREFLIGHT_OK", video_id, flush=True)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--stage", default=str(DEFAULT_STAGE))
@@ -61,6 +76,7 @@ def main() -> int:
         base = [yt]
 
     ids = load_ids()
+    preflight(base, cookie, ids[0])
     failures: list[dict] = []
     manifest: list[dict] = []
 
@@ -89,6 +105,7 @@ def main() -> int:
             "--no-playlist",
             "--retries", "5",
             "--fragment-retries", "5",
+            "--extractor-args", "youtube:player_client=default,web_embedded",
             "--write-auto-subs",
             "--sub-langs", "vi",
             "--sub-format", "json3",
