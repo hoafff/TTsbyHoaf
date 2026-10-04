@@ -8,6 +8,8 @@ import shutil
 import subprocess
 import sys
 import threading
+import time
+from collections import deque
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from difflib import SequenceMatcher
 from pathlib import Path
@@ -46,6 +48,14 @@ COOKIE_PATH = SECRETS_DIR / "cookies.txt"
 HF_TOKEN_PATH = SECRETS_DIR / "hf_token.txt"
 COOKIE_WORK_DIR = ROOT / "runtime_cookie_copies"
 DOWNLOAD_LOCK = threading.Lock()
+
+CHECKPOINT_HANDLE = "ahndongo/maymay-source16-whisper-checkpoint"
+CHECKPOINT_SCHEMA = 1
+CHECKPOINT_DIR = Path("/kaggle/working/source16_whisper_checkpoint")
+CHECKPOINT_OUTPUT_DIR = CHECKPOINT_DIR / "outputs"
+CHECKPOINT_STATE_PATH = CHECKPOINT_DIR / "state.json"
+CHECKPOINT_UPLOAD_RETRIES = 12
+CHECKPOINT_UPLOAD_RETRY_SEC = 10
 
 
 def find_input_file(filename: str, preferred: Path) -> Path | None:
@@ -90,6 +100,192 @@ def run(cmd: list[str]) -> None:
     subprocess.check_call(cmd)
 
 
+def checkpoint_config() -> dict:
+    return {
+        "schema": CHECKPOINT_SCHEMA,
+        "model": MODEL_SIZE,
+        "beam_size": BEAM_SIZE,
+        "bucket_seconds": BUCKET_SEC,
+        "word_timestamps": True,
+        "vad_filter": True,
+        "sources": KEEP_16,
+    }
+
+
+def fresh_checkpoint_state() -> dict:
+    return {
+        "stage": "SOURCE16_WHISPER_CONSENSUS_V1",
+        "config": checkpoint_config(),
+        "completed": [],
+        "summaries": {},
+        "failures": {},
+        "updated_at_unix": time.time(),
+    }
+
+
+def write_checkpoint_state(state: dict) -> None:
+    CHECKPOINT_DIR.mkdir(parents=True, exist_ok=True)
+    CHECKPOINT_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    state["updated_at_unix"] = time.time()
+    tmp = CHECKPOINT_STATE_PATH.with_suffix(".json.tmp")
+    tmp.write_text(
+        json.dumps(state, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    tmp.replace(CHECKPOINT_STATE_PATH)
+
+
+def persist_checkpoint(state: dict, reason: str) -> None:
+    import kagglehub
+
+    write_checkpoint_state(state)
+    last_exc: Exception | None = None
+
+    for attempt in range(1, CHECKPOINT_UPLOAD_RETRIES + 1):
+        try:
+            print(
+                f"CHECKPOINT_UPLOAD_STARTED attempt={attempt}/{CHECKPOINT_UPLOAD_RETRIES} reason={reason}",
+                flush=True,
+            )
+            kagglehub.dataset_upload(
+                CHECKPOINT_HANDLE,
+                str(CHECKPOINT_DIR),
+                version_notes=reason,
+            )
+            print(
+                "CHECKPOINT_SAVED",
+                f"completed={len(state.get('completed', []))}/{len(KEEP_16)}",
+                f"handle={CHECKPOINT_HANDLE}",
+                flush=True,
+            )
+            return
+        except Exception as exc:
+            last_exc = exc
+            print(
+                "CHECKPOINT_UPLOAD_RETRY",
+                f"attempt={attempt}/{CHECKPOINT_UPLOAD_RETRIES}",
+                f"error={type(exc).__name__}: {exc}",
+                flush=True,
+            )
+            if attempt < CHECKPOINT_UPLOAD_RETRIES:
+                time.sleep(CHECKPOINT_UPLOAD_RETRY_SEC)
+
+    raise RuntimeError(
+        f"Checkpoint upload failed after {CHECKPOINT_UPLOAD_RETRIES} attempts: {last_exc}"
+    )
+
+
+def checkpoint_source(state: dict, video_id: str, summary: dict) -> None:
+    src = OUT_DIR / video_id
+    if not src.exists():
+        raise RuntimeError(f"Missing source output before checkpoint: {src}")
+
+    dst = CHECKPOINT_OUTPUT_DIR / video_id
+    if dst.exists():
+        shutil.rmtree(dst)
+    shutil.copytree(src, dst)
+
+    completed = set(str(x) for x in state.get("completed", []))
+    completed.add(video_id)
+    state["completed"] = [v for v in KEEP_16 if v in completed]
+    state.setdefault("summaries", {})[video_id] = summary
+    state.setdefault("failures", {}).pop(video_id, None)
+
+    persist_checkpoint(state, f"completed {video_id}")
+
+
+def record_checkpoint_failure(state: dict, video_id: str, failure: dict) -> None:
+    state.setdefault("failures", {})[video_id] = failure
+    persist_checkpoint(state, f"failed {video_id}")
+
+
+def restore_checkpoint() -> tuple[dict, bool]:
+    import kagglehub
+    from kagglehub.exceptions import KaggleApiHTTPError
+
+    if CHECKPOINT_DIR.exists():
+        shutil.rmtree(CHECKPOINT_DIR)
+    CHECKPOINT_DIR.parent.mkdir(parents=True, exist_ok=True)
+
+    created = False
+    try:
+        print("CHECKPOINT_RESTORE_STARTED", CHECKPOINT_HANDLE, flush=True)
+        kagglehub.dataset_download(
+            CHECKPOINT_HANDLE,
+            force_download=True,
+            output_dir=str(CHECKPOINT_DIR),
+        )
+        print("CHECKPOINT_RESTORE_DOWNLOADED", CHECKPOINT_HANDLE, flush=True)
+    except KaggleApiHTTPError as exc:
+        status_code = getattr(getattr(exc, "response", None), "status_code", None)
+        if status_code != 404:
+            raise
+        CHECKPOINT_DIR.mkdir(parents=True, exist_ok=True)
+        CHECKPOINT_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+        state = fresh_checkpoint_state()
+        write_checkpoint_state(state)
+        print("CHECKPOINT_REMOTE_NOT_FOUND; bootstrapping new checkpoint dataset.", flush=True)
+        created = True
+        return state, created
+
+    if not CHECKPOINT_STATE_PATH.exists():
+        raise RuntimeError(
+            f"Checkpoint dataset exists but state.json is missing: {CHECKPOINT_HANDLE}"
+        )
+
+    state = json.loads(CHECKPOINT_STATE_PATH.read_text(encoding="utf-8"))
+    if state.get("config") != checkpoint_config():
+        raise RuntimeError(
+            "Checkpoint configuration mismatch. Refusing to mix results from a different "
+            f"model/beam/source configuration. remote={state.get('config')} "
+            f"current={checkpoint_config()}"
+        )
+
+    completed = [str(x) for x in state.get("completed", [])]
+    unknown = sorted(set(completed) - set(KEEP_16))
+    if unknown:
+        raise RuntimeError(f"Checkpoint contains unknown completed sources: {unknown}")
+
+    required = {
+        "SUMMARY.json",
+        "WHISPER_SEGMENTS.csv",
+        "WHISPER_WORDS.csv",
+        "PAUSE_FEATURES.csv",
+        "CONSENSUS_BUCKETS_30S.csv",
+    }
+
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    for video_id in completed:
+        src = CHECKPOINT_OUTPUT_DIR / video_id
+        if not src.exists():
+            raise RuntimeError(
+                f"Checkpoint marks {video_id} complete but output directory is missing."
+            )
+        missing = sorted(name for name in required if not (src / name).exists())
+        if missing:
+            raise RuntimeError(
+                f"Checkpoint for {video_id} is incomplete; missing files: {missing}"
+            )
+
+        dst = OUT_DIR / video_id
+        if dst.exists():
+            shutil.rmtree(dst)
+        shutil.copytree(src, dst)
+
+        if video_id not in state.get("summaries", {}):
+            state.setdefault("summaries", {})[video_id] = json.loads(
+                (dst / "SUMMARY.json").read_text(encoding="utf-8")
+            )
+
+    print(
+        "CHECKPOINT_RESTORED",
+        f"completed={len(completed)}/{len(KEEP_16)}",
+        f"pending={len(KEEP_16) - len(completed)}",
+        flush=True,
+    )
+    return state, created
+
+
 def clean_ws(text: str) -> str:
     text = html.unescape(str(text))
     text = text.replace("\u200b", "").replace("\ufeff", "")
@@ -117,7 +313,7 @@ def similarity(a: str, b: str) -> float:
 def install_deps() -> None:
     run([
         sys.executable, "-m", "pip", "install", "-q", "-U",
-        "faster-whisper==1.2.1", "av>=11,<19"
+        "faster-whisper==1.2.1", "av>=11,<19", "kagglehub>=1.0.0"
     ])
 
 
@@ -516,51 +712,109 @@ def main() -> int:
     install_deps()
     configure_hf_token()
 
-    # Fail fast if any staged media/caption pair is missing.
-    for video_id in KEEP_16:
+    checkpoint_state, checkpoint_created = restore_checkpoint()
+
+    # Prove checkpoint persistence before loading Whisper or spending GPU time.
+    persist_checkpoint(
+        checkpoint_state,
+        "bootstrap checkpoint backend" if checkpoint_created else "checkpoint write preflight",
+    )
+
+    completed = set(str(x) for x in checkpoint_state.get("completed", []))
+    pending = [video_id for video_id in KEEP_16 if video_id not in completed]
+    print(
+        "RESUME_PLAN",
+        f"completed={len(completed)}/{len(KEEP_16)}",
+        f"pending={len(pending)}",
+        flush=True,
+    )
+
+    # Completed sources no longer need staged media. Fail fast only for pending work.
+    for video_id in pending:
         find_source_input(video_id)
-    print("STAGED_MEDIA_PREFLIGHT_OK", len(KEEP_16), flush=True)
+    print("STAGED_MEDIA_PREFLIGHT_OK", len(pending), flush=True)
 
-    gpu_indices = detect_gpu_indices()
-    print("GPU_INDICES:", gpu_indices, flush=True)
-    model = load_model(gpu_indices)
+    all_summaries = [
+        checkpoint_state["summaries"][video_id]
+        for video_id in KEEP_16
+        if video_id in completed
+    ]
 
-    all_summaries = []
-    failures = []
-    max_parallel = max(1, len(gpu_indices))
-    print("PARALLEL_TRANSCRIPTIONS:", max_parallel, flush=True)
+    if pending:
+        gpu_indices = detect_gpu_indices()
+        print("GPU_INDICES:", gpu_indices, flush=True)
+        model = load_model(gpu_indices)
 
-    with ThreadPoolExecutor(max_workers=max_parallel) as pool:
-        future_to_video = {
-            pool.submit(process_one, model, video_id): video_id
-            for video_id in KEEP_16
-        }
-        done_count = 0
-        for future in as_completed(future_to_video):
-            video_id = future_to_video[future]
-            done_count += 1
-            try:
-                summary = future.result()
-                all_summaries.append(summary)
-                print(
-                    f"SOURCE_COMPLETE [{done_count:02d}/{len(KEEP_16):02d}] {video_id}",
-                    flush=True,
-                )
-            except Exception as exc:
-                failures.append({
-                    "video_id": video_id,
-                    "error_type": type(exc).__name__,
-                    "error": str(exc),
-                })
-                print(
-                    f"SOURCE_FAILED [{done_count:02d}/{len(KEEP_16):02d}] {video_id}: {repr(exc)}",
-                    flush=True,
-                )
+        max_parallel = max(1, len(gpu_indices))
+        print("PARALLEL_TRANSCRIPTIONS:", max_parallel, flush=True)
+
+        queue = deque(pending)
+        pool = ThreadPoolExecutor(max_workers=max_parallel)
+        in_flight: dict = {}
+
+        def submit_next() -> None:
+            if not queue:
+                return
+            video_id = queue.popleft()
+            in_flight[pool.submit(process_one, model, video_id)] = video_id
+
+        for _ in range(min(max_parallel, len(queue))):
+            submit_next()
+
+        try:
+            while in_flight:
+                future = next(as_completed(tuple(in_flight)))
+                video_id = in_flight.pop(future)
+
+                try:
+                    summary = future.result()
+                except Exception as exc:
+                    failure = {
+                        "video_id": video_id,
+                        "error_type": type(exc).__name__,
+                        "error": str(exc),
+                    }
+                    record_checkpoint_failure(checkpoint_state, video_id, failure)
+                    print(
+                        f"SOURCE_FAILED [{len(checkpoint_state.get('completed', [])):02d}/{len(KEEP_16):02d}] "
+                        f"{video_id}: {repr(exc)}",
+                        flush=True,
+                    )
+                else:
+                    # Do not launch the next source until this result is safely outside
+                    # /kaggle/working in the remote checkpoint dataset.
+                    checkpoint_source(checkpoint_state, video_id, summary)
+                    all_summaries = [
+                        checkpoint_state["summaries"][v]
+                        for v in KEEP_16
+                        if v in set(checkpoint_state.get("completed", []))
+                    ]
+                    print(
+                        f"SOURCE_COMPLETE [{len(checkpoint_state.get('completed', [])):02d}/{len(KEEP_16):02d}] "
+                        f"{video_id}",
+                        flush=True,
+                    )
+
+                submit_next()
+        finally:
+            pool.shutdown(wait=True, cancel_futures=True)
+    else:
+        gpu_indices = []
+        max_parallel = 0
+        print("ALL_SOURCES_ALREADY_CHECKPOINTED; skipping Whisper.", flush=True)
+
+    completed = set(str(x) for x in checkpoint_state.get("completed", []))
+    failures = [
+        checkpoint_state.get("failures", {}).get(video_id)
+        for video_id in KEEP_16
+        if video_id not in completed
+        and checkpoint_state.get("failures", {}).get(video_id) is not None
+    ]
 
     overall = {
         "stage": "SOURCE16_WHISPER_CONSENSUS_V1",
         "sources_total": len(KEEP_16),
-        "sources_ok": len(all_summaries),
+        "sources_ok": len(completed),
         "sources_failed": len(failures),
         "model": MODEL_SIZE,
         "word_timestamps": True,
@@ -569,6 +823,8 @@ def main() -> int:
         "gpu_indices": gpu_indices,
         "parallel_transcriptions": max_parallel,
         "media_input": "private Kaggle dataset ahndongo/maymay-source16-media",
+        "checkpoint_dataset": CHECKPOINT_HANDLE,
+        "checkpoint_schema": CHECKPOINT_SCHEMA,
         "hf_token_present": bool(os.environ.get("HF_TOKEN")),
         "sources": all_summaries,
         "failures": failures,
@@ -579,10 +835,18 @@ def main() -> int:
         encoding="utf-8",
     )
 
+    # Keep the aggregate summary in the checkpoint dataset too.
+    CHECKPOINT_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(
+        OUT_DIR / "SUMMARY_ALL.json",
+        CHECKPOINT_OUTPUT_DIR / "SUMMARY_ALL.json",
+    )
+    persist_checkpoint(checkpoint_state, "aggregate summary")
+
     print("=" * 100)
     print(json.dumps(overall, ensure_ascii=False, indent=2))
     print("OUTPUT:", OUT_DIR)
-    return 0 if not failures else 2
+    return 0 if len(completed) == len(KEEP_16) and not failures else 2
 
 
 if __name__ == "__main__":
