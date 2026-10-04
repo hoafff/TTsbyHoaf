@@ -52,6 +52,13 @@
       "accelerator": null,
       "timeout_seconds": 3600,
       "description": "Cut the QC-selected 160-clip Source16 listening pilot on Kaggle CPU; verify each WAV duration before any bulk slicing."
+    },
+    "source16-keep-auto-cut-pilot": {
+      "handle": "ahndongo/maymay-source16-keep-auto-cut-pilot-v1",
+      "path": "kaggle/cpu/source16_keep_auto_cut_pilot",
+      "accelerator": null,
+      "timeout_seconds": 3600,
+      "description": "Cut a 160-row KEEP_AUTO-only Source16 pilot to final training format: mono PCM16 WAV at 22050 Hz, with duration/sample-rate/channel verification."
     }
   }
 }
