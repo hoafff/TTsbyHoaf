@@ -161,6 +161,7 @@ def download_source(video_id: str, cookie_path: Path) -> tuple[Path, Path]:
         "--no-playlist",
         "--no-warnings",
         "--retries", "3",
+        "--extractor-args", "youtube:player_client=default,web_embedded",
     ]
 
     try:
@@ -196,6 +197,28 @@ def download_source(video_id: str, cookie_path: Path) -> tuple[Path, Path]:
         raise RuntimeError(f"Vietnamese auto-caption JSON3 missing for {video_id}")
 
     return audio_matches[0], caption_matches[0]
+
+
+def youtube_preflight(cookie_path: Path) -> None:
+    video_id = KEEP_16[0]
+    url = f"https://www.youtube.com/watch?v={video_id}"
+    local_cookie = COOKIE_WORK_DIR / "preflight.txt"
+    shutil.copyfile(cookie_path, local_cookie)
+    try:
+        print("YOUTUBE_PREFLIGHT_STARTED", video_id, flush=True)
+        run([
+            sys.executable, "-m", "yt_dlp",
+            "--cookies", str(local_cookie),
+            "--no-playlist",
+            "--no-warnings",
+            "--skip-download",
+            "--extractor-args", "youtube:player_client=default,web_embedded",
+            "--print", "%(id)s",
+            url,
+        ])
+        print("YOUTUBE_PREFLIGHT_OK", video_id, flush=True)
+    finally:
+        local_cookie.unlink(missing_ok=True)
 
 
 def parse_youtube_json3(path: Path) -> pd.DataFrame:
@@ -466,6 +489,7 @@ def main() -> int:
     install_deps()
     cookie_path = require_cookie()
     configure_hf_token()
+    youtube_preflight(cookie_path)
 
     gpu_indices = detect_gpu_indices()
     print("GPU_INDICES:", gpu_indices, flush=True)
