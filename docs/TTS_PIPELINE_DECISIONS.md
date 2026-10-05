@@ -84,4 +84,11 @@ When continuing TTS/Source16 work after a context switch, inspect this ledger an
 - Treat this as a possible systematic word-timestamp/text-span defect until diagnostics prove otherwise.
 - Do not continue listening merely to reach 160 if the diagnostic can explain the failure sooner.
 - Do not bulk-cut or train on the 17,495 KEEP_AUTO rows until this failure mode is corrected and a fresh pilot passes.
+## KEEP_AUTO transcript failure diagnosis
+
+- Human review stopped after 24 clips because 13/24 were BAD_TEXT and only 11/24 were GOOD.
+- Diagnostic comparison shows that for almost all BAD_TEXT rows, pilot text and overlapping WHISPER_WORDS/WHISPER_SEGMENTS text are the same. Only 1/24 reviewed rows triggered the coarse timestamp/text anomaly heuristic.
+- Therefore the dominant failure is not pilot-manifest text mapping. The Whisper transcript itself can be lexically wrong while retaining high word probabilities and otherwise plausible timestamps.
+- The existing `clip_consensus_mean` is derived from 30-second consensus buckets. It is not sentence/clip-level caption agreement and must never be described as proof that a KEEP_AUTO clip matches SRT/caption word-for-word.
+- The 17,495 KEEP_AUTO rows are not approved for bulk/training. A clip-local transcript/reference gate must be evaluated before rebuilding KEEP_AUTO.
 
