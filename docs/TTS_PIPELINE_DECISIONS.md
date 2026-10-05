@@ -103,4 +103,9 @@ When continuing TTS/Source16 work after a context switch, inspect this ledger an
 - On the 13 human-labeled BAD_TEXT clips, the local caption proposal often corrects Whisper lexical errors (for example `thay`→`thấy`, `Dân ca`→`Dần ca`, names, and other misrecognitions).
 - However the first prototype is not production-safe: it lowercases/removes punctuation and can truncate edge tokens (examples observed include proposals ending at `tiểu sư` or `hậu`).
 - Therefore do not export these prototype proposals for training. The production aligner must preserve original caption casing/punctuation and fail closed to REVIEW when either clip edge is not confidently covered.
+## Full KEEP_AUTO alignment scan gate
+
+- Before rebuilding or cutting the 17,495 legacy KEEP_AUTO rows, run a dry full-manifest caption sentence-alignment scan.
+- The scan must not modify training text in place and must not cut audio. It only partitions legacy KEEP_AUTO into conservative `ACCEPT_CAPTION` candidates and `REVIEW_ALIGNMENT`.
+- Only after counts are known and a fresh listening pilot from the new `ACCEPT_CAPTION` class passes may bulk cutting resume.
 
