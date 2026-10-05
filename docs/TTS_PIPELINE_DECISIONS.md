@@ -91,4 +91,10 @@ When continuing TTS/Source16 work after a context switch, inspect this ledger an
 - Therefore the dominant failure is not pilot-manifest text mapping. The Whisper transcript itself can be lexically wrong while retaining high word probabilities and otherwise plausible timestamps.
 - The existing `clip_consensus_mean` is derived from 30-second consensus buckets. It is not sentence/clip-level caption agreement and must never be described as proof that a KEEP_AUTO clip matches SRT/caption word-for-word.
 - The 17,495 KEEP_AUTO rows are not approved for bulk/training. A clip-local transcript/reference gate must be evaluated before rebuilding KEEP_AUTO.
+## Trusted-caption transcript policy
+
+- Clip-local scalar similarity is useful as a diagnostic but is not sufficient as the final transcript-quality gate. In the 24 reviewed KEEP_AUTO clips, BAD_TEXT similarities overlap heavily with GOOD similarities, including BAD_TEXT values above 0.95.
+- For sources whose caption/reference stream is trusted, Whisper should be treated primarily as a timing/alignment signal. The final training transcript should come from the trusted caption/reference text after local token-level alignment to the clip.
+- A candidate must be rejected/reviewed when local caption-to-Whisper alignment is ambiguous or weak; it must not inherit trust merely from a 30-second consensus bucket.
+- KEEP_AUTO must eventually mean clip-local alignment passed, not merely source/bucket-level caption trust.
 
