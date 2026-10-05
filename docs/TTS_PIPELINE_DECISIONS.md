@@ -97,4 +97,10 @@ When continuing TTS/Source16 work after a context switch, inspect this ledger an
 - For sources whose caption/reference stream is trusted, Whisper should be treated primarily as a timing/alignment signal. The final training transcript should come from the trusted caption/reference text after local token-level alignment to the clip.
 - A candidate must be rejected/reviewed when local caption-to-Whisper alignment is ambiguous or weak; it must not inherit trust merely from a 30-second consensus bucket.
 - KEEP_AUTO must eventually mean clip-local alignment passed, not merely source/bucket-level caption trust.
+## Caption canonicalization prototype result
+
+- The 24 reviewed KEEP_AUTO clips support caption/reference canonicalization as the preferred transcript source for trusted-caption sources.
+- On the 13 human-labeled BAD_TEXT clips, the local caption proposal often corrects Whisper lexical errors (for example `thay`→`thấy`, `Dân ca`→`Dần ca`, names, and other misrecognitions).
+- However the first prototype is not production-safe: it lowercases/removes punctuation and can truncate edge tokens (examples observed include proposals ending at `tiểu sư` or `hậu`).
+- Therefore do not export these prototype proposals for training. The production aligner must preserve original caption casing/punctuation and fail closed to REVIEW when either clip edge is not confidently covered.
 
