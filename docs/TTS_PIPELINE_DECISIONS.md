@@ -76,3 +76,12 @@ Never rewrite or discard source evidence just to make the dataset look clean. Ke
 ## Chat/session continuity rule
 
 When continuing TTS/Source16 work after a context switch, inspect this ledger and `AGENTS.md` before proposing or changing pipeline behavior. If a new user decision changes one of these rules, update this ledger in the same logical phase/commit.
+## Current KEEP_AUTO pilot status
+
+- The 160-row KEEP_AUTO-only 22,050 Hz pilot is **not approved for bulk cutting yet**.
+- Human listening reached 24 reviewed clips with 13 marked BAD_TEXT (~54%). This is a hard stop for bulk approval.
+- A severe observed case had about 14.11 seconds of speech audio while the pilot transcript contained only five words.
+- Treat this as a possible systematic word-timestamp/text-span defect until diagnostics prove otherwise.
+- Do not continue listening merely to reach 160 if the diagnostic can explain the failure sooner.
+- Do not bulk-cut or train on the 17,495 KEEP_AUTO rows until this failure mode is corrected and a fresh pilot passes.
+
