@@ -59,7 +59,7 @@ def main() -> int:
 
         start = float(r.requested_start_sec)
         end = float(r.requested_end_sec)
-        duration = float(r.actual_duration_sec)
+        duration = float(r.actual_duration_sec_pilot)
         word_text = overlap_text(words, start, end, 'word')
         seg_text = overlap_text(segs, start, end, 'text')
         pilot_text = str(r.text_pilot)
