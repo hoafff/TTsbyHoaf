@@ -108,4 +108,13 @@ When continuing TTS/Source16 work after a context switch, inspect this ledger an
 - Before rebuilding or cutting the 17,495 legacy KEEP_AUTO rows, run a dry full-manifest caption sentence-alignment scan.
 - The scan must not modify training text in place and must not cut audio. It only partitions legacy KEEP_AUTO into conservative `ACCEPT_CAPTION` candidates and `REVIEW_ALIGNMENT`.
 - Only after counts are known and a fresh listening pilot from the new `ACCEPT_CAPTION` class passes may bulk cutting resume.
+## Full original KEEP pool scope
 
+- The original accepted KEEP pool contains **22,150** candidates, not 17,495:
+  - `KEEP_AUTO`: 17,495 rows from caption-trusted sources.
+  - `KEEP_WHISPER_PRIMARY`: 4,655 rows from low-caption-trust sources.
+- Corpus-wide re-evaluation must account for all 22,150 rows.
+- The two legacy KEEP classes must not be forced through the same transcript gate:
+  - legacy `KEEP_AUTO` goes through clip-local trusted-caption alignment;
+  - legacy `KEEP_WHISPER_PRIMARY` remains a separate low-caption-trust route and must not be auto-canonicalized from unreliable captions.
+- A master audit may combine both routes for accounting, but neither unresolved route may be bulk-trained until its own validation/pilot passes.
