@@ -1,0 +1,18 @@
+{
+  "id": "ahndongo/maymay-source16-group-sample-cut-v1",
+  "title": "MayMay Source16 Group Sample Cut V1",
+  "code_file": "main.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "false",
+  "enable_internet": "false",
+  "machine_shape": "",
+  "dataset_sources": [
+    "ahndongo/maymay-source16-media",
+    "ahndongo/maymay-source16-group-sample-manifest-v1"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

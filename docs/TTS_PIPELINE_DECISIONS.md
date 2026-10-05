@@ -118,3 +118,12 @@ When continuing TTS/Source16 work after a context switch, inspect this ledger an
   - legacy `KEEP_AUTO` goes through clip-local trusted-caption alignment;
   - legacy `KEEP_WHISPER_PRIMARY` remains a separate low-caption-trust route and must not be auto-canonicalized from unreliable captions.
 - A master audit may combine both routes for accounting, but neither unresolved route may be bulk-trained until its own validation/pilot passes.
+## Human spot-check before further reclassification
+
+- Before treating any of the current audit groups as production-ready, listen to a small real-audio sample from each group.
+- Current spot-check design: 5 clips each (15 total) from:
+  - `ACCEPT_CAPTION_CANDIDATE`;
+  - `REVIEW_ALIGNMENT`;
+  - `REVIEW_WHISPER_PRIMARY` (legacy `KEEP_WHISPER_PRIMARY`).
+- `KEEP_WHISPER_PRIMARY` means caption/reference trust is low; it does **not** mean the audio is inherently unclear or low quality.
+- The spot-check uses final train audio format: mono PCM16 WAV at 22,050 Hz.

@@ -59,6 +59,13 @@
       "accelerator": null,
       "timeout_seconds": 3600,
       "description": "Cut a 160-row KEEP_AUTO-only Source16 pilot to final training format: mono PCM16 WAV at 22050 Hz, with duration/sample-rate/channel verification."
+    },
+    "source16-group-sample-cut": {
+      "handle": "ahndongo/maymay-source16-group-sample-cut-v1",
+      "path": "kaggle/cpu/source16_group_sample_cut",
+      "accelerator": null,
+      "timeout_seconds": 1800,
+      "description": "Cut a 15-clip Source16 spot-check: 5 ACCEPT_CAPTION_CANDIDATE, 5 REVIEW_ALIGNMENT, and 5 REVIEW_WHISPER_PRIMARY clips at final 22050 Hz mono PCM16."
     }
   }
 }
